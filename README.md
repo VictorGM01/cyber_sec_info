@@ -17,8 +17,8 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 <table>
     <tr>
     <td align="center"><a href="https://github.com/VictorGM01"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068797?v=4" width="100px;" alt=""/></br><sub><b>Victor G. Marques</b></sub></a><br />Back-end</td>
-    <td align="center"><a href=""><img style="border-radius: 50%;" src="" width="100px;" alt=""/></br><sub><b>Anna Beatriz</b></sub></a></br>Back-end</td>
+    <td align="center"><a href="https://github.com/Anninha1411"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86080382?v=4" width="100px;" alt=""/></br><sub><b>Anna Beatriz</b></sub></a></br>Back-end</td>
     <td align="center"><a href="https://github.com/raphaelaferraz"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068799?v=4" width="100px;" alt=""/></br><sub><b>Raphaela G. Ferraz</b></sub></a></br>Front-end</td>
-    <td align="center"><a href=""><img style="border-radius: 50%;" src="" width="100px;" alt=""/></br><sub><b>Hillary Mendes</b></sub></a></br>Front-end</td>
+    <td align="center"><a href="https://github.com/heyyyhill"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85965087?v=4" width="100px;" alt=""/></br><sub><b>Hillary Mendes</b></sub></a></br>Front-end</td>
     </tr>
 </table>
