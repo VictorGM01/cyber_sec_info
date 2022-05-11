@@ -1,0 +1,93 @@
+/* Reset do CSS */
+* {
+    font-family: 'Roboto Slab', serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: rgba(0, 0, 0, 0.5) url("/static/assets/img/background_cabecalho.png") repeat;
+    background-blend-mode: darken;
+
+    box-shadow: 1px 6px 15px 0 rgba(0,26,1,0.62);
+    -webkit-box-shadow: 1px 6px 15px 0 rgba(0,26,1,0.62);
+}
+
+.cabecalho__imagem {
+    margin: 0.80rem 0.75rem 0.75rem 0.75rem;
+}
+
+.cabecalho, .cabecalho__navegacao, .cabecalho__navegacao__lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__navegacao__lista__item {
+    width: 10rem;
+}
+
+.cabecalho__navegacao__lista__item:hover {
+    border-bottom: 1px solid #20e456;
+    border-top: 1px solid #20e456;
+
+}
+
+.cabecalho__navegacao__lista, .cabecalho__navegacao__sublista {
+    list-style-type: none;
+}
+
+.cabecalho__navegacao__lista__item, .cabecalho__navegacao__sublista__item {
+    position: relative;
+}
+
+.cabecalho__navegacao__sublista {
+    background: #010300;
+
+    display: none;
+
+    position: absolute;
+}
+
+.cabecalho__navegacao__sublista__item {
+    font-size: 0.8125rem;
+    text-align: center;
+
+    width: 10rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__navegacao__sublista__item:hover {
+    background: rgb(11,20,2);
+    background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+
+    color: #FFFFFF;
+}
+
+.cabecalho__navegacao__lista__item__link, .cabecalho__navegacao__sublista__item__link {
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+
+    padding: 1rem;
+}
+
+.cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2px;
+}
+
+.cabecalho__navegacao__sublista__item__link--indicador {
+    color: #20e456;
+
+    text-decoration: none;
+}
