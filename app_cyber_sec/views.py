@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("<title>Cyber Sec. Info</title>")  # Apenas para teste
+    return render(request, "index.html")
+

@@ -9,7 +9,7 @@
 
 /* Cabeçalho */
 .cabecalho {
-    background: rgba(0, 0, 0, 0.5) url("/static/assets/img/background_cabecalho.png") repeat;
+    background: rgba(0, 0, 0, 0.5) url("../img/background_cabecalho.png") repeat;
     background-blend-mode: darken;
 
     box-shadow: 1px 6px 15px 0 rgba(0,26,1,0.62);

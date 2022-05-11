@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
+    <link rel="icon"  type="image/png" sizes="16x16" href="{% static '/assets/img/favicon_csi.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/estilo.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" >
@@ -13,7 +14,8 @@
 <body>
 <header class="cabecalho">
   <div class="cabecalho__logo">
-    <img class="cabecalho__imagem" src="../static/assets/img/logotipo_desktop.svg" alt="Logotipo do site Cyber Security Information">
+    <img class="cabecalho__imagem" src="{% static '/assets/img/logotipo_desktop.svg' %}"
+         alt="Logotipo do site Cyber Security Information">
   </div>
   <div class="cabecalho__conteiner">
     <nav class="cabecalho__navegacao">
