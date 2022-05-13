@@ -16,14 +16,18 @@
     -webkit-box-shadow: 1px 6px 15px 0 rgba(0,26,1,0.62);
 }
 
-.cabecalho__imagem {
-    margin: 0.80rem 0.75rem 0.75rem 0.75rem;
+.cabecalho__logo__link__imagem {
+    margin: .80rem .75rem 0.80rem .75rem;
 }
 
 .cabecalho, .cabecalho__navegacao, .cabecalho__navegacao__lista {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.cabecalho__conteiner {
+    margin-right: .75rem;
 }
 
 .cabecalho__navegacao__lista__item {
@@ -76,7 +80,7 @@
 
     display: block;
 
-    padding: 1rem;
+    padding: 1.3rem;
 }
 
 .cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
