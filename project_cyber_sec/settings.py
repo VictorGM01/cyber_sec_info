@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app_cyber_sec'
+    'apps.app_cyber_sec',
+    'apps.emails_cyber_sec'
 ]
 
 MIDDLEWARE = [
