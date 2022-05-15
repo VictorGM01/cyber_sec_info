@@ -311,12 +311,6 @@
         justify-content: start;
     }
 
-    .cabecalho__navegacao {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
      .cabecalho__navegacao__lista {
          height: 4.375rem;
 
