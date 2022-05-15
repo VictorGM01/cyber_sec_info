@@ -8,3 +8,7 @@ $('#cabecalho_navegacao_item_sobre_nos').on('click', function() {
   $('#cabecalho_navegacao_sublista_sobre_nos').slideToggle('slow').css('display', 'block');
 });
 
+// Abertura do cabeçalho mobile - Ferramentas
+$('#cabecalho_navegacao_item_ferramentas').on('click', function() {
+  $('#cabecalho_navegacao_sublista_ferramentas').slideToggle('slow').css('display', 'block');
+});
