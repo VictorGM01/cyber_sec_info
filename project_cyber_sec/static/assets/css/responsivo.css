@@ -62,14 +62,19 @@
         justify-content: space-between;
     }
 
-    .cabecalho__navegacao__lista__item__link::after {
-        background: url("../img/seta_branca.png");
+    .cabecalho__navegacao__lista__item__link--icone::after {
+        background: url("../img/seta_recolhe.png");
         content: " ";
+        transition-duration: .7s;
 
         height: 20px;
         width: 20px;
 
         display: block;
+    }
+    
+    .rodar__item__link--icone::after{
+        transform: rotate(180deg);
     }
 
     .cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
