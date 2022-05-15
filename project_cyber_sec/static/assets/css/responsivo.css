@@ -188,6 +188,67 @@
 
         margin-left: 1rem;
     }
+    
+    /* Tutoriais */
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
+        background: url("/static/assets/img/icone_verificacao_em_duas_etapas.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
+        background: url("/static/assets/img/icone_mover_email_para_caixa_de_spam.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
+        background: url("/static/assets/img/icone_nosso_app.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
+        background: url("/static/assets/img/icone_como_criar_senhas_fortes.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
+        background: url("/static/assets/img/icone_ver_mais.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
 
 }
 
