@@ -249,6 +249,55 @@
 
         margin-left: 1rem
     }
+    
+    /* Conceitos */
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(1)::before {
+        background: url("/static/assets/img/icone_ciberseguranca.png") no-repeat;
+        content: " ";
+
+        height: 30px;
+        width: 25px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(2)::before {
+        background: url("/static/assets/img/icone_crimes_ciberneticos.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(3)::before {
+        background: url("/static/assets/img/icone_dicionario_de_ciberseguranca.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(4)::before {
+        background: url("/static/assets/img/icone_ver_mais.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
 
 }
 

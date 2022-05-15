@@ -17,3 +17,8 @@ $('#cabecalho_navegacao_item_ferramentas').on('click', function() {
 $('#cabecalho_navegacao_item_tutoriais').on('click', function() {
   $('#cabecalho_navegacao_sublista_tutoriais').slideToggle('slow').css('display', 'block');
 });
+
+// Abertura do cabeçalho mobile - Conceitos
+$('#cabecalho_navegacao_item_conceitos').on('click', function() {
+  $('#cabecalho_navegacao_sublista_conceitos').slideToggle('slow').css('display', 'block');
+});
