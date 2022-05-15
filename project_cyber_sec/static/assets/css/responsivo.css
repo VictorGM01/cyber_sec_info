@@ -1,0 +1,292 @@
+/*Cabecalho*/
+
+@media screen and (min-width: 0){
+    .cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cabecalho__conteiner {
+        width: 100%;
+    }
+
+    .cabecalho__navegacao {
+        display: block;
+    }
+
+    .cabecalho__logo__link__imagem {
+        display: none;
+    }
+
+    .cabecalho__conteiner__logo {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho__logo {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho__logo__link__imagem-mobile {
+        display: block;
+
+        margin: 0.5rem 0 .5rem 0;
+    }
+
+    .cabecalho__navegacao__lista {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .cabecalho__navegacao__lista__item {
+        border-bottom: 1px solid #20e456;
+        border-top: 1px solid #20e456;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+        width: 100%;
+    }
+
+    .cabecalho__navegacao__lista__item__link {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho__navegacao__lista__item__link::after {
+        background: url("../img/seta_branca.png");
+        content: " ";
+
+        height: 20px;
+        width: 20px;
+
+        display: block;
+    }
+
+    .cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
+        display: none;
+    }
+
+    .cabecalho__navegacao__sublista {
+        background: rgba(0, 0, 0, 0.6);
+
+        position: relative;
+
+        display: none;
+    }
+
+    .cabecalho__navegacao__sublista__item {
+        border-bottom: 1.5px solid #20E456;
+        border-top: 1.5px solid #20e456;
+        font-size: 1.08rem;
+        letter-spacing: 1px;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: .3rem;
+    }
+
+    .cabecalho__navegacao__sublista__item:hover {
+        background: transparent;
+    }
+
+    /* Sobre Nós */
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
+        background: url("../img/icone_email.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
+        background: url("../img/icone_pesquisa.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
+        background: url("../img/icone_desenvolver.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        background: url("../img/icone_instituicao.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cabecalho__logo {
+        justify-content: start;
+    }
+
+    .cabecalho__navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     .cabecalho__navegacao__lista {
+         height: 4.375rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cabecalho__navegacao__lista__item {
+        border-bottom: none;
+        border-top: none;
+
+        text-align: center;
+
+        width: 10.8625rem;
+        position: relative;
+    }
+
+    .cabecalho__navegacao__lista__item__link {
+        justify-content: center;
+    }
+
+    .cabecalho__navegacao__lista__item:hover {
+        border-bottom: 1px solid #20e456;
+        border-top: 1px solid #20e456;
+    }
+
+    .cabecalho__navegacao__lista__item__link::after {
+        content: "";
+
+        height: 0;
+        width: 0;
+    }
+
+    .cabecalho__navegacao__sublista {
+        background: #010300;
+
+        display: none;
+
+        position: absolute;
+
+        width: 100%;
+    }
+
+    .cabecalho__navegacao__sublista__item {
+        border-bottom: none;
+        border-top: none;
+
+        font-size: 0.8125rem;
+        text-align: center;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho__navegacao__sublista__item:hover {
+        background: rgb(11,20,2);
+        background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+
+        color: #FFFFFF;
+    }
+
+    .cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 2px;
+    }
+
+    .cabecalho__menu-mobile {
+        display: none;
+    }
+
+    .cabecalho__logo__link__imagem {
+        display: block;
+    }
+
+    .cabecalho__logo__link__imagem-mobile {
+        display: none;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+}
