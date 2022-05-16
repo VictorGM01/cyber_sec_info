@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .btn-acessar-conteudo{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(25,149,81,1) 80%, rgba(0,0,0,1) 100%);
+            padding: 20px 25px 20px 25px;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img alt="logo site" src="https://res.cloudinary.com/conteudos-de-portugues/image/upload/v1652637553/banner_canal_youtube_m4rcm3.png"
+             width="100%">
+    </div>
+
+    <h1>Novo conteúdo no site!</h1>
+
+    <p>Olá, {{ nome }}!</p>
+
+    <p>Há um novo artigo em nossa página:</p>
+
+    <p>Assunto: <strong>{{ assunto }}</strong></p>
+    <p>Categoria: <strong>{{ categoria }}</strong></p>
+    <p>Resumo: {{ resumo }}</p>
+
+    <div>
+        <a href="#" target="_blank">
+            <button class="btn-acessar-conteudo">Acessar conteúdo</button>
+        </a>
+    </div>
+
+</body>
+</html>
