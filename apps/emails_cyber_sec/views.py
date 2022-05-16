@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+
+def fale_conosco(request):
+    return HttpResponse("<h1>Fale Conosco</h1>")  # Apenas para teste
