@@ -674,4 +674,56 @@
 
         margin-left: 0;
     }
+    
+     /*Fale Conosco*/
+    .secao-contato {
+        margin: 0 13.15625rem 0 13.15625rem;
+    }
+
+    .secao-inicio__titulo {
+        font-size: 2.2rem;
+    }
+
+    @keyframes secao-inicio__titulo {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 32rem;
+        }
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+       font-size: .90rem;
+        font-weight: 520;
+    }
+
+     .secao-contato__formulario__mensagem__conteiner--desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-contato__formulario__mensagem__conteiner--tipo-de-contato {
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 0;
+    }
+
+    .secao-contato__formulario__resposta {
+        width: 45%;
+    }
+
+    .secao-contato__formulario__botao {
+        transition: all 1s ease;
+    }
+
+    .secao-contato__formulario__botao:hover {
+        background: transparent;
+        border: 1px solid #20e456;
+        cursor: pointer;
+    }
 }
