@@ -1,10 +1,72 @@
 /*Cabecalho*/
-
 @media screen and (min-width: 0){
     .cabecalho {
         align-items: flex-start;
         flex-direction: column;
     }
+    
+    .cabecalho__menu-mobile {
+        margin-left: 1.875rem;
+    }
+
+    #cabecalho_menu_checkbox {
+        opacity: 0;
+
+        position: absolute;
+    }
+
+    .cabecalho__menu-mobile__input__label {
+        cursor: pointer;
+
+        height: 22px;
+        width: 30px;
+
+        position: relative;
+
+        display: block;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas {
+        border-radius: 30px;
+        transition: .25s ease-in-out;
+
+        background-color: #FFFFFF;
+
+        height: 2px;
+        width: 100%;
+
+        display: block;
+        position: absolute;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas:nth-child(1) {
+        top: 0;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas:nth-child(2) {
+        top: 8px;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas:nth-child(3) {
+        top: 16px;
+    }
+
+    .cabecalho__menu-mobile__input:checked + .cabecalho__menu-mobile__input__label span:nth-child(1) {
+        transform: rotate(-45deg);
+
+        top: 8px;
+    }
+
+    .cabecalho__menu-mobile__input:checked + .cabecalho__menu-mobile__input__label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .cabecalho__menu-mobile__input:checked + .cabecalho__menu-mobile__input__label span:nth-child(3) {
+        transform: rotate(45deg);
+
+        top: 8px;
+    }
+
 
     .cabecalho__conteiner {
         width: 100%;
