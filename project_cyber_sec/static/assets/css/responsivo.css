@@ -303,7 +303,138 @@
 
         margin-left: 1rem;
     }
+    
+    /*Fale Conosco*/
+     .secao-inicio {
+        color: #ffffff;
+        text-align: center;
 
+        margin: 2.5rem 1.15625rem 2.5rem 1.15625rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .secao-inicio__titulo {
+        animation: secao-inicio__titulo 2.5s steps(50) 1s normal both;
+        overflow: hidden;
+
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .secao-inicio__titulo__cursor {
+        animation: secao-inicio__titulo__cursor 800ms steps(40) infinite normal;
+    }
+
+    .secao-inicio__conteiner {
+        margin-top: 1rem;
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+        font-size: .875rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+    }
+
+    .secao-contato {
+        margin: 2.5rem 1.15625rem 2.5rem 1.15625rem;
+    }
+
+    .secao-contato__formulario__usuario, .secao-contato__formulario__mensagem, .secao__contato__formulario__resposta, .secao-contato__formulario__resposta {
+        border: none;
+
+        margin: 0;
+        padding:0;
+    }
+
+    .secao-contato__formulario__usuario__label, .secao-contato__formulario__mensagem__label, .secao-contato__formulario__resposta__label, .secao-contato__formulario__resposta__label__checkbox, .secao-contato__formulario__resposta__legenda {
+        color: #FFFFFF;
+
+        margin-bottom: .1875rem;
+        margin-left: .6875rem;
+    }
+
+    .secao-contato__formulario__usuario__conteiner, .secao-contato__formulario__mensagem__conteiner, .secao-contato__formulario__resposta__conteiner {
+        margin-bottom: 2.5rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-contato__formulario__usuario__input, .secao-contato__formulario__mensagem__selecionar, .secao-contato__formulario__resposta__checkbox, .secao-contato__formulario__mensagem__textarea {
+        background-color: #1B341D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .secao-contato__formulario__usuario__input, .secao-contato__formulario__mensagem__selecionar, .secao-contato__formulario__resposta__checkbox {
+        color: #FFFFFF;
+
+        height: 3.125rem;
+    }
+
+    .secao-contato__formulario__usuario__input, .secao-contato__formulario__mensagem__selecionar {
+        padding-left: .875rem;
+    }
+
+    .secao-contato__formulario__mensagem__selecionar {
+        padding-right: .875rem;
+    }
+
+    .secao-contato__formulario__resposta__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .secao-contato__formulario__resposta__checkbox--email, .secao-contato__formulario__resposta__checkbox--whatsapp {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-contato__formulario__usuario__input:focus, .secao-contato__formulario__mensagem__selecionar:focus, .secao-contato__formulario__mensagem__textarea:focus, .secao-contato__formulario__botao:focus {
+        border: 1px solid #20e456;
+    }
+
+    .secao-contato__formulario__resposta__checkbox {
+        padding: 0 .875rem 0 .875rem
+    }
+
+    .secao-contato__formulario__mensagem__textarea {
+        color: #FFFFFF;
+
+        height: 10rem;
+
+        padding: .875rem 0 0 .875rem;
+    }
+
+    .secao-contato__formulario__conteiner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secao-contato__formulario__botao {
+        background-color: #1B341D;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 15px;
+
+        font-weight: bold;
+        letter-spacing: 1.2px;
+
+        height: 3.125rem;
+        width: 15.625rem;
+
+        margin-bottom: 1rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
