@@ -117,3 +117,28 @@
     top: 8px;
 }
 
+/*Fale Conosco*/
+.corpo__fale-conosco {
+    background: rgb(23,20,20);
+    background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
+}
+
+@keyframes secao-inicio__titulo {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 22rem;
+    }
+}
+
+@keyframes secao-inicio__titulo__cursor {
+    from {
+        color: #FFFFFF;
+    }
+
+    to {
+        color: transparent;
+    }
+}
