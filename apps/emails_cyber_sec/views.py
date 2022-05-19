@@ -19,6 +19,14 @@ def enviar_mensagem(request):
         preferencia_resposta = request.POST["preferencia-contato"]
         mensagem = request.POST["mensagem"]
 
+        assunto = f"Novo contato: {tipo_contato} de {email_usuario}"  # Assunto do e-mail
+        mensagem = "Contato"
+        email_host = settings.EMAIL_HOST_USER  # E-mail que enviará a mensagem
+
+        email_destino = ["suportecybersec@gmail.com"]  # Destinatário - E-mail de suporte
+
+        email = EmailMultiAlternatives(assunto, mensagem, email_host, email_destino)
+
         return render(request, "index.html")
 
 
