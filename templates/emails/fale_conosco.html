@@ -1,13 +1,13 @@
-{# Página de Contato #}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Fale Conosco | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
+    <link rel="icon"  type="image/png" sizes="16x16" href="{% static '/assets/img/favicon_csi.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/estilo.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/responsivo.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
@@ -15,7 +15,7 @@
 </head>
 <body class="corpo__fale-conosco">
 
-    <!-- Espaço para o header -->
+    {% include "partials/_header.html" %}  {# Inclui o header, cujo html está no arquivo _header.html #}
 
     <!-- Título da Página -->
     <section class="secao-inicio">
@@ -28,12 +28,13 @@
     <!-- Formulário -->
     <section class="secao-contato">
         <form class="secao-contato__formulario" method="post" action="" enctype="text/plain">
+            {% csrf_token %} {# token do django para validar formulários #}
 
             <!-- Fieldset relacionada ao usuário -->
             <fieldset class="secao-contato__formulario__usuario">
                 <div class="secao-contato__formulario__usuario__conteiner">
                     <label for="nome" class="secao-contato__formulario__usuario__label">Nome</label>
-                    <input type="text" id="nome" name="nome" class="secao-contato__formulario__usuario__input" required>
+                    <input type="text" id="nome" name="nome" class="secao-contato__formulario__usuario__input" placeholder="Digite seu nome" required>
                 </div>
 
                 <div class="secao-contato__formulario__usuario__conteiner">
@@ -64,6 +65,7 @@
                   <!-- Fieldset relacionada à resposta -->
                     <fieldset class="secao-contato__formulario__resposta">
                         <div class="secao-contato__formulario__resposta__conteiner secao-contato__formulario__resposta__conteiner--preferencia-por-resposta">
+                            <!--suppress HtmlUnknownTag -->
                             <legend class="secao-contato__formulario__resposta__legenda">Preferência por Resposta</legend>
 
                             <div class="secao-contato__formulario__resposta__checkbox">

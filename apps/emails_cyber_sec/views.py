@@ -7,7 +7,7 @@ from .models import Email
 
 
 def fale_conosco(request):
-    return HttpResponse("<h1>Fale Conosco</h1>")  # Apenas para teste
+    return render(request, "emails/fale_conosco.html")
 
 
 def receber_conteudos(request):
