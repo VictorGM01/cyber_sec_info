@@ -10,6 +10,18 @@ def fale_conosco(request):
     return render(request, "emails/fale_conosco.html")
 
 
+def enviar_mensagem(request):
+    if request.method == "POST":
+        nome = request.POST["nome"]
+        email_usuario = request.POST["email"]
+        telefone = request.POST["telefone"]
+        tipo_contato = request.POST["tipo-contato"]
+        preferencia_resposta = request.POST["preferencia-contato"]
+        mensagem = request.POST["mensagem"]
+
+        return render(request, "index.html")
+
+
 def receber_conteudos(request):
     return HttpResponse("<h1>Deseja receber e-mails sobre nossas publicações?</h1>")  # Apenas para teste
 

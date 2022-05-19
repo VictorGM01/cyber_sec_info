@@ -27,7 +27,7 @@
 
     <!-- Formulário -->
     <section class="secao-contato">
-        <form class="secao-contato__formulario" method="post" action="" enctype="text/plain">
+        <form class="secao-contato__formulario" method="post" action="{% url 'envio-contato' %}" enctype="multipart/form-data">
             {% csrf_token %} {# token do django para validar formulários #}
 
             <!-- Fieldset relacionada ao usuário -->
