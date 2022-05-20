@@ -43,7 +43,7 @@ def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
 
     email = EmailMultiAlternatives(assunto, mensagem, email_host, email_destino)
 
-    msg = render_to_string("emails/envio_de_email.html", context={
+    msg = render_to_string("emails/newsletter.html", context={
         "nome": nome, "assunto_artigo": assunto_artigo, "categoria": categoria, "resumo": resumo})  # Mensagem em html
 
     email.attach_alternative(msg, "text/html")

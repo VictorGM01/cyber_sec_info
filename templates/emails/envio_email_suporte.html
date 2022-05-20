@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .btn-entrar-em-contato{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(25,149,81,1) 80%, rgba(0,0,0,1) 100%);
+            padding: 16px 20px 16px 20px;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-entrar-em-contato:hover{
+            background: black;
+            border: 1px solid rgba(25,149,81,1);
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 20px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nova Solicitação de {{ nome }}</h1>
+
+    <p>Suporte,</p>
+
+    <p>Há uma nova solicitação do tipo <strong>{{ tipo_solicitacao }}</strong>. Seguem os dados:</p>
+
+    <p>{{ mensagem }}</p>
+
+    <h2>Dados Para Contato:</h2>
+
+    <ul>
+        <li><p>Nome do Usuário: <strong>{{ nome }}</strong></p></li>
+        <li><p>E-mail: <strong>{{ email }}</strong></p></li>
+        <li><p>Telefone: <strong>{{ telefone }}</strong></p></li>
+        <li><p>Realizar Contato Via: <strong>{{ preferencia_resposta }}</strong></p></li>
+    </ul>
+
+    <div>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+            <button class="btn-entrar-em-contato">Entrar em Contato</button>
+        </a>
+    </div>
+
+</body>
+</html>
