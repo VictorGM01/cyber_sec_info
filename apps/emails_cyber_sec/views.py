@@ -16,8 +16,14 @@ def enviar_mensagem(request):
         email_usuario = request.POST["email"]
         telefone = request.POST["telefone"]
         tipo_contato = request.POST["tipo-contato"]
-        preferencia_resposta = request.POST["preferencia-contato"]
+        preferencia_resposta = request.POST.getlist("preferencia-contato")
         mensagem = request.POST["mensagem"]
+
+        if len(preferencia_resposta) == 2:
+            preferencia_resposta = "E-mail e WhatsApp"
+
+        else:
+            preferencia_resposta = preferencia_resposta[0]
 
         assunto = f"Novo contato: {tipo_contato} de {email_usuario}"  # Assunto do e-mail
         email_host = settings.EMAIL_HOST_USER  # E-mail que enviará a mensagem
