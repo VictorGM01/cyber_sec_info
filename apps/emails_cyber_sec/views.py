@@ -52,6 +52,12 @@ def cadastro_newsletter(request):
         nome = request.POST['nome']
         email = request.POST['email']
 
+        if not nome.strip() or not email.strip():  # Verifica se os campos estão vazios
+            return redirect("newsletter")
+
+        if Email.objects.filter(email=email).exists():  # Verifica se o usuário já está cadastrado
+            return redirect("newsletter")
+
         novo_email = Email.objects.create(nome=nome, email=email)
 
         novo_email.save()
