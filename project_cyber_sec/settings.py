@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "localhost"]
+ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "localhost", "*"]
 
 
 # Application definition
@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'project_cyber_sec.urls'
@@ -125,7 +126,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'project_cyber_sec/static')
 ]
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
