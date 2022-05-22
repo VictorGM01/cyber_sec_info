@@ -167,6 +167,10 @@
     .cabecalho__navegacao__sublista__item:hover {
         background: transparent;
     }
+    
+    .cabecalho__navegacao__sublista__item__link {
+        text-align: initial;
+    }
 
     /* Sobre Nós */
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
@@ -541,8 +545,12 @@
 
 @media screen and (min-width: 1200px) {
     .cabecalho {
+        top: 0;
+        
         flex-direction: row;
         justify-content: space-between;
+        
+        position: sticky;
     }
 
     .cabecalho__logo {
@@ -626,6 +634,10 @@
         flex-direction: column;
 
         margin-top: 2px;
+    }
+    
+    .cabecalho__navegacao__sublista__item__link {
+        text-align: center; 
     }
 
     .cabecalho__menu-mobile {
