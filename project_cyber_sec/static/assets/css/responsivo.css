@@ -3,10 +3,8 @@
     .cabecalho {
         align-items: flex-start;
         flex-direction: column;
-    }
-    
-    .cabecalho__menu-mobile {
-        margin-left: 1.875rem;
+        
+        padding: 0 1.875rem 0 1.875rem;
     }
 
     #cabecalho_menu_checkbox {
@@ -546,6 +544,8 @@
     .cabecalho {
         flex-direction: row;
         justify-content: space-between;
+        
+        padding: 0 .8rem 0 .8rem; 
     }
 
     .cabecalho__logo {
@@ -589,6 +589,8 @@
 
     .cabecalho__navegacao__sublista {
         background: #010300;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 4px 4px 4px rgba(28, 120, 13, 0.4);
 
         display: none;
 
@@ -613,6 +615,7 @@
     .cabecalho__navegacao__sublista__item:hover {
         background: rgb(11,20,2);
         background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+        border-radius: 0 0 10px 10px;
 
         color: #FFFFFF;
     }
