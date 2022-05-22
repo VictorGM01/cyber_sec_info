@@ -27,7 +27,8 @@
 
     </section>
     <section class="secao-contato--newsletter">
-        <form class="secao-contato__formulario secao-contato__formulario--newsletter" method="post" action="" enctype="multipart/form-data">
+        <form class="secao-contato__formulario secao-contato__formulario--newsletter" method="post" action="{% url 'cadastro-newsletter' %}" enctype="multipart/form-data">
+            {% csrf_token %}
             <fieldset class="secao-contato__formulario__usuario">
                 <div class="secao-contato__formulario__usuario__conteiner">
                     <label for="nome" class="secao-contato__formulario__usuario__label secao-contato__formulario__usuario__label--newsletter">Nome ou Apelido:</label>

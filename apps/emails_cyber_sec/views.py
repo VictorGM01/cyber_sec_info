@@ -47,6 +47,10 @@ def newsletter(request):
     return render(request, "emails/newsletter.html")
 
 
+def cadastro_newsletter(request):
+    return redirect("home-page")
+
+
 def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
     assunto = "Cyber Security Information: Novo Conteúdo"  # Assunto do e-mail
     mensagem = "Atualização"
