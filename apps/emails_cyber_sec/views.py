@@ -44,6 +44,10 @@ def enviar_mensagem(request):
 
 
 def newsletter(request):
+    return render(request, "emails/newsletter.html")
+
+
+def cadastro_newsletter(request):
     if request.method == "POST":
         nome = request.POST['nome']
         email = request.POST['email']
@@ -52,11 +56,7 @@ def newsletter(request):
 
         novo_email.save()
 
-        return render(request, "emails/newsletter.html")
-
-
-def cadastro_newsletter(request):
-    return redirect("home-page")
+        return redirect("home-page")
 
 
 def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
