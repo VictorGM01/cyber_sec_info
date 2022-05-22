@@ -43,8 +43,8 @@ def enviar_mensagem(request):
         return redirect("home-page")
 
 
-def receber_conteudos(request):
-    return HttpResponse("<h1>Deseja receber e-mails sobre nossas publicações?</h1>")  # Apenas para teste
+def newsletter(request):
+    return render(request, "emails/newsletter.html")
 
 
 def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
@@ -56,7 +56,7 @@ def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
 
     email = EmailMultiAlternatives(assunto, mensagem, email_host, email_destino)
 
-    msg = render_to_string("emails/newsletter.html", context={
+    msg = render_to_string("emails/email_newsletter.html", context={
         "nome": nome, "assunto_artigo": assunto_artigo, "categoria": categoria, "resumo": resumo})  # Mensagem em html
 
     email.attach_alternative(msg, "text/html")
