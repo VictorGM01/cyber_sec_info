@@ -544,14 +544,16 @@
     .cabecalho {
         flex-direction: row;
         justify-content: space-between;
-        
-        padding: 0 .8rem 0 .8rem; 
     }
 
     .cabecalho__logo {
         justify-content: start;
     }
-
+    
+    .cabecalho__conteiner__logo {
+         padding: initial; 
+     }
+    
      .cabecalho__navegacao__lista {
          height: 4.375rem;
 
