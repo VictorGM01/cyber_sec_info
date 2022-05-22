@@ -44,7 +44,15 @@ def enviar_mensagem(request):
 
 
 def newsletter(request):
-    return render(request, "emails/newsletter.html")
+    if request.method == "POST":
+        nome = request.POST['nome']
+        email = request.POST['email']
+
+        novo_email = Email.objects.create(nome=nome, email=email)
+
+        novo_email.save()
+
+        return render(request, "emails/newsletter.html")
 
 
 def cadastro_newsletter(request):
