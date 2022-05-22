@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*", ]
+ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost"]
 
 
 # Application definition
@@ -81,17 +81,17 @@ WSGI_APPLICATION = 'project_cyber_sec.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {'default': dj_database_url.config(default=config('DATABASE_URL'))}
+DATABASES = {'default': dj_database_url.config()}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('NAME'),
-        'USER': config("USER"),
-        'PASSWORD': config("PASSWORD"),
-        'HOST': config("HOST")
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config('NAME'),
+#         'USER': config("USER"),
+#         'PASSWORD': config("PASSWORD"),
+#         'HOST': config("HOST")
+#     }
+# }
 
 
 # Password validation
