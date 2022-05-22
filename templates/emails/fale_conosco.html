@@ -19,6 +19,7 @@
 
 <!-- Formulário -->
 <section class="secao-contato">
+    {% include "partials/_alertas.html" %}
     <form class="secao-contato__formulario" method="post" action="{% url 'envio-contato' %}" enctype="multipart/form-data">
         {% csrf_token %} {# token do django para validar formulários #}
 

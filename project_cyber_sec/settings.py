@@ -163,4 +163,5 @@ django_heroku.settings(locals())
 # Mensagens
 MESSAGE_TAGS = {
     messages.ERROR: 'erro',
+    messages.SUCCESS: 'sucesso',
 }

@@ -41,7 +41,9 @@ def enviar_mensagem(request):
         email.attach_alternative(mensagem_final, "text/html")
         email.send()
 
-        return redirect("home-page")
+        messages.success(request, "E-mail enviado. Por favor, aguarde o nosso contato.")
+
+        return redirect("fale-conosco")
 
 
 def newsletter(request):
@@ -65,7 +67,9 @@ def cadastro_newsletter(request):
 
         novo_email.save()
 
-        return redirect("home-page")
+        messages.success(request, "Parabéns! Seu cadastro foi realizado.")
+
+        return redirect("newsletter")
 
 
 def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):

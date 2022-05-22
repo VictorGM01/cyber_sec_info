@@ -106,3 +106,12 @@
 	border-radius: 0.375rem;
 	margin-bottom: 1rem;
 }
+
+.sucesso {
+    padding: 1rem 1rem;
+	border: 1px solid #badbcc;
+	color: #0f5132;
+	background-color: #d1e7dd;
+	border-radius: 0.375rem;
+	margin-bottom: 1rem;
+}
