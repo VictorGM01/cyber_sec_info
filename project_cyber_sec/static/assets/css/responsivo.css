@@ -378,20 +378,6 @@
         flex-direction: column;
     }
 
-    .secao-inicio__titulo {
-        animation: secao-inicio__titulo 2.5s steps(50) 1s normal both;
-        overflow: hidden;
-
-        font-size: 1.5rem;
-        letter-spacing: 1.5px;
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    .secao-inicio__titulo__cursor {
-        animation: secao-inicio__titulo__cursor 800ms steps(40) infinite normal;
-    }
-
     .secao-inicio__conteiner {
         margin-top: 1rem;
     }
