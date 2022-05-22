@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from project_cyber_sec import settings
@@ -40,7 +40,7 @@ def enviar_mensagem(request):
         email.attach_alternative(mensagem_final, "text/html")
         email.send()
 
-        return render(request, "index.html")
+        return redirect("home-page")
 
 
 def receber_conteudos(request):
