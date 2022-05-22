@@ -483,7 +483,52 @@
 
         margin-bottom: 1rem;
     }
+    
+     /*Newsletter*/
+    .secao-inicio__titulo--newsletter {
+        letter-spacing: 1.5px;
+        line-height: 2rem;
+
+    }
+
+    .secao-inicio__titulo--cor {
+        animation: secao-inicio__titulo--cor--animacao 2.5s steps(50) 1s normal both;
+        overflow: hidden;
+
+        white-space: nowrap;
+    }
+
+    @keyframes secao-inicio__titulo--cor--animacao {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+        letter-spacing: 1.5px;
+    }
+
+    .conteiner--newsletter {
+        margin: 1.875rem;
+    }
+
+    .secao-contato__formulario--newsletter {
+        background: #1B341D;
+
+        border-radius: 15px;
+
+        padding: 1.84375rem 1.5rem 1.84375rem 1.5rem;
+    }
+
+    .secao-contato__formulario__usuario__input--newsletter, .secao-contato__formulario__botao--newsletter {
+        background: #031805;
+    }
 }
+
 
 @media screen and (min-width: 1200px) {
     .cabecalho {
