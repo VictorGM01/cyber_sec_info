@@ -219,6 +219,18 @@
         margin-left: 1rem;
     }
     
+     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+        background: url("../img/icone_newsletter.png");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+    
     /* Ferramentas */
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
         background: url("../img/icone_validador_de_url.png");
@@ -652,6 +664,15 @@
     }
 
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
         content: " ";
 
         height: 0;
