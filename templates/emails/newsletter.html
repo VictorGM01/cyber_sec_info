@@ -1,57 +1,49 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Newsletter | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="{% static '/assets/img/favicon_csi.png' %}">
-    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/estilo.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/responsivo.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-<body class="corpo__newsletter">
+{% extends "base.html" %}  {# Essa página tem sua estrutura no arquivo base.html #}
 
-    {% include "partials/_header.html" %}  {# Inclui o header, cujo html está no arquivo _header.html #}
+{% block title %}
+<title>Newsletter | Cyber Security Information</title>
+{% endblock %}
 
-    <main class="principal--newsletter">
 
-    <section class="secao-inicio">
-        <h1 class="secao-inicio__titulo--newsletter secao-inicio__titulo--animacao-newsletter">
-                Quer saber mais sobre a <span class="secao-inicio__titulo--cor">cibersegurança</span> e como colocá-la em prática?<span class="secao-inicio__titulo__cursor">|</span></h1>
-        <section class="secao-inicio__conteiner secao-inicio__conteiner--newsletter">
-            <h3 class="secao-inicio__conteiner__subtitulo secao-inicio__conteiner__subtitulo--newsletter">
-                    Inscreva-se na nossa newsletter e receba de forma exclusiva atualizações sobre nossas publicações, incluindo
-                    artigos, tutoriais e ferramentas que te auxiliarão na garantia da sua segurança no mundo digital.
-            </h3>
-        </section>
+{% block class_css_body %} class="corpo__newsletter" {% endblock %}
+
+
+{% block body %}
+<main class="principal--newsletter">
+
+<section class="secao-inicio">
+    <h1 class="secao-inicio__titulo--newsletter secao-inicio__titulo--animacao-newsletter">
+            Quer saber mais sobre a <span class="secao-inicio__titulo--cor">cibersegurança</span> e como colocá-la em prática?<span class="secao-inicio__titulo__cursor">|</span></h1>
+    <section class="secao-inicio__conteiner secao-inicio__conteiner--newsletter">
+        <h3 class="secao-inicio__conteiner__subtitulo secao-inicio__conteiner__subtitulo--newsletter">
+                Inscreva-se na nossa newsletter e receba de forma exclusiva atualizações sobre nossas publicações, incluindo
+                artigos, tutoriais e ferramentas que te auxiliarão na garantia da sua segurança no mundo digital.
+        </h3>
     </section>
+</section>
 
-     <div class="conteiner--newsletter">
-        <section class="secao-imagem">
+ <div class="conteiner--newsletter">
+    <section class="secao-imagem">
 
-        </section>
-        <section class="secao-contato--newsletter">
-            <form class="secao-contato__formulario secao-contato__formulario--newsletter" method="post" action="" enctype="multipart/form-data">
-                <fieldset class="secao-contato__formulario__usuario">
-                    <div class="secao-contato__formulario__usuario__conteiner">
-                        <label for="nome" class="secao-contato__formulario__usuario__label secao-contato__formulario__usuario__label--newsletter">Nome ou Apelido:</label>
-                        <input type="text" id="nome" name="nome" class="secao-contato__formulario__usuario__input secao-contato__formulario__usuario__input--newsletter" placeholder="Digite seu nome ou apelido">
-                    </div>
-
-                    <div class="secao-contato__formulario__usuario__conteiner">
-                        <label for="email" class="secao-contato__formulario__usuario__label secao-contato__formulario__usuario__label--newsletter">E-mail:</label>
-                        <input type="email" id="email" name="email" class="secao-contato__formulario__usuario__input secao-contato__formulario__usuario__input--newsletter" placeholder="seuemail@seudomínio.com">
-                    </div>
-                </fieldset>
-                <div class="secao-contato__formulario__conteiner">
-                    <button type="submit" class="secao-contato__formulario__botao secao-contato__formulario__botao--newsletter">Quero me inscrever</button>
+    </section>
+    <section class="secao-contato--newsletter">
+        <form class="secao-contato__formulario secao-contato__formulario--newsletter" method="post" action="" enctype="multipart/form-data">
+            <fieldset class="secao-contato__formulario__usuario">
+                <div class="secao-contato__formulario__usuario__conteiner">
+                    <label for="nome" class="secao-contato__formulario__usuario__label secao-contato__formulario__usuario__label--newsletter">Nome ou Apelido:</label>
+                    <input type="text" id="nome" name="nome" class="secao-contato__formulario__usuario__input secao-contato__formulario__usuario__input--newsletter" placeholder="Digite seu nome ou apelido">
                 </div>
-            </form>
-        </section>
-    </div>
+
+                <div class="secao-contato__formulario__usuario__conteiner">
+                    <label for="email" class="secao-contato__formulario__usuario__label secao-contato__formulario__usuario__label--newsletter">E-mail:</label>
+                    <input type="email" id="email" name="email" class="secao-contato__formulario__usuario__input secao-contato__formulario__usuario__input--newsletter" placeholder="seuemail@seudomínio.com">
+                </div>
+            </fieldset>
+            <div class="secao-contato__formulario__conteiner">
+                <button type="submit" class="secao-contato__formulario__botao secao-contato__formulario__botao--newsletter">Quero me inscrever</button>
+            </div>
+        </form>
+    </section>
+</div>
 </main>
-</body>
-</html>
+{% endblock %}
