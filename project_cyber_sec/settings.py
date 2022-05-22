@@ -15,6 +15,7 @@ from decouple import config
 import os
 import django_heroku
 import dj_database_url
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -158,3 +159,8 @@ EMAIL_HOST_USER = "grupopji2021@gmail.com"
 EMAIL_HOST_PASSWORD = config('PASS')
 
 django_heroku.settings(locals())
+
+# Mensagens
+MESSAGE_TAGS = {
+    messages.ERROR: 'erro',
+}

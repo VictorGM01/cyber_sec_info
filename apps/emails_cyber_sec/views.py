@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from project_cyber_sec import settings
+from django.contrib import messages
 
 from .models import Email
 
@@ -53,9 +54,11 @@ def cadastro_newsletter(request):
         email = request.POST['email']
 
         if not nome.strip() or not email.strip():  # Verifica se os campos estão vazios
+            messages.error(request, "Preencha todos os campos")
             return redirect("newsletter")
 
         if Email.objects.filter(email=email).exists():  # Verifica se o usuário já está cadastrado
+            messages.error(request, "Usuário já cadastrado")
             return redirect("newsletter")
 
         novo_email = Email.objects.create(nome=nome, email=email)
