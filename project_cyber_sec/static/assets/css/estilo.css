@@ -73,7 +73,7 @@
     animation: secao-inicio__titulo__cursor 800ms steps(40) infinite normal;
 }
 
-@keyframes secao-inicio__titulo {
+@keyframes secao-inicio__titulo--animacao--fale-conosco {
     from {
         width: 0;
     }
