@@ -123,12 +123,12 @@
     }
 
     .cabecalho__navegacao__lista__item__link--icone::after {
-        background: url("../img/seta_recolhe.png");
+        background: url("../img/seta_recolhe.svg");
         content: " ";
         transition-duration: .7s;
 
-        height: 20px;
-        width: 20px;
+        height: 24px;
+        width: 24px;
 
         display: block;
     }
@@ -170,7 +170,7 @@
 
     /* Sobre Nós */
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
-        background: url("../img/icone_email.png");
+        background: url("../img/icone_email.svg");
         content: " ";
 
         height: 24px;
@@ -182,7 +182,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
-        background: url("../img/icone_pesquisa.png");
+        background: url("../img/icone_pesquisa.svg");
         content: " ";
 
         height: 24px;
@@ -194,7 +194,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
-        background: url("../img/icone_desenvolver.png");
+        background: url("../img/icone_desenvolver.svg");
         content: " ";
 
         height: 24px;
@@ -206,7 +206,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
-        background: url("../img/icone_instituicao.png");
+        background: url("../img/icone_instituicao.svg");
         content: " ";
 
         height: 24px;
@@ -218,7 +218,7 @@
     }
     
      .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
-        background: url("../img/icone_newsletter.png");
+        background: url("../img/icone_newsletter.svg");
         content: " ";
 
         height: 24px;
