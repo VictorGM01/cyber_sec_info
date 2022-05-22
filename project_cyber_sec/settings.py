@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "localhost"]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
     'apps.app_cyber_sec',
     'apps.emails_cyber_sec'
 ]
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'project_cyber_sec.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config()}
+DATABASES = {'default': dj_database_url.config(default=config('DATABASE_URL'))}
 
 
 # Password validation
@@ -125,6 +126,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Configurações para os arquivos de mídia (imagens)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
