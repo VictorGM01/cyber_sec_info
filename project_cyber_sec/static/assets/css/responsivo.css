@@ -231,7 +231,7 @@
     
     /* Ferramentas */
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
-        background: url("/static/assets/img/icone_validador_de_url.svg");
+        background: url("../img/icone_validador_de_url.svg");
         content: " ";
 
         height: 24px;
@@ -242,7 +242,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
-        background: url("/static/assets/img/icone_gerador_de_senhas.svg");
+        background: url("../img/icone_gerador_de_senhas.svg");
         content: " ";
 
         height: 24px;
@@ -254,7 +254,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
-        background: url("/static/assets/img/icone_nosso_app.svg");
+        background: url("../img/icone_nosso_app.svg");
         content: " ";
 
         height: 26px;
@@ -267,7 +267,7 @@
     
     /* Tutoriais */
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
-        background: url("/static/assets/img/icone_verificacao_em_duas_etapas.svg");
+        background: url("../img/icone_verificacao_em_duas_etapas.svg");
         content: " ";
 
         height: 24px;
@@ -279,7 +279,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
-        background: url("/static/assets/img/icone_mover_email_para_caixa_de_spam.svg") no-repeat;
+        background: url("../img/icone_mover_email_para_caixa_de_spam.svg") no-repeat;
         content: " ";
 
         height: 24px;
@@ -291,7 +291,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
-        background: url("/static/assets/img/icone_baixe_nosso_app.svg");
+        background: url("../img/icone_baixe_nosso_app.svg");
         content: " ";
 
         height: 24px;
@@ -303,7 +303,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
-        background: url("/static/assets/img/icone_como_criar_senhas_fortes.svg");
+        background: url("../img/icone_como_criar_senhas_fortes.svg");
         content: " ";
 
         height: 24px;
@@ -315,7 +315,7 @@
     }
     
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
-        background: url("/static/assets/img/icone_ver_mais.svg");
+        background: url("../img/icone_ver_mais.svg");
         content: " ";
 
         height: 24px;
@@ -328,7 +328,7 @@
     
     /* Conceitos */
     .cabecalho__navegacao__sublista__item--conceitos:nth-child(1)::before {
-        background: url("/static/assets/img/icone_ciberseguranca.svg") no-repeat;
+        background: url("../img/icone_ciberseguranca.svg") no-repeat;
         content: " ";
 
         height: 24px;
@@ -340,7 +340,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--conceitos:nth-child(2)::before {
-        background: url("/static/assets/img/icone_crimes_ciberneticos.svg");
+        background: url("../img/icone_crimes_ciberneticos.svg");
         content: " ";
 
         height: 24px;
@@ -352,7 +352,7 @@
     }
 
    .cabecalho__navegacao__sublista__item--conceitos:nth-child(3)::before {
-        background: url("/static/assets/img/icone_dicionario_de_ciberseguranca.svg");
+        background: url("../img/icone_dicionario_de_ciberseguranca.svg");
         content: " ";
 
         height: 24px;
@@ -364,7 +364,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--conceitos:nth-child(4)::before {
-        background: url("/static/assets/img/icone_ver_mais.svg");
+        background: url("../img/icone_ver_mais.svg");
         content: " ";
 
         height: 24px;
