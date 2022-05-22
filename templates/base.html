@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{% block title %} {% endblock %}</title>  {# bloco title: cada página tem um título diferente #}
+    <link rel="icon"  type="image/png" sizes="16x16" href="{% static '/assets/img/favicon_csi.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/estilo.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/responsivo.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" >
+</head>
+<body {% block class_css %} {% endblock %}>  {# bloco class_css: em cada página o front adiciona uma classe diferente para o body #}
+
+    {% include "partials/_header.html" %}  {# Inclui o header, cujo html está no arquivo _header.html #}
+
+    {% block body %} {% endblock %}  {# bloco body: cada página possui conteúdos diferentes no body #}
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="{% static '/assets/js/cabecalho.js' %}"></script>
+
+</html>
