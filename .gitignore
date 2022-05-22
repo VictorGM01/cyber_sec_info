@@ -22,6 +22,9 @@ media/
 ./media
 imagens/
 
+# local settings
+local_settings.py
+
 # Distribution / packaging
 .Python
 build/
