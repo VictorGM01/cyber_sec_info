@@ -13,6 +13,15 @@ __pycache__/
 .idea/
 idea/
 
+# statcfiles
+./staticfiles
+staticfiles/
+
+# Media
+media/
+./media
+imagens/
+
 # Distribution / packaging
 .Python
 build/
