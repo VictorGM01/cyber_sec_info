@@ -483,7 +483,52 @@
 
         margin-bottom: 1rem;
     }
+    
+     /*Newsletter*/
+    .secao-inicio__titulo--newsletter {
+        letter-spacing: 1.5px;
+        line-height: 2rem;
+
+    }
+
+    .secao-inicio__titulo--cor {
+        animation: secao-inicio__titulo--cor--animacao 2.5s steps(50) 1s normal both;
+        overflow: hidden;
+
+        white-space: nowrap;
+    }
+
+    @keyframes secao-inicio__titulo--cor--animacao {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+        letter-spacing: 1.5px;
+    }
+
+    .conteiner--newsletter {
+        margin: 1.875rem;
+    }
+
+    .secao-contato__formulario--newsletter {
+        background: #1B341D;
+
+        border-radius: 15px;
+
+        padding: 1.84375rem 1.5rem 1.84375rem 1.5rem;
+    }
+
+    .secao-contato__formulario__usuario__input--newsletter, .secao-contato__formulario__botao--newsletter {
+        background: #031805;
+    }
 }
+
 
 @media screen and (min-width: 1200px) {
     .cabecalho {
@@ -773,5 +818,87 @@
         background: transparent;
         border: 1px solid #20e456;
         cursor: pointer;
+    }
+    
+    *Newsletter*/
+    .secao-inicio__titulo--newsletter {
+        animation: secao-inicio__titulo--animacao--newsletter 4s steps(50) 1s normal both;
+        overflow: hidden;
+
+        font-size: 2em;
+        text-align: center;
+        white-space: nowrap;
+
+        height: 2.5rem;
+    }
+
+    @keyframes secao-inicio__titulo--animacao--newsletter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 80rem;
+        }
+    }
+
+    .secao-inicio__titulo--cor {
+        animation: none;
+    }
+
+    .secao-inicio__conteiner--newsletter {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 2rem;
+    }
+
+    .secao-inicio__conteiner__subtitulo--newsletter {
+        line-height: 1.5em;
+
+        font-size: 1.2em;
+        font-weight: 100;
+
+        width: 60%;
+    }
+
+    .conteiner--newsletter {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 5.9375rem;
+    }
+
+    .secao-imagem {
+        background: url("/static/assets/img/imagem_newsletter.svg");
+
+        height: 23.125rem;
+        width: 23.125rem;
+
+        margin-right: 5.3125rem;
+    }
+
+    .secao-contato--newsletter {
+        height: 27.5rem;
+
+        width: 50rem;
+    }
+
+    .secao-contato__formulario--newsletter {
+        padding: 2.375rem 2.8125rem 3.875rem 2.8125rem;
+    }
+
+    .secao-contato__formulario__usuario__label--newsletter {
+        font-size: 1.3em;
+    }
+
+    .secao-contato__formulario__botao--newsletter {
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .secao-contato__formulario__botao--newsletter:hover {
+        background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
     }
 }
