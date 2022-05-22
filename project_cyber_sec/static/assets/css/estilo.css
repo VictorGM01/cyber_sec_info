@@ -59,7 +59,21 @@
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
 
-@keyframes secao-inicio__titulo {
+.secao-inicio__titulo--fale-conosco { 
+    animation: secao-inicio__titulo--animacao--fale-conosco 2.5s steps(50) 1s normal both;
+    overflow: hidden;
+
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.secao-inicio__titulo__cursor {
+    animation: secao-inicio__titulo__cursor 800ms steps(40) infinite normal;
+}
+
+@keyframes secao-inicio__titulo--animacao--fale-conosco {
     from {
         width: 0;
     }
