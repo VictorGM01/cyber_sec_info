@@ -1,4 +1,4 @@
-# Cyber Security Information
+# Cyber Security Info.
 ![image](https://user-images.githubusercontent.com/86068797/166588543-9ff49eb2-8926-4de9-8c27-27d4936941e7.png)
 
 
