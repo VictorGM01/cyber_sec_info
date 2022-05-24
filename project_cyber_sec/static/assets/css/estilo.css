@@ -110,10 +110,13 @@
 }
 
 .sucesso {
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+    border-radius: 0.375rem;
+	
+    color: #0f5132;
+	
+	
+    margin-bottom: 1rem;	
     padding: 1rem 1rem;
-	border: 1px solid #badbcc;
-	color: #0f5132;
-	background-color: #d1e7dd;
-	border-radius: 0.375rem;
-	margin-bottom: 1rem;
 }
