@@ -4,6 +4,7 @@
 
 ## Tabela de Conteúdos
 * [Descrição do Projeto](#descrição-do-projeto-)
+* [Funcionalidades](#funcionalidades)
 * [Status do Projeto](#status-do-projeto-)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Desenvolvedores](#desenvolvedores-octocat)
@@ -15,6 +16,12 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
     <img src="https://img.shields.io/static/v1?label=PYTHON&message=3.9.9&color=blue&style=for-the-badge&logo=Python"/>
     <img src="https://img.shields.io/static/v1?label=DJANGO&message=4.0.1&color=brightgreen&style=for-the-badge&logo=DJANGO&logoColor=green"/>
 </h1>
+
+## Funcionalidades
+- [] 
+- []
+- []
+- []
 
 ## Status do Projeto 🔔
 ####  🚧 Em desenvolvimento 🚧
