@@ -18,10 +18,6 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 </h1>
 
 ## Funcionalidades
-- [] 
-- []
-- []
-- []
 
 ## Status do Projeto 🔔
 ####  🚧 Em desenvolvimento 🚧
