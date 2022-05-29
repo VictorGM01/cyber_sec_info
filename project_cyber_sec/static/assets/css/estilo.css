@@ -7,6 +7,23 @@
     box-sizing: border-box;
 }
 
+/* Link de pular para o conteúdo principal */
+.link-conteudo-principal {
+    color: #FFFFFF;
+	
+    position: absolute;
+    left: -999px;
+    top: 5px;
+    z-index: 1;
+}
+
+.link-conteudo-principal:focus {
+    background: #1B341D;
+	
+    left: 10px;
+}
+
+
 /* Cabeçalho */
 .cabecalho {
     background: rgba(0, 0, 0, 0.5) url("../img/background_cabecalho.png") repeat;
@@ -53,6 +70,7 @@
     text-decoration: none;
 }
 
+
 /*Fale Conosco*/
 .corpo__fale-conosco, .corpo__newsletter {
     background: rgb(23,20,20);
@@ -92,6 +110,7 @@
         color: transparent;
     }
 }
+
 
 /*Newsletter*/ 
 .secao-inicio__titulo--cor {

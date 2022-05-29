@@ -805,6 +805,10 @@
         margin-left: 0;
     }
     
+    .cabecalho__navegacao__sublista__item__link:focus, .cabecalho__navegacao__sublista__item:active {
+        background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+    }
+    
      /*Fale Conosco*/
     .secao-contato {
         margin: 0 13.15625rem 0 13.15625rem;
