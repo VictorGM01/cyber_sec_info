@@ -13,7 +13,9 @@
 
     .cabecalho__menu-mobile__input__label {
         cursor: pointer;
-
+        
+        color: transparent;
+        
         height: 22px;
         width: 30px;
 
