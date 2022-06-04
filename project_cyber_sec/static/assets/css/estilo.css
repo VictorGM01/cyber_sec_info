@@ -139,3 +139,21 @@
     margin-bottom: 1rem;	
     padding: 1rem 1rem;
 }
+
+
+/*Link de voltar ao topo*/
+.link-conteudo-principal {
+    z-index: 1;
+    
+    color: #FFFFFF;
+    
+    position: absolute;
+    left: -999px;
+    top: 5px;
+}
+
+.link-conteudo-principal:focus {
+    background: #1B341D;
+    
+    left: 10px;
+}
