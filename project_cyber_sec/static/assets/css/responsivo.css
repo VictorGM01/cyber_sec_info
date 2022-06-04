@@ -949,4 +949,14 @@
     .secao-contato__formulario__botao--newsletter:hover {
         background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
     }
+    
+    /*Link de voltar ao topo*/
+    .conteiner__link-voltar-ao-topo {
+        opacity: 1;
+    }
+
+    .conteiner__link-voltar-ao-topo:hover {
+        background: #07733B;
+        cursor: pointer;
+    }
 }
