@@ -10,6 +10,7 @@ class Artigo(models.Model):
     data_publicacao = models.DateField(default=datetime.today)
     tempo_de_leitura = models.IntegerField()
     conteudo = models.TextField()
+    resumo = models.TextField()
     referencias = models.TextField()
     publicado = models.BooleanField(default=False)
 
