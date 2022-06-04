@@ -1,5 +1,5 @@
-/*Cabecalho*/
 @media screen and (min-width: 0){
+    /*Cabecalho*/
     .cabecalho {
         align-items: flex-start;
         flex-direction: column;
@@ -541,6 +541,11 @@
 
     .secao-contato__formulario__usuario__input--newsletter, .secao-contato__formulario__botao--newsletter {
         background: #031805;
+    }
+    
+    /*Link de voltar ao topo*/
+    .conteiner__link-voltar-ao-topo {
+        opacity: 0.4;
     }
 }
 
