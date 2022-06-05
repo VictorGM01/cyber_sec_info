@@ -1014,4 +1014,96 @@
         background: #07733B;
         cursor: pointer;
     }
+    
+    /*Página do conteúdo de Artigos/Conceitos*/
+    .principal-artigo {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio-artigo__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        object-fit: cover;
+
+        height: 16.625rem;
+    }
+
+    .secao-informacoes-artigo__span {
+        color: #C4C4C4;
+
+        display: inline;
+
+        margin: 0 .2rem 0 .2rem;
+    }
+
+    .secao-informacoes-artigo__conteiner--leitura-data {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-conteudo__artigo__paragrafo {
+        font-size: 1rem;
+    }
+
+    .secao-conteudo-artigo__paragrafo__lista {
+        font-size: 1rem;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-bottom: 6rem;
+    }
+
+    .conteiner__linha-artigos-relacionados {
+        margin: 0 2.6875rem 0 2.6875rem;
+
+        border: 1px solid #20e456;
+    }
+
+    .secao-artigos-relacionados {
+        border: none;
+
+        margin-top: 0;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-artigos-relacionados__lista {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 0 11.3125rem;
+    }
+
+    .secao-artigos-relacionados__lista__item {
+        transition: all .4s ease-in-out;
+
+        width: 40%;
+
+        margin-right: 2rem;
+    }
+
+    .secao-artigos-relacionados__lista__item:hover {
+        border: 2.5px solid #0af64c;
+    }
+
+    .secao-artigos-relacionados__lista__item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__artigo  {
+        font-size: 1rem;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__conteiner__imagem {
+        object-fit: cover;
+
+        height: 10rem;
+    }
 }
