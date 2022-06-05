@@ -1,5 +1,7 @@
 /* Reset do CSS */
 * {
+    scroll-behavior: smooth;
+	
     font-family: 'Roboto Slab', serif;
 
     margin: 0;
