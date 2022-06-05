@@ -547,6 +547,61 @@
     .conteiner__link-voltar-ao-topo {
         opacity: 0.4;
     }
+    
+    /*Página do conteúdo de Artigos/Conceitos*/
+    .principal-artigo {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio-artigo__titulo {
+        font-size: 1.75rem;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        margin-bottom: 1rem;
+    }
+
+    .secao-informacoes-artigo__span {
+        display: none;
+    }
+
+    .secao-conteudo__artigo__paragrafo {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .secao-conteudo__artigo__paragrafo, .secao-conteudo-artigo__paragrafo__lista {
+        color: #DFD9D9;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        line-height: 2.5rem;
+        text-align: justify;
+    }
+
+    .secao-conteudo-artigo__paragrafo__lista {
+        margin: 1rem 0 1.2rem 1.5rem;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-top: 3rem;
+    }
+
+    .secao-artigos-relacionados {
+        border-top: 1px solid #20e456;
+
+        margin-top: 6rem;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        font-size: 1.5rem;
+    }
+
+    .secao-artigos-relacionados__lista__item {
+        margin-bottom: 3rem;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__artigo {
+        font-size: 1.1rem;
+    }
 }
 
 
