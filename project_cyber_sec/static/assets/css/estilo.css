@@ -9,6 +9,23 @@
     box-sizing: border-box;
 }
 
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1B341D;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #07733B;
+  border-radius: 50px;
+}
+
+
 /* Link de pular para o conteúdo principal */
 .link-conteudo-principal {
     color: #FFFFFF;
