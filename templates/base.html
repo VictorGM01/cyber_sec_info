@@ -32,10 +32,15 @@
     </script>
 
     {% block content %} {% endblock %}  {# bloco body: cada página possui conteúdos diferentes no body #}
-    <a title="Voltar ao Topo" id="link-voltar-ao-topo" class="conteiner__link-voltar-ao-topo" href="#" data-link-voltar-ao-topo><img class="conteiner__link__imagem-voltar-ao-topo" src="../static/assets/img/seta_topo.svg" alt="Link para voltar ao topo da página"></a>
+
+    <!-- Botão de voltar ao topo -->
+    <a title="Voltar ao Topo" id="link-voltar-ao-topo" class="conteiner__link-voltar-ao-topo" data-link-voltar-ao-topo>
+        <img class="conteiner__link__imagem-voltar-ao-topo" src="{% static '/assets/img/seta_topo.svg' %}" alt="Link para voltar ao topo da página">
+    </a>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="{% static '/assets/js/cabecalho.js' %}"></script>
+<script src="{% static '/assets/js/botaoVoltarAoTopo.js' %}"></script>
 
 </html>
