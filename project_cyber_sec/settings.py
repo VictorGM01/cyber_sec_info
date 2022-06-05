@@ -49,8 +49,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
-    'apps.app_cyber_sec',
+    'apps.artigos_cyber_sec',
     'apps.emails_cyber_sec',
+    'apps.principal_cyber_sec',
     # Media Cloudinary
     'cloudinary',
     'cloudinary_storage',

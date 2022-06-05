@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('app_cyber_sec', '0002_artigo_referencias'),
+        ('artigos_cyber_sec', '0002_artigo_referencias'),
     ]
 
     operations = [
