@@ -1240,3 +1240,11 @@
         filter:drop-shadow(1px 1px 1px rgb(68, 238, 115));
     }
 }
+
+
+@media screen and (min-width: 1500px){
+    /*Desenvolvedores*/
+    .secao-cards-desenvolvedores, .secao-cards-orientadores {
+        margin: 0 17rem 0 17rem;
+    }
+}
