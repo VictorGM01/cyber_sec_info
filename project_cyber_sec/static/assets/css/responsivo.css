@@ -602,6 +602,67 @@
     .secao-artigos-relacionados__lista__item__link__artigo {
         font-size: 1.1rem;
     }
+    
+    
+    /*Desenvolvedores*/
+    .secao-cards-desenvolvedores, .secao-cards-orientadores {
+        margin: 0 1.96875rem 0 1.96875rem;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         margin-bottom: 2rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile {
+         background: url("/static/assets/img/icone_desenvolver_sem_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+         background: url("/static/assets/img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+    .secao-cards-desenvolvedores__lista__item__titulo, .secao-cards-orientadores__lista__item__titulo {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 0 0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        color: #DFD9D9;
+        font-size: .90rem;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 0 0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner {
+        margin-bottom: 1.25rem;
+    }
 }
 
 
