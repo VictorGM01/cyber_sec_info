@@ -24,7 +24,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Imagem não selecionável */
-img {
+.cabecalho__logo__link__imagem, .secao-cards__lista__item__secao-redes-sociais__conteiner__lista__item__link__imagem, .conteiner__link__imagem-voltar-ao-topo, .secao-cards-desenvolvedores__lista__item__conteiner--imagem-perfil, .secao-cards-orientadores__lista__item__conteiner--imagem-perfil {
     pointer-events: none;
 }
 
