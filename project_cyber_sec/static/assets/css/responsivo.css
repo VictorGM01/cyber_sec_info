@@ -614,7 +614,7 @@
      }
 
      .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile {
-         background: url("/static/assets/img/icone_desenvolver_sem_fundo.svg");
+         background: url("../img/icone_desenvolver_sem_fundo.svg");
          z-index: -1;
 
         height: 40px;
@@ -627,7 +627,7 @@
      }
 
      .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
-         background: url("/static/assets/img/icone_desenvolver_com_fundo.svg");
+         background: url("../img/icone_desenvolver_com_fundo.svg");
          z-index: -1;
 
         height: 40px;
@@ -1179,7 +1179,7 @@
     }
 
     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
-        background: url("/static/assets/img/icone_desenvolver_sem_fundo.svg");
+        background: url("../img/icone_desenvolver_sem_fundo.svg");
         z-index: -1;
 
         height: 40px;
@@ -1192,7 +1192,7 @@
     }
 
     .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-desktop {
-          background: url("/static/assets/img/icone_desenvolver_com_fundo.svg");
+          background: url("../img/icone_desenvolver_com_fundo.svg");
          z-index: -1;
 
         height: 40px;
