@@ -23,6 +23,12 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Imagem não selecionável */
+img {
+    pointer-events: none;
+}
+
+
 /* Barra de rolagem */
 ::-webkit-scrollbar {
   width: 5px;
