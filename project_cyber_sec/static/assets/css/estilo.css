@@ -10,6 +10,13 @@
 }
 
 
+/* Alteração da cor ao selecionar o texto */
+*::selection {
+    background: rgba(10, 246, 76, 0.23);
+    color: #FFFFFF;
+}
+
+
 /* Barra de rolagem */
 ::-webkit-scrollbar {
   width: 5px;
