@@ -464,3 +464,58 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
      margin: 0.75rem 0 0 0.75rem;
 }
+
+
+
+
+/* Media query para impressão */
+@media print {
+    .cabecalho, .secao-caminho-artigo, .secao-artigos-relacionados, .secao-informacoes-artigo__conteiner--redes-sociais {
+        display: none;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        object-fit: cover;
+        height: 16.625rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .secao-informacoes-artigo__conteiner--leitura-data {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-informacoes-artigo__span {
+        margin: 0 .2rem 0 .2rem
+    }
+
+    .secao-conteudo-inicio__artigo__titulo, .secao-inicio-artigo__titulo, .secao-inicio__titulo {
+        color: #28441c;
+    }
+
+    .secao-conteudo__artigo__paragrafo, .secao-conteudo-artigo__paragrafo__lista {
+        color: #4f4e4e;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        line-height: 2.5rem;
+        text-align: justify;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-top: 1rem;
+    }
+
+    .secao-conteudo__artigo-referencias__titulo, .secao-conteudo__artigo-referencias__lista {
+        color:#28441c;
+    }
+
+    .secao-conteudo__artigo-referencias__lista__item__link {
+        color: #4f4e4e;
+    }
+
+    .print {
+        display: none;
+    }
+}
