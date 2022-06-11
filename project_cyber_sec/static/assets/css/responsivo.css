@@ -1229,15 +1229,15 @@
     }
 
     .secao-cards-desenvolvedores__lista__item:hover, .secao-cards-orientadores__lista__item:hover {
-        background: transparent;
+        background: rgba(0, 0, 0, 0.1);
     }
 
-    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
         transition: .2s ease-in-out;
     }
 
     .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover {
-        filter:drop-shadow(1px 1px 1px rgb(68, 238, 115));
+        filter: drop-shadow(1px 1px 1px rgba(10, 246, 76, 0.61));
     }
 }
 
