@@ -91,7 +91,7 @@
 
 
 /*Fale Conosco*/
-.corpo__fale-conosco, .corpo__newsletter {
+.corpo__fale-conosco, .corpo__newsletter, .corpo__desenvolvedores {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
