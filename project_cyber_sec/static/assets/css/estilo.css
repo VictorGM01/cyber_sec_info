@@ -17,6 +17,12 @@
 }
 
 
+/* Alteração de cor de fundo ao selecioanr os elementos*/
+a:active, a:focus, label:focus, label:active, li:focus {
+  background: rgba(10, 246, 76, 0.23);
+}
+
+
 /* Barra de rolagem */
 ::-webkit-scrollbar {
   width: 5px;
