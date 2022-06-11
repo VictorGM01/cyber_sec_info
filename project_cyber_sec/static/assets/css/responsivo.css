@@ -1241,10 +1241,3 @@
     }
 }
 
-
-@media screen and (min-width: 1500px){
-    /*Desenvolvedores*/
-    .secao-cards-desenvolvedores, .secao-cards-orientadores {
-        margin: 0 17rem 0 17rem;
-    }
-}
