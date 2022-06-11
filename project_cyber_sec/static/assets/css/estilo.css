@@ -24,7 +24,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Imagem não selecionável */
-.cabecalho__logo__link__imagem, .secao-cards__lista__item__secao-redes-sociais__conteiner__lista__item__link__imagem, .conteiner__link__imagem-voltar-ao-topo, .secao-cards-desenvolvedores__lista__item__conteiner--imagem-perfil, .secao-cards-orientadores__lista__item__conteiner--imagem-perfil {
+.secao-cards-desenvolvedores__lista__item__conteiner--imagem-perfil, .secao-cards-orientadores__lista__item__conteiner--imagem-perfil {
     pointer-events: none;
 }
 
@@ -262,13 +262,8 @@ a:active, a:focus, label:focus, label:active, li:focus {
     width: 1.5rem;
 }
 
-
-.secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link {
+.secao-informacoes-artigo__conteiner--redes-sociais__lista__item:nth-child(1), .secao-informacoes-artigo__conteiner--redes-sociais__lista__item:nth-child(2), .secao-informacoes-artigo__conteiner--redes-sociais__lista__item:nth-child(3)  {
     margin-right: 1.5rem;
-}
-
-.secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link:nth-child(3){
-    margin-right: 0;
 }
 
 .conteiner__linha {
