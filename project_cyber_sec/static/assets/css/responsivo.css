@@ -602,6 +602,67 @@
     .secao-artigos-relacionados__lista__item__link__artigo {
         font-size: 1.1rem;
     }
+    
+    
+    /*Desenvolvedores*/
+    .secao-cards-desenvolvedores, .secao-cards-orientadores {
+        margin: 0 1.96875rem 0 1.96875rem;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         margin-bottom: 2rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile {
+         background: url("/static/assets/img/icone_desenvolver_sem_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+         background: url("/static/assets/img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+    .secao-cards-desenvolvedores__lista__item__titulo, .secao-cards-orientadores__lista__item__titulo {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 0 0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        color: #DFD9D9;
+        font-size: .90rem;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 0 0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner {
+        margin-bottom: 1.25rem;
+    }
 }
 
 
@@ -1105,5 +1166,85 @@
         object-fit: cover;
 
         height: 10rem;
+    }
+    
+    
+    /*Desenvolvedores*/
+    .secao-inicio__titulo--desenvolvedores, .secao-inicio__titulo--orientadores {
+        font-size: 2rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile, .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-mobile {
+        background: none;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+        background: url("/static/assets/img/icone_desenvolver_sem_fundo.svg");
+        z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-desktop {
+          background: url("/static/assets/img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+    }
+
+    .secao-cards-desenvolvedores__lista, .secao-cards-orientadores__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         transition: 2s;
+
+         width: 35%;
+    }
+
+    .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-desenvolvedores__lista__item:nth-child(3), .secao-cards-orientadores__lista__item:nth-child(1) {
+        margin-right: 4rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        font-size: 1rem;
+
+        margin-bottom: 2rem;
+        padding: 0 .8rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item:hover, .secao-cards-orientadores__lista__item:hover {
+        background: transparent;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
+        transition: .2s ease-in-out;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover {
+        filter:drop-shadow(1px 1px 1px rgb(68, 238, 115));
+    }
+}
+
+
+@media screen and (min-width: 1500px){
+    /*Desenvolvedores*/
+    .secao-cards-desenvolvedores, .secao-cards-orientadores {
+        margin: 0 17rem 0 17rem;
     }
 }
