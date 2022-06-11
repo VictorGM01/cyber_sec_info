@@ -1232,7 +1232,7 @@
         background: rgba(0, 0, 0, 0.1);
     }
 
-    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
         transition: .2s ease-in-out;
     }
 
