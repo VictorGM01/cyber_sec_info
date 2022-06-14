@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block meta-descricao %}
+<meta name="description" content="Artigo sobre {{ artigo.titulo_para_caminho }}. Leia para se atualizar e compreender conteúdos de Cibersegurança.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Artigo, Cibersegurança, Conteúdos, Cybersecurity, Informação, Segurança">
+{% endblock %}
+
 {% block title %}
 <title>{{ artigo.titulo_para_caminho }} | Cyber Security Information</title>
 {% endblock %}
