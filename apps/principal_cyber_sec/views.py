@@ -8,3 +8,6 @@ def index(request):
 def desenvolvedores(request):
     return render(request, "principal/desenvolvedores.html")
 
+
+def sitemap(request):
+    return render(request, 'sitemap.xml', content_type='xml')
