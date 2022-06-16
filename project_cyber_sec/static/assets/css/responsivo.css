@@ -545,6 +545,7 @@
     
     /*Link de voltar ao topo*/
     .conteiner__link-voltar-ao-topo {
+        border: 0;
         opacity: 0.4;
     }
     
