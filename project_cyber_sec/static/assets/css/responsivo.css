@@ -545,6 +545,7 @@
     
     /*Link de voltar ao topo*/
     .conteiner__link-voltar-ao-topo {
+        border: 0;
         opacity: 0.4;
     }
     
@@ -1069,6 +1070,11 @@
     /*Link de voltar ao topo*/
     .conteiner__link-voltar-ao-topo {
         opacity: 1;
+    }
+    
+    .conteiner__link__imagem-voltar-ao-topo{
+        height: 3rem;
+        width: 2.5rem;
     }
 
     .conteiner__link-voltar-ao-topo:hover {

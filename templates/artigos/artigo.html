@@ -48,8 +48,9 @@
                     <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este artigo sobre {{ artigo.titulo_para_caminho }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse artigo em alguma conversa" width="20"></a>
                 </li>
                 <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
-                    <a onclick="window.print()" class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" title="Realizar download do Artigo">
-                        <img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do artigo" width="20">
+                    <button onclick="window.print()" class="secao-informacoes-aritgo__conteiner--redes-sociais__lista__item__botao">
+                      <img title="Realizar download do artigo" class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do artigo" width="20">
+                    </button>
                     </a>
                 </li>
             </ul>

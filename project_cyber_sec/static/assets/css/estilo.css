@@ -258,12 +258,19 @@ a:active, a:focus, label:focus, label:active, li:focus {
  }
 
 .secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem:hover {
+    cursor: pointer;
+	
     height: 1.5rem;
     width: 1.5rem;
 }
 
 .secao-informacoes-artigo__conteiner--redes-sociais__lista__item:nth-child(1), .secao-informacoes-artigo__conteiner--redes-sociais__lista__item:nth-child(2), .secao-informacoes-artigo__conteiner--redes-sociais__lista__item:nth-child(3)  {
     margin-right: 1.5rem;
+}
+
+.secao-informacoes-aritgo__conteiner--redes-sociais__lista__item__botao {
+    background: transparent;
+    border: 0;
 }
 
 .conteiner__linha {
