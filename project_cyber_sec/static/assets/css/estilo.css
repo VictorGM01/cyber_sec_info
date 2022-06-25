@@ -361,7 +361,6 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 .secao-artigos-relacionados__lista__item__link__artigo {
     line-height: 1.8rem;
-    text-align: justify;
 
     margin: 0 1.59375rem 1.59375rem 1.59375rem;
 }
