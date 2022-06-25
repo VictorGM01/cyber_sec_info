@@ -51,7 +51,6 @@
                     <button onclick="window.print()" class="secao-informacoes-aritgo__conteiner--redes-sociais__lista__item__botao">
                       <img title="Realizar download do artigo" class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do artigo" width="20">
                     </button>
-                    </a>
                 </li>
             </ul>
         </div>
@@ -69,5 +68,24 @@
         </article>
     </section>
 </main>
+<div class="conteiner__linha-artigos-relacionados"></div>
+<section class="secao-artigos-relacionados" tabindex="0">
+    <h4 class="secao-artigos-relacionados__titulo">Artigos relacionados</h4>
+    <ul class="secao-artigos-relacionados__lista">
+        {% for artigo in artigos_relacionados %}
+        <li class="secao-artigos-relacionados__lista__item">
+            <a class="secao-artigos-relacionados__lista__item__link" href="{% url 'artigo' artigo.titulo_para_caminho %}">
+                <div class="secao-artigos-relacionados__lista__item__link__conteiner">
+                    <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Capa do artigo sobre {{ artigo.titulo_para_caminho }}">
+                </div>
+                <h5 class="secao-artigos-relacionados__lista__item__link__titulo">{{ artigo.titulo_para_caminho }}</h5>
+                <article class="secao-artigos-relacionados__lista__item__link__artigo">
+                    {{ artigo.resumo }}
+                </article>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
 {% endblock %}
 
