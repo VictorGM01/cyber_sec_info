@@ -1226,6 +1226,10 @@
     .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-desenvolvedores__lista__item:nth-child(3), .secao-cards-orientadores__lista__item:nth-child(1) {
         margin-right: 4rem;
     }
+    
+    .secao-cards-orientadores__lista__item:nth-child(1) {
+        height: inherit;
+    }
 
     .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
         font-size: 1rem;
