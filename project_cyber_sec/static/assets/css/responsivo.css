@@ -79,7 +79,7 @@
     }
 
     .cabecalho__conteiner__logo {
-        width: 100%;
+        width: calc(100% - 31px);
 
         display: flex;
         align-items: center;
