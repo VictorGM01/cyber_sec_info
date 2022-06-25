@@ -2,6 +2,13 @@ from django.db import models
 from datetime import datetime
 
 
+# Modelo para os temas dos artigos
+class Temas(models.TextChoices):
+    CIBERSEG = 'Seguranca Cibernetica'
+    CIBERSEG_CRIMES = 'Seguranca Cibernetica | Crimes Cibernéticos'
+    CIBERSEG_LGPD = 'Seguranca Cibernetica | LGPD'
+
+
 # Modelo para os artigos
 class Artigo(models.Model):
     titulo = models.CharField(max_length=100)
@@ -12,6 +19,7 @@ class Artigo(models.Model):
     conteudo = models.TextField()
     resumo = models.TextField()
     referencias = models.TextField()
+    tema = models.TextField(max_length=45, choices=Temas.choices)
     publicado = models.BooleanField(default=False)
 
     def __str__(self):
