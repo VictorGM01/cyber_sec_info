@@ -79,7 +79,7 @@
     }
 
     .cabecalho__conteiner__logo {
-        width: 100%;
+        width: calc(100% - 31px);
 
         display: flex;
         align-items: center;
@@ -575,7 +575,6 @@
         font-size: 1.1rem;
         letter-spacing: 1.5px;
         line-height: 2.5rem;
-        text-align: justify;
     }
 
     .secao-conteudo-artigo__paragrafo__lista {
@@ -657,7 +656,6 @@
         letter-spacing: 1px;
         text-align: center;
 
-        padding: 0 0.4rem;
         margin-bottom: 1.25rem;
     }
 
@@ -1225,6 +1223,10 @@
 
     .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-desenvolvedores__lista__item:nth-child(3), .secao-cards-orientadores__lista__item:nth-child(1) {
         margin-right: 4rem;
+    }
+    
+    .secao-cards-orientadores__lista__item:nth-child(1) {
+        height: inherit;
     }
 
     .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
