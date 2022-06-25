@@ -6,7 +6,7 @@ def artigo(request, nome_artigo):
 
     artigo_a_ser_exibido = get_object_or_404(Artigo, titulo_para_caminho=nome_artigo)
 
-    artigos_relacionados = Artigo.objects.order_by('-data_publicacao').filter(
+    artigos_relacionados = Artigo.objects.order_by('-data_publicacao').filter(publicado=True).filter(
         tema__icontains=artigo_a_ser_exibido.tema).exclude(titulo_para_caminho=nome_artigo)[:2]
 
     conteudo = {
@@ -16,4 +16,3 @@ def artigo(request, nome_artigo):
     }
 
     return render(request, 'artigos/artigo.html', context=conteudo)
-
