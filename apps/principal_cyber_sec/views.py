@@ -9,5 +9,9 @@ def desenvolvedores(request):
     return render(request, "principal/desenvolvedores.html")
 
 
+def instituicao(request):
+    return render(request, "principal/instituicao.html")
+
+
 def sitemap(request):
     return render(request, 'sitemap.xml', content_type='xml')
