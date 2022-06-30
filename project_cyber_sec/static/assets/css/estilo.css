@@ -62,6 +62,13 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Estilizações gerais da tag body*/
+.corpo__fale-conosco, .corpo__newsletter, .corpo__desenvolvedores, .corpo-instituicao {
+    background: rgb(23,20,20);
+    background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
+}
+
+
 /* Cabeçalho */
 .cabecalho {
     background: rgba(0, 0, 0, 0.5) url("../img/background_cabecalho.webp") repeat;
@@ -110,11 +117,6 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /*Fale Conosco*/
-.corpo__fale-conosco, .corpo__newsletter, .corpo__desenvolvedores {
-    background: rgb(23,20,20);
-    background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
-}
-
 .secao-inicio__titulo--fale-conosco { 
     animation: secao-inicio__titulo--animacao--fale-conosco 2.5s steps(50) 1s normal both;
     overflow: hidden;
@@ -472,6 +474,58 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Instituição */
+.secao-informacoes-ifsp__conteiner__informacoes {
+    align-items: center;
+    display: flex;
+}
+
+ .secao-informacoes-ifsp__titulo {
+     color: #f1f1f1;
+ }
+
+.secao-informacoes-ifsp__titulo__spam {
+    color: #20e456;
+
+    display: block;
+}
+
+.secao-conteudo-informacoes-ifsp__artigo {
+    margin-bottom: 1rem;
+}
+
+.secao-conteudo-informacoes-ifsp__artigo__paragrafo {
+    color: #DFD9D9;
+    letter-spacing: 1.5px;
+    line-height: 2.5rem;
+}
+
+.secao-conteudo-informacoes-ifsp__artigo-saiba-mais {
+    border-left: 1px solid #20e456;
+
+    margin: 2rem 0 1rem 0;
+}
+
+.secao-conteudo-informacoes-ifsp__artigo-saiba-mais__titulo__link {
+    color: #DFD9D9;
+    font-size: .875rem;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.secao-conteudo-informacoes-ifsp__artigo-saiba-mais__conteiner {
+    margin-left: 0.9rem;
+}
+
+@keyframes secao-inicio__titulo--animacao--instituicao {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20rem;
+    }
+}
 
 
 /* Media query para impressão */
