@@ -1291,5 +1291,52 @@
     .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover {
         filter: drop-shadow(1px 1px 1px rgba(10, 246, 76, 0.61));
     }
+    
+    
+    /* Instituição */
+    .principal-instituicao {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner-logo {
+        background: url("/static/assets/img/icone_if.png");
+
+        height: 90px;
+        width: 92px;
+
+        margin-left: -0.7rem;
+    }
+
+    .secao-informacoes-ifsp__titulo {
+        color: #f1f1f1;
+
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .secao-informacoes-ifsp__conteiner {
+        margin-bottom: 1.5625rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner__informacoes {
+        margin-bottom: 0.5625rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner__imagem {
+        width: 100%;
+    }
+
+    .secao-conteudo-informacoes-ifsp__artigo__paragrafo {
+        font-size: 1.1rem;
+    }
+
+    .conteiner__linha--instituicao {
+        margin: 4rem 0 2rem 0;
+    }
+
+    .secao-conteudo-informacoes-ifsp__secao__conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
