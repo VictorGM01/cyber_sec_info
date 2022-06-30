@@ -517,6 +517,12 @@ a:active, a:focus, label:focus, label:active, li:focus {
     margin-left: 0.9rem;
 }
 
+.secao-conteudo-informacoes-ifsp__artigo-saiba-mais__titulo {
+    margin-left: 0.8rem;
+    color: #FFFFFF;
+    letter-spacing: 2.5px;
+}
+
 @keyframes secao-inicio__titulo--animacao--instituicao {
     from {
         width: 0;
