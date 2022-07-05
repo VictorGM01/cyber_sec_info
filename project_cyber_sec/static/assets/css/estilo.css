@@ -198,6 +198,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
     right: .2rem;
 }
 
+
 /*Página do conteúdo de Artigos/Conceitos*/
 .corpo__artigo {
     background: #0B0F0A;
@@ -365,6 +366,78 @@ a:active, a:focus, label:focus, label:active, li:focus {
     line-height: 1.8rem;
 
     margin: 0 1.59375rem 1.59375rem 1.59375rem;
+}
+
+
+
+/*Dicionário de Cibersegurança*/
+.secao-pesquisa-conteudo__label {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.secao-pesquisa-conteudo__label__input{
+    background: #1B341D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+    color: #FFFFFF;
+    outline: none;
+
+    height: 3rem;
+    width: 100%;
+
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+}
+
+.secao-pesquisa-conteudo__label__input:focus {
+    border: 1px solid #20e456;
+}
+
+.secao-pesquisa-conteudo__botao__imagem {
+    z-index: 1;
+    position: absolute;
+
+    margin-left: -0.3rem;
+}
+
+.secao-conteudo__artigo-letra__titulo {
+    border-left: 4px solid #20E456;
+    clear: left;
+    color: #ffffff;
+
+    font-size: 1.125rem;
+    letter-spacing: 1.5px;
+
+    margin-top: 1.5625rem;
+    padding-left: 0.4rem;
+}
+
+.secao-conteudo__artigo-letra--espacamento {
+    margin-top: 3.5rem;
+}
+
+.secao-conteudo__lista {
+    list-style-type: none;
+}
+
+.secao-conteudo__artigo-nao-encontrado {
+    align-items: center;
+    display: none;
+    justify-content: center;
+
+    margin: 5rem 0 5rem 0;
+}
+
+.secao-conteudo__artigo-nao-encontrado__imagem {
+    background: url("../img/nao_encontrado.svg");
+    height: 90px;
+    width: 90px;
+}
+
+.secao-conteudo__artigo-nao-encontrado__titulo {
+    color: #DFD9D9;
 }
 
 

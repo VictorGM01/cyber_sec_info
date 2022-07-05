@@ -604,6 +604,12 @@
     }
     
     
+    /*Dicionário de Cibersegurança*/
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: column;
+    }
+    
+    
     /*Desenvolvedores*/
     .secao-cards-desenvolvedores, .secao-cards-orientadores {
         margin: 0 1.96875rem 0 1.96875rem;
@@ -1215,6 +1221,12 @@
         object-fit: cover;
 
         height: 10rem;
+    }
+    
+    
+    /*Dicionário de Cibersegurança*/
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: row;
     }
     
     
