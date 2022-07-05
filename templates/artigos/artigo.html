@@ -58,6 +58,19 @@
 
     <div class="conteiner__linha"></div>
 
+    {% if artigo.titulo_para_caminho == 'Dicionário de Cibersegurança' %}
+    <section class="secao-pesquisa-conteudo">
+        <label for="pesquisa" class="secao-pesquisa-conteudo__label" title="Pesquisar por termo...">
+            <input list="lista_de_opcoes" type="search" id="inputPesquisaConteudo" name="pesquisa" class="secao-pesquisa-conteudo__label__input" placeholder="Pesquisar por termo..."  onkeyup="pesquisar()">
+            <datalist id="lista_de_opcoes">
+                <option></option>
+            </datalist>
+            <img src="{% static '/assets/img/icone_pesquisa.svg' %}" alt="Ícone de Pesquisa" class="secao-pesquisa-conteudo__botao__imagem">
+        </label>
+    </section>
+    {% else %}
+    {% endif %}
+
     <section class="secao-conteudo">
 
         {{ artigo.conteudo | safe }}
@@ -89,3 +102,10 @@
 </section>
 {% endblock %}
 
+
+{% if artigo.titulo_para_caminho == 'Dicionário de Cibersegurança' %}
+    {% block script %}
+        <script src="{% static '/assets/js/inputDeBusca.js' %}"></script>
+    {% endblock %}
+{% else %}
+{% endif %}
