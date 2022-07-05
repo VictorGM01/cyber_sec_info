@@ -604,7 +604,6 @@
     }
     
     
-    
     /*Dicionário de Cibersegurança*/
     .secao-conteudo__artigo-nao-encontrado {
        flex-direction: column;
@@ -1222,6 +1221,12 @@
         object-fit: cover;
 
         height: 10rem;
+    }
+    
+    
+    /*Dicionário de Cibersegurança*/
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: row;
     }
     
     
