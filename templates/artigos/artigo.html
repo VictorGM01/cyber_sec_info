@@ -75,7 +75,12 @@
 
         {{ artigo.conteudo | safe }}
 
-        <article class="secao-conteudo__artigo-referencias">
+        <article class="secao-conteudo__artigo-nao-encontrado" id="nenhumResultado">
+            <div class="secao-conteudo__artigo-nao-encontrado__imagem"></div>
+            <h3 class="secao-conteudo__artigo-nao-encontrado__titulo">Nenhum resultado encontrado</h3>
+        </article>
+
+        <article class="secao-conteudo__artigo-referencias" id="artigoReferencias">
             <h3 class="secao-conteudo__artigo-referencias__titulo">Referências bibilográficas</h3>
             {{ artigo.referencias | safe }}
         </article>
@@ -105,7 +110,7 @@
 
 {% if artigo.titulo_para_caminho == 'Dicionário de Cibersegurança' %}
     {% block script %}
-        <script src="{% static '/assets/js/inputDeBusca.js' %}"></script>
+        <script type="text/javascript" src="{% static '/assets/js/inputDeBusca.js' %}"></script>
     {% endblock %}
 {% else %}
 {% endif %}

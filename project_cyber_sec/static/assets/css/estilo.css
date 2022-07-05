@@ -371,6 +371,10 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /*Dicionário de Cibersegurança*/
+.secao-pesquisa-conteudo {
+    margin-top: 1rem;
+}
+
 .secao-pesquisa-conteudo__label {
     align-items: center;
     display: flex;

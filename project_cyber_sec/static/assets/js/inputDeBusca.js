@@ -25,7 +25,7 @@ function pesquisar() {
     }
 
     //Validação para que os itens não encontrados na lista do dicionário não apareça e que seja demonstrado o aviso de que nenhum item foi encontrado. Além disso, há uma validação para que o indicativo de letra do dicionário também não seja demonstrado quando o usuário digitar esse indicativo no input.
-    if(naoEncontrados.length === itensBusca.length || itensBusca.length === (naoEncontrados.length + itemLetra.length)){
+    if(naoEncontrados.length === itensBusca.length || filtro === "LETRA"){
         nenhumResultado.style.display = "flex";
     }
 
