@@ -99,7 +99,7 @@ DATABASES = {'default': dj_database_url.config()}
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': config(REDIS_URI),
+        'LOCATION': config('REDIS_URI'),
     }
 }
 
