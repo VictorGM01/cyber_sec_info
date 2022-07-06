@@ -95,11 +95,15 @@ WSGI_APPLICATION = 'project_cyber_sec.wsgi.application'
 DATABASES = {'default': dj_database_url.config()}
 
 
-# Django cache com Redis
+# Django cache com Memcached
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': config('REDIS_URL'),
+        'BACKEND': 'django_bmemcached.memcached.BMemcached',
+        'LOCATION': config('MEMCACHEDCLOUD_SERVERS'),
+        'OPTIONS': {
+                    'username': config('MEMCACHEDCLOUD_USERNAME'),
+                    'password': config('MEMCACHEDCLOUD_PASSWORD')
+            }
     }
 }
 
