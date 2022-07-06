@@ -94,6 +94,15 @@ WSGI_APPLICATION = 'project_cyber_sec.wsgi.application'
 
 DATABASES = {'default': dj_database_url.config()}
 
+
+# Django cache com Redis
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': config(REDIS_URI),
+    }
+}
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',

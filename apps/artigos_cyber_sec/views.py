@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
+from django.views.decorators.cache import cache_page
 from .models import Artigo
 
 
+@cache_page(60)
 def artigo(request, nome_artigo):
 
     artigo_a_ser_exibido = get_object_or_404(Artigo, titulo_para_caminho=nome_artigo)
