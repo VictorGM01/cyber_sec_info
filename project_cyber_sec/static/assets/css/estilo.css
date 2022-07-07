@@ -382,7 +382,8 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 .secao-pesquisa-conteudo__label__input{
-    background: #1B341D;
+    background: #1B341D url("../img/icone_pesquisa.svg") no-repeat right padding-box;
+    background-position: 99.25% 40%;;
     border: none;
     border-radius: 15px;
     box-shadow: none;
