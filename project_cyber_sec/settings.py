@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost", "www.ciberseguranca.info"]
 
@@ -154,13 +154,13 @@ USE_TZ = True
 
 DISABLE_COLLECTSTATIC = 1
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'project_cyber_sec/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'project_cyber_sec/static')
 ]
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
