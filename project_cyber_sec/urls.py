@@ -25,4 +25,4 @@ urlpatterns = [
     path('email/', include("apps.emails_cyber_sec.urls")),
     path('artigos/', include("apps.artigos_cyber_sec.urls")),
     path('sitemap.xml', views.sitemap, name='sitemap.xml')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
