@@ -48,7 +48,7 @@
         {% if artigos %}
         <div>
             {% for artigo in artigos %}
-            <p><strong><a href="{% url 'artigo' artigo.titulo_para_caminho%}">{{ artigo.titulo }}</a></strong></p>
+            <p><strong><a href="https://www.ciberseguranca.info/artigos/{{ artigo.titulo_para_caminho }}">{{ artigo.titulo }}</a></strong></p>
             <img alt="capa do artigo {{ artigo.titulo_para_caminho  }}" src="{{ artigo.capa.url }}" width="50%">
             <p>{{ artigo.resumo }}</p>
             {% endfor %}
