@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -29,27 +30,35 @@
         }
     </style>
 </head>
-<body>
-    <div>
-        <img alt="logo site" src="https://res.cloudinary.com/conteudos-de-portugues/image/upload/v1652637553/banner_canal_youtube_m4rcm3.png"
-             width="100%">
-    </div>
+    <body>
+        <div>
+            <img alt="logo site" src="https://res.cloudinary.com/conteudos-de-portugues/image/upload/v1652637553/banner_canal_youtube_m4rcm3.png"
+                 width="100%">
+        </div>
 
-    <h1>Novo conteúdo no site!</h1>
+        <div class="title"><h1>Novos conteúdos no site!</h1></div>
 
-    <p>Olá, {{ nome }}!</p>
+        <div>
 
-    <p>Há um novo artigo em nossa página:</p>
+            <p>Olá, {{ nome }}!</p>
 
-    <p>Assunto: <strong>{{ assunto_artigo }}</strong></p>
-    <p>Categoria: <strong>{{ categoria }}</strong></p>
-    <p>Resumo: {{ resumo }}</p>
+            <p>Esses foram os artigos adicionados recentemente no nosso site:</p>
+        </div>
 
-    <div>
-        <a href="#" target="_blank">
-            <button class="btn-acessar-conteudo">Acessar conteúdo</button>
-        </a>
-    </div>
+        {% if artigos %}
+        <div>
+            {% for artigo in artigos %}
+            <p><strong><a href="{% url 'artigo' artigo.titulo_para_caminho%}">{{ artigo.titulo }}</a></strong></p>
+            <img alt="capa do artigo {{ artigo.titulo_para_caminho  }}" src="{{ artigo.capa.url }}" width="50%">
+            <p>{{ artigo.resumo }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
 
-</body>
+        <div class="btn">
+            <a href="https://www.ciberseguranca.info" target="_blank">
+                <button class="btn-acessar-conteudo">Acessar os Conteúdos</button>
+            </a>
+        </div>
+    </body>
 </html>
