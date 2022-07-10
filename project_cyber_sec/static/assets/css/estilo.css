@@ -63,7 +63,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Estilizações gerais da tag body*/
-.corpo__fale-conosco, .corpo__newsletter, .corpo__desenvolvedores, .corpo-instituicao {
+.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
