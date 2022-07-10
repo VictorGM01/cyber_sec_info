@@ -17,7 +17,7 @@
 }
 
 
-/* Alteração de cor de fundo ao selecioanr os elementos*/
+/* Alteração de cor de fundo ao selecioanr os elementos */
 a:active, a:focus, label:focus, label:active, li:focus {
   background: rgba(10, 246, 76, 0.23);
 }
@@ -62,8 +62,8 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/* Estilizações gerais da tag body*/
-.corpo__fale-conosco, .corpo__newsletter, .corpo__desenvolvedores, .corpo-instituicao {
+/* Estilizações gerais da tag body */
+.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
@@ -116,7 +116,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/*Fale Conosco*/
+/* Fale Conosco */
 .secao-inicio__titulo--fale-conosco { 
     animation: secao-inicio__titulo--animacao--fale-conosco 2.5s steps(50) 1s normal both;
     overflow: hidden;
@@ -152,7 +152,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/*Newsletter*/ 
+/* Newsletter */ 
 .secao-inicio__titulo--cor {
     color: #149A54;
 }
@@ -181,7 +181,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/*Link de voltar ao topo*/
+/* Link de voltar ao topo */
 .conteiner__link-voltar-ao-topo {
     background: #149A54;
     border-radius: 100%;
@@ -199,7 +199,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/*Página do conteúdo de Artigos/Conceitos*/
+/* Página do conteúdo de Artigos/Conceitos */
 .corpo__artigo {
     background: #0B0F0A;
 }
@@ -370,7 +370,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 
-/*Dicionário de Cibersegurança*/
+/* Dicionário de Cibersegurança */
 .secao-pesquisa-conteudo {
     margin-top: 1rem;
 }
@@ -446,7 +446,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/*Desenvolvedores*/
+/* Desenvolvedores */
  .secao-inicio__titulo--desenvolvedores, .secao-inicio__titulo--orientadores {
      animation: secao-inicio__titulo--animacao--desenvolvedores 2s steps(50) 1s normal both;
      overflow: hidden;
