@@ -1,5 +1,5 @@
 @media screen and (min-width: 0){
-    /*Cabecalho*/
+    /* Cabecalho */
     .cabecalho {
         align-items: flex-start;
         flex-direction: column;
@@ -381,7 +381,7 @@
         margin-left: 1rem;
     }
     
-    /*Fale Conosco*/
+    /* Fale Conosco */
      .secao-inicio {
         color: #ffffff;
         text-align: center;
@@ -499,7 +499,7 @@
         margin-bottom: 1rem;
     }
     
-     /*Newsletter*/
+     /* Newsletter */
     .secao-inicio__titulo--newsletter {
         letter-spacing: 1.5px;
         line-height: 2rem;
@@ -543,13 +543,13 @@
         background: #031805;
     }
     
-    /*Link de voltar ao topo*/
+    /* Link de voltar ao topo */
     .conteiner__link-voltar-ao-topo {
         border: 0;
         opacity: 0.4;
     }
     
-    /*Página do conteúdo de Artigos/Conceitos*/
+    /* Página do conteúdo de Artigos/Conceitos */
     .principal-artigo {
         margin: 0 1.5625rem 0 1.5625rem;
     }
@@ -604,13 +604,13 @@
     }
     
     
-    /*Dicionário de Cibersegurança*/
+    /* Dicionário de Cibersegurança */
     .secao-conteudo__artigo-nao-encontrado {
        flex-direction: column;
     }
     
     
-    /*Desenvolvedores*/
+    /* Desenvolvedores */
     .secao-cards-desenvolvedores, .secao-cards-orientadores {
         margin: 0 1.96875rem 0 1.96875rem;
     }
@@ -717,6 +717,7 @@
 
 
 @media screen and (min-width: 1200px) {
+    /* Cabeçalho */
     .cabecalho {
         top: 0;
         
@@ -982,7 +983,7 @@
         background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
     }
     
-     /*Fale Conosco*/
+     /* Fale Conosco */
     .secao-contato {
         margin: 0 13.15625rem 0 13.15625rem;
     }
@@ -1034,7 +1035,7 @@
         cursor: pointer;
     }
     
-    /*Newsletter*/
+    /* Newsletter */
     .secao-inicio__titulo--newsletter {
         animation: secao-inicio__titulo--animacao--newsletter 4s steps(50) 1s normal both;
         overflow: hidden;
@@ -1116,7 +1117,7 @@
         background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
     }
     
-    /*Link de voltar ao topo*/
+    /* Link de voltar ao topo */
     .conteiner__link-voltar-ao-topo {
         opacity: 1;
     }
@@ -1131,7 +1132,7 @@
         cursor: pointer;
     }
     
-    /*Página do conteúdo de Artigos/Conceitos*/
+    /* Página do conteúdo de Artigos/Conceitos */
     .principal-artigo {
         margin: 0 9.96875rem 0 9.96875rem;
     }
@@ -1224,13 +1225,13 @@
     }
     
     
-    /*Dicionário de Cibersegurança*/
+    /* Dicionário de Cibersegurança */
     .secao-conteudo__artigo-nao-encontrado {
        flex-direction: row;
     }
     
     
-    /*Desenvolvedores*/
+    /* Desenvolvedores */
     .secao-inicio__titulo--desenvolvedores, .secao-inicio__titulo--orientadores {
         font-size: 2rem;
     }
