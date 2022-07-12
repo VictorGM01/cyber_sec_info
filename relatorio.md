@@ -320,101 +320,150 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
     AFIP - Associação Fundo de Incentivo à Pesquisa; SILVA, Andressa.; LÔBO, Ingrid.; MELLO, Marco Túlio. Dona Ciência - Acessibilidade. 32. ed.  2021. E-book. 19 p. Disponível em: https://institutodosono.com/dona-ciencia-edicao-32/#dearflip-df_7864/26/. Acesso em: 9 jun. 2022.
 
+
     AZAUSTRE, Carlos. Aprendiendo JavaScript: Desde cero hasta ECMAScript 6. carlosazaustre. es, 2016.
+
 
     BARROS, S. D. P; LEITE, P. T. A terceira idade frente aos desafios impostos pela tecnologia: a necessidade do aprendizado para um uso ético e seguro. [SI]: Decima Octava Conferencia Iberoamericana en Sistemas, Cibernética e Informática, 2019, Orlando. Memorias, v. 3., p. 23-28, 2019.
 
+
     BASILE, Felipe R. M.; LOPEZ, Leonardo Juan R.. Estrategia formativa en defensa digital para adolescentes: experiencia en el Instituto Federal de São Paulo. Revista Científica General José María Córdova, v. 18, n. 30, p. 271-287, 2020.
+    
     
     BORGES, Luiz Eduardo. Python para Desenvolvedores. 2. ed. Rio de Janeiro: Edição do autor, 2010.
     
+    
     BRASIL. Ministério da Economia. Secretaria de Governo Digital. VLibras. Brasília, 2019.
+    
     
     CARDOSO, Natanael Silva et al. Um estudo comparativo entre os principais frameworks de desenvolvimento web em linguagem python. 2019.
     
+    
     CECÍLIO, RICARDO. DESENVOLVIMENTO DO SITE WEBGD ACESSÍVEL. 2010.
+    
     
     CGI.br - Comitê Gestor da Internet no Brasil. 2020, Pesquisa sobre o uso da Internet por crianças e adolescentes no Brasil: TIC Kids Online Brasil 2019. São Paulo: CGI.br. Disponível em: https://cetic.br/media/docs/publicacoes/2/20201123093344/tic_kids_online_2019_livro_eletronico.pdf. Acesso em: 19 jun. 2022. 
     
+    
     CHARÃO, Júlia. Os crimes cibernéticos na legislação brasileira e os procedimentos de investigação. 2017.
+    
     
     COSTA, A. C. Í.; ANDRADE, S. A. I. HTML5 - Por que usá-lo?. Revista eletrônica da FANESE, v. 4, n. 1, p. ?, 2015. Disponível em: https://app.fanese.edu.br/revista/wp-content/uploads/ARTIGO-01-Aluno-Ricardo-ArtigoHTML5.pdf. Acesso em: 14 jun. 2022. 
     
+    
     COUTO, E. S. A infância e o brincar na cultura digital. Perspectiva, [S. l.], v. 31, n. 3, p. 897-916, 2013. DOI: 10.5007/2175-795X.2013v31n3p897. Disponível em: https://periodicos.ufsc.br/index.php/perspectiva/article/view/2175-795X.2013v31n3p897. Acesso em: 19 jun. 2022.
+    
     
     CRAIGEN, Dan; DIAKUN-THIBAULT, Nadia; PURSE, Randy. Defining cybersecurity. Technology Innovation Management Review, v. 4, n. 10, 2014.
     
+    
     CURY, Lucilene; CAPOBIANCO, Ligia. Princípios da história das tecnologias da informação e comunicação grandes invenções. VIII Encontro Nacional de História da Mídia. Anais... Guarapuava: Unicentro, p. 1-13, 2011.
+    
     
     CUSIN, C. A.; VIDOTTI, S. A. B. G. Inclusão digital via acessibilidade web | Digital inclusion via web accessibility. Liinc em Revista, [S. l.], v. 5, n. 1, 2009. DOI: 10.18617/liinc.v5i1.297. Disponível em: https://revista.ibict.br/liinc/article/view/3189. Acesso em: 9 jun. 2022. 
     
+    
     DA SILVA, Rogério Oliveira; SILVA, Igor Rodrigues Sousa. Linguagem de Programação Python. TECNOLOGIAS EM PROJEÇÃO, v. 10, n. 1, p. 55-71, 2019.
+    
     
     DE JESUS ALMEIDA, Jessica et al. Crimes cibernéticos. Caderno de Graduação-Ciências Humanas e Sociais-UNIT-SERGIPE, v. 2, n. 3, p. 215-236, 2015.
     DHAWAN, S. What’s new in CSS 3. In: Medium. Beginner's Guide to Mobile Web Development. [S. I.], 13 mai. 2018. Disponível em: https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1. Acesso em 14 jun. 2022.
     
+    
     EIS, D. Uma breve história do CSS. Tableless, [S.I], 2005. Disponível em: https://tableless.com.br/uma-breve-historia-do-css/. Acesso em: 14 jun. 2022. 
+    
     
     FERRAZ, Amanda Raquel da Rocha Sarmento. A utilização da internet feita por crianças com idade entre 5 e 10 anos. 2019. 74 f. Trabalho de Conclusão de Curso (Licenciatura Plena em Pedagogia) - Centro de Educação, Curso de Pedagogia, Universidade Federal de Alagoas, Maceió, 2019. Disponível em: http://www.repositorio.ufal.br/jspui/handle/riufal/5072. Acesso em: 19 jun. 2022. 
     
+    
     Ferreira, Elisabete Zimmer et al. Internet influence on the biopsychosocial health of adolescents: an integratitive review. Revista Brasileira de Enfermagem [online], 2020, v. 73, n. 2 [Acess 19 June 2022] , e20180766. Available from: <https://doi.org/10.1590/0034-7167-2018-0766>. Epub 30 Mar 2020. ISSN 1984-0446. https://doi.org/10.1590/0034-7167-2018-0766.
+    
     
     FLATSCHART, Fábio. HTML 5-Embarque Imediato. Brasport, 2011.
     
+    
     FONTES, Edison. Praticando a segurança da informação. Brasport, 2008.
+    
     
     FRANÇA, S. dos S. WEB DESIGN RESPONSIVO: CAMINHOS PARA UM SITE ADAPTÁVEL. Interfaces Científicas - Exatas e Tecnológicas, [S. l.], v. 1, n. 2, p. 75–84, 2015. DOI: 10.17564/2359-4942.2015v1n2p75-84. Disponível em: https://periodicos.set.edu.br/exatas/article/view/2220. Acesso em: 19 jun. 2022.
     
+    
     FRÓES, Gabriel; WEBER, Vanessa. SQLite (O Banco de Dados de Bolso) // Dicionário do Programador. Youtube, 19 jul. 2021. Disponível em: <https://www.youtube.com/watch?v=xOODmm-NdUc>. Acesso em 19 jun. 2022.
+    
     
     HINTZBERGEN, Jule et al. Fundamentos de Segurança da Informação: com base na ISO 27001 e na ISO 27002. Brasport, 2018.
     
+    
     ISHIYAMA, Y. B.; TANAKA, Q. F. Democratização da web e liberdade para gerar conteúdo: a tecnologia como meio para geração de impacto social. In: Grupo PET - Sistemas de Informação - EACH/USP.  Coruja Informa. [S. I.], 31 mai. 2017. Disponível em  http://www.each.usp.br/petsi/jornal/?p=1790. Acesso em: 9 jun. 2022.
+    
     
     KASPERSKY - Kaspersky Lab. Proteja os idosos também no mundo online. Pesquisa da Kaspersky identificou que 44% dos internautas têm parentes idosos que já foram vítimas de ciberameaças. In: Kasperski - Kaspersky Lab. Comunicado à imprensa. [S. I.], 31 mar. 2020. Disponível em: https://www.kaspersky.com.br/about/press-releases/2020_proteja-os-idosos-tamb-m-no-mundo-online. Acesso em: 10 mai. 2022.
     
+    
     MACHADO, Leticia Rocha et al. Competência digital de idosos: mapeamento e avaliação. Educação Temática Digital, v. 21, n. 4, p. 941, 2019.
+    
     
     MACIEL, Ariane Durce. O lugar das mulheres: Gênero e inclusão digital. P2P e inovação, v. 2, n. 1, p. 66-85, 2015.
     
+    
     MALENKOVICH, Serge. Caso Morris Worm completa 25 anos. In: Kasperski daily - Kaspersky Lab. Kaspersky daily. [S. I.], 4 nov. 2013. Disponível em: https://www.kaspersky.com.br/blog/caso-morris-worm-completa-25-anos/1632/. Acesso em: 10 mai. 2022.
+    
     
     MARIOTO, Rita Roberta; BASILE, Felipe Rodrigues Martinez. Escrita para terceira idade com o uso de tecnologias digitais: relato de experiência. Revista Internacional de Formação de Professores, v. 5, 2020.
     
+    
     MILANI, André. PostgreSQL-Guia do Programador. Novatec Editora, 2008.
+    
     
     MOHURLE, Savita; PATIL, Manisha. A brief study of wannacry threat: Ransomware attack 2017. International Journal of Advanced Research in Computer Science, v. 8, n. 5, p. 1938-1940, 2017.
     
+    
     MORAIS, E. A.; AMBRÓSIO, Ana Paula L. Ferramentas de busca na Internet. Relatório Técnico: Universidade Federal de Goiás, 2007. 
+    
     
     NEVES, Barbara Coelho et al. Se estou no Google, logo existo: técnicas de alavancagem e visibilidade de um periódico científico em motores de busca por meio de técnicas de SEO. Informação & Informação, [S.l.], v. 25, n. 4, p. 402-430, dez. 2020. ISSN 1981-8920. Disponível em: https://www.uel.br/revistas/uel/index.php/informacao/article/view/39512. Acesso em: 17 jun. 2022. doi:http://dx.doi.org/10.5433/1981-8920.2020v25n4p402.
     
+    
     NIC.br - Núcleo de Informação e Coordenação do Ponto BR ; W3C Brasil - Consórcio World Wide Web Brasil; CGI.br -  Comitê Gestor da Internet no Brasil; MPSP - Ministério Público do Estado de São Paulo. 2016. Cartilha de Acessibilidade na Web (Fascículo II). Disponível em: https://www.w3c.br/pub/Materiais/PublicacoesW3C/cartilha-w3cbr-acessibilidade-web-fasciculo-II.pdf.. Acesso em: 9 jun. 2022. 
+    
     
     NIC.br - Núcleo de Informação e Coordenação do Ponto BR. 2021. Pesquisa sobre o uso das tecnologias de informação e comunicação nos domicílios brasileiros: pesquisa TIC Domicílios (Edição COVID-19 - Metodologia adaptada), ano 2020. Disponível em: https://cetic.br/pt/arquivos/domicilios/2020/domicilios/. Acesso em: 9 jun. 2022. 
     
+    
     NIC.br - Núcleo de Informação e Coordenação do Ponto BR; W3C Brasil - Consórcio World Wide Web Brasil; CGI.br -  Comitê Gestor da Internet no Brasil; MPSP - Ministério Público do Estado de São Paulo. 2014. Cartilha de Acessibilidade na Web (Fascículo I). Disponível em: https://ceweb.br/media/docs/publicacoes/1/cartilha-w3cbr-acessibilidade-web-fasciculo-I.pdf. Acesso em: 9 jun. 2022. 
+    
     
     OLIVEIRA, C. B.; SILVA NETO, P. C. Acessibilidade web em dispositivos móveis: uma proposta de métrica para desenvolvimento de conteúdo web móvel acessível a deficientes visuais. Profiscientia, n. 13, p. 08-24, 2019. Disponível em: http://www.profiscientia.ifmt.edu.br/profiscientia/index.php/profiscientia/article/view/209/147. Acesso em: 9 jun. 2022.
     
+    
     PANTOFA, Verônica Costa et al. Tecnologia da Informação e Comunicação e a Sociedade da Informação: uma contribuição para inclusão. 2008.
+    
     
     PELTIER, Thomas R. Information security risk analysis. CRC press, 2005.
     
+    
     PIEKARSKI, Joseli Inês. Vulnerabilidade digital de novas tecnologias: técnicas utilizadas através do meio digital que podem ser aplicadas em processo. Gestão da Segurança da Informação-Unisul Virtual de espionagem e no cybercrime, 2018.
+    
     
     PNAD - Pesquisa Nacional por Amostra de Domicílios, 2015. Disponível em: https://biblioteca.ibge.gov.br/visualizacao/livros/liv98887.pdf. Acesso em: 19 jun. 2022.
     
+    
     PRADO, Filipe. Brasil foi 5º país com mais ataques cibernéticos no ano: relembre os principais. IstoÉ Dinheiro. [S. I.], 20 dez. 2021. Disponível em: https://www.istoedinheiro.com.br/brasil-foi-5o-pais-com-mais-ataques-ciberneticos-no-ano-relembre-os-principais/. Acesso em: 10 mai. 2022.
+    
     
     RIBEIRO, Alysson de Sousa; ALBUQUERQUE, Walisson Francisco de. Análise de artefatos maliciosos em ambiente acadêmico. 2014.
     
+    
     SERASA - Serasa Experian. Brasileiros sofrem uma tentativa de fraude a cada 8 segundos, revela levantamento da Serasa Experian. In: SERASA - Serasa Experian. Análise de Dados. [S. I.], 30  ago. 2021. Disponível em: https://www.serasaexperian.com.br/sala-de-imprensa/analise-de-dados/brasileiros-sofrem-uma-tentativa-de-fraude-a-cada-8-segundos-revela-levantamento-da-serasa-experian/. Acesso em: 10 mai. 2022.
+    
     
     SILVA, Diego Pereira da et al. AACVOX: mobile application for augmentative alternative communication to help people with speech disorder and motor impairment. Research on Biomedical Engineering, v. 34, p. 166-175, 2018.
     
+    
     TORRES, V. M. HTML e seus Componentes. Revista Ada Lovelace, [S. l.], v. 2, p. 99–101, 2018. Disponível em: http://anais.unievangelica.edu.br/index.php/adalovelace/article/view/4652. Acesso em: 14 jun. 2022.
     
+    
     WAI - W3C Web Accessibility Initiative. Introduction to Web Accessibility. WAI, 2005. Disponível em: https://www.w3.org/WAI/fundamentals/accessibility-intro/. Acesso em: 9 jun. 2022.
+    
     
     WENDT, Emerson; JORGE, Higor Vinicius Nogueira. Crimes Cibernéticos (2a. edição): Ameaças e procedimentos de investigação. Brasport, 2013.
