@@ -14,8 +14,10 @@
 Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, originário do projeto acadêmico científico-tecnológico deste grupo, cujo objetivo é o fornecimento de informações sobre a cibersegurança e de ferramentas tecnológicas para a aplicação, por parte dos usuários, dos conceitos ensinados.
 
 <div align="center">
-    <img src="https://img.shields.io/static/v1?label=PYTHON&message=3.9.9&color=blue&style=for-the-badge&logo=Python"/>
-    <img src="https://img.shields.io/static/v1?label=DJANGO&message=4.0.1&color=brightgreen&style=for-the-badge&logo=DJANGO&logoColor=green"/>
+    <img alt="Badge com a versão utilizada do Python" src="https://img.shields.io/static/v1?label=PYTHON&message=3.9.9&color=blue&style=for-the-badge&logo=Python"/>
+    <img alt="Badge com a versão utilizada do Django" src="https://img.shields.io/static/v1?label=DJANGO&message=4.0.1&color=brightgreen&style=for-the-badge&logo=DJANGO&logoColor=green"/>
+    <img alt="Badge com a versão utilizada do HTML" src="https://img.shields.io/static/v1?label=HTML&message=V5&color=yellow&style=for-the-badge&logo=HTML5&logoColor=yellow"/>
+    <img alt="Badge com a versão utilizada do CSS" src="https://img.shields.io/static/v1?label=CSS&message=V3&color=blue&style=for-the-badge&logo=CSS3&logoColor=blue"/>
 </div>
 
 ## Trabalho Escrito 📚
