@@ -13,11 +13,11 @@
     * [Acessibilidade Web](#acessibilidade-web)
     * [Acessibilidade Web em Dispositivos Móveis](#acessibilidade-web-em-dispositivos-móveis)
     * [Acessibilidade Web e a Inclusão Informacional](#acessibilidade-web-e-a-inclusão-informacional)
-  * [Segurança Cibernética]()
-    * [Crimes Cibernéticos]()
-    * [Públicos Vulneráveis na Web]()
-      * [Crianças e Adolescentes]()
-      * [Idosos]()
+  * [Segurança Cibernética](#segurança-cibernética)
+    * [Crimes Cibernéticos](#crimes-cibernéticos)
+    * [Públicos Vulneráveis na Web](#públicos-vulneráveis-na-web)
+      * [Crianças e Adolescentes](#crianças-e-adolescentes)
+      * [Idosos](#idosos)
   * [Tecnologias]()
     * [Front-End]()
       * [HTML, CSS e JavaScript]()
@@ -199,3 +199,52 @@ Como dito, a acessibilidade Web garante inúmeros benefícios para a comunidade 
 Ademais, para que se garanta a inclusão informacional, os conteúdos de cunho informativo devem se adequar a todos os usuários e isso é alcançado, também, pela acessibilidade Web. Através de um site acessível, as informações contidas neste, podem ser acessadas pelos usuários de forma igual, uma vez que um site semântico tem uma eficiência alta com leitores de tela e, de acordo com Silva, Lôbo e Mello (2021), os softwares para leitura de textos e comunicações alternativas, fazem com que as pessoas com deficiência consigam ter acesso ao conteúdo que está sendo oferecido pela Web, seja no ambiente de ensino básico, seja no ambiente de ensino superior. 
 
 Diante o exposto, a acessibilidade Web se encontra atrelada à inclusão informacional, algo de extrema importância para a educação dos cidadãos, sobretudo no que diz respeito aos direitos que as pessoas possuem dentro do mundo cibernético. Para Ishiyama e Tanaka (2017), o avanço da Web permite que as pessoas acessem diversos conteúdos na internet, os quais são produzidos de forma livre. Com isso, websites que fornecem conteúdos informacionais e possuem uma acessibilidade garantida, faz com que a educação da sociedade como um todo seja atingida de forma igual e inclusiva, isto é, garantem a inclusão informacional.
+
+### Segurança Cibernética
+
+Segurança Cibernética, ou, em inglês "Cyber Security", de acordo com Craigen, Diakun-Thibault e Purse (2014) é um termo muito utilizado, cujas definições são variáveis e, muitas vezes, subjetivas ou pouco informativas. Nesse sentido, a International Telecommunication Union, ou em português “União Internacional de Telecomunicações”, caracterizou a Segurança Cibernética como uma:
+> [...] coleção de ferramentas, políticas, conceitos de segurança, salvaguardas de segurança, diretrizes, abordagens de gerenciamento de risco, ações, treinamento, melhores práticas, garantia e tecnologias que podem ser usadas para proteger o ambiente cibernético e a organização e os ativos do usuário. Os ativos da organização e do usuário incluem dispositivos de computação conectados, pessoal, infraestrutura, aplicativos, serviços, sistemas de telecomunicações e a totalidade das informações transmitidas e/ou armazenadas no ambiente cibernético. A segurança cibernética se esforça para garantir a obtenção e a manutenção das propriedades de segurança da organização e dos ativos do usuário contra riscos de segurança relevantes no ambiente cibernético. (ITU-T, 2008, p.2)
+
+Além dessa definição, neste projeto será utilizado o conceito de Segurança Cibernética, mencionada ao longo deste trabalho como Cibersegurança, estabelecido pela Oxford University Press (2014), que caracteriza-a como um estado de proteção contra o uso criminoso ou não autorizado de dados eletrônicos, ou as medidas tomadas para isso (Apud Craigen et al, 2014).
+
+Outrossim, considera-se importante para esse projeto a diferenciação entre Segurança da Informação e Cibersegurança. Nesse sentido, a Segurança da Informação, conforme explicitado por Hintzbergen et al. (2018), trata-se da preservação da Confidencialidade, Integridade e Disponibilidade da Informação. Nessa direção, entende-se que a área de atuação da Segurança da Informação é ampla, o que se diferencia da área de atuação da Segurança Cibernética que, como informado no parágrafo acima, corresponde apenas à proteção dos dados eletrônicos. Portanto, a Cibersegurança caracteriza-se como uma ramificação da Segurança da Informação.
+
+#### Crimes Cibernéticos
+
+De acordo com Wendt e Jorge (2013), os crimes cibernéticos são delitos praticados contra ou por meio de dispositivos informáticos (computadores, celulares, pendrives, etc). Nessa direção, os autores dividem os crimes cibernéticos em “crimes cibernéticos abertos” e “crimes exclusivamente cibernéticos”. Essa divisão também é realizada por Mendonça et al. (2015), na qual os crimes cibernéticos são divididos em  “crimes impróprios" e “crimes próprios”, os quais possuem o mesmo significado da divisão de Wendt e Jorge. 
+
+Com isso, os crimes cibernéticos abertos, conforme afirmam Wendt e Jorge (2013), são aqueles que podem ser praticados da maneira tradicional (com ação física) ou por meio de dispositivos informáticos, isto é, os dispositivos são apenas meios opcionais para a realização do delito. Como exemplo desses crimes destacam-se: crimes contra a honra, racismo, tráfico de drogas, estelionato, entre outros. Já os crimes exclusivamente cibernéticos, são aqueles que só podem ser praticados com a utilização de dispositivos informáticos.
+
+Por fim, para a realização deste projeto é de suma relevância a explicitação dos crimes cibernéticos, uma vez que a aplicação web terá conteúdos informacionais sobre como o usuário pode se proteger deles. 
+
+#### Públicos Vulneráveis na Web
+
+Com o avanço da Web e da internet, as informações passaram a estar presentes nesse meio virtual com bastante intensidade e, com isso, Fontes (2008) afirma que a Segurança da Informação é uma temática que tem ganhado espaço no cotidiano da sociedade, uma vez que essas informações estão disponíveis a muitas pessoas, sejam essas pessoas de uma organização, sejam essas pessoas usuárias da Web. 
+
+Assim, com a presença da Segurança da Informação no ambiente computacional, há a criação do termo “Vulnerabilidade”, o qual pode ter variações relacionadas ao seu significado. De acordo com Hintzbergen et al. (2018), esse termo, vulnerabilidade, significa a fraqueza que um ativo ou controle pode ter e pode, também, ser explorada por ameaças. Peltier (2005) reforça essa definição, dizendo que a fraqueza também pode afetar um bem e que, caso um desses itens - ativo, controle ou bem - sejam de fato explorados por uma ameaça, isso poderá causar algum impacto, seja na organização, seja para um indivíduo. 
+
+Dessa forma, o avanço da Web e das tecnologias fazem com que os eventos de vulnerabilidades, ocasionadas, majoritariamente, por ações pessoais, sejam reconhecidos de diversas maneiras e, uma delas, de acordo com Piekarski (2018), é a vulnerabilidade digital.
+
+##### Crianças e Adolescentes
+
+Como as Tecnologias de Informação e Comunicação se difundiram na sociedade, as crianças e adolescentes são um público alvo que, segundo Ferraz (2019), possuem um grande interesse pela utilização dos recursos que esses meios digitais oferecem. Diante disso, a inserção massiva das TICs e de mídias sociais, fizeram com que, de acordo com Couto (2013), as crianças passassem a estar cada vez mais conectadas e imersas nesse cibermundo e, com isso, o referido autor também aponta a criação de uma cibercultura infantil, a qual é definida como uma maneira de comportamento, de socialização e de troca de informações realizadas por crianças pela internet. Assim, esse público alvo estão, também, propensos às vulnerabilidades digitais. 
+
+Com essa faixa etária de pessoas que se encontram cada vez mais conectadas, Ferraz (2019) aponta que as crianças desenvolvem suas habilidades com a tecnologia de forma rápida, fazendo com que elas entendam que esse ambiente virtual é um ambiente as quais estão fisicamente inacessíveis, além de terem uma liberdade maior de se comunicaram e de se expressarem. 
+
+Além das crianças, os adolescentes também se encontram em vulnerabilidade no mundo virtual. A Pesquisa Nacional por Amostras de Domicílios (PNAD), realizada em 2015, demonstra que adolescentes que estão nas faixas etárias de 15 a 17 anos e de 18 a 19 anos, são os indivíduos que mais acessam a internet, o que equivale, respectivamente, a 82% e 82,9%. 
+
+Os adolescentes, assim como as crianças, também veem a utilização dos recursos proporcionados pelas tecnologias como algo benéfico e, de acordo com Ferreira et al. (2020), as vantagens principais que os adolescentes reconhecem das tecnologias são a rapidez, a economia, a capacidade de conhecer pessoas e de aumentar o número de amigos. 
+
+A TIC Kids Online Brasil de 2019 aponta que a utilização de mídias digitais - recurso tecnológico que é proveniente das Tecnologias de Informação e Comunicação - por crianças e adolescentes é algo excessivo e problemático, dado que essas faixas etárias estão submetidas aos diversos riscos que o mundo digital possui. 
+
+Diante os expostos, Basile e Lopez (2020) expõem que a massiva utilização das tecnologias de informação aumenta a relevância do estudo sobre a defesa no mundo virtual. Ademais, há medidas que podem ser tomadas para a preservação e para a integridade das crianças e adolescentes, há, também, princípios, direitos e deveres para o uso da Internet no Brasil, as quais se encontram na Lei n° 12.965 de 23 de abril de 2014 - O Marco Civil da Internet.
+
+##### Idosos
+
+A tecnologia tornou-se o principal meio de comunicação e de informação na sociedade contemporânea e, Marioto e Basile (2020), apontam que a chegada dessas tecnologias TICs (Tecnologias de Informação e Comunicação) alteraram, significativamente, os modos de ser, estar, agir e interagir na sociedade, isto é, para se conviver no corpo social moderno, é necessário ter acesso ao conhecimento tecnológico. 
+
+Dessa maneira, Marioto e Basile (2020), apontam, também, que os idosos, pessoas com mais de 60 anos de idade, constituem um grupo da sociedade que possuem especificidades no que se refere à inserção social realizada por meio da tecnologia. Assim, para que esse público da Terceira Idade não seja excluído das atividades sociais realizadas por intermédio da tecnologia e que não tenha sua qualidade de vida omitida pela falta de conhecimento dos aparatos tecnológicos, os autores afirmam que é de suma relevância o desenvolvimento de atividades de ensino e aprendizagem, as quais atendam as especificidades desse grupo. Essas atividades de ensino e aprendizagem podem ser realizadas, com, por exemplo, a escrita de artigos que serão disponibilizados pelas tecnologias TICs. 
+
+A Terceira Idade, de acordo com Barros e Leite (2019), está exposta aos diversos perigos na internet, seja devido a falta de habilidades digitais, seja pelo declínio que essas pessoas estão vivenciando das competências cognitivas. As autoras também demonstram que esses aspectos fazem com que esse grupo se torne mais vulnerável aos golpes virtuais. Por isso, os idosos são vistos por cibercriminosos como alvos fáceis para aplicação de golpes. Isso é reforçado por Machado et al. (2019), que aponta que esse grupo de pessoas possuem habilidades e conhecimentos a serem desenvolvidos sobre essa temática. 
+
+Assim, as atividades de ensino e aprendizagem, através de artigos digitais, servirão de garantia para que os idosos consigam utilizar de forma segura a internet. A Segurança e Privacidade na Internet, de acordo com Silva (2018), conforme citado por Machado et al. (2019), é uma competência de extrema importância para os idosos e, para que eles consigam desenvolver essa competência, esse grupo de pessoas poderão utilizar ferramentas na internet para desenvolver cuidados relacionados ao mundo virtual, evitando o roubo de dados e informações pessoais. 
