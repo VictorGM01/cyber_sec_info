@@ -26,6 +26,7 @@
       * [Python e Django](#python-e-django)
       * [SQLite e PostgreSQL](#sqlite-e-postgresql)
   * [Artigos Relacionados](#artigos-relacionados)
+* [Referências](#referências)
 
 # Tema e Autores
 
@@ -314,3 +315,5 @@ Ademais, em assentimento com Cardoso et al. (2019), o desenvolvimento da aplica�
 
 Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um site com um propósito semelhante ao objetivo geral da aplicação web desenvolvida no presente trabalho, o CERT.br (Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil). Nesse sentido, foi constatado a presença de diversos conteúdos informacionais sobre Segurança Cibernética no site, tais como: cartilhas, guias e recomendações de segurança. Todavia, como a divulgação desses materiais não é o objetivo principal do site, uma vez que o projeto tem como missão o tratamento de incidentes (CERT.br, 2022), nota-se a ausência da acessibilidade no site, o que, em contraposição ao atual projeto, não garante a democratização do acesso às informações disponibilizadas.
 
+
+# Referências
