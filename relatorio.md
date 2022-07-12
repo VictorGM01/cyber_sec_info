@@ -8,11 +8,11 @@
     * [Objetivo Geral](#objetivo-geral)
     * [Objetivos Específicos](#objetivos-específicos)
   * [Justificativa](#justificativa)
-* [Revisão de Literatura]()
-  * [Acessibilidade]()
-    * [Acessibilidade Web]()
-    * [Acessibilidade Web em Dispositivos Móveis]()
-    * [Acessibilidade Web e a Inclusão Informacional]()
+* [Revisão de Literatura](#revisão-de-literatura)
+  * [Acessibilidade](#acessibilidade)
+    * [Acessibilidade Web](#acessibilidade-web)
+    * [Acessibilidade Web em Dispositivos Móveis](#acessibilidade-web-em-dispositivos-móveis)
+    * [Acessibilidade Web e a Inclusão Informacional](#acessibilidade-web-e-a-inclusão-informacional)
   * [Segurança Cibernética]()
     * [Crimes Cibernéticos]()
     * [Públicos Vulneráveis na Web]()
@@ -169,3 +169,33 @@ A realização do presente trabalho é de suma relevância, principalmente para 
 Dessa forma, a abordagem que esse trabalho realiza sobre a cibersegurança é algo de extrema importância para o contexto atual, dado que a tecnologia está cada vez mais inserida na sociedade. Assim sendo, com o avanço da tecnologia, há também o avanço de crimes cibernéticos e isso é evidenciado pelo surgimento do “WannaCry”, em 2017, que, de acordo com Patil e Mohurle (2017), é um software malicioso responsável pela criptografia de arquivos ou dispositivos inteiros. A restituição desses dados só ocorre após a vítima realizar um pagamento ao sequestrador. Nessa direção, além do surgimento do “WannaCry”, muitos outros crimes cibernéticos desse tipo foram registrados e o mais recente deles foi o sequestro dos dados do Ministério de Saúde, em dezembro de 2021, pelo grupo de crackers “Lapsus$”. Diante o exposto, é necessário que as pessoas tenham conhecimento sobre o que é a cibersegurança e quais são as maneiras de aplicar esse conceito no dia-a-dia, de modo a evitar mais vítimas de crimes virtuais.
 
 Com isso, este trabalho apresenta uma plataforma inovadora na área de Segurança Cibernética, pois, além dos conteúdos teóricos, tutoriais e ferramentas reunidos em um único lugar, a aplicação web desenvolvida visa a possibilidade de acesso para todas as pessoas, inclusive para as pessoas com deficiências, o que, em concordância com Loja et al. (2015), visa minimizar as limitações das pessoas deficientes, além de contribuir para a inclusão dessas pessoas na sociedade (apud Silva et al., 2018). Para isso, esse projeto utilizará outras tecnologias que facilitam a utilização, navegação e entendimento da aplicação, como, por exemplo, a ferramenta VLibras, responsável por traduzir o conteúdo digital (texto, áudio e imagem) em libras (Brasil, 2019). Ademais, o desenvolvimento da aplicação web conta com a utilização de recursos do HTML5 que possibilitam a navegação por teclado, algo fundamental para os usuários que utilizam softwares de leitura de tela e para usuários que não conseguem utilizar o mouse devido alguma deficiência.
+
+
+## Revisão de Literatura
+
+### Acessibilidade
+#### Acessibilidade Web
+
+O avanço da tecnologia proporciona às pessoas o acesso à uma gama de websites e, dessa forma, é imprescindível que esses sites não tenham barreiras de acesso para as pessoas que possuem deficiência ou para aquelas que não possuem deficiência. Assim, é de extrema importância a garantia da acessibilidade em websites e, conforme a Cartilha de Acessibilidade na Web do W3C Brasil - Fascículo I (2014), a acessibilidade Web trata-se da possibilidade e a condição de percepção, alcance e entendimento, para uma utilização, com igualdade de oportunidades, de segurança e de autonomia,  de sites e ferramentas que estão disponíveis na Web. Isso é reforçado, também, por Cusin e Vidotti (2009), que dizem que a acessibilidade Web é a capacidade e a garantia que as pessoas com deficiência têm de entender, interagir e navegar na Web, podendo contribuir com o mundo virtual. 
+
+Ademais, segundo a W3C WAI (2005), a acessibilidade Web proporciona uma variedade de benefícios para pessoas que não são portadoras de deficiência, sendo essas as pessoas idosas, que estão com suas habilidades em mudança devido ao envelhecimento, e as pessoas com “deficiências temporárias”, como àquelas que estão com um braço quebrado ou com os óculos perdidos. Ainda segundo a W3C WAI, a acessibilidade Web é benéfica, também, para pessoas que se encontram em situações diversas do cotidiano, como: pessoas que estão sob intensa luz solar e que precisam de um site que possua um bom contraste e tamanho de fontes; pessoas que estão em um ambiente que não se pode ouvir um áudio e que precisam de um recurso textual do conteúdo do site; ou pessoas que possuem uma conexão lenta com a Internet, a qual necessita de um site otimizado e bem estruturado para se ter um melhor rendimento.
+
+Além dessas propriedades, a acessibilidade Web possibilita a natureza colaborativa que a Web possui, uma vez que todas as pessoas, independente de suas condições intelectuais, físicas e educacionais, podem ter acesso aos conteúdos que são oferecidos na Web e podem, também, fornecer conteúdos de própria autoria. Cusin e Vidotti (2009), afirmam que a acessibilidade Web é um fator que propulsiona as inclusões informacional e digital, dado que há a presença de uma igualdade de acesso aos usuários, sejam esses portadores de deficiência ou não.
+
+Outrossim, a acessibilidade em websites permite que pessoas deficientes possam realizar atividades simples do cotidiano, como consumir conteúdos informacionais que são disponibilizados na internet. De acordo com a Cartilha de Acessibilidade na Web do W3C Brasil - Fascículo II (2016),  um site que não possui recursos de acessibilidade, faz com que pessoas com deficiência ou com mobilidade reduzida não consigam realizar uma pesquisa acadêmica, por exemplo, dado que as informações que estão presentes em um website sem acessibilidade não poderiam ser consumidas ou interpretadas por esses indivíduos, uma vez que podem utilizar as tecnologias assistivas, leitores de telas, ou podem realizar a navegação por teclado. 
+
+Há ferramentas que auxiliam a garantia da acessibilidade de sites para os usuários, de acordo com as suas necessidades. Em conformidade com a Cartilha de Acessibilidade na Web do W3C Brasil - Fascículo II (2016), há pessoas que são surdas ou que possuem uma deficiência auditiva e acessam as informações em áudio e vídeo com legendas, descrições e tradução em LIBRAS, dessa forma, é possível implementar um tradutor, através de plugins ou softwares, de conteúdos digitais em Português para Libras. Ainda de acordo com a Cartilha, há pessoas que acessam websites por dispositivos móveis, que possuem telas e teclados de tamanho reduzido, além de uma capacidade de processamento e armazenamento menor, dessa maneira, é possível implementar códigos de estilização - CSS - que garantam a responsividade do site. A Cartilha também expõe que há pessoas que possuem deficiência motora e mobilidade reduzida e, para navegar na Web, utilizam o teclado e, com isso, é necessária a implementação de um código de marcação do site - o HTML - semântico.	
+
+#### Acessibilidade Web em Dispositivos Móveis
+
+A acessibilidade Web, quando garantida, pode alcançar outros tipos de benefícios para os diversos usuários existentes na Web e, um desses benefícios é a acessibilidade Web em dispositivos móveis. Para Oliveira e Silva Neto (2019), a acessibilidade Web mobile é entendida como a inclusão de usuários ao acesso de conteúdos, disponibilizados na Web, através da utilização de dispositivos móveis, como smartphones, tablets e outros.
+
+De acordo com a pesquisa TIC de Domicílios (2020), os dispositivos móveis são os principais tipos de dispositivos utilizados para acessar a Web, representando quase o total da população usuária de Internet com dez anos ou mais (99%). Com isso, é primordial a utilização de metodologias do desenvolvimento Web que garantam o acesso desses usuários que utilizam telefones celulares, sendo assim, essa acessibilidade mobile pode ser alcançada através da aplicação de atributos do HTML5 e de funções de estilização do CSS3.
+
+#### Acessibilidade Web e a Inclusão Informacional
+
+Como dito, a acessibilidade Web garante inúmeros benefícios para a comunidade digital e, também, para a educação da comunidade como um todo. A acessibilidade Web, então, garante a inclusão informacional, que, para Cusin e Vidotti (2009) é a habilidade de buscar, usar, acessar e recriar uma informação com  responsabilidade social. 
+
+Ademais, para que se garanta a inclusão informacional, os conteúdos de cunho informativo devem se adequar a todos os usuários e isso é alcançado, também, pela acessibilidade Web. Através de um site acessível, as informações contidas neste, podem ser acessadas pelos usuários de forma igual, uma vez que um site semântico tem uma eficiência alta com leitores de tela e, de acordo com Silva, Lôbo e Mello (2021), os softwares para leitura de textos e comunicações alternativas, fazem com que as pessoas com deficiência consigam ter acesso ao conteúdo que está sendo oferecido pela Web, seja no ambiente de ensino básico, seja no ambiente de ensino superior. 
+
+Diante o exposto, a acessibilidade Web se encontra atrelada à inclusão informacional, algo de extrema importância para a educação dos cidadãos, sobretudo no que diz respeito aos direitos que as pessoas possuem dentro do mundo cibernético. Para Ishiyama e Tanaka (2017), o avanço da Web permite que as pessoas acessem diversos conteúdos na internet, os quais são produzidos de forma livre. Com isso, websites que fornecem conteúdos informacionais e possuem uma acessibilidade garantida, faz com que a educação da sociedade como um todo seja atingida de forma igual e inclusiva, isto é, garantem a inclusão informacional.
