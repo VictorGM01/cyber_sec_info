@@ -1,7 +1,7 @@
 # Cyber Security Information - PJI 2022 - IFSP
 ![image](https://user-images.githubusercontent.com/86068797/166588543-9ff49eb2-8926-4de9-8c27-27d4936941e7.png)
 
-> ## Tabela de Conteúdos
+> # Tabela de Conteúdos
 * [Tema e Autores](#tema-e-autores)
 * [Introdução](#introdução)
   * [Objetivos](#objetivos)
@@ -27,7 +27,7 @@
       * [SQLite e PostgreSQL]()
   * [Artigos Relacionados]()
 
-## Tema e Autores
+# Tema e Autores
 
 O presente trabalho tem como tema:
 > **Desenvolvimento de uma aplicação web para divulgação de conteúdos e ferramentas acerca da cibersegurança**
@@ -125,7 +125,7 @@ Os orientadores desse projeto são:
     </tr>
 </table>
 
-## Introdução
+# Introdução
 
 Em 1946, conforme relatado por Maciel (2015), o primeiro computador digital eletrônico de grande escala era apresentado, o ENIAC (Electronic Numerical Integrator and Computer). Esse computador tinha o peso igual a 30 toneladas e ocupava 180 metros quadrados (MACIEL, 2015). Com o passar do tempo, os computadores foram se desenvolvendo, tornando-se multifuncionais e disponíveis para uso pessoal. Cury e Capobianco (2011) relatam que foi a partir de 1980 que a fase dos computadores portáteis e em rede se iniciou.
 
@@ -145,12 +145,12 @@ Dessa maneira, a aplicação web é composta pelas seguintes tecnologias: lingua
 
 Outrossim, o projeto está desenvolvido com preceitos na literatura como artigos relacionados à Segurança da Informação, Segurança Cibernética, Tecnologia da Informação e Acessibilidade na Web, além de livros e revistas também relacionados ao tema.
 
-### Objetivos
-#### Objetivo Geral
+## Objetivos
+### Objetivo Geral
 
 * Desenvolver uma aplicação web para difundir materiais sobre a cibersegurança, incluindo ferramentas para a aplicação dos conteúdos apresentados – tal como um software mobile para o armazenamento de informações confidenciais –, tendo em vista a democratização do acesso aos conteúdos que tratam sobre o tema.
 
-#### Objetivos Específicos
+### Objetivos Específicos
 
 * Realizar uma pesquisa via Google Forms para compreender a aplicação da cibersegurança no cotidiano da comunidade, com foco em crianças, adolescentes e idosos; 
 * Realizar o levantamento de requisitos da aplicação web;
@@ -162,7 +162,7 @@ Outrossim, o projeto está desenvolvido com preceitos na literatura como artigos
 * Aperfeiçoar os conhecimentos relacionados à linguagem de marcação HTML5, à linguagem de estilização CSS3 e às linguagens de programação JavaScript e Python, de modo a desenvolver a aplicação seguindo boas práticas de programação;
 * Criar páginas nas principais redes sociais para um maior alcance de usuários da aplicação. 
 
-### Justificativa
+## Justificativa
 
 A realização do presente trabalho é de suma relevância, principalmente para as pessoas que não possuem um conhecimento prévio sobre Tecnologia da Informação e Segurança da Informação, sobretudo crianças, adolescentes e idosos,  uma vez que trata do desenvolvimento de uma aplicação web para divulgação de conteúdos essenciais sobre a Segurança Cibernética, além de tutoriais e ferramentas. Sendo assim, esta pesquisa será essencial para a disseminação e enfatização da importância do conhecimento acerca da cibersegurança, além de contribuir com a democratização do acesso aos conteúdos relacionados a essa área, pois a aplicação será acessível a todos os públicos. 
 
@@ -171,10 +171,10 @@ Dessa forma, a abordagem que esse trabalho realiza sobre a cibersegurança é al
 Com isso, este trabalho apresenta uma plataforma inovadora na área de Segurança Cibernética, pois, além dos conteúdos teóricos, tutoriais e ferramentas reunidos em um único lugar, a aplicação web desenvolvida visa a possibilidade de acesso para todas as pessoas, inclusive para as pessoas com deficiências, o que, em concordância com Loja et al. (2015), visa minimizar as limitações das pessoas deficientes, além de contribuir para a inclusão dessas pessoas na sociedade (apud Silva et al., 2018). Para isso, esse projeto utilizará outras tecnologias que facilitam a utilização, navegação e entendimento da aplicação, como, por exemplo, a ferramenta VLibras, responsável por traduzir o conteúdo digital (texto, áudio e imagem) em libras (Brasil, 2019). Ademais, o desenvolvimento da aplicação web conta com a utilização de recursos do HTML5 que possibilitam a navegação por teclado, algo fundamental para os usuários que utilizam softwares de leitura de tela e para usuários que não conseguem utilizar o mouse devido alguma deficiência.
 
 
-## Revisão de Literatura
+# Revisão de Literatura
 
-### Acessibilidade
-#### Acessibilidade Web
+## Acessibilidade
+### Acessibilidade Web
 
 O avanço da tecnologia proporciona às pessoas o acesso à uma gama de websites e, dessa forma, é imprescindível que esses sites não tenham barreiras de acesso para as pessoas que possuem deficiência ou para aquelas que não possuem deficiência. Assim, é de extrema importância a garantia da acessibilidade em websites e, conforme a Cartilha de Acessibilidade na Web do W3C Brasil - Fascículo I (2014), a acessibilidade Web trata-se da possibilidade e a condição de percepção, alcance e entendimento, para uma utilização, com igualdade de oportunidades, de segurança e de autonomia,  de sites e ferramentas que estão disponíveis na Web. Isso é reforçado, também, por Cusin e Vidotti (2009), que dizem que a acessibilidade Web é a capacidade e a garantia que as pessoas com deficiência têm de entender, interagir e navegar na Web, podendo contribuir com o mundo virtual. 
 
@@ -186,13 +186,13 @@ Outrossim, a acessibilidade em websites permite que pessoas deficientes possam r
 
 Há ferramentas que auxiliam a garantia da acessibilidade de sites para os usuários, de acordo com as suas necessidades. Em conformidade com a Cartilha de Acessibilidade na Web do W3C Brasil - Fascículo II (2016), há pessoas que são surdas ou que possuem uma deficiência auditiva e acessam as informações em áudio e vídeo com legendas, descrições e tradução em LIBRAS, dessa forma, é possível implementar um tradutor, através de plugins ou softwares, de conteúdos digitais em Português para Libras. Ainda de acordo com a Cartilha, há pessoas que acessam websites por dispositivos móveis, que possuem telas e teclados de tamanho reduzido, além de uma capacidade de processamento e armazenamento menor, dessa maneira, é possível implementar códigos de estilização - CSS - que garantam a responsividade do site. A Cartilha também expõe que há pessoas que possuem deficiência motora e mobilidade reduzida e, para navegar na Web, utilizam o teclado e, com isso, é necessária a implementação de um código de marcação do site - o HTML - semântico.	
 
-#### Acessibilidade Web em Dispositivos Móveis
+### Acessibilidade Web em Dispositivos Móveis
 
 A acessibilidade Web, quando garantida, pode alcançar outros tipos de benefícios para os diversos usuários existentes na Web e, um desses benefícios é a acessibilidade Web em dispositivos móveis. Para Oliveira e Silva Neto (2019), a acessibilidade Web mobile é entendida como a inclusão de usuários ao acesso de conteúdos, disponibilizados na Web, através da utilização de dispositivos móveis, como smartphones, tablets e outros.
 
 De acordo com a pesquisa TIC de Domicílios (2020), os dispositivos móveis são os principais tipos de dispositivos utilizados para acessar a Web, representando quase o total da população usuária de Internet com dez anos ou mais (99%). Com isso, é primordial a utilização de metodologias do desenvolvimento Web que garantam o acesso desses usuários que utilizam telefones celulares, sendo assim, essa acessibilidade mobile pode ser alcançada através da aplicação de atributos do HTML5 e de funções de estilização do CSS3.
 
-#### Acessibilidade Web e a Inclusão Informacional
+### Acessibilidade Web e a Inclusão Informacional
 
 Como dito, a acessibilidade Web garante inúmeros benefícios para a comunidade digital e, também, para a educação da comunidade como um todo. A acessibilidade Web, então, garante a inclusão informacional, que, para Cusin e Vidotti (2009) é a habilidade de buscar, usar, acessar e recriar uma informação com  responsabilidade social. 
 
@@ -200,7 +200,7 @@ Ademais, para que se garanta a inclusão informacional, os conteúdos de cunho i
 
 Diante o exposto, a acessibilidade Web se encontra atrelada à inclusão informacional, algo de extrema importância para a educação dos cidadãos, sobretudo no que diz respeito aos direitos que as pessoas possuem dentro do mundo cibernético. Para Ishiyama e Tanaka (2017), o avanço da Web permite que as pessoas acessem diversos conteúdos na internet, os quais são produzidos de forma livre. Com isso, websites que fornecem conteúdos informacionais e possuem uma acessibilidade garantida, faz com que a educação da sociedade como um todo seja atingida de forma igual e inclusiva, isto é, garantem a inclusão informacional.
 
-### Segurança Cibernética
+## Segurança Cibernética
 
 Segurança Cibernética, ou, em inglês "Cyber Security", de acordo com Craigen, Diakun-Thibault e Purse (2014) é um termo muito utilizado, cujas definições são variáveis e, muitas vezes, subjetivas ou pouco informativas. Nesse sentido, a International Telecommunication Union, ou em português “União Internacional de Telecomunicações”, caracterizou a Segurança Cibernética como uma:
 > [...] coleção de ferramentas, políticas, conceitos de segurança, salvaguardas de segurança, diretrizes, abordagens de gerenciamento de risco, ações, treinamento, melhores práticas, garantia e tecnologias que podem ser usadas para proteger o ambiente cibernético e a organização e os ativos do usuário. Os ativos da organização e do usuário incluem dispositivos de computação conectados, pessoal, infraestrutura, aplicativos, serviços, sistemas de telecomunicações e a totalidade das informações transmitidas e/ou armazenadas no ambiente cibernético. A segurança cibernética se esforça para garantir a obtenção e a manutenção das propriedades de segurança da organização e dos ativos do usuário contra riscos de segurança relevantes no ambiente cibernético. (ITU-T, 2008, p.2)
@@ -209,7 +209,7 @@ Além dessa definição, neste projeto será utilizado o conceito de Segurança 
 
 Outrossim, considera-se importante para esse projeto a diferenciação entre Segurança da Informação e Cibersegurança. Nesse sentido, a Segurança da Informação, conforme explicitado por Hintzbergen et al. (2018), trata-se da preservação da Confidencialidade, Integridade e Disponibilidade da Informação. Nessa direção, entende-se que a área de atuação da Segurança da Informação é ampla, o que se diferencia da área de atuação da Segurança Cibernética que, como informado no parágrafo acima, corresponde apenas à proteção dos dados eletrônicos. Portanto, a Cibersegurança caracteriza-se como uma ramificação da Segurança da Informação.
 
-#### Crimes Cibernéticos
+### Crimes Cibernéticos
 
 De acordo com Wendt e Jorge (2013), os crimes cibernéticos são delitos praticados contra ou por meio de dispositivos informáticos (computadores, celulares, pendrives, etc). Nessa direção, os autores dividem os crimes cibernéticos em “crimes cibernéticos abertos” e “crimes exclusivamente cibernéticos”. Essa divisão também é realizada por Mendonça et al. (2015), na qual os crimes cibernéticos são divididos em  “crimes impróprios" e “crimes próprios”, os quais possuem o mesmo significado da divisão de Wendt e Jorge. 
 
@@ -217,7 +217,7 @@ Com isso, os crimes cibernéticos abertos, conforme afirmam Wendt e Jorge (2013)
 
 Por fim, para a realização deste projeto é de suma relevância a explicitação dos crimes cibernéticos, uma vez que a aplicação web terá conteúdos informacionais sobre como o usuário pode se proteger deles. 
 
-#### Públicos Vulneráveis na Web
+### Públicos Vulneráveis na Web
 
 Com o avanço da Web e da internet, as informações passaram a estar presentes nesse meio virtual com bastante intensidade e, com isso, Fontes (2008) afirma que a Segurança da Informação é uma temática que tem ganhado espaço no cotidiano da sociedade, uma vez que essas informações estão disponíveis a muitas pessoas, sejam essas pessoas de uma organização, sejam essas pessoas usuárias da Web. 
 
@@ -225,7 +225,7 @@ Assim, com a presença da Segurança da Informação no ambiente computacional, 
 
 Dessa forma, o avanço da Web e das tecnologias fazem com que os eventos de vulnerabilidades, ocasionadas, majoritariamente, por ações pessoais, sejam reconhecidos de diversas maneiras e, uma delas, de acordo com Piekarski (2018), é a vulnerabilidade digital.
 
-##### Crianças e Adolescentes
+#### Crianças e Adolescentes
 
 Como as Tecnologias de Informação e Comunicação se difundiram na sociedade, as crianças e adolescentes são um público alvo que, segundo Ferraz (2019), possuem um grande interesse pela utilização dos recursos que esses meios digitais oferecem. Diante disso, a inserção massiva das TICs e de mídias sociais, fizeram com que, de acordo com Couto (2013), as crianças passassem a estar cada vez mais conectadas e imersas nesse cibermundo e, com isso, o referido autor também aponta a criação de uma cibercultura infantil, a qual é definida como uma maneira de comportamento, de socialização e de troca de informações realizadas por crianças pela internet. Assim, esse público alvo estão, também, propensos às vulnerabilidades digitais. 
 
@@ -239,7 +239,7 @@ A TIC Kids Online Brasil de 2019 aponta que a utilização de mídias digitais -
 
 Diante os expostos, Basile e Lopez (2020) expõem que a massiva utilização das tecnologias de informação aumenta a relevância do estudo sobre a defesa no mundo virtual. Ademais, há medidas que podem ser tomadas para a preservação e para a integridade das crianças e adolescentes, há, também, princípios, direitos e deveres para o uso da Internet no Brasil, as quais se encontram na Lei n° 12.965 de 23 de abril de 2014 - O Marco Civil da Internet.
 
-##### Idosos
+#### Idosos
 
 A tecnologia tornou-se o principal meio de comunicação e de informação na sociedade contemporânea e, Marioto e Basile (2020), apontam que a chegada dessas tecnologias TICs (Tecnologias de Informação e Comunicação) alteraram, significativamente, os modos de ser, estar, agir e interagir na sociedade, isto é, para se conviver no corpo social moderno, é necessário ter acesso ao conhecimento tecnológico. 
 
