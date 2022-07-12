@@ -6,7 +6,7 @@
 * [Introdução](#introdução)
   * [Objetivos](#objetivos)
     * [Objetivo Geral](#objetivo-geral)
-    * [Objetivos Específicos](#objetivos-especficos)
+    * [Objetivos Específicos](#objetivos-específicos)
   * [Justificativa](#justificativa)
 * [Revisão de Literatura]()
   * [Acessibilidade]()
