@@ -93,3 +93,34 @@ Os autores desse projeto são:
       </td>
     </tr>
 </table>
+
+Os orientadores desse projeto são:
+
+<table>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/86068797/178559771-8f9f90e3-e9be-4be3-b435-e2bbed0df593.png" width="150;" alt="Foto de Adriano Ferruzzi"/>
+        <br>
+        <b>Adriano José Ferruzzi</b>
+        <br>
+        Orientador do projeto e professor da área técnica no Instituto Federal de Educação, Ciência e Tecnologia.
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/adriano-ferruzzi/">
+          <img alt="Perfil do Linkedin de Adriano Ferruzzi" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+        </a>
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/86068797/178559833-eee470b2-d25e-4c14-82c6-255e2fd310f7.png" width="150;" alt="Foto de Regivaldo Ferreira"/>
+        <br>
+        <b>Regivaldo Sousa Ferreira</b>
+        <br>
+        Co-orientador do projeto e professor da área técnica no Instituto Federal de Educação, Ciência e Tecnologia.
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/regivaldo-sousa-723680157/">
+          <img alt="Perfil do Linkedin de Regivaldo Ferreira" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+        </a>
+      </td>
+    </tr>
+</table>
