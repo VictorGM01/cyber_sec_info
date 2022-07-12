@@ -37,7 +37,7 @@ Os autores desse projeto são:
 <table>
     <tr>
       <td align="center">
-        <img src="https://user-images.githubusercontent.com/86068797/178555475-152784e4-593f-4767-9eeb-9960d1892b5c.png" width="150;" alt="Foto de Victor Gabriel Marques"/>
+        <img src="https://user-images.githubusercontent.com/86068797/178555475-152784e4-593f-4767-9eeb-9960d1892b5c.png" width="150;" alt="Foto de Anna Beatriz"/>
         <br>
         <b>Anna Beatriz Santos e Souza</b>
         <br>
@@ -49,7 +49,7 @@ Os autores desse projeto são:
         </a>
       </td>
       <td align="center">
-        <img src="https://user-images.githubusercontent.com/86068797/178555740-9b99df1a-e39b-46b2-8474-71903d1483f7.png" width="150;" alt="Foto de Victor Gabriel Marques"/>
+        <img src="https://user-images.githubusercontent.com/86068797/178555740-9b99df1a-e39b-46b2-8474-71903d1483f7.png" width="150;" alt="Foto de Hillary Mendes"/>
         <br>
         <b>Hillary Mendes Moreira</b>
         <br>
@@ -63,7 +63,7 @@ Os autores desse projeto são:
     </tr>
     <tr>
       <td align="center">
-        <img src="https://user-images.githubusercontent.com/86068797/178555567-f0f70de3-183e-4f56-8d6e-341480c2df72.png" width="150;" alt="Foto de Victor Gabriel Marques"/>
+        <img src="https://user-images.githubusercontent.com/86068797/178555567-f0f70de3-183e-4f56-8d6e-341480c2df72.png" width="150;" alt="Foto de Raphaela Ferraz"/>
         <br>
         <b>Raphaela Guiland Ferraz</b>
         <br>
