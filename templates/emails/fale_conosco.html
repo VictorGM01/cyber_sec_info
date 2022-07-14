@@ -1,4 +1,5 @@
 {% extends "base.html" %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
 
 {% block meta-descricao %}
 <meta name="description" content="Entre em contato com nosso suporte. Envie sugestões, dúvidas ou reclamações relacionadas aos conteúdos de cibersegurança ou ao nosso site.">
@@ -48,7 +49,7 @@
 
             <div class="secao-contato__formulario__usuario__conteiner">
                 <label for="telefone" class="secao-contato__formulario__usuario__label">Número de Celular</label>
-                <input data-telefone type="tel" id="telefone" name="telefone" class="secao-contato__formulario__usuario__input" placeholder="Digite o número do seu celular">
+                <input data-telefone type="tel" id="telefone" name="telefone" class="secao-contato__formulario__usuario__input" maxlength="15" placeholder="Digite o número do seu celular">
             </div>
         </fieldset>
 
@@ -88,7 +89,7 @@
             </div>
                 <div class="secao-contato__formulario__resposta__conteiner">
                     <label for="mensagem" class="secao-contato__formulario__mensagem__label">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" class="secao-contato__formulario__mensagem__textarea" placeholder="Escreva a sua mensagem" required></textarea>
+                    <textarea id="mensagem" name="mensagem" class="secao-contato__formulario__mensagem__textarea" maxlength="500" placeholder="Escreva a sua mensagem" required></textarea>
                 </div>
         </fieldset>
         <div class="secao-contato__formulario__conteiner">
@@ -97,4 +98,8 @@
     </form>
 </section>
 </main>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="{% static '/assets/js/faleConosco.js' %}"></script>
 {% endblock %}

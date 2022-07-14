@@ -20,7 +20,15 @@ def enviar_mensagem(request):
         preferencia_resposta = request.POST.getlist("preferencia-contato")
         mensagem = request.POST["mensagem"]
 
-        if len(preferencia_resposta) == 2:
+        if not nome.strip():
+            messages.error(request, "Insira um nome ou apelido para contato")
+            return redirect("fale-conosco")
+
+        elif len(telefone) < 14:  # Verifica se o número informado possui menos de 14 caracteres (com máscara)
+            messages.error(request, "Insira um telefone válido")
+            return redirect("fale-conosco")
+
+        elif len(preferencia_resposta) == 2:
             preferencia_resposta = "E-mail e WhatsApp"
 
         else:
@@ -41,7 +49,7 @@ def enviar_mensagem(request):
         email.attach_alternative(mensagem_final, "text/html")
         email.send()
 
-        messages.success(request, "E-mail enviado. Por favor, aguarde o nosso contato.")
+        messages.success(request, "Recebemos sua mensagem. Por favor, aguarde o nosso contato.")
 
         return redirect("fale-conosco")
 
