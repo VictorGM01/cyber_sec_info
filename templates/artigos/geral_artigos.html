@@ -41,27 +41,29 @@
 
             <section data-secao-carrossel class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards">
                 <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista">
-                    <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item animacao">
+                    {% for artigo_recente in artigos_recentes %}
+                    <li data-artigo-recente="{{ artigo_recente.id }}" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item animacao">
                         <h3 class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__titulo">
-                            Título do Artigo
+                            {{ artigo_recente.titulo_para_caminho }}
                         </h3>
                         <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner">
-                            <img class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem" src="" alt="">
+                            <img class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem" src="{{ artigo_recente.capa.url }}" alt="Artigo sobre {{ artigo_recente.titulo }}">
                         </div>
                         <section class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao">
                             <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data">
                                 <p class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo">
-                                    Data do artigo
+                                    {{ artigo_recente.data_publicacao }}
                                 </p>
                             </div>
 
                             <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo">
                                 <p class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo">
-                                    Tempo de leitura
+                                    {{ artigo_recente.tempo_de_leitura }} min
                                 </p>
                             </div>
                         </section>
                     </li>
+                    {% endfor %}
                 </ul>
             </section>
         </section>
@@ -74,27 +76,29 @@
 
         <section class="secao-artigos-gerais--pagina-geral-de-artigos__secao">
             <ul class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista">
+                {% for artigo in artigos %}
                 <li class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item animacao">
                     <h3 class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__titulo">
-                        Título artigo
+                        {{ artigo.titulo_para_caminho }}
                     </h3>
                     <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner">
-                        <img class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem" src="" alt="">
+                        <img class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Artigo sobre {{ artigo.titulo }}">
                     </div>
                     <section class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao">
                         <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data">
                             <p class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo">
-                                Data do artigo
+                                {{ artigo.data_publicacao }}
                             </p>
                         </div>
 
                         <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo">
                             <p class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo">
-                                Tempo de leitura
+                                {{ artigo.tempo_de_leitura }} min
                             </p>
                         </div>
                     </section>
                 </li>
+                {% endfor %}
             </ul>
         </section>
     </section>
@@ -106,4 +110,9 @@
        </nav>
    </section>
 </main>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="{% static '/assets/js/paginaGeralDeArtigos.js' %}"></script>
+    <script type="text/javascript" src="{% static '/assets/js/scrollAnimado.js' %}"></script>
 {% endblock %}
