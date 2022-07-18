@@ -713,6 +713,87 @@
 
         margin-top: .4rem;
     }
+    
+    
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
+        font-size: 1.75rem;
+
+        padding: 2.4375rem 0 0 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input {
+        width: 100%;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo, .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        font-size: 1.65rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem, .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo {
+        margin-top: 2.1875rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo {
+        font-size: .8rem;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        box-shadow: 0 0 .70rem #00ff44;
+
+        height: auto;
+        width: 30rem;
+
+        margin: .4rem 0 1rem 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos::after {
+        height: 14%;
+
+        transform: skewY(-5deg);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        margin-top: 6.5rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 
@@ -1350,6 +1431,96 @@
     .secao-conteudo-informacoes-ifsp__secao__conteiner {
         display: flex;
         justify-content: space-between;
+    }
+    
+    
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos::after {
+        bottom: -10rem;
+        height: 100%;
+
+        transform: skewY(-3deg);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
+        font-size: 2rem;
+
+        padding: 2.5rem 1.15625rem 0 1.15625rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner  {
+        margin-left: 8.125rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--titulo {
+        width: 40%;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input {
+        margin-left: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input{
+        width: 80%;
+
+        margin-bottom: 3.4375rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo {
+        margin-top: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards {
+        overflow: initial;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:nth-child(2), .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:nth-child(3) {
+        display: block;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo {
+        font-size: initial;
+
+        flex-direction: row;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes, .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 0 10.125rem 0 10.125rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        box-shadow: none;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:hover, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #00ff45;
+        bottom: .5rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+        object-fit: cover;
+
+        height: 6rem;
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin-top: 13rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
+        justify-content: center;
     }
 }
 
