@@ -797,6 +797,30 @@
 }
 
 
+@media screen and (min-width: 1000px) {
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos::after {
+        height: 20%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        margin-top: 8.5rem;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 30%;
+    }
+}
+
+
 @media screen and (min-width: 1200px) {
     /* Cabeçalho */
     .cabecalho {
