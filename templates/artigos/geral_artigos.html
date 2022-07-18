@@ -1,21 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Artigos | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-  <body class="corpo--pagina-geral-de-artigos">
-  <a class="link-conteudo-principal" href="#conteudo-principal">Pular para o conteúdo principal</a>
-<!-- espaço para o header -->
-    <main class="principal--pagina-geral-de-artigos" role="main">
-      <section id="conteudo-principal" class="secao-inicio--pagina-geral-de-artigos">
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Artigos de Segurança da Informação, Segurança Cibernética, Crimes Cibernéticos e LGPD">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Artigos, Cybersecurity, Segurança Cibernética, Segurança da Informação, Crimes Cibernéticos">
+{% endblock %}
+
+{% block title %}
+<title>Artigos | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--pagina-geral-de-artigos" {% endblock %}
+
+{% block content %}
+
+<main class="principal--pagina-geral-de-artigos" role="main">
+    <section id="conteudo-principal" class="secao-inicio--pagina-geral-de-artigos">
         <div class="secao-inicio--pagina-geral-de-artigos__conteiner">
             <div class="secao-inicio--pagina-geral-de-artigos__conteiner--titulo">
                 <h1 class="secao-inicio--pagina-geral-de-artigos__conteiner__titulo">Conheça nossos artigos relacionados à <span class="secao-inicio--pagina-geral-de-artigos__conteiner__titulo__span" title="Cibersegurança"></span><span class="span-acessibilidade" content=" " style="color: transparent; display: flex"> Cibersegurança</span></h1>
@@ -40,7 +43,7 @@
                 <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista">
                     <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item animacao">
                         <h3 class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__titulo">
-                            Cibersegurança
+                            Título do Artigo
                         </h3>
                         <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner">
                             <img class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem" src="" alt="">
@@ -48,13 +51,13 @@
                         <section class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao">
                             <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data">
                                 <p class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo">
-                                    09 de jun. de 2022
+                                    Data do artigo
                                 </p>
                             </div>
 
                             <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo">
                                 <p class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo">
-                                    X min.
+                                    Tempo de leitura
                                 </p>
                             </div>
                         </section>
@@ -63,7 +66,7 @@
             </section>
         </section>
     </section>
-      <section class="secao-artigos-gerais--pagina-geral-de-artigos">
+    <section class="secao-artigos-gerais--pagina-geral-de-artigos">
         <h2 class="secao-artigos-gerais--pagina-geral-de-artigos__titulo">
             Mais artigos
         </h2>
@@ -81,13 +84,13 @@
                     <section class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao">
                         <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data">
                             <p class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo">
-                                14 de jun. de 2022
+                                Data do artigo
                             </p>
                         </div>
 
                         <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo">
                             <p class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo">
-                                X min.
+                                Tempo de leitura
                             </p>
                         </div>
                     </section>
@@ -95,14 +98,12 @@
             </ul>
         </section>
     </section>
-       <section class="secao-paginacao">
-        <nav class="secao-paginacao__navegacao">
-            <a href="#" class="secao-paginacao__navegacao__link-voltar"></a>
-            <p class="secao-paginacao__navegacao__paragrafo">Página X de XX</p>
-            <a href="#" class="secao-paginacao__navegacao__link-avancar"></a>
-        </nav>
-    </section>
-    </main>
-  </body>
-  <!-- espaço para adicionar scripts -->
-</html>
+   <section class="secao-paginacao">
+       <nav class="secao-paginacao__navegacao">
+           <a href="#" class="secao-paginacao__navegacao__link-voltar"></a>
+           <p class="secao-paginacao__navegacao__paragrafo">Página X de XX</p>
+           <a href="#" class="secao-paginacao__navegacao__link-avancar"></a>
+       </nav>
+   </section>
+</main>
+{% endblock %}
