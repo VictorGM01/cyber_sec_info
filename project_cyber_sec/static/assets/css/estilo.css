@@ -612,6 +612,227 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Página geral de artigos */
+.corpo--pagina-geral-de-artigos {
+    background-color: #056014;
+}
+
+.secao-inicio--pagina-geral-de-artigos {
+    background: rgb(23,20,20);
+    background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
+
+    position: relative;
+}
+
+.secao-inicio--pagina-geral-de-artigos::after {
+    z-index: -1;
+
+    background: inherit;
+
+    content: '';
+
+    display: block;
+
+    left: 0;
+    position: absolute;
+    right: 0;
+
+    transform-origin: 0%;
+}
+
+.secao-inicio--pagina-geral-de-artigos__conteiner__titulo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo, .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input {
+    background: #1B341D url("../img/icone_pesquisa.svg") no-repeat right padding-box;
+    background-position: 99.25% 40%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+    color: #FFFFFF;
+    outline: none;
+
+    height: 3rem;
+
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input:focus {
+    border: 1px solid #20e456;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes--linha {
+    background: #20e456;
+    box-shadow: 0 0 1rem #20e456;
+
+    height: 1px;
+    width: 100%;
+
+    margin: 1.75rem 0 2.8125rem 0;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+    list-style-type: none;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+    background: linear-gradient(269.14deg, #0E270D 0.74%, #021D04 47.62%, #171414 94.51%);
+    border: 2px solid #106103;
+    border-radius: 22px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+
+    width: 50%;
+
+    padding: 1.28125rem;
+    margin-bottom: 2rem;
+}
+
+.secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+    border: 2px solid #1ba904;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner {
+    margin: 1.25rem 0 1.25rem 0;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__titulo {
+    color: #05FE2D;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 12rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+    object-fit: cover;
+    height: 6rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo {
+    color: #DFD9D9;
+
+    align-items: center;
+    display: flex;
+
+    margin-left: .2rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo::before, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo::before {
+    background: url('../img/icone_data.svg') no-repeat;
+
+    content: " ";
+
+    height: 28px;
+    width: 28px;
+
+    margin-right: .2rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo::before, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo::before {
+    background: url('../img/icone_tempo.svg') no-repeat;
+
+    content: " ";
+
+    height: 28px;
+    width: 28px;
+
+    margin-right: .2rem;
+}
+
+.secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__titulo {
+    color: #00CB20;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 10rem;
+}
+
+.secao-inicio--pagina-geral-de-artigos__conteiner__titulo__span::before {
+    content: "Cibersegurança";
+    animation: palavras infinite 8s ease-in-out;
+}
+
+@keyframes palavras {
+    0% {
+        content: "Cibersegurança"
+    }
+    50% {
+        content: "Segurança da Informação"
+    }
+    75% {
+        content: "Crimes cibernéticos"
+    }
+    100% {
+        content: "LGPD"
+    }
+}
+
+.span-acessibilidade {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.secao-paginacao {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    margin: 2rem 0 2rem 0;
+}
+
+.secao-paginacao__navegacao {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.secao-paginacao__navegacao__paragrafo {
+    color: #DFD9D9;
+}
+
+.secao-paginacao__navegacao__link-voltar {
+    background: url("../img/icone_voltar.svg");
+
+    display: block;
+
+    height: 24px;
+    width: 24px;
+}
+
+.secao-paginacao__navegacao__link-avancar {
+    background: url("../img/icone_avancar.svg");
+
+    display: block;
+
+    height: 24px;
+    width: 24px;
+}
+
+ .secao-inicio--pagina-geral-de-artigos__conteiner__titulo__span, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo__span { 
+    color: #20e456;
+}
+
+
 /* Media query para impressão */
 @media print {
     .cabecalho, .secao-caminho-artigo, .secao-artigos-relacionados, .secao-informacoes-artigo__conteiner--redes-sociais {
