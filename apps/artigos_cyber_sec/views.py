@@ -6,6 +6,7 @@ from django.core.paginator import Paginator
 
 def artigos(request):
     artigos = Artigo.objects.order_by('-data_publicacao').filter(publicado=True)
+    artigos_recentes = artigos[:3]
 
     paginator = Paginator(artigos, 9)
 
@@ -14,7 +15,8 @@ def artigos(request):
     artigos_por_pagina = paginator.get_page(pagina)
 
     conteudo = {
-        'artigos': artigos_por_pagina
+        'artigos': artigos_por_pagina,
+        'artigos_recentes': artigos_recentes
     }
 
     return render(request, 'artigos/geral_artigos.html', context=conteudo)
