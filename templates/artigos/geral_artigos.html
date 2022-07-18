@@ -102,13 +102,24 @@
             </ul>
         </section>
     </section>
-   <section class="secao-paginacao">
-       <nav class="secao-paginacao__navegacao">
-           <a href="#" class="secao-paginacao__navegacao__link-voltar"></a>
-           <p class="secao-paginacao__navegacao__paragrafo">Página X de XX</p>
-           <a href="#" class="secao-paginacao__navegacao__link-avancar"></a>
+    <section class="secao-paginacao">
+        <nav class="secao-paginacao__navegacao">
+            {% if artigos.has_other_pages %}
+                {% if artigos.has_previous %}
+                    <a href="?page={{ artigos.previous_page_number }}" class="secao-paginacao__navegacao__link-voltar"></a>
+                {% else %}
+                    <a href="#" style="display: none" class="secao-paginacao__navegacao__link-voltar"></a>
+                {% endif %}
+
+                <p class="secao-paginacao__navegacao__paragrafo">Página {{ artigos.number }} de {{ paginas }}</p>
+                {% if artigos.has_next %}
+                    <a href="?page={{ artigos.next_page_number }}" class="secao-paginacao__navegacao__link-avancar"></a>
+                {% else %}
+                    <a href="#" style="display: none" class="secao-paginacao__navegacao__link-avancar"></a>
+                {% endif %}
+           {% endif %}
        </nav>
-   </section>
+    </section>
 </main>
 {% endblock %}
 

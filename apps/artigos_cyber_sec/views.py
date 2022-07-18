@@ -10,13 +10,16 @@ def artigos(request):
 
     paginator = Paginator(artigos, 9)
 
+    numero_de_paginas = paginator.num_pages
+
     pagina = request.GET.get('page')
 
     artigos_por_pagina = paginator.get_page(pagina)
 
     conteudo = {
         'artigos': artigos_por_pagina,
-        'artigos_recentes': artigos_recentes
+        'artigos_recentes': artigos_recentes,
+        'paginas': numero_de_paginas
     }
 
     return render(request, 'artigos/geral_artigos.html', context=conteudo)
