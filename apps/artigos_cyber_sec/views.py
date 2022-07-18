@@ -3,8 +3,12 @@ from django.views.decorators.cache import cache_page
 from .models import Artigo
 
 
+def artigos(request):
+    return render(request, 'artigos/geral_artigos.html')
+
+
 @cache_page(60)
-def artigo(request, nome_artigo):
+def exibe_artigo(request, nome_artigo):
 
     artigo_a_ser_exibido = get_object_or_404(Artigo, titulo_para_caminho=nome_artigo)
 
