@@ -1,10 +1,23 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.decorators.cache import cache_page
 from .models import Artigo
+from django.core.paginator import Paginator
 
 
 def artigos(request):
-    return render(request, 'artigos/geral_artigos.html')
+    artigos = Artigo.objects.order_by('-data_publicacao').filter(publicado=True)
+
+    paginator = Paginator(artigos, 9)
+
+    pagina = request.GET.get('page')
+
+    artigos_por_pagina = paginator.get_page(pagina)
+
+    conteudo = {
+        'artigos': artigos_por_pagina
+    }
+
+    return render(request, 'artigos/geral_artigos.html', context=conteudo)
 
 
 @cache_page(60)
