@@ -71,6 +71,8 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 /* Cabeçalho */
 .cabecalho {
+    z-index: 1;
+	
     background: rgba(0, 0, 0, 0.5) url("../img/background_cabecalho.webp") repeat;
     background-blend-mode: darken;
     box-shadow: 1px 6px 15px 0 rgba(0,26,1,0.62);
