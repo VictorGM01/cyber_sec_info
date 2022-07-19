@@ -812,11 +812,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
     }
 
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
-        width: 30%;
+        width: 31%;
     }
 }
 
@@ -1465,27 +1465,25 @@
 
         transform: skewY(-3deg);
     }
+    
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem {
+        margin: 0;
+    }
 
     .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
         font-size: 2rem;
-
-        padding: 2.5rem 1.15625rem 0 1.15625rem;
-    }
-
-    .secao-inicio--pagina-geral-de-artigos__conteiner  {
-        margin-left: 8.125rem;
     }
 
     .secao-inicio--pagina-geral-de-artigos__conteiner--titulo {
         width: 40%;
     }
 
-    .secao-inicio--pagina-geral-de-artigos__conteiner--input {
-        margin-left: 2rem;
-    }
-
     .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input{
-        width: 80%;
+        width: 100%;
 
         margin-bottom: 3.4375rem;
     }
@@ -1510,10 +1508,6 @@
         font-size: initial;
 
         flex-direction: row;
-    }
-
-    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes, .secao-artigos-gerais--pagina-geral-de-artigos {
-        margin: 0 10.125rem 0 10.125rem;
     }
     
     .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
@@ -1542,6 +1536,10 @@
     .secao-artigos-gerais--pagina-geral-de-artigos {
         margin-top: 13rem;
     }
+    
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 13rem 9.96875rem 0 9.96875rem;
+    } 
 
     .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
         justify-content: center;
