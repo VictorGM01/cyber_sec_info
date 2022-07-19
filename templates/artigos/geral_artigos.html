@@ -43,7 +43,7 @@
                 <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista">
                     {% for artigo_recente in artigos_recentes %}
                     <li data-artigo-recente="{{ artigo_recente.id }}" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item animacao">
-                        <a href="#" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__link" title="Acesse o artigo...">
+                        <a href="{% url 'artigo' artigo_recente.titulo_para_caminho %}" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__link" title="Acesse o artigo...">
                             <h3 class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__titulo">
                                 {{ artigo_recente.titulo_para_caminho }}
                             </h3>
@@ -80,7 +80,7 @@
             <ul class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista">
                 {% for artigo in artigos %}
                 <li class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item animacao">
-                    <a href="#" class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__link" title="Acesse o artigo...">
+                    <a href="{% url 'artigo' artigo.titulo_para_caminho %}" class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__link" title="Acesse o artigo...">
                          <h3 class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__titulo">
                             {{ artigo.titulo_para_caminho }}
                         </h3>
