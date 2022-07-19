@@ -1465,6 +1465,14 @@
 
         transform: skewY(-3deg);
     }
+    
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem {
+        margin: 0;
+    }
 
     .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
         font-size: 2rem;
@@ -1485,7 +1493,7 @@
     }
 
     .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input{
-        width: 80%;
+        width: 100%;
 
         margin-bottom: 3.4375rem;
     }
@@ -1542,6 +1550,10 @@
     .secao-artigos-gerais--pagina-geral-de-artigos {
         margin-top: 13rem;
     }
+    
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 13rem 9.96875rem 0 9.96875rem;
+    } 
 
     .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
         justify-content: center;
