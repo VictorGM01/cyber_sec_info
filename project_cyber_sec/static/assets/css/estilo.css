@@ -675,6 +675,11 @@ a:active, a:focus, label:focus, label:active, li:focus {
     margin: 1.75rem 0 2.8125rem 0;
 }
 
+.secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__link, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__link {
+    text-decoration: none;
+}
+
+
 .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
     list-style-type: none;
 
