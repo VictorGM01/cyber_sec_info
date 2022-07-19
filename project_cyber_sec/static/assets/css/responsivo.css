@@ -812,11 +812,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
     }
 
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
-        width: 30%;
+        width: 31%;
     }
 }
 
