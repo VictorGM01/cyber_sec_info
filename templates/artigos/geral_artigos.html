@@ -25,12 +25,15 @@
             </div>
 
             <div class="secao-inicio--pagina-geral-de-artigos__conteiner--input">
-                <label for="pesquisa-conteudo" class="secao-inicio--pagina-geral-de-artigos__conteiner--input__label" title="Pesquisar por conteúdo...">
-                    <input type="search" id="pesquisa-conteudo" class="secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input" placeholder="Pesquisar por conteúdo...">
-                </label>
+                <form method="get">
+                    <label for="pesquisa-conteudo" class="secao-inicio--pagina-geral-de-artigos__conteiner--input__label" title="Pesquisar por conteúdo...">
+                        <input type="search" name="busca" id="pesquisa-conteudo" class="secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input" placeholder="Pesquisar por conteúdo...">
+                    </label>
+                </form>
             </div>
         </div>
 
+        {% if artigos_recentes %}
         <section class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes">
             <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem">
                 <h2 class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo">
@@ -69,14 +72,20 @@
                 </ul>
             </section>
         </section>
+        {% endif %}
     </section>
     <section class="secao-artigos-gerais--pagina-geral-de-artigos">
         <h2 class="secao-artigos-gerais--pagina-geral-de-artigos__titulo">
-            Mais artigos
+            {% if artigos and not busca %}
+                Mais artigos
+            {% elif busca %}
+                Artigos Encontrados
+            {% endif %}
         </h2>
         <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes--linha"></div>
 
         <section class="secao-artigos-gerais--pagina-geral-de-artigos__secao">
+            {% if artigos %}
             <ul class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista">
                 {% for artigo in artigos %}
                 <li class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item animacao">
@@ -104,6 +113,12 @@
                 </li>
                 {% endfor %}
             </ul>
+            {% else %}
+            <article class="secao-conteudo__artigo-nao-encontrado" style="display: flex">
+                <div class="secao-conteudo__artigo-nao-encontrado__imagem"></div>
+                <h3 class="secao-conteudo__artigo-nao-encontrado__titulo">Nenhum resultado encontrado</h3>
+            </article>
+            {% endif %}
         </section>
     </section>
     <section class="secao-paginacao">

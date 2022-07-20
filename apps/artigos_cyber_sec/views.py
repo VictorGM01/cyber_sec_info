@@ -2,9 +2,11 @@ from django.shortcuts import render, get_object_or_404
 from django.views.decorators.cache import cache_page
 from .models import Artigo
 from django.core.paginator import Paginator
+from django.db.models import Q
 
 
 def artigos(request):
+    busca = request.GET.get('busca')
     artigos = Artigo.objects.order_by('-data_publicacao').filter(publicado=True)
     artigos_recentes = artigos[:3]
 
@@ -15,6 +17,10 @@ def artigos(request):
     pagina = request.GET.get('page')
 
     artigos_por_pagina = paginator.get_page(pagina)
+
+    if busca:
+        artigos_buscados = Artigo.objects.filter(Q(titulo__icontains=busca) | Q(conteudo__icontains=busca))
+        return render(request, 'artigos/geral_artigos.html', context={'artigos': artigos_buscados, 'busca': True})
 
     conteudo = {
         'artigos': artigos_por_pagina,
