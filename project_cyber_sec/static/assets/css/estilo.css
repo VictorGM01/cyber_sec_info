@@ -62,6 +62,19 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Efeitos de animação */
+.js .animacao {
+    opacity: 0;
+    transform: translate3d(-50px, 0px, 0px);
+}
+
+.js .animacao-inicio {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: .3s all ease;
+}
+
+
 /* Estilizações gerais da tag body */
 .corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao {
     background: rgb(23,20,20);
