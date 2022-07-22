@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 # Opções para as categorias dos tutoriais
-class Categoria(models.TextChoices):
+class Categorias(models.TextChoices):
     CELULARES = 'Celulares'
     COMPUTADORES = 'Computadores'
     NAVEGADORES = 'Navegadores'
@@ -22,4 +22,5 @@ class Tutorial(models.Model):
     url_video = models.URLField(blank=True)
     conteudo = models.TextField()
     resumo = models.TextField()
+    categoria = models.TextField(max_length=20, choices=Categorias.choices)
     publicado = models.BooleanField(default=False)
