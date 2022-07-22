@@ -1110,6 +1110,11 @@
             width: 32rem;
         }
     }
+    
+    .secao-inicio__conteiner { 
+        display: flex;
+        justify-content: center;
+    }
 
     .secao-inicio__conteiner__subtitulo {
        font-size: 1.2rem;
