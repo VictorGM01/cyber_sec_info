@@ -271,7 +271,7 @@
         margin-left: 1rem;
     }
     
-    /* Tutoriais */
+    /* tutoriais */
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
         background: url("../img/icone_verificacao_em_duas_etapas.svg");
         content: " ";

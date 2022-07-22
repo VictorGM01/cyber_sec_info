@@ -15,7 +15,7 @@ $('#cabecalho_navegacao_item_ferramentas').on('click', function() {
   $(this).toggleClass('rodar__item__link--icone');
 });
 
-// Abertura do cabeçalho mobile - Tutoriais
+// Abertura do cabeçalho mobile - tutoriais
 $('#cabecalho_navegacao_item_tutoriais').on('click', function() {
   $('#cabecalho_navegacao_sublista_tutoriais').slideToggle('slow').css('display', 'block');
   $(this).toggleClass('rodar__item__link--icone');
