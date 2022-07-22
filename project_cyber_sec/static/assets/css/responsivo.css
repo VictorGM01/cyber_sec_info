@@ -503,7 +503,6 @@
     .secao-inicio__titulo--newsletter {
         letter-spacing: 1.5px;
         line-height: 2rem;
-
     }
 
     .secao-inicio__titulo--cor {
@@ -1094,7 +1093,12 @@
     }
 
     .secao-inicio__titulo {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        
+        display: flex;
+        justify-content: center;
+        
+        width: 60%;
     }
 
     @keyframes secao-inicio__titulo--animacao--fale-conosco {
@@ -1108,7 +1112,7 @@
     }
 
     .secao-inicio__conteiner__subtitulo {
-       font-size: .90rem;
+       font-size: 1.2rem;
         font-weight: 520;
     }
 
