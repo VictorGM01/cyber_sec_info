@@ -22,7 +22,7 @@ from apps.principal_cyber_sec import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("apps.principal_cyber_sec.urls")),
-    path('email/', include("apps.emails_cyber_sec.urls")),
+    path('sobre-nos/email/', include("apps.emails_cyber_sec.urls")),
     path('artigos/', include("apps.artigos_cyber_sec.urls")),
     path('sitemap.xml', views.sitemap, name='sitemap.xml')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
