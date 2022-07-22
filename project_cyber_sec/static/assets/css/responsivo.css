@@ -1114,6 +1114,8 @@
     .secao-inicio__conteiner__subtitulo {
        font-size: 1.2rem;
         font-weight: 520;
+        
+        width: 60%;
     }
 
      .secao-contato__formulario__mensagem__conteiner--desktop {
