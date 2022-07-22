@@ -1316,7 +1316,10 @@
     }
 
     .secao-artigos-relacionados__lista__item:hover {
-        border: 2.5px solid #0af64c;
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #20e456;
+        
+        bottom: .5rem;
     }
 
     .secao-artigos-relacionados__lista__item:nth-child(2) {

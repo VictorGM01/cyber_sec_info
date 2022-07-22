@@ -352,10 +352,12 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 .secao-artigos-relacionados__lista__item {
-    background: #043809;
+    background: transparent;
     border: 1.8px solid #20e456;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
+    
+    position: relative;
 }
 
 .secao-artigos-relacionados__lista__item__link {
@@ -382,7 +384,6 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
     margin: 0 1.59375rem 1.59375rem 1.59375rem;
 }
-
 
 
 /* Dicionário de Cibersegurança */
