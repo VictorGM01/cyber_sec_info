@@ -506,7 +506,7 @@
     }
 
     .secao-inicio__titulo--cor {
-        animation: secao-inicio__titulo--cor--animacao 2.5s steps(90) 1s normal both;
+        animation: secao-inicio__titulo--cor--animacao 2.5s steps(50) 1s normal both;
         overflow: hidden;
 
         white-space: nowrap;
@@ -1092,13 +1092,8 @@
         margin: 0 13.15625rem 0 13.15625rem;
     }
 
-    .secao-inicio__titulo {
+    .secao-inicio__titulo--fale-conosco {
         font-size: 2rem;
-        
-        display: flex;
-        justify-content: center;
-        
-        width: 60%;
     }
 
     @keyframes secao-inicio__titulo--animacao--fale-conosco {
@@ -1110,10 +1105,17 @@
             width: 32rem;
         }
     }
+    
+    .secao-inicio__conteiner { 
+        display: flex;
+        justify-content: center;
+    }
 
     .secao-inicio__conteiner__subtitulo {
        font-size: 1.2rem;
         font-weight: 520;
+        
+        width: 60%;
     }
 
      .secao-contato__formulario__mensagem__conteiner--desktop {
@@ -1146,7 +1148,7 @@
     
     /* Newsletter */
     .secao-inicio__titulo--newsletter {
-        animation: secao-inicio__titulo--animacao--newsletter 4s steps(50) 1s normal both;
+        animation: secao-inicio__titulo--animacao--newsletter 4s steps(90) 1s normal both;
         overflow: hidden;
 
         font-size: 2em;
@@ -1421,6 +1423,10 @@
     /* Instituição */
     .principal-instituicao {
         margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio__titulo--instituicao { 
+        font-size: 2rem;
     }
 
     .secao-informacoes-ifsp__conteiner-logo {
