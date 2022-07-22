@@ -49,9 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Apps Internos
     'apps.artigos_cyber_sec',
     'apps.emails_cyber_sec',
     'apps.principal_cyber_sec',
+    'apps.tutoriais_cyber_sec',
     # Media Cloudinary
     'cloudinary',
     'cloudinary_storage',
