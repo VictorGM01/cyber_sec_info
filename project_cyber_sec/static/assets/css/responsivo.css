@@ -506,7 +506,7 @@
     }
 
     .secao-inicio__titulo--cor {
-        animation: secao-inicio__titulo--cor--animacao 2.5s steps(50) 1s normal both;
+        animation: secao-inicio__titulo--cor--animacao 2.5s steps(90) 1s normal both;
         overflow: hidden;
 
         white-space: nowrap;
