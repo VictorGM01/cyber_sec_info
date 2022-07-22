@@ -1092,13 +1092,8 @@
         margin: 0 13.15625rem 0 13.15625rem;
     }
 
-    .secao-inicio__titulo {
+    .secao-inicio__titulo--fale-conosco {
         font-size: 2rem;
-        
-        display: flex;
-        justify-content: center;
-        
-        width: 60%;
     }
 
     @keyframes secao-inicio__titulo--animacao--fale-conosco {
