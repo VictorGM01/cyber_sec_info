@@ -1422,6 +1422,10 @@
     .principal-instituicao {
         margin: 0 9.96875rem 0 9.96875rem;
     }
+    
+    .secao-inicio__titulo--instituicao { 
+        font-size: 2rem;
+    }
 
     .secao-informacoes-ifsp__conteiner-logo {
         background: url("/static/assets/img/icone_if.png");
