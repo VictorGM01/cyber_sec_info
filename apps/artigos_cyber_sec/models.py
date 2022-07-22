@@ -2,7 +2,7 @@ from django.db import models
 from datetime import datetime
 
 
-# Modelo para os temas dos artigos
+# Opções para os temas dos artigos
 class Temas(models.TextChoices):
     CIBERSEG = 'Seguranca Cibernetica'
     CIBERSEG_CRIMES = 'Seguranca Cibernetica | Crimes Cibernéticos'
