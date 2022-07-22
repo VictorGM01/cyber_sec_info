@@ -34,13 +34,13 @@ def artigos(request):
 @cache_page(60)
 def exibe_artigo(request, nome_artigo):
 
-    artigo_a_ser_exibido = get_object_or_404(Artigo, titulo_para_caminho=nome_artigo)
+    artigo_a_ser_exibido = get_object_or_404(Artigo, titulo_para_url=nome_artigo)
 
     if not artigo_a_ser_exibido.publicado:
         return redirect('artigos')
 
     artigos_relacionados = Artigo.objects.order_by('-data_publicacao').filter(publicado=True).filter(
-        tema__icontains=artigo_a_ser_exibido.tema).exclude(titulo_para_caminho=nome_artigo)[:2]
+        tema__icontains=artigo_a_ser_exibido.tema).exclude(titulo_para_url=nome_artigo)[:2]
 
     conteudo = {
         'artigo': artigo_a_ser_exibido,

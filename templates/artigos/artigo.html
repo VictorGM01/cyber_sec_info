@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block meta-descricao %}
-<meta name="description" content="Artigo sobre {{ artigo.titulo_para_caminho }}. Leia para se atualizar e compreender conteúdos de Cibersegurança.">
+<meta name="description" content="Artigo sobre {{ artigo.titulo }}. Leia para se atualizar e compreender conteúdos de Cibersegurança.">
 {% endblock %}
 
 {% block meta-keys %}
@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block title %}
-<title>{{ artigo.titulo_para_caminho }} | Cyber Security Information</title>
+<title>{{ artigo.titulo }} | Cyber Security Information</title>
 {% endblock %}
 
 {% block class_css_body %} class="corpo__artigo" {% endblock %}
@@ -19,7 +19,7 @@
 
 <main class="principal-artigo" role="main" tabindex="0">
     <section class="secao-caminho-artigo">
-        <a class="secao-caminho-artigo__link" href="#">Artigos</a> > <p class="secao-caminho-artigo__paragrafo">{{ artigo.titulo_para_caminho }}</p>
+        <a class="secao-caminho-artigo__link" href="#">Artigos</a> > <p class="secao-caminho-artigo__paragrafo">{{ artigo.titulo }}</p>
     </section>
 
     <section id="conteudo-principal" class="secao-inicio-artigo">
@@ -44,7 +44,7 @@
                     <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do Facebook"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_facebook.svg' %}" alt="Ícone do Facebook para compartilhar esse artigo no feed" width="20"></a>
                 </li>
                 <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
-                    <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este artigo sobre {{ artigo.titulo_para_caminho }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse artigo em alguma conversa" width="20"></a>
+                    <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este artigo sobre {{ artigo.titulo }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse artigo em alguma conversa" width="20"></a>
                 </li>
                 <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
                     <button onclick="window.print()" class="secao-informacoes-aritgo__conteiner--redes-sociais__lista__item__botao">
@@ -57,7 +57,7 @@
 
     <div class="conteiner__linha"></div>
 
-    {% if artigo.titulo_para_caminho == 'Dicionário de Cibersegurança' %}
+    {% if artigo.titulo_para_url == 'dicionario-de-ciberseguranca' %}
     <section class="secao-pesquisa-conteudo">
         <label for="pesquisa" class="secao-pesquisa-conteudo__label" title="Pesquisar por termo...">
             <input list="lista_de_opcoes" type="search" id="inputPesquisaConteudo" name="pesquisa" class="secao-pesquisa-conteudo__label__input" placeholder="Pesquisar por termo..."  onkeyup="pesquisar()">
@@ -95,11 +95,11 @@
     <ul class="secao-artigos-relacionados__lista">
         {% for artigo in artigos_relacionados %}
         <li class="secao-artigos-relacionados__lista__item">
-            <a class="secao-artigos-relacionados__lista__item__link" href="{% url 'artigo' artigo.titulo_para_caminho %}">
+            <a class="secao-artigos-relacionados__lista__item__link" href="{% url 'artigo' artigo.titulo_para_url %}">
                 <div class="secao-artigos-relacionados__lista__item__link__conteiner">
-                    <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Capa do artigo sobre {{ artigo.titulo_para_caminho }}">
+                    <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Capa do artigo sobre {{ artigo.titulo }}">
                 </div>
-                <h5 class="secao-artigos-relacionados__lista__item__link__titulo">{{ artigo.titulo_para_caminho }}</h5>
+                <h5 class="secao-artigos-relacionados__lista__item__link__titulo">{{ artigo.titulo}}</h5>
                 <article class="secao-artigos-relacionados__lista__item__link__artigo">
                     {{ artigo.resumo }}
                 </article>
@@ -111,7 +111,7 @@
 {% endblock %}
 
 
-{% if artigo.titulo_para_caminho == 'Dicionário de Cibersegurança' %}
+{% if artigo.titulo_para_url == 'dicionario-de-ciberseguranca' %}
     {% block script %}
         <script type="text/javascript" src="{% static '/assets/js/dicionario.js' %}"></script>
     {% endblock %}
