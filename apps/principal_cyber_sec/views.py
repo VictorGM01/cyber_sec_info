@@ -19,3 +19,7 @@ def sitemap(request):
 
 def termos_de_uso(request):
     return render(request, "principal/termos_de_uso.html")
+
+
+def politica_de_privacidade(request):
+    return render(request, "principal/politica_de_privacidade.html")
