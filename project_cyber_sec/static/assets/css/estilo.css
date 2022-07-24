@@ -131,6 +131,99 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Rodapé */
+.rodape {
+    background-color: #000F02;
+}
+
+.rodape__secao-informacoes__secao-redes-sociais__lista, .rodape__navegacao__conteiner-sobre-nos__lista, .rodape__navegacao__conteiner-ferramentas__lista, .rodape__navegacao__conteiner-tutoriais__lista, .rodape__navegacao__conteiner-artigos__lista, .rodape__secao-documentos__navegacao__lista {
+    list-style-type: none;
+}
+
+.rodape__secao-informacoes__secao-redes-sociais__titulo {
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+}
+
+.rodape__secao-informacoes__secao-redes-sociais__titulo--cor, .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo, .rodape__secao-selos__link, .rodape__secao-selos__link__paragrafo__span {
+    color: #28BC10;
+    letter-spacing: 1.5px;
+}
+
+.rodape__secao-informacoes__secao-redes-sociais__lista {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.rodape__secao-informacoes__secao-redes-sociais__lista__item__link {
+    background-color: #094112;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+
+    padding: .25rem;
+}
+
+.rodape__secao-informacoes__secao-redes-sociais__lista__item__link:hover {
+    background-color: #107c1b;
+}
+
+.rodape__navegacao__conteiner-sobre-nos__lista__item__link, .rodape__navegacao__conteiner-ferramentas__lista__item__link, .rodape__navegacao__conteiner-tutoriais__lista__item__link, .rodape__navegacao__conteiner-artigods__lista__item__link, .rodape__secao-selos__link, .rodape__secao-documentos__navegacao__lista__item__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.rodape__navegacao__conteiner-artigos__lista__item__link--ver-todos, .rodape__navegacao__conteiner-tutoriais__lista__item__link--ver-todos {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.rodape__navegacao__conteiner-sobre-nos__lista__item__link:focus, .rodape__navegacao__conteiner-sobre-nos__lista__item__link:hover, .rodape__navegacao__conteiner-ferramentas__lista__item__link:focus, .rodape__navegacao__conteiner-ferramentas__lista__item__link:hover, .rodape__navegacao__conteiner-tutoriais__lista__item__link:focus, .rodape__navegacao__conteiner-tutoriais__lista__item__link:hover, .rodape__navegacao__conteiner-artigods__lista__item__link:focus, .rodape__navegacao__conteiner-artigods__lista__item__link:hover, .rodape__navegacao__conteiner-artigos__lista__item__link--ver-todos:focus, .rodape__navegacao__conteiner-artigos__lista__item__link--ver-todos:hover, .rodape__secao-selos__link:focus, .rodape__secao-selos__link:hover, .rodape__secao-documentos__navegacao__lista__item__link:focus, .rodape__secao-documentos__navegacao__lista__item__link:hover {
+    text-decoration: underline;
+    color: #7fe873;
+}
+
+.rodape__secao-selos__link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__secao-documentos__navegacao__lista__item__link {
+    color: #D9D9D9;
+    font-size: .8rem;
+}
+
+.rodape__secao-documentos__navegacao__lista {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 2rem
+}
+
+.rodape__secao-documentos__navegacao__lista__item__link--separador:after {
+    content: "|";
+    color: #149A54;
+
+    display: block;
+
+    height: auto;
+    width: auto;
+}
+
+.rodape__secao-documentos__navegacao__lista__item__link, .rodape__secao-documentos__navegacao__lista__item__link--separador {
+    display: flex;
+    gap: .5rem;
+}
+
+.rodape__secao-documentos__navegacao__lista__item__link--espacamento {
+    margin-left: .5rem;
+}
+
+
 /* Fale Conosco */
 .secao-inicio__titulo--fale-conosco { 
     animation: secao-inicio__titulo--animacao--fale-conosco 2.5s steps(50) 1s normal both;
