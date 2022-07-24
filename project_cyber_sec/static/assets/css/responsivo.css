@@ -381,6 +381,44 @@
         margin-left: 1rem;
     }
     
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 1.625rem 0 1.625rem;
+    }
+
+    .rodape__secao-informacoes__conteiner-logotipo {
+        display: flex;
+        justify-content: center;
+
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__lista, .rodape__navegacao__conteiner-tutoriais, .rodape__navegacao__conteiner-artigos {
+        margin-bottom: 1.875rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .30rem 0 .30rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__titulo, .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.125rem;
+
+        margin: .75rem 0 .75rem 0;
+    }
+
+    .rodape__navegacao__conteiner-ferramentas {
+        margin: 1.875rem 0 1.875rem 0;
+    }
+
+    .rodape__secao-selos__link {
+        gap: 1rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    
+    
     /* Fale Conosco */
      .secao-inicio {
         color: #ffffff;
