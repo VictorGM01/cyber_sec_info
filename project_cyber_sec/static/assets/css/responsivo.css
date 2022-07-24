@@ -1033,6 +1033,15 @@
         margin-left: 0;
     }
     
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(6)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
      .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
         content: " ";
 
@@ -1052,6 +1061,15 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
         content: " ";
 
         height: 0;
