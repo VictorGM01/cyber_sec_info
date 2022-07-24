@@ -15,3 +15,7 @@ def instituicao(request):
 
 def sitemap(request):
     return render(request, 'sitemap.xml', content_type='xml')
+
+
+def termos_de_uso(request):
+    return render(request, "principal/termos_de_uso.html")
