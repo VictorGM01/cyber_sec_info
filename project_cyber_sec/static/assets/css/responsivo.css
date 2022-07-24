@@ -381,6 +381,44 @@
         margin-left: 1rem;
     }
     
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 1.625rem 0 1.625rem;
+    }
+
+    .rodape__secao-informacoes__conteiner-logotipo {
+        display: flex;
+        justify-content: center;
+
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__lista, .rodape__navegacao__conteiner-tutoriais, .rodape__navegacao__conteiner-artigos {
+        margin-bottom: 1.875rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .30rem 0 .30rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__titulo, .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.125rem;
+
+        margin: .75rem 0 .75rem 0;
+    }
+
+    .rodape__navegacao__conteiner-ferramentas {
+        margin: 1.875rem 0 1.875rem 0;
+    }
+
+    .rodape__secao-selos__link {
+        gap: 1rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    
+    
     /* Fale Conosco */
      .secao-inicio {
         color: #ffffff;
@@ -1086,6 +1124,45 @@
     .cabecalho__navegacao__sublista__item__link:focus, .cabecalho__navegacao__sublista__item:active {
         background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
     }
+    
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 3.125rem 0 3.125rem;
+    }
+
+    .rodape__secao-informacoes {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 3.75rem;
+    }
+
+    .rodape__navegacao {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.5rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item__link, .rodape__navegacao__conteiner-ferramentas__lista__item__link, .rodape__navegacao__conteiner-tutoriais__lista__item__link, .rodape__navegacao__conteiner-artigods__lista__item__link, .rodape__secao-selos__link__paragrafo {
+        font-size: 1.2rem;
+    }
+
+    .rodape__secao-selos {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
     
      /* Fale Conosco */
     .secao-contato {
