@@ -174,7 +174,6 @@
         text-align: initial;
     }
 
-    /* Sobre Nós */
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
         background: url("../img/icone_email.svg");
         content: " ";
@@ -188,18 +187,6 @@
     }
 
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
-        background: url("../img/icone_pesquisa.svg");
-        content: " ";
-
-        height: 24px;
-        width: 24px;
-
-        display: block;
-
-        margin-left: 1rem;
-    }
-
-    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
         background: url("../img/icone_desenvolver.svg");
         content: " ";
 
@@ -211,19 +198,7 @@
         margin-left: 1rem;
     }
 
-    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
-        background: url("../img/icone_instituicao.svg");
-        content: " ";
-
-        height: 24px;
-        width: 24px;
-
-        display: block;
-
-        margin-left: 1rem;
-    }
-    
-     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
         background: url("../img/icone_newsletter.svg");
         content: " ";
 
@@ -234,10 +209,45 @@
 
         margin-left: 1rem;
     }
-    
-    /* Ferramentas */
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        background: url("../img/icone_sobre_o_projeto.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+        background: url("../img/icone_instituicao.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(6)::before {
+        background: url("../img/icone_pesquisa.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+   
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
-        background: url("../img/icone_validador_de_url.svg");
+        background: url("/static/assets/img/icone_validador_de_url.svg");
         content: " ";
 
         height: 24px;
@@ -248,7 +258,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
-        background: url("../img/icone_gerador_de_senhas.svg");
+        background: url("/static/assets/img/icone_gerador_de_senhas.svg");
         content: " ";
 
         height: 24px;
@@ -260,7 +270,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
-        background: url("../img/icone_nosso_app.svg");
+        background: url("/static/assets/img/icone_nosso_app.svg");
         content: " ";
 
         height: 26px;
@@ -270,10 +280,21 @@
 
         margin-left: 1rem;
     }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
+        background: url("/static/assets/img/icone_recomendacao.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
     
-    /* tutoriais */
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
-        background: url("../img/icone_verificacao_em_duas_etapas.svg");
+        background: url("/static/assets/img/icone_verificacao_em_duas_etapas.svg");
         content: " ";
 
         height: 24px;
@@ -285,11 +306,11 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
-        background: url("../img/icone_mover_email_para_caixa_de_spam.svg") no-repeat;
+        background: url("/static/assets/img/icone_baixe_nosso_app.svg");
         content: " ";
 
         height: 24px;
-        width: 28px;
+        width: 24px;
 
         display: block;
 
@@ -297,7 +318,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
-        background: url("../img/icone_baixe_nosso_app.svg");
+        background: url("/static/assets/img/icone_desenvolver.svg");
         content: " ";
 
         height: 24px;
@@ -309,7 +330,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
-        background: url("../img/icone_como_criar_senhas_fortes.svg");
+        background: url("/static/assets/img/icone_cabecalho_navegadores.svg");
         content: " ";
 
         height: 24px;
@@ -319,9 +340,9 @@
 
         margin-left: 1rem
     }
-    
+
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
-        background: url("../img/icone_ver_mais.svg");
+        background: url("/static/assets/img/icone_ver_mais.svg");
         content: " ";
 
         height: 24px;
@@ -332,7 +353,6 @@
         margin-left: 1rem
     }
     
-    /* Conceitos */
     .cabecalho__navegacao__sublista__item--conceitos:nth-child(1)::before {
         background: url("../img/icone_ciberseguranca.svg") no-repeat;
         content: " ";
