@@ -1015,6 +1015,10 @@ a:active, a:focus, label:focus, label:active, li:focus {
     margin: 1rem 0 1rem;
 }
 
+.secao-conteudo__artigo__conteiner{
+    height: 300px;
+}
+
 @keyframes secao-inicio__titulo--animacao-pesquisa {
     from {
         width: 0;
