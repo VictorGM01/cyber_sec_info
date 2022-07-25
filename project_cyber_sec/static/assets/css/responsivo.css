@@ -1765,5 +1765,38 @@
         flex-direction: row;
         gap: 1rem;
     }
+    
+    
+    /* Política de Privacidade e Termos de Uso*/
+    .principal--documentos {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio__titulo--documentos {
+        animation: secao-inicio__titulo--animacao--documentos 2s steps(50) 1s normal both;
+        overflow: hidden;
+
+        font-size: 2rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    @keyframes secao-inicio__titulo--animacao--documentos {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 25rem;
+        }
+    }
+
+    .secao-conteudo-documentos__conteiner__titulo {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+        font-size: 1.1rem;
+    }
 }
 
