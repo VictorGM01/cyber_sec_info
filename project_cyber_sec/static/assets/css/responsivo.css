@@ -851,6 +851,30 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 1.1px;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        background: #20e456;
+        box-shadow: 0 0 1rem #20e456;
+
+        height: 1px;
+        width: 100%;
+    }
 }
 
 
@@ -1671,6 +1695,47 @@
 
     .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
         justify-content: center;
+    }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 2rem;
+    }
+
+    .secao-conteudo-topico__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1.125rem;
+    }
+
+    .secao-conteudo-topico__conteiner--linha:nth-child(1) {
+        display: none;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        width: 65%;
+    }
+
+    .secao-conteudo-topico__conteiner--linha2 {
+        width: 78%;
+    }
+
+    .secao-conteudo-topico__conteiner--linha3 {
+        width: 74%;
+    }
+
+    .seca-conteudo-topico--cards__lista {
+        flex-direction: row;
+        gap: 1rem;
     }
 }
 
