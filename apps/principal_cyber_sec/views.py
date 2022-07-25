@@ -13,6 +13,10 @@ def instituicao(request):
     return render(request, "principal/instituicao.html")
 
 
+def pesquisas(request):
+    return render(request, "principal/pesquisas.html")
+
+
 def sitemap(request):
     return render(request, 'sitemap.xml', content_type='xml')
 
