@@ -875,6 +875,34 @@
         height: 1px;
         width: 100%;
     }
+    
+    
+    /* Política de Privacidade e Termos de Uso */
+    .principal--documentos {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-conteudo-documentos__conteiner__titulo {
+        font-size: 1.2rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+        font-size: 1rem;
+    }
+
+    .conteiner__linha--documentos {
+        margin-top: 5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__lista {
+        margin-left: 1.5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__lista__item {
+        margin-bottom: 1.2rem
+    }
 }
 
 
