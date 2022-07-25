@@ -1,8 +1,9 @@
+{% load static %}
 <footer class="rodape">
     <section class="rodape__secao-informacoes">
         <div class="rodape__secao-informacoes__conteiner-logotipo">
-            <a href="./index.html" class="rodape__secao-informacoes__conteiner-logotipo__link" title="Ir para a página principal">
-                <img src="../static/assets/img/logotipo_csi_rodape.webp" class="rodape__secao-informacoes__conteiner-logotipo__link__imagem" alt="Logotipo do site Cyber Securtiy Information">
+            <a href="{% url 'home-page' %}" class="rodape__secao-informacoes__conteiner-logotipo__link" title="Ir para a página principal">
+                <img src="{% static '/assets/img/logotipo_csi_rodape.webp' %}" class="rodape__secao-informacoes__conteiner-logotipo__link__imagem" alt="Logotipo do site Cyber Securtiy Information">
             </a>
         </div>
 
@@ -10,7 +11,7 @@
             <h5 class="rodape__secao-informacoes__secao-redes-sociais__titulo">Nossas <span class="rodape__secao-informacoes__secao-redes-sociais__titulo--cor">redes sociais</span></h5>
             <ul class="rodape__secao-informacoes__secao-redes-sociais__lista">
                 <li class="rodape__secao-informacoes__secao-redes-sociais__lista__item">
-                    <a href="" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o perfil do Instagram do Cyber Security Information">
+                    <a href="https://www.instagram.com/csi_ifsp/" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o perfil do Instagram do Cyber Security Information">
                         <svg class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.0628 0H8.93716C4.00919 0 0 4.00919 0 8.93716V21.0628C0 25.9908 4.00919 30 8.93716 30H21.0628C25.9908 30 30 25.9908 30 21.0628V8.93716C29.9999 4.00919 25.9908 0 21.0628 0ZM26.982 21.0628C26.982 24.3319 24.3319 26.982 21.0628 26.982H8.93716C5.66813 26.982 3.018 24.3319 3.018 21.0628V8.93716C3.018 5.66807 5.66813 3.018 8.93716 3.018H21.0628C24.3319 3.018 26.982 5.66807 26.982 8.93716V21.0628Z" fill="#1ED03B"/>
                             <path d="M15 7.24097C10.7216 7.24097 7.24091 10.7217 7.24091 15C7.24091 19.2783 10.7216 22.759 15 22.759C19.2783 22.759 22.759 19.2783 22.759 15C22.759 10.7216 19.2783 7.24097 15 7.24097ZM15 19.7411C12.3815 19.7411 10.2589 17.6185 10.2589 15C10.2589 12.3816 12.3816 10.259 15 10.259C17.6184 10.259 19.741 12.3816 19.741 15C19.741 17.6184 17.6184 19.7411 15 19.7411Z" fill="#1ED03B"/>
@@ -19,7 +20,7 @@
                     </a>
                 </li>
                 <li class="rodape__secao-informacoes__secao-redes-sociais__lista__item">
-                    <a href="" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o repositório do GitHub do Cyber Security Information">
+                    <a href="https://github.com/VictorGM01/cyber_sec_info" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o repositório do GitHub do Cyber Security Information">
                         <svg class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link__svg" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_579_76)">
                                 <path d="M15 -0.432022C6.71344 -0.432022 0 6.45673 0 14.9468C0 21.7452 4.2975 27.5075 10.2534 29.5404C11.0062 29.6855 11.2781 29.2097 11.2781 28.7983C11.2781 28.4331 11.2697 27.4671 11.2641 26.1849C7.08937 27.1115 6.21 24.1174 6.21 24.1174C5.52656 22.3449 4.54031 21.8692 4.54031 21.8692C3.18281 20.9186 4.64812 20.9387 4.64812 20.9387C6.15187 21.0435 6.94312 22.5199 6.94312 22.5199C8.28095 24.8728 10.4531 24.1924 11.3128 23.7963C11.4441 22.8054 11.835 22.1239 12.2606 21.7442C8.93061 21.3588 5.42906 20.0372 5.42906 14.1442C5.42906 12.4612 6.01031 11.0905 6.97125 10.014C6.80531 9.62859 6.29719 8.06188 7.10344 5.94346C7.10344 5.94346 8.35871 5.53304 11.2284 7.52075C12.4294 7.17953 13.7044 7.00941 14.9784 7.00075C16.2534 7.00941 17.5275 7.18049 18.7284 7.52075C21.5812 5.53304 22.8356 5.94346 22.8356 5.94346C23.6409 8.06188 23.1328 9.62764 22.9866 10.014C23.9381 11.0905 24.5194 12.4622 24.5194 14.1442C24.5194 20.0507 21.0131 21.3531 17.6794 21.7288C18.2006 22.1893 18.6891 23.136 18.6891 24.573C18.6891 26.6299 18.6703 28.287 18.6703 28.7878C18.6703 29.1876 18.9328 29.6682 19.7053 29.5134C25.7053 27.5017 29.9981 21.7346 29.9981 14.9458C29.9981 6.45576 23.2847 -0.432983 14.9981 -0.432983L15 -0.432022Z" fill="#1ED03B"/>
@@ -33,7 +34,7 @@
                     </a>
                 </li>
                 <li class="rodape__secao-informacoes__secao-redes-sociais__lista__item">
-                    <a href="" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o canal do Youtube do Cyber Security Information">
+                    <a href="https://www.youtube.com/channel/UCgAT5PiTeAMkTMOBxxvuXqQ" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o canal do Youtube do Cyber Security Information">
                         <svg class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="#1ED03B"/>
                             <path d="M22.5502 9.98083C22.1004 10.1181 21.6313 10.2361 21.1616 10.3535C17.8283 11.0606 13.3838 9.14142 11.4646 12.2727C9.86401 14.7626 9.35864 17.8783 7.53784 20.1045L17.2634 29.8301C23.7363 28.8504 28.8517 23.7343 29.8304 17.2611L22.5502 9.98083Z" fill="#1ED03B"/>
@@ -43,7 +44,7 @@
                     </a>
                 </li>
                 <li class="rodape__secao-informacoes__secao-redes-sociais__lista__item">
-                    <a href="" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o repositório do GitHub do Cyber Security Information">
+                    <a href="mailto:suportecybersec@gmail.com" class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link" title="Acesse o gmail do Cyber Security Information">
                         <svg class="rodape__secao-informacoes__secao-redes-sociais__lista__item__link__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M32 6.60865V25.3913C32 27.1235 30.6017 28.5217 28.8696 28.5217H3.13044C1.39825 28.5217 0 27.1235 0 25.3913V6.60865C0 6.55302 0 6.49733 0.0069375 6.44171C0.0904375 4.84171 1.36344 3.56865 2.96344 3.48521C3.01906 3.47827 3.07475 3.47827 3.13037 3.47827H28.8695C28.9251 3.47827 28.9878 3.47827 29.0434 3.48521C30.6365 3.56871 31.9095 4.84171 31.993 6.43477C32 6.4904 32 6.55302 32 6.60865Z" fill="#1ED03B"/>
                             <path d="M29.0435 3.48521C28.9878 3.47827 28.9253 3.47827 28.8696 3.47827H16V28.5218H28.8696C30.6017 28.5218 32 27.1235 32 25.3913V6.60871C32 6.55308 32 6.49046 31.9931 6.43477C31.9096 4.84177 30.6365 3.56871 29.0435 3.48521Z" fill="#1ED03B"/>
@@ -62,22 +63,22 @@
                     <h5 class="rodape__navegacao__conteiner-sobre-nos__lista__item__titulo">Sobre nós</h5>
                 </li>
                 <li class="rodape__navegacao__conteiner-sobre-nos__lista__item">
-                    <a href="./fale_conosco.html" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página para falar conosco">Fale Conosco</a>
+                    <a href="{% url 'fale-conosco' %}" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página para falar conosco">Fale Conosco</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-sobre-nos__lista__item">
-                    <a href="./desenvolvedores.html" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre os desenvolvedores">Desenvolvedores</a>
+                    <a href="{% url 'desenvolvedores' %}" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre os desenvolvedores">Desenvolvedores</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-sobre-nos__lista__item">
-                    <a href="./newsletter.html" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página para se inscrever na nossa newsletter">Newsletter</a>
+                    <a href="{% url 'newsletter' %}" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página para se inscrever na nossa newsletter">Newsletter</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-sobre-nos__lista__item">
-                    <a href="./instituicao.html" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre o nosso projeto">Sobre o Projeto</a>
+                    <a href="#" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre o nosso projeto">Sobre o Projeto</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-sobre-nos__lista__item">
-                    <a href="./instituicao.html" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre a instituição">Instituição</a>
+                    <a href="{% url 'instituicao' %}" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre a instituição">Instituição</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-sobre-nos__lista__item">
-                    <a href="./newsletter.html" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre as nossas pesquisas">Pesquisas</a>
+                    <a href="#" class="rodape__navegacao__conteiner-sobre-nos__lista__item__link" title="Acesse a página sobre as nossas pesquisas">Pesquisas</a>
                 </li>
             </ul>
         </div>
@@ -128,16 +129,16 @@
                     <h5 class="rodape__navegacao__conteiner-artigos__lista__item__titulo">Artigos</h5>
                 </li>
                  <li class="rodape__navegacao__conteiner-artigos__lista__item">
-                    <a href="#" class="rodape__navegacao__conteiner-artigods__lista__item__link" title="Acesse a página do nosso artigo sobre cibersegurança">Cibersegurança</a>
+                    <a href="{% url 'artigo' 'o-que-e-ciberseguranca' %}" class="rodape__navegacao__conteiner-artigods__lista__item__link" title="Acesse a página do nosso artigo sobre cibersegurança">Cibersegurança</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-artigos__lista__item">
-                    <a href="#" class="rodape__navegacao__conteiner-artigods__lista__item__link" title="Acesse a página do nosso artigo sobre crimes cibernéticos">Crimes cibernéticos</a>
+                    <a href="{% url 'artigo' 'o-que-sao-crimes-ciberneticos' %}" class="rodape__navegacao__conteiner-artigods__lista__item__link" title="Acesse a página do nosso artigo sobre crimes cibernéticos">Crimes cibernéticos</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-artigos__lista__item">
-                    <a href="#" class="rodape__navegacao__conteiner-artigods__lista__item__link" title="Acesse a página do nosso artigo sobre dicionário de cibersegurança">Dicionário de Cibersegurança</a>
+                    <a href="{% url 'artigo' 'dicionario-de-ciberseguranca' %}" class="rodape__navegacao__conteiner-artigods__lista__item__link" title="Acesse a página do nosso artigo sobre dicionário de cibersegurança">Dicionário de Cibersegurança</a>
                 </li>
                 <li class="rodape__navegacao__conteiner-artigos__lista__item">
-                    <a href="#" class="rodape__navegacao__conteiner-artigods__lista__item__link rodape__navegacao__conteiner-artigos__lista__item__link--ver-todos" title="Acesse a página que possui todos os artigos">Ver Todos</a>
+                    <a href="{% url 'artigos' %}" class="rodape__navegacao__conteiner-artigods__lista__item__link rodape__navegacao__conteiner-artigos__lista__item__link--ver-todos" title="Acesse a página que possui todos os artigos">Ver Todos</a>
                 </li>
             </ul>
         </div>
@@ -145,14 +146,14 @@
     <section class="rodape__secao-selos">
         <a href="https://ptb.ifsp.edu.br/" class="rodape__secao-selos__link" title="Acesse o site do Instituto Federal de São Paulo Câmpus Pirituba">
             <div class="rodape__secao-selos__link__conteiner">
-                <img src="../static/assets/img/icone_if_rodape.webp" class="rodape__secao-selos__link__conteiner__imagem" alt="Ícone do Instituto Federal">
+                <img src="{% static '/assets/img/icone_if_rodape.webp'%}" class="rodape__secao-selos__link__conteiner__imagem" alt="Ícone do Instituto Federal">
             </div>
             <p class="rodape__secao-selos__link__paragrafo">Filiado ao <span class="rodape__secao-selos__link__paragrafo__span">IFSP - Câmpus Pirituba</span></p>
         </a>
 
-        <a href="#" class="rodape__secao-selos__link" title="Acesse o site que comprova que a navegação no Cyber Security Information é segura">
+        <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.ciberseguranca.info%2F&hl=pt_BR" class="rodape__secao-selos__link" title="Acesse o site que comprova que a navegação no Cyber Security Information é segura">
             <div class="rodape__secao-selos__link__conteiner">
-                <img src="../static/assets/img/icone_navegacao_segura_rodape.webp" class="rodape__secao-selos__link__conteiner__imagem" alt="Ícone do google de navegação segura">
+                <img src="{% static '/assets/img/icone_navegacao_segura_rodape.webp' %}" class="rodape__secao-selos__link__conteiner__imagem" alt="Ícone do google de navegação segura">
             </div>
         </a>
     </section>
@@ -160,10 +161,10 @@
         <nav class="rodape__secao-documentos__navegacao">
             <ul class="rodape__secao-documentos__navegacao__lista">
                 <li class="rodape__secao-documentos__navegacao__lista__item">
-                    <a href="" class="rodape__secao-documentos__navegacao__lista__item__link rodape__secao-documentos__navegacao__lista__item__link--separador" title="Acesse a página sobre a nossa política de privacidade">Política de Privacidade</a>
+                    <a href="{% url 'politica-de-privacidade' %}" class="rodape__secao-documentos__navegacao__lista__item__link rodape__secao-documentos__navegacao__lista__item__link--separador" title="Acesse a página sobre a nossa política de privacidade">Política de Privacidade</a>
                 </li>
                 <li class="rodape__secao-documentos__navegacao__lista__item">
-                    <a href="" class="rodape__secao-documentos__navegacao__lista__item__link rodape__secao-documentos__navegacao__lista__item__link--espacamento" title="Acesse a página sobre o nossos termos de uso">Temos de Uso</a>
+                    <a href="{% url 'termos-de-uso' %}" class="rodape__secao-documentos__navegacao__lista__item__link rodape__secao-documentos__navegacao__lista__item__link--espacamento" title="Acesse a página sobre o nossos termos de uso">Temos de Uso</a>
                 </li>
             </ul>
         </nav>
