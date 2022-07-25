@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Pesquisas | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-  </head>
-  <body class="corpo--pesquisa">
-    <a class="link-conteudo-principal" href="#conteudo-principal">Pular para o conteúdo principal</a>
-    <!-- espaço para o cabeçalho -->
-    <main class="principal--pesquisa" role="main" tabindex="0">
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+
+{% block title %}
+<title>Pesquisas | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--pesquisa" {% endblock %}
+
+{% block content %}
+
+<main class="principal--pesquisa" role="main" tabindex="0">
     <section id="conteudo-principal" class="secao-inicio">
         <h1 class="secao-inicio__titulo secao-inicio__titulo--pesquisa">Pesquisas<span class="secao-inicio__titulo__cursor">|</span></h1>
     </section>
@@ -105,9 +99,4 @@
         </section>
     </section>
 </main>
-<button title="Voltar ao Topo" id="link-voltar-ao-topo" class="conteiner__link-voltar-ao-topo" data-link-voltar-ao-topo><img class="conteiner__link__imagem-voltar-ao-topo" src="../static/assets/img/seta_topo.svg" alt="Link para voltar ao topo da página"></button>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../static/assets/js/cabecalho.js"></script>
-  <script src="../static/assets/js/botaoVoltarAoTopo.js"></script>
-</html>
+{% endblock %}
