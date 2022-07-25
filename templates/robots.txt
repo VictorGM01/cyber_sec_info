@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /*?page=
+
+Sitemap: https://www.ciberseguranca.info/sitemap.xml
