@@ -947,6 +947,89 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Pesquisas */
+.secao-inicio__titulo {
+    letter-spacing: 1.5px;
+}
+
+.secao-inicio__titulo--pesquisa {
+    animation: secao-inicio__titulo--animacao-pesquisa 2s steps(50) 1s normal both;
+    overflow: hidden;
+
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.secao-conteudo-topico--espacamento {
+   margin-top: 3rem;
+}
+
+.secao-conteudo-topico__conteiner__titulo {
+    color: #FFFFFF;
+
+    padding: 1rem 0;
+}
+
+.secao-conteudo-topico__conteiner__titulo__span, .secao-inicio--pagina-geral-de-artigos__conteiner__titulo__span, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo__span{
+    color: #20e456;
+}
+
+.secao-conteudo__artigo__paragrafo--pesquisa {
+    border-left: 4px solid #20e456;
+    padding-left: .5rem;
+}
+
+.seca-conteudo-topico--cards__lista {
+    list-style-type: none;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seca-conteudo-topico--cards__lista__item {
+     background: linear-gradient(359.41deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+     border: 2px solid #28BC10;
+     border-radius: 5px;
+     box-shadow: 0 0 .15rem #20e456;
+     transition: .4s ease-in-out;
+
+     height: max-content;
+
+    margin: 1rem 0 1rem 0;
+    padding: 2rem;
+}
+
+.seca-conteudo-topico--cards__lista__item__artigo {
+    color: #DFD9D9;
+}
+
+.secao-conteudo__artigo__paragrafo--pesquisa {
+    color: #DFD9D9;
+    font-size: inherit;
+    letter-spacing: 1.5px;
+    text-align: justify;
+
+    margin: 1rem 0 1rem;
+}
+
+@keyframes secao-inicio__titulo--animacao-pesquisa {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20rem;
+    }
+}
+
+.secao-conteudo__artigo--espacamento {
+    margin-top: 4rem;
+}
+
+
 /* Media query para impressão */
 @media print {
     .cabecalho, .secao-caminho-artigo, .secao-artigos-relacionados, .secao-informacoes-artigo__conteiner--redes-sociais {
