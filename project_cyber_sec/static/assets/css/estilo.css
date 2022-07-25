@@ -76,7 +76,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Estilizações gerais da tag body */
-.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa {
+.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
@@ -1031,6 +1031,46 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 .secao-conteudo__artigo--espacamento {
     margin-top: 4rem;
+}
+
+
+/* Política de Privacidade e Termos de Uso */
+.secao-inicio__titulo--documentos {
+    letter-spacing: 1.5px;
+}
+
+.secao-conteudo-documentos__conteiner__titulo {
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.secao-conteudo-documentos__conteiner__titulo--cor {
+    color: #28BC10;
+}
+
+.secao-conteudo-documentos__artigo__lista {
+    color: #DFD9D9 ;
+}
+
+.secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+    color: #DFD9D9;
+    letter-spacing: 1.5px;
+    line-height: 2.5rem;
+}
+
+.conteiner__linha--documentos-espacamento {
+    margin-bottom: 2.5rem;
+}
+
+.secao-conteudo-documentos__artigo__paragrafo__link {
+    color: #28BC10;
+    text-decoration: none;
+}
+
+.secao-conteudo-documentos__artigo__paragrafo__link:hover {
+    text-decoration: underline;
 }
 
 
