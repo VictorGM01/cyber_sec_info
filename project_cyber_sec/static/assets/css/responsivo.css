@@ -851,6 +851,30 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 1.1px;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        background: #20e456;
+        box-shadow: 0 0 1rem #20e456;
+
+        height: 1px;
+        width: 100%;
+    }
 }
 
 
