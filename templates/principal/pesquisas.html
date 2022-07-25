@@ -1,4 +1,5 @@
 {% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
 
 {% block title %}
 <title>Pesquisas | Cyber Security Information</title>
@@ -106,4 +107,9 @@
         </section>
     </section>
 </main>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="{% static 'assets/js/graficoPesquisas.js' %}"></script>
 {% endblock %}
