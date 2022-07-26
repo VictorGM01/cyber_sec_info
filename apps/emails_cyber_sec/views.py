@@ -53,6 +53,9 @@ def enviar_mensagem(request):
 
         return redirect("fale-conosco")
 
+    else:
+        return redirect("fale-conosco")
+
 
 def newsletter(request):
     return render(request, "emails/newsletter.html")
@@ -77,4 +80,7 @@ def cadastro_newsletter(request):
 
         messages.success(request, "Parabéns! Seu cadastro foi realizado.")
 
+        return redirect("newsletter")
+
+    else:
         return redirect("newsletter")
