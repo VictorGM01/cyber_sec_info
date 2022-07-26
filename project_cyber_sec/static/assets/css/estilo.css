@@ -1004,6 +1004,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 .seca-conteudo-topico--cards__lista__item__artigo {
     color: #DFD9D9;
+    line-height: 1.5rem;
 }
 
 .secao-conteudo__artigo__paragrafo--pesquisa {
