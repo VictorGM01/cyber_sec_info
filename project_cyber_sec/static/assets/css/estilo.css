@@ -134,6 +134,8 @@ a:active, a:focus, label:focus, label:active, li:focus {
 /* Rodapé */
 .rodape {
     background-color: #000F02;
+	
+    margin-top: 5.5rem;
 }
 
 .rodape__secao-informacoes__secao-redes-sociais__lista, .rodape__navegacao__conteiner-sobre-nos__lista, .rodape__navegacao__conteiner-ferramentas__lista, .rodape__navegacao__conteiner-tutoriais__lista, .rodape__navegacao__conteiner-artigos__lista, .rodape__secao-documentos__navegacao__lista {
