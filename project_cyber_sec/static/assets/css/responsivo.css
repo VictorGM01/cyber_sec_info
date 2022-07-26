@@ -1762,8 +1762,17 @@
     }
 
     .seca-conteudo-topico--cards__lista {
+        align-items: unset; 
         flex-direction: row;
         gap: 1rem;
+    }
+    
+    .seca-conteudo-topico--cards__lista__item { 
+        align-items: center;
+        display: flex;
+
+        height: initial;
+        width: 30rem;
     }
     
     
