@@ -78,19 +78,3 @@ def cadastro_newsletter(request):
         messages.success(request, "Parabéns! Seu cadastro foi realizado.")
 
         return redirect("newsletter")
-
-
-def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
-    assunto = "Cyber Security Information: Novo Conteúdo"  # Assunto do e-mail
-    mensagem = "Atualização"
-    email_host = settings.EMAIL_HOST_USER  # E-mail que enviará a mensagem
-
-    email_destino = [destino]  # Destinatário
-
-    email = EmailMultiAlternatives(assunto, mensagem, email_host, email_destino)
-
-    msg = render_to_string("emails/email_newsletter.html", context={
-        "nome": nome, "assunto_artigo": assunto_artigo, "categoria": categoria, "resumo": resumo})  # Mensagem em html
-
-    email.attach_alternative(msg, "text/html")
-    email.send()
