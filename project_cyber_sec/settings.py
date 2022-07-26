@@ -32,7 +32,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost", "www.ciberseguranca.info"]
+ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost", "www.ciberseguranca.info",
+                 "ciberseguranca.info"]
 
 SECURE_SSL_REDIRECT = True
 
