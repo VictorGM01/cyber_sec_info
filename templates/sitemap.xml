@@ -9,42 +9,62 @@
 
 <url>
   <loc>https://www.ciberseguranca.info/</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/email/fale-conosco</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/sobre-nos/email/fale-conosco</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/desenvolvedores</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/sobre-nos/desenvolvedores</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/instituicao</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/sobre-nos/email/newsletter</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/email/newsletter</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/sobre-nos/instituicao</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/artigos/Ciberseguran%C3%A7a</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/sobre-nos/pesquisas</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/artigos/Crimes%20Cibern%C3%A9ticos</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/artigos/o-que-e-ciberseguranca</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ciberseguranca.info/artigos/Dicion%C3%A1rio%20de%20Ciberseguran%C3%A7a</loc>
-  <lastmod>2022-07-10T21:01:57+00:00</lastmod>
+  <loc>https://www.ciberseguranca.info/artigos/o-que-sao-crimes-ciberneticos</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/artigos/dicionario-de-ciberseguranca</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/artigos/</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/politica-de-privacidade</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/termos-de-uso</loc>
+  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
