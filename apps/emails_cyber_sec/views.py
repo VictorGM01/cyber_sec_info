@@ -20,7 +20,15 @@ def enviar_mensagem(request):
         preferencia_resposta = request.POST.getlist("preferencia-contato")
         mensagem = request.POST["mensagem"]
 
-        if len(preferencia_resposta) == 2:
+        if not nome.strip():
+            messages.error(request, "Insira um nome ou apelido para contato")
+            return redirect("fale-conosco")
+
+        elif len(telefone) < 14:  # Verifica se o número informado possui menos de 14 caracteres (com máscara)
+            messages.error(request, "Insira um telefone válido")
+            return redirect("fale-conosco")
+
+        elif len(preferencia_resposta) == 2:
             preferencia_resposta = "E-mail e WhatsApp"
 
         else:
@@ -41,8 +49,11 @@ def enviar_mensagem(request):
         email.attach_alternative(mensagem_final, "text/html")
         email.send()
 
-        messages.success(request, "E-mail enviado. Por favor, aguarde o nosso contato.")
+        messages.success(request, "Recebemos sua mensagem. Por favor, aguarde o nosso contato.")
 
+        return redirect("fale-conosco")
+
+    else:
         return redirect("fale-conosco")
 
 
@@ -71,18 +82,5 @@ def cadastro_newsletter(request):
 
         return redirect("newsletter")
 
-
-def envia_email(request, nome, destino, assunto_artigo, categoria, resumo):
-    assunto = "Cyber Security Information: Novo Conteúdo"  # Assunto do e-mail
-    mensagem = "Atualização"
-    email_host = settings.EMAIL_HOST_USER  # E-mail que enviará a mensagem
-
-    email_destino = [destino]  # Destinatário
-
-    email = EmailMultiAlternatives(assunto, mensagem, email_host, email_destino)
-
-    msg = render_to_string("emails/email_newsletter.html", context={
-        "nome": nome, "assunto_artigo": assunto_artigo, "categoria": categoria, "resumo": resumo})  # Mensagem em html
-
-    email.attach_alternative(msg, "text/html")
-    email.send()
+    else:
+        return redirect("newsletter")

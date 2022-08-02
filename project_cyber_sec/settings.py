@@ -16,6 +16,8 @@ import os
 import django_heroku
 import dj_database_url
 from django.contrib.messages import constants as messages
+import cloudinary
+import cloudinary_storage
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,21 +32,32 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost"]
+ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost", "www.ciberseguranca.info",
+                 "ciberseguranca.info"]
+
+SECURE_SSL_REDIRECT = True
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',
-    'apps.app_cyber_sec',
-    'apps.emails_cyber_sec'
+    # Apps Internos
+    'apps.artigos_cyber_sec',
+    'apps.emails_cyber_sec',
+    'apps.principal_cyber_sec',
+    'apps.tutoriais_cyber_sec',
+    # Media Cloudinary
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +96,19 @@ WSGI_APPLICATION = 'project_cyber_sec.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {'default': dj_database_url.config()}
+
+
+# Django cache com Memcached
+CACHES = {
+    'default': {
+        'BACKEND': 'django_bmemcached.memcached.BMemcached',
+        'LOCATION': config('MEMCACHEDCLOUD_SERVERS'),
+        'OPTIONS': {
+                    'username': config('MEMCACHEDCLOUD_USERNAME'),
+                    'password': config('MEMCACHEDCLOUD_PASSWORD')
+            }
+    }
+}
 
 # DATABASES = {
 #     'default': {
@@ -144,6 +170,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Configurações para os arquivos de mídia (imagens)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('CLOUD_NAME', default=""),
+    'API_KEY': config('API_KEY', default=""),
+    'API_SECRET': config('API_SECRET', default=""),
+}
 
 
 # Default primary key field type

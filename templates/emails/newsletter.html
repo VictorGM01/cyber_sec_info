@@ -1,24 +1,32 @@
 {% extends "base.html" %}  {# Essa página tem sua estrutura no arquivo base.html #}
 
+{% block meta-descricao %}
+<meta name="description" content="Newsletter de cibersegurança. Cadastre-se para receber atualizações sobre nossas publicações recentes.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Cadastro, Cibersegurança, Cybersecurity, E-mail, Newsletter">
+{% endblock %}
+
 {% block title %}
 <title>Newsletter | Cyber Security Information</title>
 {% endblock %}
 
 
-{% block class_css_body %} class="corpo__newsletter" {% endblock %}
+{% block class_css_body %} class="corpo--newsletter" {% endblock %}
 
 
 {% block content %}
-<main class="principal--newsletter">
+<main class="principal--newsletter" role="main" tabindex="0">
 
-<section class="secao-inicio">
+<section id="conteudo-principal" class="secao-inicio">
     <h1 class="secao-inicio__titulo--newsletter secao-inicio__titulo--animacao-newsletter">
             Quer saber mais sobre a <span class="secao-inicio__titulo--cor">cibersegurança</span> e como colocá-la em prática?<span class="secao-inicio__titulo__cursor">|</span></h1>
     <section class="secao-inicio__conteiner secao-inicio__conteiner--newsletter">
-        <h3 class="secao-inicio__conteiner__subtitulo secao-inicio__conteiner__subtitulo--newsletter">
+        <h2 class="secao-inicio__conteiner__subtitulo secao-inicio__conteiner__subtitulo--newsletter">
                 Inscreva-se na nossa newsletter e receba de forma exclusiva atualizações sobre nossas publicações, incluindo
                 artigos, tutoriais e ferramentas que te auxiliarão na garantia da sua segurança no mundo digital.
-        </h3>
+        </h2>
     </section>
 </section>
 

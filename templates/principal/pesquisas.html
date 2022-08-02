@@ -1,0 +1,340 @@
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Principais dados obtidos na pesquisa realizada no ano de 2022. A pesquisa trata da Cibersegurança no cotidiano de pessoas de todas as faixas etárias">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Pesquisa de Cibersegurança">
+{% endblock %}
+
+{% block title %}
+<title>Pesquisas | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--pesquisa" {% endblock %}
+
+{% block content %}
+
+<main class="principal--pesquisa" role="main" tabindex="0">
+    <section id="conteudo-principal" class="secao-inicio">
+        <h1 class="secao-inicio__titulo secao-inicio__titulo--pesquisa">Pesquisas<span class="secao-inicio__titulo__cursor">|</span></h1>
+    </section>
+
+    <section class="secao-conteudo">
+        <section class="secao-conteudo-topico">
+            <div class="secao-conteudo-topico__conteiner">
+                <div class="secao-conteudo-topico__conteiner--linha"></div>
+                <h2 class="secao-conteudo-topico__conteiner__titulo">Informações gerais <span class="secao-conteudo-topico__conteiner__titulo__span">sobre a pesquisa</span></h2>
+                <div class="secao-conteudo-topico__conteiner--linha"></div>
+            </div>
+        </section>
+        <article class="secao-conteudo__artigo">
+            <p class="secao-conteudo__artigo__paragrafo">
+                Para a melhor compreensão da aplicação da Cibersegurança e da Segurança da Informação no cotidiano da sociedade, foi criado um Google Forms, o qual foi compartilhado com a comunidade por meio de redes sociais, para obter essas informações, de forma anônima e individual.
+            </p>
+
+             <p class="secao-conteudo__artigo__paragrafo">
+                Este formulário contém perguntas focadas sobre o conhecimento das pessoas sobre a Segurança da Informação e sobre a Cibersegurança, de acordo com as suas faixas etárias. Além disso, as perguntas também possuem o enfoque de saber como as pessoas fornecem suas informações sensíveis ao navegar na internet e como elas se sentem quando realizam essa navegação.
+            </p>
+
+            <p class="secao-conteudo__artigo__paragrafo">
+                De forma geral, o formulário tem 18 perguntas e obteve, no total, 116 respostas. Essas perguntas são diferentes de acordo com a faixa etária do indivíduo. Sendo assim, as faixas etárias que consideramos são: Até 12 anos - Crianças; Entre 13 e 17 anos - Adolescentes; Entre 18 e 25 anos - Adultos; 26 e 40 anos - Adultos; 41 e 60 anos - Idosos; Acima de 60 anos - Idosos.
+            </p>
+            <p class="secao-conteudo__artigo__paragrafo">
+                Assim, as perguntas direcionadas às crianças e adolescentes se totalizam em 9, já as perguntas direcionadas aos adultos e idosos, se totalizam em 7. Já as perguntas gerais, ou seja, as que foram feitas para todas as faixas etárias, se totalizam em 2. Desta forma, as respostas das perguntas direcionadas às crianças e adolescentes totalizam em 51. Já nas perguntas direcionadas aos adultos e idosos, há o total de 65 respostas.
+            </p>
+        </article>
+
+        <section class="secao-conteudo-topico secao-conteudo-topico--espacamento">
+            <div class="secao-conteudo-topico__conteiner">
+                <div class="secao-conteudo-topico__conteiner--linha"></div>
+                <h2 class="secao-conteudo-topico__conteiner__titulo">Principais <span class="secao-conteudo-topico__conteiner__titulo__span">resultados</span></h2>
+                <div class="secao-conteudo-topico__conteiner--linha secao-conteudo-topico__conteiner--linha2"></div>
+            </div>
+        </section>
+
+        <article class="secao-conteudo__artigo">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Como você considera que seja seu nível de conhecimento sobre Segurança da Informação?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta1"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 25% das pessoas alegaram que conhecem muito pouco sobre a Segurança da Informação, 22,4% disseram que conhecem somente o essencial, 19,8% disseram que conhecem pouco, 16,4% apontaram que não conhecem nada, 13,8% alegaram que conhecem bem e apenas 2,6% responderam que dominam o conhecimento sobre a Segurança da Informação.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número expressivo de pessoas que possuem um conhecimento precário sobre a Segurança da Informação, além de que há, também, um número pouco expressivo de pessoas que conhecem ou que possuem um certo aprofundamento no assunto.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Com isso, é possível observar o quão necessária é a democratização dessa temática tão importante na sociedade atual, dado que, à medida que a tecnologia se desenvolve e se insere no cotidiano das pessoas, há o avanço de ataques virtuais. Diante desse cenário, as pessoas que não possuem contato com a segurança no mundo virtual estão altamente vulneráveis, o que faz com que os crimes cibernéticos continuem se perpetuando na comunidade, além de aumentar o nível de desigualdade acerca do conhecimento sobre a tecnologia.
+                </p>
+            </article>
+        </article>
+
+         <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                De acordo com a sua idade, qual dos seguintes grupos melhor te identifica?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta2"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 41,4% se identifica como pessoas que têm entre 13 e 17 anos (adolescentes), 20,7% se identifica como pessoas que possuem entre 18 e 25 anos (adultos), 20,7% se identifica como pessoas que têm entre 26 e 40 anos (adultos), 11,2% se identificam como indivíduos que possuem entre 41 e 60 anos (adultos), apenas 3,4% das pessoas que responderam se identificam com a faixa etária de acima de 60 anos (idosos) e somente 2,6% das pessoas se identificam com a idade de até 12 anos (crianças).
+                </p>
+            </article>
+        </article>
+
+        <section class="secao-conteudo-topico secao-conteudo-topico--espacamento">
+            <div class="secao-conteudo-topico__conteiner">
+                <h2 class="secao-conteudo-topico__conteiner__titulo">Perguntas Direcionadas às Crianças e Adolescentes</h2>
+            </div>
+        </section>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Ao realizar o cadastro em alguma rede social você preenche todas as informações que são solicitadas (obrigatórias ou não)?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta3"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 67,7% das crianças e adolescentes disseram que sim, que preenchem todas as informações que são solicitadas, 33,3% responderam que não preenchem todas as informações e 3,9% dessa faixa etária alegaram que não possuem redes sociais.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número exacerbado de pessoas que preenchem todas as informações que são solicitadas em um formulário de cadastro de redes sociais ou de e-commerces, por exemplo. Com isso, é possível observar que existe uma necessidade de conhecimento, por parte das crianças e dos adolescentes, sobre o perigo que está atrelado ao fornecimento adicional de informações, as quais são fornecidas a mais do que as que são previamente solicitadas, dado que as empresas, de quaisquer segmentos, têm interesses relacionados a esses dados pessoais para diversos fins - sendo o fim lucrativo o principal deles. Desta forma, é imprescindível que os conhecimentos sobre a segurança cibernética e sobre os dados sensíveis sejam disseminados na comunidade, uma vez que será possível mitigar o controle de dados sem consulta prévia ao titular, além de amenizar possíveis ataques de roubo de dados.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você já sofreu algum golpe virtual (via WhatsApp, e-mail, Facebook, etc)?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta4"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 84,3% das crianças e adolescentes responderam que não sofreram golpes virtuais, 11,8% alegaram que não sabem e 3,9% disseram que já sofreram golpes virtuais.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Com base nisso, é notório que crianças e adolescentes possuem uma baixa aderência aos golpes que são aplicados no mundo cibernético, uma vez que muitas delas não possuem poder aquisitivo para poder realizar algum tipo de compra ou negociação, além de que elas são menores de idades e não conseguem efetivar certas compras na internet. Desta forma, ainda há um número considerável dessa faixa etária que não sabem se já foram vítimas de algum crime cibernético, algo que é preocupante, pois a pessoa pode, de fato, ter sido vítima e nem ao menos saber que aquele ato é um crime. Diante desse cenário, é evidente a falta da democratização desta temática, sobretudo a democratização do conhecimento sobre os principais ataques cibernéticos e quais são as formas de se proteger destes crimes. Além disso, é perceptível uma falta de conhecimento sobre legislações presentes na internet, como a Lei Geral de Proteção de Dados (LGPD), e outras que regem o mundo virtual e que garantem certos direitos para os usuários.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você se sente seguro ao navegar pela internet?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta5"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 66,7% das crianças e adolescentes responderam que se sentem mais ou menos seguras, 19,6% disseram que não se sentem seguras e outras 13,7% alegaram que se sentem seguras.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número expressivo de crianças e de adolescentes que possuem dúvidas quanto a sua segurança ao navegar pela internet, além de um número considerável de pessoas dessa faixa etária que, de fato, não se sentem seguras ao navegar pela internet. Portanto, é evidente a necessidade do conhecimento sobre como se proteger no mundo virtual, dado que, ao ter conhecimento sobre os crimes cibernéticos e sobre a importância dos dados sensíveis, é possível se precaver de possíveis golpes virtuais, o que aumentará o sentimento de segurança ao realizar a navegação na internet. Ademais, é de suma importância o compartilhamento de informações sobre as formas de alguém saber se está ou não seguro na internet como, por exemplo, como alguém pode saber se o site em que está é ou não confiável.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você se sente seguro quando está nas redes sociais?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta6"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 58,8% das crianças e dos adolescentes alegaram que se sentem parcialmente seguros, 21,6% disseram que não se sentem seguros, 15,7% disseram que se sentem seguros e outros 3,9% disseram que não possuem nenhuma rede social.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número exacerbado de crianças e de adolescentes que se sentem parcialmente seguros ao realizarem a navegação em suas redes sociais, além de que há um número considerável dessa faixa etária que não se sente segura ao realizar essa navegação. Com isso, é evidente que, para aumentar a segurança nesses ambientes digitais, essas pessoas precisam ter acesso aos conteúdos ligados à segurança da informação e à segurança cibernética, fazendo com que elas consigam reconhecer suas vulnerabilidades dentro dessas redes sociais.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você acredita que sua privacidade é respeitada enquanto navega pela internet/redes sociais?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta7"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 66,7% das crianças e dos adolescentes disseram que não acreditam que tenham sua privacidade respeitada, 15,7% acredita que talvez tenham sua privacidade respeitada, 13,7% responderam que acreditam e outros 3,9% alegaram que não sabem se a sua privacidade é respeitada.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número expressivo de crianças e de adolescentes que acreditam que sua privacidade não é respeitada enquanto acessam à internet, além de uma parcela considerável que crê parcialmente no respeito de sua privacidade. Logo, é possível afirmar que existe uma necessidade, para esta faixa etária, do conhecimento sobre o que é, de fato, a privacidade e quais são ações para garanti-la no meio digital, dado que, diante das respostas anteriores, é evidente que as pessoas dessa faixa etária não conhecem as formas de colocar em prática a segurança cibernética e a segurança da informação.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Com base em seus conhecimentos, qual o nível de exposição dos seus dados e informações nas redes?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta8"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 45,1% das crianças e adolescentes responderam que seus dados estão razoavelmente expostos, 29,4% responderam que seus dados estão poucos expostos, 13,7% alegaram que seus dados estão expostos, 5,9% disseram que seus dados estão muito expostos, 3,9% responderam que não sabem o nível de exposição dos seus dados e outros 2% disseram que não possuem redes sociais.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tomando como base estas informações, é notório que há um número exacerbado de pessoas que consideram o nível razoável de exposição de seus dados. Por conseguinte, a democratização do conhecimento acerca da cibersegurança e sobre a segurança da informação é essencial para que essas pessoas consigam identificar sua exposição nas redes sociais, além de que consigam, através de técnicas e análises que serão expostas no website e no aplicativo, diminuir essa exposição. Ademais, também é necessário, de acordo com a porcentagem de pessoas que responderam que não sabem o nível de exposição de seus dados, explicar sobre o que se trata tal exposição, quais são suas consequências e como evitar que isso aconteça.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                As suas redes sociais (Instagram, Facebook, WhatsApp, etc) possuem verificação em duas etapas?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta9"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 41,2% das crianças e dos adolescentes alegaram que possuem verificação em duas etapas em suas redes sociais, 21,6% responderam que não têm verificação em duas etapas, 33,3% disseram que não sabem se possuem a verificação e 3,9% responderam que não têm nenhuma rede social.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tomando como base estas informações, é notório que há uma parcela considerável de crianças e adolescentes que não sabem se possuem a verificação em duas etapas, além de que há um número elevado de pessoas que não têm esse recurso ativado em suas redes. Portanto, é observável a necessidade da explicação e do conhecimento sobre a verificação em duas etapas e como ela é importante para prevenir possíveis ataques de roubo de dados. Ademais, também é possível observar a demanda de conhecimento sobre como ativar esse recursos nas mais diversas redes sociais existentes.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Em média, quando você recebe algum e-mail que contém links, qual a sua reação?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta10"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 41,2% das crianças e adolescentes disseram que verificam o remetente e o conteúdo do e-mail antes de abrir o link, 25,5% responderam que não leem seus e-mails, 9,8% alegaram que abrem o link assim que leem, 9,8% responderam que movem o e-mail para caixa de spam (após leitura), uma vez que não solicitei nenhum envio de links, 5,9% disseram que verificam o remetente antes de abrir o link, 3,9% alegaram que movem o e-mail para a caixa de spam (antes da leitura) por medo e apenas 3,9% responderam que não possuem e-mail.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há uma quantidade exacerbada de pessoas dessa faixa etária que não realiza a leitura de seus e-mails, algo que é preocupante, uma vez que a denúncia de e-mails que possuem conteúdo enganoso ou malicioso é essencial para que crimes cibernéticos sejam mitigados, além de evitar que outras pessoas sejam vítimas de possível golpes virtuais por meio dessas mensagens.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Outro ponto importante que pode ser observado, é através da quantidade considerável de crianças e adolescentes que abrem o link que está presente no e-mail assim que realiza a leitura deste, o que demonstra a carência de conhecimento sobre a aplicação de inúmeros golpes cibernéticos via e-mail.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Ademais, é pouco expressiva a quantidade de pessoas dessa faixa etária que movem e-mails indesejados para a caixa de spam, aspecto que expõe a falta de conhecimento sobre a importância desse ato, dado que pode-se evitar a proliferação de cibercrimes.
+                </p>
+            </article>
+        </article>
+
+        <section class="secao-conteudo-topico secao-conteudo-topico--espacamento">
+            <div class="secao-conteudo-topico__conteiner">
+                <h2 class="secao-conteudo-topico__conteiner__titulo">Perguntas direcionadas aos Adultos e Idosos</h2>
+            </div>
+        </section>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você já sofreu algum golpe virtual (via WhatsApp, e-mail, Facebook, etc)?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta11"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 73,8% dos adultos e idosos alegaram que não sofreram algum golpe virtual, 23,1% responderam que já sofreram golpes virtuais e 3,1% disseram que não se lembram.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número expressivo dessa faixa etária que já sofreu algum golpe virtual. Com isso, pode-se afirmar que existe uma carência do conhecimento sobre os crimes cibernéticos que são ocorrentes nas redes sociais, além da falta de conhecimento sobre como se proteger desses crimes. Com isso, a democratização dos conteúdos acerca de segurança cibernética e da segurança da informação é uma forma eficaz de mitigar essa porcentagem de pessoas que ainda sofrem com crimes virtuais.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você conhece pessoas, com a sua faixa etária, que já sofreram algum golpe virtual?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta12"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 70,8% dos adultos e idosos disseram que conhecem alguma pessoa vítima de golpes virtuais e 29,2% alegaram que não conhecem.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número bastante expressivo de pessoas que conhecem alguma outra que foi vítima de golpe na internet. Com isso, pode-se afirmar que existe um aumento do número de crimes cibernéticos, dado que as pessoas, com a falta de conhecimento sobre o assunto (cibersegurança e crimes cibernéticos) e a falta de conhecimento sobre seus direitos no mundo da internet, são vítimas desses crimes.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você já compartilhou informações sensíveis (endereço, número de celular, senhas de verificação, etc) pelas redes sociais?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta13"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 46,2% dos adultos e idosos disseram que já compartilharam informações sensíveis pelas redes, 41,5% alegaram que não compartilharam, 10,8% responderam que talvez tenham compartilhado e 1,5% dessas pessoas disseram que não lembram.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório um número exacerbado de pessoas que já compartilharam informações privadas e sensíveis pelas redes sociais, além de um número considerável de pessoas que não têm certeza se já realizaram, de fato, esse compartilhamento. Por isso, é possível afirmar que a carência do conhecimento sobre a importância das informações sensíveis e sobre o que elas representam para as empresas de tecnologia, somado com a falta de conhecimento sobre a segurança da informação e cibernética, geram a vulnerabilidade dessas pessoas.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                As suas redes sociais (Instagram, Facebook, WhatsApp, etc) possuem verificação em duas etapas?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta14"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 52,3% dos adultos e idosos alegaram que possuem verificação em duas etapas, 30,8% disseram que não sabem, 15,4% responderam que não possuem verificação em duas etapas e 1,5% dessas pessoas alegaram que não possuem redes sociais.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tendo como base estas informações, é notório que há um número expressivo de pessoas que não possuem o recurso de verificação em duas etapas ativado em suas redes sociais, além de um número considerável de pessoas que não possuem conhecimento sobre o que é esse recurso. Logo, pode-se afirmar que se faz necessário a disseminação do conhecimento sobre a verificação de duas etapas, principalmente no que diz respeito à importância de sua utilização e sobre como ativá-la em diferentes redes sociais. Ademais, é possível observar que existe uma carência relacionada ao conhecimento da segurança cibernética e da segurança da informação, já que há um número alto de pessoas que não sabem, de fato, o que esse recurso representa.
+                </p>
+            </article>
+        </article>
+
+        <article class="secao-conteudo__artigo secao-conteudo__artigo--espacamento">
+            <p class="secao-conteudo__artigo__paragrafo--pesquisa">
+                Você acha que conseguiria identificar um site que copiou, maliciosamente, o site oficial de seu banco?
+            </p>
+            <div class="secao-conteudo__artigo__conteiner" id="pergunta15"></div>
+            <article class="secao-conteudo__artigo">
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Como resposta, 33,8% dos adultos e idosos responderam que talvez saibam identificar, 32,3% alegaram que não iriam saber identificar, 24,6% disseram que sabem identificar e 9,2% responderam que não sabem dizer se conseguiram identificar.
+                </p>
+                <p class="secao-conteudo__artigo__paragrafo">
+                    Tomando como base estas informações, é notório que há uma quantidade expressiva de pessoas que não possuem certeza se conseguiriam identificar um site malicioso, além de um número expressivo de pessoas que não sabem, de fato, identificar um site clonado. Por consequência, pode-se afirmar que existe a necessidade da disseminação do conhecimento sobre os detalhes de uma página na web, como a diferença do protocolo HTTP e HTTPS, além da democratização do conhecimento sobre a segurança das informações privadas no mundo cibernético.
+                </p>
+            </article>
+        </article>
+
+         <section class="secao-conteudo-topico secao-conteudo-topico--espacamento">
+            <div class="secao-conteudo-topico__conteiner">
+                <div class="secao-conteudo-topico__conteiner--linha"></div>
+                <h2 class="secao-conteudo-topico__conteiner__titulo">Análise dos <span class="secao-conteudo-topico__conteiner__titulo__span">dados obtidos</span></h2>
+                <div class="secao-conteudo-topico__conteiner--linha secao-conteudo-topico__conteiner--linha3"></div>
+            </div>
+        </section>
+
+        <section class="secao-conteudo-topico--cards">
+            <ul class="seca-conteudo-topico--cards__lista">
+                <li class="seca-conteudo-topico--cards__lista__item">
+                    <article class="seca-conteudo-topico--cards__lista__item__artigo">
+                        A partir da pesquisa, nota-se a carência de conhecimento, em todas as faixas etárias, acerca da Segurança Cibernética
+                    </article>
+                </li>
+                <li class="seca-conteudo-topico--cards__lista__item">
+                    <article class="seca-conteudo-topico--cards__lista__item__artigo">
+                        Constata-se, também, a ausência de medidas de segurança básicas no cotidiano dos envolvidos na pesquisa, tais como: verificação em duas etapas nas redes sociais, denúncia de e-mails como spam/phishing, etc
+                    </article>
+                </li>
+                <li class="seca-conteudo-topico--cards__lista__item">
+                    <article class="seca-conteudo-topico--cards__lista__item__artigo">
+                        Observa-se, ainda, a dúvida do público mais novo (crianças e adolescentes) quanto aos aspectos fundamentais da Cibersegurança, como a privacidade e as informações pessoais.
+                    </article>
+                </li>
+                <li class="seca-conteudo-topico--cards__lista__item">
+                    <article class="seca-conteudo-topico--cards__lista__item__artigo">
+                        Juntamente, verifica-se a necessidade de ferramentas tecnológicas, tais como a aplicação Cyber Security Information e o aplicativo Digital Authenticator, que democratizem o acesso aos conteúdos e ferramentas relacionadas à Cibersegurança.
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="{% static 'assets/js/graficoPesquisas.js' %}"></script>
+{% endblock %}

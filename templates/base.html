@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    {% block meta-descricao %} {% endblock %}
+    {% block meta-keys %} {% endblock %}
+    <meta name="author" content="Anna Beatriz, Hillary Mendes, Raphaela Guiland, Victor Marques">
     {% block title %} {% endblock %} {# bloco title: cada página tem um título diferente #}
     <link rel="icon"  type="image/png" sizes="16x16" href="{% static '/assets/img/favicon_csi.png' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/assets/css/estilo.css' %}">
@@ -13,26 +16,40 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" >
 </head>
 <body {% block class_css_body %} {% endblock %}>  {# bloco class_css: em cada página o front adiciona uma classe diferente para o body #}
+    
+    <a class="link-conteudo-principal" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     {% include "partials/_header.html" %}  {# Inclui o header, cujo html está no arquivo _header.html #}
 
     <!-- Vlibras -->
+    <div class="print">
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    </div>
 
     {% block content %} {% endblock %}  {# bloco body: cada página possui conteúdos diferentes no body #}
 
+    <!-- Botão de voltar ao topo -->
+    <button title="Voltar ao Topo" id="link-voltar-ao-topo" class="conteiner__link-voltar-ao-topo" data-link-voltar-ao-topo>
+        <img class="conteiner__link__imagem-voltar-ao-topo" src="{% static '/assets/img/seta_topo.svg' %}" alt="Botão para voltar ao topo da página">
+    </button>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="{% static '/assets/js/cabecalho.js' %}"></script>
+<script src="{% static '/assets/js/botaoVoltarAoTopo.js' %}"></script>
+{% block script %} {% endblock %}  {# bloco script: caso alguma página tenha um script específico #}
+
+{% include "partials/_footer.html" %}  {# Inclui o footer, cujo html está no arquivo _footer.html #}
+
+<!-- Script Vlibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
 </html>

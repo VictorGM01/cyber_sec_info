@@ -1,5 +1,5 @@
-/*Cabecalho*/
 @media screen and (min-width: 0){
+    /* Cabecalho */
     .cabecalho {
         align-items: flex-start;
         flex-direction: column;
@@ -13,7 +13,9 @@
 
     .cabecalho__menu-mobile__input__label {
         cursor: pointer;
-
+        
+        color: transparent;
+        
         height: 22px;
         width: 30px;
 
@@ -77,7 +79,7 @@
     }
 
     .cabecalho__conteiner__logo {
-        width: 100%;
+        width: calc(100% - 31px);
 
         display: flex;
         align-items: center;
@@ -172,7 +174,6 @@
         text-align: initial;
     }
 
-    /* Sobre Nós */
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
         background: url("../img/icone_email.svg");
         content: " ";
@@ -186,18 +187,6 @@
     }
 
     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
-        background: url("../img/icone_pesquisa.svg");
-        content: " ";
-
-        height: 24px;
-        width: 24px;
-
-        display: block;
-
-        margin-left: 1rem;
-    }
-
-    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
         background: url("../img/icone_desenvolver.svg");
         content: " ";
 
@@ -209,19 +198,7 @@
         margin-left: 1rem;
     }
 
-    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
-        background: url("../img/icone_instituicao.svg");
-        content: " ";
-
-        height: 24px;
-        width: 24px;
-
-        display: block;
-
-        margin-left: 1rem;
-    }
-    
-     .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
         background: url("../img/icone_newsletter.svg");
         content: " ";
 
@@ -232,10 +209,45 @@
 
         margin-left: 1rem;
     }
-    
-    /* Ferramentas */
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        background: url("../img/icone_sobre_o_projeto.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+        background: url("../img/icone_instituicao.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(6)::before {
+        background: url("../img/icone_pesquisa.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+   
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
-        background: url("../img/icone_validador_de_url.svg");
+        background: url("/static/assets/img/icone_validador_de_url.svg");
         content: " ";
 
         height: 24px;
@@ -246,7 +258,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
-        background: url("../img/icone_gerador_de_senhas.svg");
+        background: url("/static/assets/img/icone_gerador_de_senhas.svg");
         content: " ";
 
         height: 24px;
@@ -258,7 +270,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
-        background: url("../img/icone_nosso_app.svg");
+        background: url("/static/assets/img/icone_nosso_app.svg");
         content: " ";
 
         height: 26px;
@@ -268,10 +280,21 @@
 
         margin-left: 1rem;
     }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
+        background: url("/static/assets/img/icone_recomendacao.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
     
-    /* Tutoriais */
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
-        background: url("../img/icone_verificacao_em_duas_etapas.svg");
+        background: url("/static/assets/img/icone_verificacao_em_duas_etapas.svg");
         content: " ";
 
         height: 24px;
@@ -283,11 +306,11 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
-        background: url("../img/icone_mover_email_para_caixa_de_spam.svg") no-repeat;
+        background: url("/static/assets/img/icone_baixe_nosso_app.svg");
         content: " ";
 
         height: 24px;
-        width: 28px;
+        width: 24px;
 
         display: block;
 
@@ -295,7 +318,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
-        background: url("../img/icone_baixe_nosso_app.svg");
+        background: url("/static/assets/img/icone_desenvolver.svg");
         content: " ";
 
         height: 24px;
@@ -307,7 +330,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
-        background: url("../img/icone_como_criar_senhas_fortes.svg");
+        background: url("/static/assets/img/icone_cabecalho_navegadores.svg");
         content: " ";
 
         height: 24px;
@@ -317,9 +340,9 @@
 
         margin-left: 1rem
     }
-    
+
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
-        background: url("../img/icone_ver_mais.svg");
+        background: url("/static/assets/img/icone_ver_mais.svg");
         content: " ";
 
         height: 24px;
@@ -330,7 +353,6 @@
         margin-left: 1rem
     }
     
-    /* Conceitos */
     .cabecalho__navegacao__sublista__item--conceitos:nth-child(1)::before {
         background: url("../img/icone_ciberseguranca.svg") no-repeat;
         content: " ";
@@ -379,7 +401,45 @@
         margin-left: 1rem;
     }
     
-    /*Fale Conosco*/
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 1.625rem 0 1.625rem;
+    }
+
+    .rodape__secao-informacoes__conteiner-logotipo {
+        display: flex;
+        justify-content: center;
+
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__lista, .rodape__navegacao__conteiner-tutoriais, .rodape__navegacao__conteiner-artigos {
+        margin-bottom: 1.875rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .30rem 0 .30rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__titulo, .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.125rem;
+
+        margin: .75rem 0 .75rem 0;
+    }
+
+    .rodape__navegacao__conteiner-ferramentas {
+        margin: 1.875rem 0 1.875rem 0;
+    }
+
+    .rodape__secao-selos__link {
+        gap: 1rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    
+    
+    /* Fale Conosco */
      .secao-inicio {
         color: #ffffff;
         text-align: center;
@@ -497,11 +557,10 @@
         margin-bottom: 1rem;
     }
     
-     /*Newsletter*/
+     /* Newsletter */
     .secao-inicio__titulo--newsletter {
         letter-spacing: 1.5px;
         line-height: 2rem;
-
     }
 
     .secao-inicio__titulo--cor {
@@ -540,10 +599,339 @@
     .secao-contato__formulario__usuario__input--newsletter, .secao-contato__formulario__botao--newsletter {
         background: #031805;
     }
+    
+    /* Link de voltar ao topo */
+    .conteiner__link-voltar-ao-topo {
+        border: 0;
+        opacity: 0.4;
+    }
+    
+    /* Página do conteúdo de Artigos/Conceitos */
+    .principal-artigo {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio-artigo__titulo {
+        font-size: 1.75rem;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        margin-bottom: 1rem;
+    }
+
+    .secao-informacoes-artigo__span {
+        display: none;
+    }
+
+    .secao-conteudo__artigo__paragrafo {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .secao-conteudo__artigo__paragrafo, .secao-conteudo-artigo__paragrafo__lista {
+        color: #DFD9D9;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        line-height: 2.5rem;
+    }
+
+    .secao-conteudo-artigo__paragrafo__lista {
+        margin: 1rem 0 1.2rem 1.5rem;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-top: 3rem;
+    }
+
+    .secao-artigos-relacionados {
+        border-top: 1px solid #20e456;
+
+        margin-top: 6rem;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        font-size: 1.5rem;
+    }
+
+    .secao-artigos-relacionados__lista__item {
+        margin-bottom: 3rem;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__artigo {
+        font-size: 1.1rem;
+    }
+    
+    
+    /* Dicionário de Cibersegurança */
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: column;
+    }
+    
+    
+    /* Desenvolvedores */
+    .secao-cards-desenvolvedores, .secao-cards-orientadores {
+        margin: 0 1.96875rem 0 1.96875rem;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         margin-bottom: 2rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile {
+         background: url("../img/icone_desenvolver_sem_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+         background: url("../img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+    .secao-cards-desenvolvedores__lista__item__titulo, .secao-cards-orientadores__lista__item__titulo {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 0 0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        color: #DFD9D9;
+        font-size: .90rem;
+        letter-spacing: 1px;
+        text-align: center;
+
+        margin-bottom: 1.25rem;
+        padding: 0.4rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner {
+        margin-bottom: 1.25rem;
+    }
+    
+    
+    /* Instituição */
+    .principal-instituicao {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio--instituicao {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .secao-inicio__titulo--instituicao {
+        animation: secao-inicio__titulo--animacao--instituicao 2s steps(50) 1s normal both;
+        overflow: hidden;;
+
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .secao-informacoes-ifsp__conteiner__informacoes {
+        margin-bottom: .5rem;
+    }
+
+    .secao-informacoes-ifsp__titulo {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    .secao-informacoes-ifsp__conteiner__imagem {
+        width: 100%;
+    }
+
+    .conteiner__linha--instituicao {
+        margin-top: 5rem;
+    }
+
+    .secao-conteudo-informacoes-ifsp__secao__conteiner__paragrafo, .secao-conteudo-informacoes-ifsp__secao__conteiner__paragrafo__link {
+        color: #DFD9D9;
+        font-size: .875rem;
+        text-decoration: none;
+
+        margin-top: .4rem;
+    }
+    
+    
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
+        font-size: 1.75rem;
+
+        padding: 2.4375rem 0 0 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input {
+        width: 100%;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo, .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        font-size: 1.65rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem, .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo {
+        margin-top: 2.1875rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo {
+        font-size: .8rem;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        box-shadow: 0 0 .70rem #00ff44;
+
+        height: auto;
+        width: 30rem;
+
+        margin: .4rem 0 1rem 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos::after {
+        height: 14%;
+
+        transform: skewY(-5deg);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        margin-top: 6.5rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 1.1px;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        background: #20e456;
+        box-shadow: 0 0 1rem #20e456;
+
+        height: 1px;
+        width: 100%;
+    }
+    
+    
+    /* Política de Privacidade e Termos de Uso */
+    .principal--documentos {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-conteudo-documentos__conteiner__titulo {
+        font-size: 1.2rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+        font-size: 1rem;
+    }
+
+    .conteiner__linha--documentos {
+        margin-top: 5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__lista {
+        margin-left: 1.5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__lista__item {
+        margin-bottom: 1.2rem
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos::after {
+        height: 20%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        margin-top: 8.5rem;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 31%;
+    }
 }
 
 
 @media screen and (min-width: 1200px) {
+    /* Cabeçalho */
     .cabecalho {
         top: 0;
         
@@ -697,6 +1085,15 @@
         margin-left: 0;
     }
     
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(6)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
      .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
         content: " ";
 
@@ -716,6 +1113,15 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
         content: " ";
 
         height: 0;
@@ -805,13 +1211,56 @@
         margin-left: 0;
     }
     
-     /*Fale Conosco*/
+    .cabecalho__navegacao__sublista__item__link:focus, .cabecalho__navegacao__sublista__item:active {
+        background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+    }
+    
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 3.125rem 0 3.125rem;
+    }
+
+    .rodape__secao-informacoes {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 3.75rem;
+    }
+
+    .rodape__navegacao {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.5rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item__link, .rodape__navegacao__conteiner-ferramentas__lista__item__link, .rodape__navegacao__conteiner-tutoriais__lista__item__link, .rodape__navegacao__conteiner-artigods__lista__item__link, .rodape__secao-selos__link__paragrafo {
+        font-size: 1.2rem;
+    }
+
+    .rodape__secao-selos {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+     /* Fale Conosco */
     .secao-contato {
         margin: 0 13.15625rem 0 13.15625rem;
     }
 
-    .secao-inicio__titulo {
-        font-size: 2.2rem;
+    .secao-inicio__titulo--fale-conosco {
+        font-size: 2rem;
     }
 
     @keyframes secao-inicio__titulo--animacao--fale-conosco {
@@ -823,10 +1272,17 @@
             width: 32rem;
         }
     }
+    
+    .secao-inicio__conteiner { 
+        display: flex;
+        justify-content: center;
+    }
 
     .secao-inicio__conteiner__subtitulo {
-       font-size: .90rem;
+       font-size: 1.2rem;
         font-weight: 520;
+        
+        width: 60%;
     }
 
      .secao-contato__formulario__mensagem__conteiner--desktop {
@@ -857,9 +1313,9 @@
         cursor: pointer;
     }
     
-    /*Newsletter*/
+    /* Newsletter */
     .secao-inicio__titulo--newsletter {
-        animation: secao-inicio__titulo--animacao--newsletter 4s steps(50) 1s normal both;
+        animation: secao-inicio__titulo--animacao--newsletter 4s steps(90) 1s normal both;
         overflow: hidden;
 
         font-size: 2em;
@@ -938,4 +1394,418 @@
     .secao-contato__formulario__botao--newsletter:hover {
         background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
     }
+    
+    /* Link de voltar ao topo */
+    .conteiner__link-voltar-ao-topo {
+        opacity: 1;
+    }
+    
+    .conteiner__link__imagem-voltar-ao-topo{
+        height: 3rem;
+        width: 2.5rem;
+    }
+
+    .conteiner__link-voltar-ao-topo:hover {
+        background: #07733B;
+        cursor: pointer;
+    }
+    
+    /* Página do conteúdo de Artigos/Conceitos */
+    .principal-artigo {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio-artigo__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        object-fit: cover;
+
+        height: 16.625rem;
+    }
+
+    .secao-informacoes-artigo__span {
+        color: #C4C4C4;
+
+        display: inline;
+
+        margin: 0 .2rem 0 .2rem;
+    }
+
+    .secao-informacoes-artigo__conteiner--leitura-data {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-conteudo__artigo__paragrafo {
+        font-size: 1rem;
+    }
+
+    .secao-conteudo-artigo__paragrafo__lista {
+        font-size: 1rem;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-bottom: 6rem;
+    }
+
+    .conteiner__linha-artigos-relacionados {
+        margin: 0 2.6875rem 0 2.6875rem;
+
+        border: 1px solid #20e456;
+    }
+
+    .secao-artigos-relacionados {
+        border: none;
+
+        margin-top: 0;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-artigos-relacionados__lista {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 0 11.3125rem;
+    }
+
+    .secao-artigos-relacionados__lista__item {
+        transition: all .4s ease-in-out;
+
+        width: 40%;
+
+        margin-right: 2rem;
+    }
+
+    .secao-artigos-relacionados__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #20e456;
+        
+        bottom: .5rem;
+    }
+
+    .secao-artigos-relacionados__lista__item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__artigo  {
+        font-size: 1rem;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__conteiner__imagem {
+        object-fit: cover;
+
+        height: 10rem;
+    }
+    
+    
+    /* Dicionário de Cibersegurança */
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: row;
+    }
+    
+    
+    /* Desenvolvedores */
+    .secao-inicio__titulo--desenvolvedores, .secao-inicio__titulo--orientadores {
+        font-size: 2rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile, .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-mobile {
+        background: none;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+        background: url("../img/icone_desenvolver_sem_fundo.svg");
+        z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-desktop {
+          background: url("../img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+    }
+
+    .secao-cards-desenvolvedores__lista, .secao-cards-orientadores__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         transition: 2s;
+
+         width: 35%;
+    }
+
+    .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-desenvolvedores__lista__item:nth-child(3), .secao-cards-orientadores__lista__item:nth-child(1) {
+        margin-right: 4rem;
+    }
+    
+    .secao-cards-orientadores__lista__item:nth-child(1) {
+        height: inherit;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        font-size: 1rem;
+
+        margin-bottom: 2rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item:hover, .secao-cards-orientadores__lista__item:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
+        transition: .2s ease-in-out;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover {
+        filter: drop-shadow(1px 1px 1px rgba(10, 246, 76, 0.61));
+    }
+    
+    
+    /* Instituição */
+    .principal-instituicao {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio__titulo--instituicao { 
+        font-size: 2rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner-logo {
+        background: url("/static/assets/img/icone_if.png");
+
+        height: 90px;
+        width: 92px;
+
+        margin-left: -0.7rem;
+    }
+
+    .secao-informacoes-ifsp__titulo {
+        color: #f1f1f1;
+
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .secao-informacoes-ifsp__conteiner {
+        margin-bottom: 1.5625rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner__informacoes {
+        margin-bottom: 0.5625rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner__imagem {
+        width: 100%;
+    }
+
+    .secao-conteudo-informacoes-ifsp__artigo__paragrafo {
+        font-size: 1.1rem;
+    }
+
+    .conteiner__linha--instituicao {
+        margin: 4rem 0 2rem 0;
+    }
+
+    .secao-conteudo-informacoes-ifsp__secao__conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos::after {
+        bottom: -10rem;
+        height: 100%;
+
+        transform: skewY(-3deg);
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem {
+        margin: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--titulo {
+        width: 40%;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input{
+        width: 100%;
+
+        margin-bottom: 3.4375rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo {
+        margin-top: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards {
+        overflow: initial;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:nth-child(2), .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:nth-child(3) {
+        display: block;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo {
+        font-size: initial;
+
+        flex-direction: row;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        box-shadow: none;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:hover, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #00ff45;
+        bottom: .5rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+        object-fit: cover;
+
+        height: 6rem;
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin-top: 13rem;
+    }
+    
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 13rem 9.96875rem 0 9.96875rem;
+    } 
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
+        justify-content: center;
+    }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 2rem;
+    }
+
+    .secao-conteudo-topico__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1.125rem;
+    }
+
+    .secao-conteudo-topico__conteiner--linha:nth-child(1) {
+        display: none;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        width: 65%;
+    }
+
+    .secao-conteudo-topico__conteiner--linha2 {
+        width: 78%;
+    }
+
+    .secao-conteudo-topico__conteiner--linha3 {
+        width: 74%;
+    }
+
+    .seca-conteudo-topico--cards__lista {
+        align-items: unset; 
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .seca-conteudo-topico--cards__lista__item { 
+        align-items: center;
+        display: flex;
+
+        height: initial;
+        width: 30rem;
+    }
+    
+    
+    /* Política de Privacidade e Termos de Uso*/
+    .principal--documentos {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio__titulo--documentos {
+        animation: secao-inicio__titulo--animacao--documentos 2s steps(50) 1s normal both;
+        overflow: hidden;
+
+        font-size: 2rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    @keyframes secao-inicio__titulo--animacao--documentos {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 25rem;
+        }
+    }
+
+    .secao-conteudo-documentos__conteiner__titulo {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+        font-size: 1.1rem;
+    }
 }
+

@@ -1,0 +1,119 @@
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Artigo sobre {{ artigo.titulo }}. Leia para se atualizar e compreender conteúdos de Cibersegurança.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Artigo, Cibersegurança, Conteúdos, Cybersecurity, Informação, Segurança">
+{% endblock %}
+
+{% block title %}
+<title>{{ artigo.titulo }} | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo__artigo" {% endblock %}
+
+{% block content %}
+
+<main class="principal-artigo" role="main" tabindex="0">
+    <section class="secao-caminho-artigo">
+        <a class="secao-caminho-artigo__link" href="{% url 'artigos' %}">Artigos</a> > <p class="secao-caminho-artigo__paragrafo">{{ artigo.titulo }}</p>
+    </section>
+
+    <section id="conteudo-principal" class="secao-inicio-artigo">
+        <h1 class="secao-inicio-artigo__titulo secao-inicio__titulo">{{ artigo.titulo }}</h1>
+        <div class="secao-inicio-artigo__conteiner">
+            <img class="secao-inicio-artigo__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Capa do artigo sobre {{ artigo.titulo }}">
+        </div>
+    </section>
+
+    <section class="secao-informacoes-artigo">
+        <div class="secao-informacoes-artigo__conteiner--leitura-data">
+            <time class="secao-informacoes-artigo__tempo">{{ artigo.data_publicacao }}</time> <span class="secao-informacoes-artigo__span"> | </span>
+            <p class="secao-informacoes-artigo__paragrafo">{{ artigo.tempo_de_leitura }} minutos de leitura</p>
+        </div>
+
+        <div class="secao-informacoes-artigo__conteiner--redes-sociais">
+            <ul class="secao-informacoes-artigo__conteiner--redes-sociais__lista">
+                <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
+                    <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://linkedin.com/shareArticle?url=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do LinkedIn"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_linkedin.svg' %}" alt="Ícone do LinkedIn para compartilhar esse artigo no feed" width="20"></a>
+                </li>
+                <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
+                    <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do Facebook"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_facebook.svg' %}" alt="Ícone do Facebook para compartilhar esse artigo no feed" width="20"></a>
+                </li>
+                <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
+                    <a class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este artigo sobre {{ artigo.titulo }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse artigo em alguma conversa" width="20"></a>
+                </li>
+                <li class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item">
+                    <button onclick="window.print()" class="secao-informacoes-aritgo__conteiner--redes-sociais__lista__item__botao">
+                      <img title="Realizar download do artigo" class="secao-informacoes-artigo__conteiner--redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do artigo" width="20">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="conteiner__linha"></div>
+
+    {% if artigo.titulo_para_url == 'dicionario-de-ciberseguranca' %}
+    <section class="secao-pesquisa-conteudo">
+        <label for="pesquisa" class="secao-pesquisa-conteudo__label" title="Pesquisar por termo...">
+            <input list="lista_de_opcoes" type="search" id="inputPesquisaConteudo" name="pesquisa" class="secao-pesquisa-conteudo__label__input" placeholder="Pesquisar por termo..."  onkeyup="pesquisar()">
+            <datalist id="lista_de_opcoes">
+                <option>Autenticação</option>
+                <option>Autenticidade</option>
+                <option>Cibersegurança</option>
+                <option>Confidencialidade</option>
+                <option>Disponibilidade</option>
+                <option>Integridade</option>
+            </datalist>
+        </label>
+    </section>
+    {% else %}
+    {% endif %}
+
+    <section class="secao-conteudo">
+
+        {{ artigo.conteudo | safe }}
+
+        <article class="secao-conteudo__artigo-nao-encontrado" id="nenhumResultado">
+            <div class="secao-conteudo__artigo-nao-encontrado__imagem"></div>
+            <h3 class="secao-conteudo__artigo-nao-encontrado__titulo">Nenhum resultado encontrado</h3>
+        </article>
+
+        <article class="secao-conteudo__artigo-referencias" id="artigoReferencias">
+            <h3 class="secao-conteudo__artigo-referencias__titulo">Referências bibilográficas</h3>
+            {{ artigo.referencias | safe }}
+        </article>
+    </section>
+</main>
+<div class="conteiner__linha-artigos-relacionados"></div>
+<section class="secao-artigos-relacionados" tabindex="0">
+    <h4 class="secao-artigos-relacionados__titulo">Artigos relacionados</h4>
+    <ul class="secao-artigos-relacionados__lista">
+        {% for artigo in artigos_relacionados %}
+        <li class="secao-artigos-relacionados__lista__item">
+            <a class="secao-artigos-relacionados__lista__item__link" href="{% url 'artigo' artigo.titulo_para_url %}">
+                <div class="secao-artigos-relacionados__lista__item__link__conteiner">
+                    <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Capa do artigo sobre {{ artigo.titulo }}">
+                </div>
+                <h5 class="secao-artigos-relacionados__lista__item__link__titulo">{{ artigo.titulo}}</h5>
+                <article class="secao-artigos-relacionados__lista__item__link__artigo">
+                    {{ artigo.resumo }}
+                </article>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
+
+
+{% if artigo.titulo_para_url == 'dicionario-de-ciberseguranca' %}
+    {% block script %}
+        <script type="text/javascript" src="{% static '/assets/js/dicionario.js' %}"></script>
+    {% endblock %}
+{% else %}
+{% endif %}

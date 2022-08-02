@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Artigos de Segurança da Informação, Segurança Cibernética, Crimes Cibernéticos e LGPD">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Artigos, Cybersecurity, Segurança Cibernética, Segurança da Informação, Crimes Cibernéticos">
+{% endblock %}
+
+{% block title %}
+<title>Artigos | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--pagina-geral-de-artigos" {% endblock %}
+
+{% block content %}
+
+<main class="principal--pagina-geral-de-artigos" role="main">
+    <section id="conteudo-principal" class="secao-inicio--pagina-geral-de-artigos">
+        <div class="secao-inicio--pagina-geral-de-artigos__conteiner">
+            <div class="secao-inicio--pagina-geral-de-artigos__conteiner--titulo">
+                <h1 class="secao-inicio--pagina-geral-de-artigos__conteiner__titulo">Conheça nossos artigos sobre <span class="secao-inicio--pagina-geral-de-artigos__conteiner__titulo__span" title="Cibersegurança"></span><span class="span-acessibilidade" content=" " style="color: transparent; display: flex"> Cibersegurança</span></h1>
+            </div>
+
+            <div class="secao-inicio--pagina-geral-de-artigos__conteiner--input">
+                <form method="get">
+                    <label for="pesquisa-conteudo" class="secao-inicio--pagina-geral-de-artigos__conteiner--input__label" title="Pesquisar por conteúdo...">
+                        <input type="search" name="busca" id="pesquisa-conteudo" class="secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input" placeholder="Pesquisar por conteúdo...">
+                    </label>
+                </form>
+            </div>
+        </div>
+
+        {% if artigos_recentes %}
+        <section class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes">
+            <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem">
+                <h2 class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo">
+                    Artigos <span class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo__span">recentes</span>
+                </h2>
+                <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes--linha"></div>
+            </div>
+
+            <section data-secao-carrossel class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards">
+                <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista">
+                    {% for artigo_recente in artigos_recentes %}
+                    <li data-artigo-recente="{{ artigo_recente.id }}" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item animacao">
+                        <a href="{% url 'artigo' artigo_recente.titulo_para_url %}" class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__link" title="Acesse o artigo...">
+                            <h3 class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__titulo">
+                                {{ artigo_recente.titulo}}
+                            </h3>
+                            <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner">
+                                <img class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem" src="{{ artigo_recente.capa.url }}" alt="Artigo sobre {{ artigo_recente.titulo }}">
+                            </div>
+                            <section class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao">
+                                <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data">
+                                    <p class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo">
+                                        {{ artigo_recente.data_publicacao }}
+                                    </p>
+                                </div>
+
+                                <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo">
+                                    <p class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo">
+                                        {{ artigo_recente.tempo_de_leitura }} min
+                                    </p>
+                                </div>
+                            </section>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </section>
+        {% endif %}
+    </section>
+    <section class="secao-artigos-gerais--pagina-geral-de-artigos">
+        <h2 class="secao-artigos-gerais--pagina-geral-de-artigos__titulo">
+            {% if artigos and not busca %}
+                Mais artigos
+            {% elif busca %}
+                Artigos Encontrados
+            {% endif %}
+        </h2>
+        <div class="secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes--linha"></div>
+
+        <section class="secao-artigos-gerais--pagina-geral-de-artigos__secao">
+            {% if artigos %}
+            <ul class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista">
+                {% for artigo in artigos %}
+                <li class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item animacao">
+                    <a href="{% url 'artigo' artigo.titulo_para_url %}" class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__link" title="Acesse o artigo...">
+                         <h3 class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__titulo">
+                            {{ artigo.titulo }}
+                        </h3>
+                        <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner">
+                            <img class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Artigo sobre {{ artigo.titulo }}">
+                        </div>
+                        <section class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao">
+                            <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data">
+                                <p class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo">
+                                    {{ artigo.data_publicacao }}
+                                </p>
+                            </div>
+
+                            <div class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo">
+                                <p class="secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo">
+                                    {{ artigo.tempo_de_leitura }} min
+                                </p>
+                            </div>
+                        </section>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <article class="secao-conteudo__artigo-nao-encontrado" style="display: flex">
+                <div class="secao-conteudo__artigo-nao-encontrado__imagem"></div>
+                <h3 class="secao-conteudo__artigo-nao-encontrado__titulo">Nenhum resultado encontrado</h3>
+            </article>
+            {% endif %}
+        </section>
+    </section>
+    <section class="secao-paginacao">
+        <nav class="secao-paginacao__navegacao">
+            {% if artigos.has_other_pages %}
+                {% if artigos.has_previous %}
+                    <a href="?page={{ artigos.previous_page_number }}" class="secao-paginacao__navegacao__link-voltar"></a>
+                {% else %}
+                    <a href="#" style="display: none" class="secao-paginacao__navegacao__link-voltar" title="Ir para a página anterior"></a>
+                {% endif %}
+
+                <p class="secao-paginacao__navegacao__paragrafo">Página {{ artigos.number }} de {{ paginas }}</p>
+                {% if artigos.has_next %}
+                    <a href="?page={{ artigos.next_page_number }}" class="secao-paginacao__navegacao__link-avancar"></a>
+                {% else %}
+                    <a href="#" style="display: none" class="secao-paginacao__navegacao__link-avancar" title="Ir para a próxima página"></a>
+                {% endif %}
+           {% endif %}
+       </nav>
+    </section>
+</main>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="{% static '/assets/js/carrosselAutomatico.js' %}"></script>
+    <script type="text/javascript" src="{% static '/assets/js/scrollAnimado.js' %}"></script>
+{% endblock %}

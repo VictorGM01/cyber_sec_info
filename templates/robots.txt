@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /*?page=
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /sobre-nos/email/enviar-mensagem
+Disallow: /sobre-nos/email/cadastro-newsletter
+
+Sitemap: https://www.ciberseguranca.info/sitemap.xml
