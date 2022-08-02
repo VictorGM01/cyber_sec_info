@@ -26,6 +26,10 @@
       * [Python e Django](#python-e-django)
       * [SQLite e PostgreSQL](#sqlite-e-postgresql)
   * [Artigos Relacionados](#artigos-relacionados)
+* [Método](#método)
+    * [Etapas do Back-End](#etapas-do-back-end)
+    * [Etapas do Front-End](#etapas-do-front-end)
+    * [Etapas Gerais](#etapas-gerais)
 * [Referências](#referências)
 
 # Tema e Autores
@@ -315,6 +319,71 @@ Ademais, em assentimento com Cardoso et al. (2019), o desenvolvimento da aplica�
 
 Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um site com um propósito semelhante ao objetivo geral da aplicação web desenvolvida no presente trabalho, o CERT.br (Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil). Nesse sentido, foi constatado a presença de diversos conteúdos informacionais sobre Segurança Cibernética no site, tais como: cartilhas, guias e recomendações de segurança. Todavia, como a divulgação desses materiais não é o objetivo principal do site, uma vez que o projeto tem como missão o tratamento de incidentes (CERT.br, 2022), nota-se a ausência da acessibilidade no site, o que, em contraposição ao atual projeto, não garante a democratização do acesso às informações disponibilizadas.
 
+# Método
+
+**Etapa 1) Segmentação das áreas de desenvolvimento**
+ - Para o início do desenvolvimento da aplicação web Cyber Security Information, a segmentação das áreas de desenvolvimento em front-end e back-end foi o primeiro passo. Nessa etapa, dois dos integrantes do grupo de autores, Anna Santos e Victor Marques, ficaram responsáveis pelo desenvolvimento back-end da aplicação, enquanto Hillary Mendes e Raphaela Ferraz ficaram responsáveis pelo desenvolvimento front-end da aplicação.
+ - Outrossim, dando continuidade ao projeto realizado em 2021, isto é, o projeto de desenvolvimento de um software mobile para o armazenamento de dados confidenciais, o qual o resultado (aplicativo Digital Authenticator) será exposto na aplicação, dois dos integrantes do grupo, Anna Santos e Victor Marques, ficaram responsáveis pelo aprimoramento do software, enquanto Raphaela Ferraz ficou responsável pela criação do layout das novas telas.
+
+**Etapa 2) Estudo sobre as tecnologias das áreas de desenvolvimento**
+ - Uma vez realizada a divisão das áreas de desenvolvimento, a próxima etapa trata do estudo das principais tecnologias de cada área. Com isso, os integrantes Raphaela Ferraz e Victor Marques, representantes das áreas de desenvolvimento front-end e back end, foram responsáveis por criar guias de estudo para cada uma das duas áreas. Sendo assim, os guias de estudo foram constituídos por cursos, vídeos, sites e páginas em redes sociais que abordavam conteúdos relacionados ao tema de desenvolvimento.
+
+**Etapa 3) Criação dos ambientes para diferentes estágios do ciclo de vida da aplicação web**
+ - Nessa etapa, a área de back-end foi responsável por criar o **ambiente de desenvolvimento**, ou seja, o ambiente utilizado pelos integrantes para a programação da aplicação, o **ambiente de homologação**, isto é, o ambiente utilizado para a realização de testes na aplicação e o **ambiente de produção**, ou seja, o ambiente que os usuários finais utilizarão. Ademais, a área de front-end foi responsável por criar o **ambiente de design**, ou seja, o ambiente utilizado para a criação do design das páginas da aplicação. 
+
+**Etapa 4) Levantamento de Requisitos da Aplicação**
+ - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram as imagens a seguir (figura 1 e figura 2):
+> figura 1
+> figura 2
+
+**Etapa 5) Criação do Diagrama de Caso de Uso da Aplicação Web**
+ - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 3).
+> figura 3
+
+## Etapas do Back-End
+**Etapa 6) Estruturação dos diretórios da aplicação**
+ - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 3.
+ > figura 4
+ - Conforme demonstrado na figura acima, o diretório “apps” é responsável por organizar os aplicativos, o diretório “media” é onde ficam as mídias da aplicação no ambiente de desenvolvimento e homologação, o diretório “project_cyber_sec” é o Django Project, responsável por armazenar todas as configurações da aplicação, o diretório “staticfiles” é onde ficam os arquivos estáticos (arquivos de estilização, arquivos “.js” e imagens) no ambiente de produção, o diretório “templates” é onde ficam os templates em HTML5 e, por fim, o diretório “venv” é o “ambiente virtual” da aplicação nos ambientes de desenvolvimento e homologação.
+
+**Etapa 7) Criação e segmentação dos aplicativos**
+ - Após a organização dos diretórios, os aplicativos Django foram segmentados por funcionalidade dentro do diretório “apps”. Nesse sentido, as páginas relacionadas aos artigos ficarão dentro de um app específico, assim como as páginas relacionadas aos tutoriais e as demais.
+
+**Etapa 8) Criação dos bancos de dados**
+ - Após todas as etapas supramencionadas, a última etapa necessária para o início da programação back-end da aplicação foi a criação dos bancos de dados SQLite (para os ambientes de desenvolvimento e de homologação) e a criação do banco de dados PostgreSQL (para o ambiente de produção).
+ 
+## Etapas do Front-End
+**Etapa 9) Estudo sobre a inserção da acessibilidade nas páginas**
+ - Para o início do desenvolvimento front-end das páginas da aplicação, o estudo sobre a inserção da acessibilidade na estruturação das páginas trata-se do primeiro passo. Com isso, foram realizados os estudos sobre a semântica que o HTML5 proporciona, através das suas tags de marcação com significado. Ademais, também foi estudado os tipos de leitores de telas e como utilizá-los para navegar em páginas web. 
+
+**Etapa 10) Estudo sobre a inserção de responsividade nas páginas**
+ - Após a etapa acima, o segundo passo, para realizar o desenvolvimento front-end das páginas do website, consiste em realizar estudos sobre a inserção da responsividade no design das páginas. Com isso, foram realizados os estudos sobre mobile first e media queries.
+
+**Etapa 11) Criação dos designs no Figma (mobile e desktop)**
+ - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 4.
+> figura 5
+ - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 5.
+> figura 6
+
+**Etapa 12) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
+ - Através da realização de todas as etapas acima, a última etapa necessária para o início da programação front-end da aplicação consiste em desenvolver os códigos de marcação (HTML), de estilização (CSS) e de dinamicidade (JavaScript) com os recursos que garantem a acessibilidade e a responsividade do site. 
+
+**Etapa 13) Realização de testes de acessibilidade e responsividade**
+ - Nesta etapa, são realizados os testes das páginas desenvolvidas, no ambiente de desenvolvimento e no ambiente de homologação, para garantir a acessibilidade e a responsividade da aplicação.
+
+## Etapas Gerais
+**Etapa 14) Estudo sobre a segurança cibernética**
+ - Visando a produção de conteúdos informacionais acerca da Cibersegurança, nessa etapa os integrantes realizaram uma pesquisa aprofundada sobre Segurança da Informação aplicada à Segurança Cibernética, de modo a obter conhecimento e fundamentação teórica para a produção de artigos, tutoriais e ferramentas.
+
+**Etapa 15) Produção de artigos, tutoriais e ferramentas**
+ - Uma vez que os integrantes realizaram a etapa anterior, a próxima etapa trata da produção dos artigos, tutoriais e ferramentas, que serão disponibilizados em diversos tipos de mídias na aplicação web.
+ - Ademais, nessa etapa o software mobile Digital Authenticator - responsável por armazenar informações confidenciais de maneira segura - é melhorado e implementado na aplicação Cyber Security Information.
+
+**Etapa 16) Realização de testes**
+ - Nessa etapa, os responsáveis pelo ambiente de homologação ficam encarregados de validar todas as implementações na aplicação antes da publicação destas no ambiente de produção.
+
+**Etapa 17) Publicação das funcionalidades no ambiente de produção**
+ - Após a realização dos testes, as funcionalidades implementadas na aplicação, se forem aprovadas nos testes, serão disponibilizadas para os usuários finais.
 
 # Referências
 
