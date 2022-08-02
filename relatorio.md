@@ -333,17 +333,18 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 **Etapa 4) Levantamento de Requisitos da Aplicação**
  - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram as imagens a seguir (figura 1 e figura 2):
-> figura 1
-> figura 2
+> imagem 1
+> imagem 2
 
 **Etapa 5) Criação do Diagrama de Caso de Uso da Aplicação Web**
  - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 3).
-> figura 3
+> imagem 3
 
 ## Etapas do Back-End
 **Etapa 6) Estruturação dos diretórios da aplicação**
  - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 3.
- > figura 4
+ > imagem 4
+
  - Conforme demonstrado na figura acima, o diretório “apps” é responsável por organizar os aplicativos, o diretório “media” é onde ficam as mídias da aplicação no ambiente de desenvolvimento e homologação, o diretório “project_cyber_sec” é o Django Project, responsável por armazenar todas as configurações da aplicação, o diretório “staticfiles” é onde ficam os arquivos estáticos (arquivos de estilização, arquivos “.js” e imagens) no ambiente de produção, o diretório “templates” é onde ficam os templates em HTML5 e, por fim, o diretório “venv” é o “ambiente virtual” da aplicação nos ambientes de desenvolvimento e homologação.
 
 **Etapa 7) Criação e segmentação dos aplicativos**
@@ -361,9 +362,9 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 **Etapa 11) Criação dos designs no Figma (mobile e desktop)**
  - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 4.
-> figura 5
+> imagem 5
  - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 5.
-> figura 6
+> imagem 6
 
 **Etapa 12) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
  - Através da realização de todas as etapas acima, a última etapa necessária para o início da programação front-end da aplicação consiste em desenvolver os códigos de marcação (HTML), de estilização (CSS) e de dinamicidade (JavaScript) com os recursos que garantem a acessibilidade e a responsividade do site. 
