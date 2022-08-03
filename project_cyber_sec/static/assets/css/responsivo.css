@@ -903,6 +903,97 @@
     .secao-conteudo-documentos__artigo__lista__item {
         margin-bottom: 1.2rem
     }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais::after {
+        height: 14%;
+
+        transform: skewY(-5deg);
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem, .secao-tutoriais-gerais--pagina-geral-de-tutoriais {
+       margin: 0 1.5625rem 0 1.5625rem
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 1.75rem;
+        padding: 2.4375rem 0 0 0;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input {
+        width: 100%;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--input {
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo {
+        font-size: 1.65rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+        overflow: hidden;
+        
+        width: auto;
+        height: auto;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        width: 100%;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item {
+        box-shadow: 0 0 0.7rem #00ff44;
+
+        height: auto;
+        width: 30rem;
+
+        margin: 0.4rem 0 1rem 2rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo {
+        font-size: .8rem;
+    }
+    
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        margin-top: 10rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: .75rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar {
+        background-image: url("../img/icone_voltar_botao_categoria.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar {
+        background-image: url("../img/icone_avancar_botao_categoria.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento {
+        margin-top: 4rem;
+    }
 }
 
 
@@ -925,6 +1016,34 @@
     }
 
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 31%;
+    }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo {
+        width: 45%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        text-align: left;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        width: 10%;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
         width: 31%;
     }
 }
@@ -1806,6 +1925,85 @@
 
     .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
         font-size: 1.1rem;
+    }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem, .secao-tutoriais-gerais--pagina-geral-de-tutoriais, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo {
+        width: 45%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        text-align: left;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner__imagem {
+        object-fit: cover;
+
+        height: 6rem;
+        width: 100%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+       overflow: initial;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item {
+        margin: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais::after {
+        height: 30%;
+        transform: skewY(-5deg);
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        margin-top: 15rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        width: 10%;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        width: 31%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item:hover, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #00ff45;
+
+        bottom: .5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao {
+        overscroll-behavior-y: none;
     }
 }
 
