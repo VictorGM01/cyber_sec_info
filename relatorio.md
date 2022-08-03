@@ -337,17 +337,17 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram as imagens a seguir (figura 1 e figura 2):
 
 <div align="center">
- <figure>
-  <figcaption><em>Figura 1 - Requisitos funcionais da aplicação web</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613150-d19bf0b7-5124-4599-876f-1eba95e6407c.png" width="700px"><br>
- <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
- </figure>
+  <figure>
+    <figcaption><em>Figura 1 — Requisitos funcionais da aplicação web</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613150-d19bf0b7-5124-4599-876f-1eba95e6407c.png" width="700px" alt="Figura 1"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
 </div>
 
 <div align="center">
  <figure>
-  <figcaption><em>Figura 2 - Requisitos não funcionais da aplicação web</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613333-d0025277-5ffa-474a-abaf-fbe3275d0638.png" width="700px"><br>
+  <figcaption><em>Figura 2 — Requisitos não funcionais da aplicação web</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613333-d0025277-5ffa-474a-abaf-fbe3275d0638.png" width="700px" alt="Figura 2"><br>
   <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
  </figure>
 </div>
@@ -357,11 +357,11 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 3).
 
 <div align="center">
- <figure>
-  <figcapition><em>Figura 3 - Diagrama de caso de uso da aplicação web</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613442-944fbae5-5184-44f5-b559-3afd0e1a23b5.png" width="700px"><br>
-  <figcapition><em>Fonte: Os autores (2022)</em></figcaption><br><br>
- </figure>
+  <figure>
+    <figcaption><em>Figura 3 — Diagrama de caso de uso da aplicação web</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613442-944fbae5-5184-44f5-b559-3afd0e1a23b5.png" width="700px" alt="Figura 3"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
 </div>
 
 
@@ -370,11 +370,11 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 4.
 
 <div align="center">
- <figure>
-  <figcaption><em>Figura 4 - Diretórios da aplicação Cyber Security Information</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613389-84cb43b3-4b33-4887-a655-2b815c6acfdb.png" width="350px"><br>
-  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
- </figure>
+  <figure>
+    <figcaption><em>Figura 4 — Diretórios da aplicação Cyber Security Information</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613389-84cb43b3-4b33-4887-a655-2b815c6acfdb.png" width="350px" alt="Figura 4"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
 </div>
 
 
@@ -397,21 +397,21 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 5.
 
 <div align="center">
- <figure>
-  <figcaption><em>Figura 5 - Ambiente de design Figma da aplicação Cyber Security Information</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613419-8d250587-1668-48f8-b89a-664c334988c5.png" width="700px"><br>
-  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
- </figure>
+  <figure>
+    <figcaption><em>Figura 5 — Ambiente de design Figma da aplicação Cyber Security Information</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613419-8d250587-1668-48f8-b89a-664c334988c5.png" width="700px" alt="Figura 5"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
 </div>
 
  - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 6.
 
 <div align="center">
- <figure>
-  <figcaption><em>Figura 6 - Divisão do ambiente de design Figma</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613360-c66568c3-4ad9-49ac-874d-9fae61ea803d.png" width="350px"><br>
-  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
- </figure>
+  <figure>
+    <figcaption><em>Figura 6 — Divisão do ambiente de design Figma</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613360-c66568c3-4ad9-49ac-874d-9fae61ea803d.png" width="350px" alt="Figura 6"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
 </div>
 
 
