@@ -903,6 +903,97 @@
     .secao-conteudo-documentos__artigo__lista__item {
         margin-bottom: 1.2rem
     }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais::after {
+        height: 14%;
+
+        transform: skewY(-5deg);
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem, .secao-tutoriais-gerais--pagina-geral-de-tutoriais {
+       margin: 0 1.5625rem 0 1.5625rem
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 1.75rem;
+        padding: 2.4375rem 0 0 0;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input {
+        width: 100%;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--input {
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo {
+        font-size: 1.65rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+        overflow: hidden;
+        
+        width: auto;
+        height: auto;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        width: 100%;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item {
+        box-shadow: 0 0 0.7rem #00ff44;
+
+        height: auto;
+        width: 30rem;
+
+        margin: 0.4rem 0 1rem 2rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo {
+        font-size: .8rem;
+    }
+    
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        margin-top: 10rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: .75rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar {
+        background-image: url("../img/icone_voltar_botao_categoria.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar {
+        background-image: url("../img/icone_avancar_botao_categoria.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento {
+        margin-top: 4rem;
+    }
 }
 
 
