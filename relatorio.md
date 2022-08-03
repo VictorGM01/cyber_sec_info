@@ -27,6 +27,7 @@
       * [SQLite e PostgreSQL](#sqlite-e-postgresql)
   * [Artigos Relacionados](#artigos-relacionados)
 * [Método](#método)
+    * [Etapas Iniciais](#etapas-iniciais)
     * [Etapas do Back-End](#etapas-do-back-end)
     * [Etapas do Front-End](#etapas-do-front-end)
     * [Etapas Gerais](#etapas-gerais)
@@ -321,6 +322,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 # Método
 
+## Etapas Iniciais
 **Etapa 1) Segmentação das áreas de desenvolvimento**
  - Para o início do desenvolvimento da aplicação web Cyber Security Information, a segmentação das áreas de desenvolvimento em front-end e back-end foi o primeiro passo. Nessa etapa, dois dos integrantes do grupo de autores, Anna Santos e Victor Marques, ficaram responsáveis pelo desenvolvimento back-end da aplicação, enquanto Hillary Mendes e Raphaela Ferraz ficaram responsáveis pelo desenvolvimento front-end da aplicação.
  - Outrossim, dando continuidade ao projeto realizado em 2021, isto é, o projeto de desenvolvimento de um software mobile para o armazenamento de dados confidenciais, o qual o resultado (aplicativo Digital Authenticator) será exposto na aplicação, dois dos integrantes do grupo, Anna Santos e Victor Marques, ficaram responsáveis pelo aprimoramento do software, enquanto Raphaela Ferraz ficou responsável pela criação do layout das novas telas.
@@ -333,17 +335,48 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 **Etapa 4) Levantamento de Requisitos da Aplicação**
  - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram as imagens a seguir (figura 1 e figura 2):
-> imagem 1
-> imagem 2
+
+<div align="center">
+ <figure>
+  <figcaption><em>Figura 1 - Requisitos funcionais da aplicação web</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613150-d19bf0b7-5124-4599-876f-1eba95e6407c.png" width="700px"><br>
+ <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+ </figure>
+</div>
+
+<div align="center">
+ <figure>
+  <figcaption><em>Figura 2 - Requisitos não funcionais da aplicação web</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613333-d0025277-5ffa-474a-abaf-fbe3275d0638.png" width="700px"><br>
+  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+ </figure>
+</div>
+
 
 **Etapa 5) Criação do Diagrama de Caso de Uso da Aplicação Web**
  - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 3).
-> imagem 3
+
+<div align="center">
+ <figure>
+  <figcapition><em>Figura 3 - Diagrama de caso de uso da aplicação web</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613442-944fbae5-5184-44f5-b559-3afd0e1a23b5.png" width="700px"><br>
+  <figcapition><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+ </figure>
+</div>
+
 
 ## Etapas do Back-End
 **Etapa 6) Estruturação dos diretórios da aplicação**
- - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 3.
- > imagem 4
+ - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 4.
+
+<div align="center">
+ <figure>
+  <figcaption><em>Figura 4 - Diretórios da aplicação Cyber Security Information</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613389-84cb43b3-4b33-4887-a655-2b815c6acfdb.png" width="350px"><br>
+  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+ </figure>
+</div>
+
 
  - Conforme demonstrado na figura acima, o diretório “apps” é responsável por organizar os aplicativos, o diretório “media” é onde ficam as mídias da aplicação no ambiente de desenvolvimento e homologação, o diretório “project_cyber_sec” é o Django Project, responsável por armazenar todas as configurações da aplicação, o diretório “staticfiles” é onde ficam os arquivos estáticos (arquivos de estilização, arquivos “.js” e imagens) no ambiente de produção, o diretório “templates” é onde ficam os templates em HTML5 e, por fim, o diretório “venv” é o “ambiente virtual” da aplicação nos ambientes de desenvolvimento e homologação.
 
@@ -361,10 +394,26 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Após a etapa acima, o segundo passo, para realizar o desenvolvimento front-end das páginas do website, consiste em realizar estudos sobre a inserção da responsividade no design das páginas. Com isso, foram realizados os estudos sobre mobile first e media queries.
 
 **Etapa 11) Criação dos designs no Figma (mobile e desktop)**
- - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 4.
-> imagem 5
- - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 5.
-> imagem 6
+ - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 5.
+
+<div align="center">
+ <figure>
+  <figcaption><em>Figura 5 - Ambiente de design Figma da aplicação Cyber Security Information</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613419-8d250587-1668-48f8-b89a-664c334988c5.png" width="700px"><br>
+  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+ </figure>
+</div>
+
+ - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 6.
+
+<div align="center">
+ <figure>
+  <figcaption><em>Figura 6 - Divisão do ambiente de design Figma</em></figcaption><br>
+  <img src="https://user-images.githubusercontent.com/86080382/182613360-c66568c3-4ad9-49ac-874d-9fae61ea803d.png" width="350px"><br>
+  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+ </figure>
+</div>
+
 
 **Etapa 12) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
  - Através da realização de todas as etapas acima, a última etapa necessária para o início da programação front-end da aplicação consiste em desenvolver os códigos de marcação (HTML), de estilização (CSS) e de dinamicidade (JavaScript) com os recursos que garantem a acessibilidade e a responsividade do site. 
