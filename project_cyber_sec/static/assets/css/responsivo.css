@@ -1018,6 +1018,34 @@
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
         width: 31%;
     }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo {
+        width: 45%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        text-align: left;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        width: 10%;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        width: 31%;
+    }
 }
 
 
