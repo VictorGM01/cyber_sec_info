@@ -1035,6 +1035,104 @@
      .secao-tutoriais--pagina-categoria-tutoriais {
          margin-top: 3.5rem;
      }
+    
+    
+    .principal--tutorial {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-caminho-tutorial {
+        margin: 2rem 0 1.25rem 0;
+    }
+
+    .secao-inicio-tutorial__titulo {
+        color: #FFFFFF;
+        letter-spacing: 1.5px;
+        font-size: 1.75rem;
+
+        margin-bottom: .625rem;
+    }
+
+    .secao-inicio-tutorial__conteiner__imagem {
+        margin-bottom: 1rem;
+    }
+
+    .secao-informacoes-tutorial {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-informacoes-tutorial__conteiner--leitura-data-video {
+        display: flex;
+    }
+
+    .secao-informacoes-tutorial__conteiner--leitura-data-video__tempo, .secao-informacoes-tutorial__conteiner--leitura-data-video__span, .secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo {
+        font-size: .69rem;
+
+        margin: 0 .3rem 0 .3rem;
+    }
+
+    .secao-informacoes-tutorial__conteiner-redes-sociais__lista {
+        list-style: none;
+
+        display: flex;
+        gap: 1.5rem;
+
+        margin: 1rem 0 1rem 0;
+    }
+
+    .secao-tutoriais-relacionados, .secao-artigos-relacionados {
+        padding: 0 1.5625rem 0 1.5625rem;
+    }
+
+     .secao-tutoriais-relacionados::after {
+         transform: skewY(-5deg);
+
+         height: 8%;
+     }
+
+    .conteiner__linha--tutoriais-relacionados {
+        width: 100%;
+
+        margin-top: 6rem;
+    }
+
+    .secao-tutoriais-relacionados__titulo, .secao-artigos-relacionados__titulo {
+        font-size: 1.5rem;
+
+        padding: 1.25rem 0 1.25rem 0;
+    }
+
+    .secao-tutoriais-relacionados__lista {
+        flex-direction: column;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__titulo, .secao-tutoriais-relacionados__lista__item__link__artigo {
+        padding: 0 1.7rem 0 1.7rem;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__titulo {
+        font-size: 1.4rem;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .secao-artigos-relacionados--pagina-de-conteudo-tutoriais {
+        background: transparent;
+        border-top: none;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        margin: 0;
+    }
+
+    .secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais {
+        margin-top: 2.5rem;
+    }
 }
 
 
