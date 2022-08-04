@@ -2192,5 +2192,83 @@
     .secao-tutoriais--pagina-categoria-tutoriais {
         margin-top: 10rem;
     }
+    
+    
+        /* Página do conteúdo dos Tutoriais */
+    .principal--tutorial {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio-tutorial__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio-tutorial__conteiner__imagem {
+        object-fit: cover;
+
+        height: 16.625rem;
+
+        margin-bottom: 0;
+    }
+
+    .secao-informacoes-tutorial {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .secao-informacoes-tutorial__conteiner--leitura-data-video__tempo, .secao-informacoes-tutorial__conteiner--leitura-data-video__span, .secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo {
+        font-size: .875rem;
+    }
+
+    .secao-tutoriais-relacionados::after {
+        height: 35%;
+    }
+
+    .secao-tutoriais-relacionados__titulo {
+        margin-bottom: 2.5rem;
+        padding-top: 3rem;
+    }
+
+    .secao-tutoriais-relacionados__titulo, .secao-artigos-relacionados__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__conteiner__imagem {
+        height: 15rem;
+    }
+
+    .secao-tutoriais-relacionados__lista {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .secao-tutoriais-relacionados__lista__item {
+        width: 40%;
+    }
+
+    .secao-artigos-relacionados.secao-artigos-relacionados--pagina-de-conteudo-tutoriais {
+        margin-top: 12.75rem;
+    }
+
+    .secao-artigos-relacionados__lista.secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais {
+        margin-top: 3rem;
+    }
+
+    .secao-artigos-relacionados__lista__item--pagina-de-conteudo-tutoriais {
+        width: 50%;
+    }
+
+    .secao-tutoriais-relacionados__lista__item {
+        border: 1px solid #20e456;
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-tutoriais-relacionados__lista__item:hover {
+        background: linear-gradient(90deg, #196b16 0.58%, #196b16 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #204607;
+        bottom: .5rem;
+    }
 }
 
