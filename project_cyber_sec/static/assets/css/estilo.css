@@ -76,7 +76,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Estilizações gerais da tag body */
-.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos, .corpo--pagina-geral-de-tutoriais, .corpo--pagina-categoria-tutoriais {
+.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos, .corpo--pagina-geral-de-tutoriais, .corpo--pagina-categoria-tutoriais, .corpo--tutorial {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
@@ -1480,6 +1480,167 @@ a:active, a:focus, label:focus, label:active, li:focus {
     width: 35px;
 }
 
+
+/* Página do conteúdo dos Tutoriais */
+.secao-caminho-tutorial {
+    color: #FFFFFF;
+
+    display: flex;
+}
+
+.secao-caminho-tutorial__link {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    margin-right: 0.3rem;
+}
+
+.secao-caminho-tutorial__paragrafo {
+    color: #20E456;
+}
+
+.secao-caminho-tutorial__link__span::after {
+    content: ' >';
+}
+
+.secao-inicio-tutorial__conteiner__imagem {
+    width: 100%;
+}
+
+.secao-informacoes-tutorial__conteiner--leitura-data-video__tempo, .secao-informacoes-tutorial__conteiner--leitura-data-video__span, .secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo {
+    color: #C4C4C4;
+
+    font-size: .875rem;
+}
+
+.secao-informacoes-tutorial__conteiner--leitura-data-video__span::after {
+    content: ' | ';
+}
+
+.secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__botao {
+    background: transparent;
+    border: 0;
+}
+
+.secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem {
+    transition: .4s ease-in-out;
+}
+
+.secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem:hover {
+    cursor: pointer;
+
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.secao-conteudo__artigo__titulo {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    letter-spacing: 1.8px;
+
+    margin: 1.5625rem 0 1rem 0;
+}
+
+.secao-conteudo__secao-video__iframe {
+    border: 1px solid #20e456;
+}
+
+.secao-conteudo__secao-video__iframe, .secao-tutoriais-relacionados__lista__item__link__conteiner__imagem, .secao-artigos-relacionados__item__link__conteiner__imagem {
+    width: 100%;
+}
+
+.conteiner__linha--tutoriais-relacionados {
+    background: #20E456;
+
+    height: 2px;
+}
+
+.secao-tutoriais-relacionados {
+    background: linear-gradient(180.24deg, #087319 0.22%, #055F0E 45.36%, #02540A 96.09%);
+}
+
+.secao-tutoriais-relacionados__titulo, .secao-artigos-relacionados__titulo {
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+
+    text-align: center;
+}
+
+.secao-tutoriais-relacionados__titulo__span {
+    color: #05FE2D;
+}
+
+.secao-tutoriais-relacionados::after {
+    z-index: -1;
+    background: #02540A;
+
+    content: '';
+
+    display: block;
+
+    left: 0;
+    position: absolute;
+    right: 0;
+
+    transform-origin: 0%;
+}
+
+.secao-tutoriais-relacionados__lista {
+    list-style: none;
+
+    display: flex;
+    gap: 3rem;
+}
+
+.secao-tutoriais-relacionados__lista__item {
+    background: linear-gradient(121.99deg, #0D4B03 16.53%, #005403 54.98%, #038517 99.49%);
+    border: 2px solid #22F500;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    flex-shrink: 0;
+
+    padding-bottom: 1.2rem;
+}
+
+.secao-tutoriais-relacionados__lista__item__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.secao-tutoriais-relacionados__lista__item__link__titulo, .secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo {
+    letter-spacing: 1.8px;
+}
+
+.secao-tutoriais-relacionados__lista__item__link__titulo {
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+.secao-tutoriais-relacionados__lista__item__link__conteiner__imagem {
+    border-radius: 25px;
+    object-fit: cover;
+
+    height: 10rem;
+
+    margin-bottom: 1.2rem;
+}
+
+.secao-artigos-relacionados--pagina-de-conteudo-tutoriais {
+    background: transparent;
+    border-top: none;
+}
+
+.secao-artigos-relacionados__titulo__span {
+    color: #02EB27;
+}
+
+.conteiner-linha--titulo-artigos-relacionados {
+    background: #05FE2D;
+
+    height: 1px;
+}
 
 
 /* Media query para impressão */
