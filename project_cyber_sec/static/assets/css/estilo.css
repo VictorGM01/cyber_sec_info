@@ -263,6 +263,10 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Newsletter */ 
+.principal--newsletter {
+    margin-bottom: 6rem;
+}
+
 .secao-inicio__titulo--cor {
     color: #149A54;
 }
