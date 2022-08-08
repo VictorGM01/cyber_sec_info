@@ -227,6 +227,10 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Fale Conosco */
+.principal--fale-conosco {
+    margin-bottom: 6rem;
+}
+
 .secao-inicio__titulo--fale-conosco { 
     animation: secao-inicio__titulo--animacao--fale-conosco 2.5s steps(50) 1s normal both;
     overflow: hidden;
