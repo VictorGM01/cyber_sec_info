@@ -676,6 +676,10 @@ a:active, a:focus, label:focus, label:active, li:focus {
 
 
 /* Instituição */
+.principal--instituicao {
+    margin-bottom: 6rem;
+}
+
 .secao-informacoes-ifsp__conteiner__informacoes {
     align-items: center;
     display: flex;
