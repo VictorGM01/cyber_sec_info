@@ -1133,6 +1133,48 @@
     .secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais {
         margin-top: 2.5rem;
     }
+    
+    
+    /* Página Sobre o Projeto */
+    .secao-inicio--sobre-projeto, .secao-trabalhos-derivados__titulo, .secao-trabalhos-derivados__lista__item:nth-child(1), .secao-trabalhos-derivados__lista__item:nth-child(3) {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio__titulo--sobre-projeto {
+        margin-top: 2.5rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item:nth-child(2) {
+        margin-top: 2.75rem;
+
+        padding: 1rem 1.5625rem 1rem 1.5625rem;
+    }
+
+    .secao-inicio__artigo {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .secao-inicio__artigo__paragrafo {
+        color: #DFD9D9;
+        text-align: initial;
+        line-height: 1.5rem;
+    }
+
+    .secao-inicio__artigo-acesso {
+        margin-bottom: 2.5rem;
+    }
+
+    .secao-trabalhos-derivados__titulo {
+        margin: 2.5rem 0 2.5rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item {
+        margin-bottom: 3.75rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item__artigo {
+        margin-bottom: 1.6rem;
+    }
 }
 
 
