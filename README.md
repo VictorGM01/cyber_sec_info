@@ -26,7 +26,15 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 
 ## Funcionalidades :scroll:
 
-As seguintes funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
+- [x] Disponibilização de Artigos
+- [ ] Disponibilização de Tutoriais
+- [ ] Disponibilização de Ferramentas para Proteção
+- [ ] Disponibilização do App Mobile (Digital Authenticator)
+- [x] Envio diário de E-mails (newsletter)
+- [x] Disponibilização de Meio para Contato
+- [x] Exposição de Informações Sobre Adicionais Sobre o Projeto (Desenvolvedores, Instituição, Relatório, etc)
+
+Estas funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
 
 ## Status do Projeto 🔔
 ####  🚧 Em desenvolvimento 🚧
