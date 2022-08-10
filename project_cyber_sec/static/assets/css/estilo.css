@@ -611,7 +611,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
  }
 
  .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo {
-     background: url("/static/assets/img/icone_desenvolver_sem_fundo.svg");
+     background: url("../img/icone_desenvolver_sem_fundo.svg");
      z-index: -1;
 
      height: 40px;
@@ -624,7 +624,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
  }
 
  .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo{
-     background: url("/static/assets/img/icone_desenvolver_com_fundo.svg");
+     background: url("../img/icone_desenvolver_com_fundo.svg");
      z-index: -1;
 
      height: 40px;
@@ -660,7 +660,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 .secao-cards-orientadores__lista__item__conteiner--icone-orientador {
-    background: url("/static/assets/img/icone_orientador.svg");
+    background: url("../img/icone_orientador.svg");
     z-index: -1;
 
     height: 55px;

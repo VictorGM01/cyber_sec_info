@@ -247,7 +247,7 @@
     }
    
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
-        background: url("/static/assets/img/icone_validador_de_url.svg");
+        background: url("../img/icone_validador_de_url.svg");
         content: " ";
 
         height: 24px;
@@ -258,7 +258,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
-        background: url("/static/assets/img/icone_gerador_de_senhas.svg");
+        background: url("../img/icone_gerador_de_senhas.svg");
         content: " ";
 
         height: 24px;
@@ -270,7 +270,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
-        background: url("/static/assets/img/icone_nosso_app.svg");
+        background: url("../img/icone_nosso_app.svg");
         content: " ";
 
         height: 26px;
@@ -282,7 +282,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
-        background: url("/static/assets/img/icone_recomendacao.svg");
+        background: url("../img/icone_recomendacao.svg");
         content: " ";
 
         height: 24px;
@@ -294,7 +294,7 @@
     }
     
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
-        background: url("/static/assets/img/icone_verificacao_em_duas_etapas.svg");
+        background: url("../img/icone_verificacao_em_duas_etapas.svg");
         content: " ";
 
         height: 24px;
@@ -306,7 +306,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
-        background: url("/static/assets/img/icone_baixe_nosso_app.svg");
+        background: url("../img/icone_baixe_nosso_app.svg");
         content: " ";
 
         height: 24px;
@@ -318,7 +318,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
-        background: url("/static/assets/img/icone_desenvolver.svg");
+        background: url("../img/icone_desenvolver.svg");
         content: " ";
 
         height: 24px;
@@ -330,7 +330,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
-        background: url("/static/assets/img/icone_cabecalho_navegadores.svg");
+        background: url("../img/icone_cabecalho_navegadores.svg");
         content: " ";
 
         height: 24px;
@@ -342,7 +342,7 @@
     }
 
     .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
-        background: url("/static/assets/img/icone_ver_mais.svg");
+        background: url("../img/icone_ver_mais.svg");
         content: " ";
 
         height: 24px;
@@ -1897,7 +1897,7 @@
     }
 
     .secao-informacoes-ifsp__conteiner-logo {
-        background: url("/static/assets/img/icone_if.png");
+        background: url("../img/icone_if.png");
 
         height: 90px;
         width: 92px;
