@@ -1133,6 +1133,48 @@
     .secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais {
         margin-top: 2.5rem;
     }
+    
+    
+    /* Página Sobre o Projeto */
+    .secao-inicio--sobre-projeto, .secao-trabalhos-derivados__titulo, .secao-trabalhos-derivados__lista__item:nth-child(1), .secao-trabalhos-derivados__lista__item:nth-child(3) {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio__titulo--sobre-projeto {
+        margin-top: 2.5rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item:nth-child(2) {
+        margin-top: 2.75rem;
+
+        padding: 1rem 1.5625rem 1rem 1.5625rem;
+    }
+
+    .secao-inicio__artigo {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .secao-inicio__artigo__paragrafo {
+        color: #DFD9D9;
+        text-align: initial;
+        line-height: 1.5rem;
+    }
+
+    .secao-inicio__artigo-acesso {
+        margin-bottom: 2.5rem;
+    }
+
+    .secao-trabalhos-derivados__titulo {
+        margin: 2.5rem 0 2.5rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item {
+        margin-bottom: 3.75rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item__artigo {
+        margin-bottom: 1.6rem;
+    }
 }
 
 
@@ -2269,6 +2311,36 @@
         background: linear-gradient(90deg, #196b16 0.58%, #196b16 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
         box-shadow: 0 0 1rem #204607;
         bottom: .5rem;
+    }
+    
+    
+    /* Página Sobre o Projeto */
+    .secao-inicio--sobre-projeto, .secao-trabalhos-derivados__titulo, .secao-trabalhos-derivados__lista__item:nth-child(1), .secao-trabalhos-derivados__lista__item:nth-child(3) {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-trabalhos-derivados__lista__item:nth-child(2) {
+        padding: 1rem 9.96875rem 1rem 9.96875rem;
+    }
+
+    .secao-inicio__titulo--sobre-projeto {
+       font-size: 2rem;
+    }
+
+    .secao-trabalhos-derivados__titulo {
+        font-size: 1.8rem;
+
+        margin: 3rem 0 3rem;
+    }
+
+    .secao-inicio__artigo__paragrafo {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .conteiner__linha--sobre-projeto {
+        height: 0;
+        width: 0;
     }
 }
 

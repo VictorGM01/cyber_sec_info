@@ -5,7 +5,7 @@
 ## Tabela de Conteúdos
 * [Descrição do Projeto](#descrição-do-projeto-)
 * [Trabalho escrito](#trabalho-escrito-)
-* [Funcionalidades]()
+* [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
 * [Tecnologias Utilizadas]()
 * [Desenvolvedores](#desenvolvedores-octocat)
@@ -23,6 +23,18 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 ## Trabalho Escrito 📚
 
 > Para acessar o nosso relatório [clique aqui](relatorio.md)
+
+## Funcionalidades :scroll:
+
+- [x] Disponibilização de Artigos
+- [ ] Disponibilização de Tutoriais
+- [ ] Disponibilização de Ferramentas para Proteção
+- [ ] Disponibilização do App Mobile (Digital Authenticator)
+- [x] Envio diário de E-mails (newsletter)
+- [x] Disponibilização de Meio para Contato
+- [x] Exposição de Informações Sobre Adicionais Sobre o Projeto (Desenvolvedores, Instituição, Relatório, etc)
+
+Estas funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
 
 ## Status do Projeto 🔔
 ####  🚧 Em desenvolvimento 🚧
