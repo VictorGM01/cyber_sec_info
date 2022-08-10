@@ -5,9 +5,9 @@
 ## Tabela de Conteúdos
 * [Descrição do Projeto](#descrição-do-projeto-)
 * [Trabalho escrito](#trabalho-escrito-)
-* [Funcionalidades]()
+* [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
-* [Tecnologias Utilizadas](#funcionalidades-scroll)
+* [Tecnologias Utilizadas]()
 * [Desenvolvedores](#desenvolvedores-octocat)
 
 ## Descrição do Projeto 📋
