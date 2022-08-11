@@ -9,6 +9,10 @@ def desenvolvedores(request):
     return render(request, "principal/desenvolvedores.html")
 
 
+def sobre_o_projeto(request):
+    return render(request, "principal/sobre_o_projeto.html")
+
+
 def instituicao(request):
     return render(request, "principal/instituicao.html")
 
