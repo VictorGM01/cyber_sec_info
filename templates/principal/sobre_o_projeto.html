@@ -1,96 +1,94 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Sobre o Projeto | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-  <body class="corpo--sobre-projeto">
-  <!-- espaço para o link de pular para o conteúdo principal -->
-    <!-- espaço para o cabeçalho -->
-    <main class="principal--sobre-projeto" tabindex="0" role="main">
-      <section id="conteudo-principal" class="secao-inicio--sobre-projeto">
-        <div class="secao-inicio--sobre-projeto__conteiner">
-          <h1 class="secao-inicio__titulo--sobre-projeto">
-            Sobre o Projeto<span class="secao-inicio__titulo__cursor">|</span>
-          </h1>
-        </div>
-        
-        <article class="secao-inicio__artigo">
-          <p class="secao-inicio__artigo__paragrafo">
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Acesse o relatório oficial do projeto de pesquisa responsável pela criação da aplicação Cyber Security Information. Acesse e saiba mais.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="relatório, artigos publicados, documento">
+{% endblock %}
+
+{% block title %}
+<title>Sobre o Projeto | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--sobre-projeto" {% endblock %}
+
+{% block content %}
+<main class="principal--sobre-projeto" tabindex="0" role="main">
+  <section id="conteudo-principal" class="secao-inicio--sobre-projeto">
+    <div class="secao-inicio--sobre-projeto__conteiner">
+      <h1 class="secao-inicio__titulo--sobre-projeto">
+        Sobre o Projeto<span class="secao-inicio__titulo__cursor">|</span>
+      </h1>
+    </div>
+
+    <article class="secao-inicio__artigo">
+      <p class="secao-inicio__artigo__paragrafo">
+        <!-- espaço para o texto -->
+      </p>
+    </article>
+
+    <article class="secao-inicio__artigo-acesso">
+      <a href="#" class="secao-inicio__artigo-acesso__link" title="Clique aqui para acessar o arquivo completo do trabalho">Clique aqui para acessar o <span class="secao-inicio__artigo-acesso__link__span">arquivo completo do trabalho</span></a>
+    </article>
+  </section>
+
+  <div class="conteiner__linha conteiner__linha--sobre-projeto"></div>
+
+  <section class="secao-trabalhos-derivados">
+    <h2 class="secao-trabalhos-derivados__titulo">Trabalhos <span class="secao-trabalhos-derivados__titulo_span">derivados</span></h2>
+    <ul class="secao-trabalhos-derivados__lista">
+      <li class="secao-trabalhos-derivados__lista__item">
+        <h3 class="secao-trabalhos-derivados__lista__item__titulo">
+          <span class="secao-trabalhos-derivados__lista__item__titulo__span">
+            13º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2022:
+          </span>
+          Desenvolvimento de uma Aplicação Web para Divulgação de Conteúdos e Ferramentas Acerca da Cibersegurança
+        </h3>
+        <article class="secao-trabalhos-derivados__lista__item__artigo">
+          <p class="secao-trabalhos-derivados__lista__item__artigo__paragrafo">
             <!-- espaço para o texto -->
           </p>
         </article>
-        
-        <article class="secao-inicio__artigo-acesso">
-          <a href="#" class="secao-inicio__artigo-acesso__link" title="Clique aqui para acessar o arquivo completo do trabalho">Clique aqui para acessar o <span class="secao-inicio__artigo-acesso__link__span">arquivo completo do trabalho</span></a>
+        <article class="secao-trabalhos-derivados__lista__item__artigo-acesso">
+            <a href="#" class="secao-trabalhos-derivados__lista__item__artigo-acesso__link" title="Clique aqui para acessar o trabalho completo">Clique aqui para acessar o <span class="secao-trabalhos-derivados__lista__item__artigo-acesso__link__span"></span></a>
         </article>
-      </section>
-      
-      <div class="conteiner__linha conteiner__linha--sobre-projeto"></div>
-      
-      <section class="secao-trabalhos-derivados">
-        <h2 class="secao-trabalhos-derivados__titulo">Trabalhos <span class="secao-trabalhos-derivados__titulo_span">derivados</span></h2>
-        <ul class="secao-trabalhos-derivados__lista">
-          <li class="secao-trabalhos-derivados__lista__item">
-            <h3 class="secao-trabalhos-derivados__lista__item__titulo">
-              <span class="secao-trabalhos-derivados__lista__item__titulo__span">
-                13º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2022:
-              </span>
-              Desenvolvimento de uma Aplicação Web para Divulgação de Conteúdos e Ferramentas Acerca da Cibersegurança
-            </h3>
-            <article class="secao-trabalhos-derivados__lista__item__artigo">
-              <p class="secao-trabalhos-derivados__lista__item__artigo__paragrafo">
-                <!-- espaço para o texto -->
-              </p>
-            </article>
-            <article class="secao-trabalhos-derivados__lista__item__artigo-acesso">
-              <a href="#" class="secao-trabalhos-derivados__lista__item__artigo-acesso__link" title="Clique aqui para acessar o trabalho completo">Clique aqui para acessar o <span class="secao-trabalhos-derivados__lista__item__artigo-acesso__link__span">
-            </article>
-          </li>
-          <li class="secao-trabalhos-derivados__lista__item">
-            <h3 class="secao-trabalhos-derivados__lista__item__titulo">
-              <span class="secao-trabalhos-derivados__lista__item__titulo__span">
-                Revista Acadêmica - Ensino de Ciências e Tecnologias IFSP - Campus Cubatão:
-              </span>
-              Desenvolvimento de uma Aplicação Web e de um Software Mobile para a Democratização e Aplicação da Cibersegurança
-            </h3>
-            <article class="secao-trabalhos-derivados__lista__item__artigo">
-              <p class="secao-trabalhos-derivados__lista__item__artigo__paragrafo">
-                <!-- espaço para o texto -->
-              </p>
-            </article>
-            <article class="secao-trabalhos-derivados__lista__item__artigo-acesso">
-              <a href="#" class="secao-trabalhos-derivados__lista__item__artigo-acesso__link" title="Clique aqui para acessar o trabalho completo">Clique aqui para acessar o <span class="secao-trabalhos-derivados__lista__item__artigo-acesso__link__span">
-            </article>
-          </li>
-          <li class="secao-trabalhos-derivados__lista__item">
-            <h3 class="secao-trabalhos-derivados__lista__item__titulo">
-              <span class="secao-trabalhos-derivados__lista__item__titulo__span">
-                Instituto do Sono - Dona Ciência:
-              </span>
-              Segurança para a Internet
-            </h3>
-            <article class="secao-trabalhos-derivados__lista__item__artigo">
-              <p class="secao-trabalhos-derivados__lista__item__artigo__paragrafo">
-                <!-- espaço para o texto -->
-              </p>
-            </article>
-            <article class="secao-trabalhos-derivados__lista__item__artigo-acesso">
-              <a href="#" class="secao-trabalhos-derivados__lista__item__artigo-acesso__link" title="Clique aqui para acessar o trabalho completo">Clique aqui para acessar o <span class="secao-trabalhos-derivados__lista__item__artigo-acesso__link__span">
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-            <!-- espaço para o botão de voltar ao topo -->
-            <!-- espaço para o rodapé -->
-  </body>
-        <!-- espaço para os scripts -->
-</html>
+      </li>
+      <li class="secao-trabalhos-derivados__lista__item">
+        <h3 class="secao-trabalhos-derivados__lista__item__titulo">
+          <span class="secao-trabalhos-derivados__lista__item__titulo__span">
+            Revista Acadêmica - Ensino de Ciências e Tecnologias IFSP - Campus Cubatão:
+          </span>
+          Desenvolvimento de uma Aplicação Web e de um Software Mobile para a Democratização e Aplicação da Cibersegurança
+        </h3>
+        <article class="secao-trabalhos-derivados__lista__item__artigo">
+          <p class="secao-trabalhos-derivados__lista__item__artigo__paragrafo">
+            <!-- espaço para o texto -->
+          </p>
+        </article>
+        <article class="secao-trabalhos-derivados__lista__item__artigo-acesso">
+            <a href="#" class="secao-trabalhos-derivados__lista__item__artigo-acesso__link" title="Clique aqui para acessar o trabalho completo">Clique aqui para acessar o <span class="secao-trabalhos-derivados__lista__item__artigo-acesso__link__span"></span></a>=
+        </article>
+      </li>
+      <li class="secao-trabalhos-derivados__lista__item">
+        <h3 class="secao-trabalhos-derivados__lista__item__titulo">
+          <span class="secao-trabalhos-derivados__lista__item__titulo__span">
+            Instituto do Sono - Dona Ciência:
+          </span>
+          Segurança para a Internet
+        </h3>
+        <article class="secao-trabalhos-derivados__lista__item__artigo">
+          <p class="secao-trabalhos-derivados__lista__item__artigo__paragrafo">
+            <!-- espaço para o texto -->
+          </p>
+        </article>
+        <article class="secao-trabalhos-derivados__lista__item__artigo-acesso">
+            <a href="#" class="secao-trabalhos-derivados__lista__item__artigo-acesso__link" title="Clique aqui para acessar o trabalho completo">Clique aqui para acessar o <span class="secao-trabalhos-derivados__lista__item__artigo-acesso__link__span"></span></a>
+        </article>
+      </li>
+    </ul>
+  </section>
+</main>
+{% endblock %}
