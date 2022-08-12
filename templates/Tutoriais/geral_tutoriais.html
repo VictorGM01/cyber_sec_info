@@ -1,240 +1,231 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Tutoriais | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-  <body class="corpo--pagina-geral-de-tutoriais">
-    <!-- espaço para o link de conteúdo principal -->
-    <!-- espaço para o cabeçalho -->
-    <main class="principal--pagina-geral-de-tutoriais" role="main" tabindex="0">
-      <section id="conteudo-principal" class="secao-inicio--pagina-geral-de-tutoriais">
-        <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner">
-            <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo">
-                <h1 class="secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo">
-                    Conheça nossos tutoriais sobre como garantir a cibersegurança em
-                    <span class="secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo__span"></span><span class="span-acessibilidade" content=" " style="color: transparent; display: flex; font-size: .1rem">computadores, celulares, redes sociais e navegadores</span>
-                </h1>
-            </div>
+{% extends 'base.html' %}
+{% load static %}
 
-            <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input">
-                <form action="">
-                    <label for="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label" title="Pesquisar por tutorial...">
-                        <input type="search" id="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input" placeholder="Pesquisar por tutorial...">
-                    </label>
-                </form>
-            </div>
+{% block title %}
+<title>Tutoriais | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--pagina-geral-de-tutoriais" {% endblock %}
+
+{% block content %}
+
+<main class="principal--pagina-geral-de-tutoriais" role="main" tabindex="0">
+  <section id="conteudo-principal" class="secao-inicio--pagina-geral-de-tutoriais">
+    <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner">
+        <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo">
+            <h1 class="secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo">
+                Conheça nossos tutoriais sobre como garantir a cibersegurança em
+                <span class="secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo__span"></span><span class="span-acessibilidade" content=" " style="color: transparent; display: flex; font-size: .1rem">computadores, celulares, redes sociais e navegadores</span>
+            </h1>
         </div>
-        
-        <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes">
-                      <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem">
-                <h2 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo">
-                    Tutoriais <span class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo__span">recentes</span>
-                </h2>
-                <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
-            </div>
-            
-          <section data-secao-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards">
-            <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista">
-              <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item">
-                <a href="#" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link" title="Acesse o tutorial">
-                   <h3 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__titulo">
-                      Tutorial 1
-                    </h3>
 
-                     <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner">
-                        <img class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+        <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input">
+            <form action="">
+                <label for="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label" title="Pesquisar por tutorial...">
+                    <input type="search" id="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input" placeholder="Pesquisar por tutorial...">
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes">
+                  <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem">
+            <h2 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo">
+                Tutoriais <span class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo__span">recentes</span>
+            </h2>
+            <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
+        </div>
+
+      <section data-secao-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards">
+        <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista">
+          <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item">
+            <a href="#" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link" title="Acesse o tutorial">
+               <h3 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__titulo">
+                  Tutorial 1
+                </h3>
+
+                 <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner">
+                    <img class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+                  </div>
+
+                  <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao">
+                    <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura">
+                      <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
+                         X min.
+                      </p>
+                     </div>
+
+                     <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video">
+                       <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
+                          X min.
+                       </p>
                       </div>
-
-                      <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao">
-                        <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura">
-                          <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                             X min.
-                          </p>
-                         </div>
-
-                         <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video">
-                           <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                              X min.
-                           </p>
-                          </div>
-                        </section>
-                      </a>
-                    </li>
-            </ul>
-          </section>
-        </section>
+                    </section>
+                  </a>
+                </li>
+        </ul>
       </section>
-      <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais">
-        <h2 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo">
-          Tutoriais <span class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo__span">por categoria</span>
-        </h2>
-        
-        <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
-        
-        <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria">
-          <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--computadores" title="Acesse a página desta categoria de tutoriais">
-              Computadores
+    </section>
+  </section>
+  <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais">
+    <h2 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo">
+      Tutoriais <span class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo__span">por categoria</span>
+    </h2>
+
+    <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
+
+    <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria">
+      <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
+        <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--computadores" title="Acesse a página desta categoria de tutoriais">
+          Computadores
+        </a>
+
+        <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
+          <button data-botao-computadores="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-computadores" title="Clique aqui para voltar os tutoriais desta categoria"></button>
+          <button data-botao-computadores="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar botao-avancar-computadores" title="Clique aqui para avançar os tutoriais desta categoria"></button>
+        </div>
+      </div>
+      <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
+        <ul data-carrossel-lista="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          <li data-carrossel-item="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
+            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+              <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
+                Título
+              </h3>
+              <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+              </div>
+              <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
+                    X min.
+                  </p>
+                </div>
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
+                    X min.
+                  </p>
+                </div>
+              </section>
             </a>
-            
-            <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
-              <button data-botao-computadores="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-computadores" title="Clique aqui para voltar os tutoriais desta categoria"></button>
-              <button data-botao-computadores="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar botao-avancar-computadores" title="Clique aqui para avançar os tutoriais desta categoria"></button>
-            </div>
-          </div>
-          <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
-            <ul data-carrossel-lista="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
-              <li data-carrossel-item="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-                <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
-                  <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                    Título
-                  </h3>
-                  <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                    <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-                  </div>
-                  <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                  </section>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </section>
-        <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento">
-          <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--celulares" title="Acesse a página desta categoria de tutoriais">
-               Celulares
-            </a>
-            
-            <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
-              <button data-botao-celulares="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-celulares" title="Clique aqui para voltar os tutoriais desta categoria"></button>
-              <button data-botao-celulares="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar" title="Clique aqui para avançar os tutoriais desta categoria"></button>
-            </div>
-          </div>
-          <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
-            <ul data-carrossel-lista="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
-              <li data-carrossel-item="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-                <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
-                  <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                    Título do Tutorial
-                  </h3>
-                  <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                    <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-                  </div>
-                  <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                  </section>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </section>
-        <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento">
-          <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner"> 
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--redes-sociais" title="Acesse a página desta categoria de tutoriais">
-              Redes Sociais
-            </a>
-            
-            <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
-              <button data-botao-redes-sociais="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-redes-sociais" title="Clique aqui para voltar os tutoriais desta categoria"></button>
-              <button data-botao-redes-sociais="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar" title="Clique aqui para avançar os tutoriais desta categoria"></button>
-            </div>
-          </div>
-          <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
-            <ul data-carrossel-lista="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
-              <li data-carrossel-item="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-                <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
-                  <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                    Título do Tutorial
-                  </h3>
-                  <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                    <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-                  </div>
-                  <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                  </section>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </section>
-        <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento">
-          <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--navegadores" title="Acesse a página desta categoria de tutoriais">
-              Navegadores
-            </a>
-            
-            <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
-              <button data-botao-navegadores="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-navegadores" title="Clique aqui para voltar os tutoriais desta categoria"></button>
-              <button data-botao-navegadores="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar" title="Clique aqui para avançar os tutoriais desta categoria"></button>
-            </div>
-          </div>
-          <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
-            <ul data-carrossel-lista="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
-              <li data-carrossel-item="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-                <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
-                  <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                    Título do Tutorial
-                  </h3>
-                  <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                    <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-                  </div>
-                  <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                    <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
-                      <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                        X min.
-                      </p>
-                    </div>
-                  </section>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </section>
+          </li>
+        </ul>
       </section>
-    </main>
-    <!-- espaço para o botão de voltar ao topo -->
-    <!-- espaço para o rodapé -->
-  </body>
-    <!-- espaço para adição dos scripts -->
-</html>
+    </section>
+    <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento">
+      <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
+        <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--celulares" title="Acesse a página desta categoria de tutoriais">
+           Celulares
+        </a>
+
+        <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
+          <button data-botao-celulares="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-celulares" title="Clique aqui para voltar os tutoriais desta categoria"></button>
+          <button data-botao-celulares="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar" title="Clique aqui para avançar os tutoriais desta categoria"></button>
+        </div>
+      </div>
+      <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
+        <ul data-carrossel-lista="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          <li data-carrossel-item="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
+            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+              <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
+                Título do Tutorial
+              </h3>
+              <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+              </div>
+              <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
+                    X min.
+                  </p>
+                </div>
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
+                    X min.
+                  </p>
+                </div>
+              </section>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento">
+      <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
+        <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--redes-sociais" title="Acesse a página desta categoria de tutoriais">
+          Redes Sociais
+        </a>
+
+        <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
+          <button data-botao-redes-sociais="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-redes-sociais" title="Clique aqui para voltar os tutoriais desta categoria"></button>
+          <button data-botao-redes-sociais="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar" title="Clique aqui para avançar os tutoriais desta categoria"></button>
+        </div>
+      </div>
+      <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
+        <ul data-carrossel-lista="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          <li data-carrossel-item="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
+            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+              <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
+                Título do Tutorial
+              </h3>
+              <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+              </div>
+              <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
+                    X min.
+                  </p>
+                </div>
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
+                    X min.
+                  </p>
+                </div>
+              </section>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento">
+      <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner">
+        <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--navegadores" title="Acesse a página desta categoria de tutoriais">
+          Navegadores
+        </a>
+
+        <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes">
+          <button data-botao-navegadores="voltar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar botao-voltar-navegadores" title="Clique aqui para voltar os tutoriais desta categoria"></button>
+          <button data-botao-navegadores="avancar" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar" title="Clique aqui para avançar os tutoriais desta categoria"></button>
+        </div>
+      </div>
+      <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
+        <ul data-carrossel-lista="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          <li data-carrossel-item="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
+            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+              <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
+                Título do Tutorial
+              </h3>
+              <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+              </div>
+              <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
+                    X min.
+                  </p>
+                </div>
+                <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
+                  <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
+                    X min.
+                  </p>
+                </div>
+              </section>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+</main>
+{% endblock %}
