@@ -18,56 +18,56 @@
 {% block content %}
 
 <main class="principal--tutorial" role="main" tabindex="0">
-  <section class="secao-caminho-tutorial">
-    <a class="secao-caminho-tutorial__link" href="#">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
-      {{ tutorial.categoria }}<span class="secao-caminho-tutorial__link__span"></span>
-    </a>
-    <p class="secao-caminho-tutorial__paragrafo">{{ tutorial.titulo }}</p>
-  </section>
+    <section class="secao-caminho-tutorial">
+        <a class="secao-caminho-tutorial__link" href="#">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
+            {{ tutorial.categoria }}<span class="secao-caminho-tutorial__link__span"></span>
+        </a>
+        <p class="secao-caminho-tutorial__paragrafo">{{ tutorial.titulo }}</p>
+    </section>
 
-  <section id="conteudo-principal" class="secao-inicio-tutorial">
-    <h1 class="secao-inicio-tutorial__titulo">{{ tutorial.titulo }}</h1>
-    <div class="secao-inicio-tutorial__conteiner">
-      <img class="secao-inicio-tutorial__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do Tutorial Sobre {{ tutorial.titulo }}">
-    </div>
-  </section>
+    <section id="conteudo-principal" class="secao-inicio-tutorial">
+        <h1 class="secao-inicio-tutorial__titulo">{{ tutorial.titulo }}</h1>
+        <div class="secao-inicio-tutorial__conteiner">
+            <img class="secao-inicio-tutorial__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do Tutorial Sobre {{ tutorial.titulo }}">
+        </div>
+    </section>
 
-  <section class="secao-informacoes-tutorial">
-    <div class="secao-informacoes-tutorial__conteiner--leitura-data-video">
-      <time class="secao-informacoes-tutorial__conteiner--leitura-data-video__tempo">{{ tutorial.data_publicacao }}</time>
-      <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
-      <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minutos de leitura</p>
-      <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
-      <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_video }} minutos de video</p>
-    </div>
+    <section class="secao-informacoes-tutorial">
+        <div class="secao-informacoes-tutorial__conteiner--leitura-data-video">
+            <time class="secao-informacoes-tutorial__conteiner--leitura-data-video__tempo">{{ tutorial.data_publicacao }}</time>
+            <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
+            <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minutos de leitura</p>
+            <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
+            <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_video }} minutos de video</p>
+        </div>
 
-    <div class="secao-informacoes-tutorial__conteiner-redes-sociais">
-      <ul class="secao-informacoes-tutorial__conteiner-redes-sociais__lista">
-        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-          <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://linkedin.com/shareArticle?url=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do LinkedIn"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_linkedin.svg' %}" alt="Ícone do LinkedIn para compartilhar esse tutorial no feed" width="20"></a>
-        </li>
-        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-          <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do Facebook"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_facebook.svg' %}" alt="Ícone do Facebook para compartilhar esse tutorial no feed" width="20"></a>
-        </li>
-        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-          <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este tutorial sobre {{ tutorial.titulo }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse tutorial em alguma conversa" width="20"></a>
-        </li>
-        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-          <button onclick="window.print()" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__botao">
-            <img title="Realizar donwload do Tutorial" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do tutorial" width="20">
-          </button>
-        </li>
-      </ul>
-    </div>
-  </section>
+        <div class="secao-informacoes-tutorial__conteiner-redes-sociais">
+            <ul class="secao-informacoes-tutorial__conteiner-redes-sociais__lista">
+                <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+                    <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://linkedin.com/shareArticle?url=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do LinkedIn"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_linkedin.svg' %}" alt="Ícone do LinkedIn para compartilhar esse tutorial no feed" width="20"></a>
+                </li>
+                <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+                    <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do Facebook"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_facebook.svg' %}" alt="Ícone do Facebook para compartilhar esse tutorial no feed" width="20"></a>
+                </li>
+                <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+                    <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este tutorial sobre {{ tutorial.titulo }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse tutorial em alguma conversa" width="20"></a>
+                </li>
+                <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+                    <button onclick="window.print()" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__botao">
+                        <img title="Realizar donwload do Tutorial" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do tutorial" width="20">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-  <div class="conteiner__linha"></div>
+    <div class="conteiner__linha"></div>
 
-  <section class="secao-conteudo">
+    <section class="secao-conteudo">
 
-      {{ tutorial.conteudo | safe }}
+        {{ tutorial.conteudo | safe }}
 
-  </section>
+    </section>
 </main>
 <div class="conteiner__linha--tutoriais-relacionados"></div>
 <section class="secao-tutoriais-relacionados">
