@@ -4,10 +4,10 @@ from datetime import datetime
 
 # Opções para as categorias dos tutoriais
 class Categorias(models.TextChoices):
-    CELULARES = 'Celulares'
-    COMPUTADORES = 'Computadores'
-    NAVEGADORES = 'Navegadores'
-    REDES_SOCIAIS = 'Redes Sociais'
+    CELULARES = 'celulares'
+    COMPUTADORES = 'computadores'
+    NAVEGADORES = 'navegadores'
+    REDES_SOCIAIS = 'redes-sociais'
 
 
 # Modelo para os tutoriais

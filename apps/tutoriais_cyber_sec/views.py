@@ -7,8 +7,8 @@ def tutoriais(request):
     return render(request, 'tutoriais/geral_tutoriais.html')
 
 
-def exibe_tutorial(request, nome_tutorial: str):
-    tutorial_a_ser_exibido = get_object_or_404(Tutorial, titulo_para_url=nome_tutorial)
+def exibe_tutorial(request, categoria:str, nome_tutorial: str):
+    tutorial_a_ser_exibido = get_object_or_404(Tutorial, categoria=categoria, titulo_para_url=nome_tutorial)
 
     if not tutorial_a_ser_exibido.publicado:
         return redirect('tutoriais')

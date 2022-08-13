@@ -75,7 +75,7 @@
     <ul class="secao-tutoriais-relacionados__lista">
         {% for tutorial in tutoriais_relacionados %}
         <li class="secao-tutoriais-relacionados__lista__item">
-            <a href="{% url 'tutorial' tutorial.titulo_para_url %}" class="secao-tutoriais-relacionados__lista__item__link" title="Acesse o tutorial">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-relacionados__lista__item__link" title="Acesse o tutorial">
                 <div class="secao-tutoriais-relacionados__lista__item__link__conteiner">
                     <img class="secao-tutoriais-relacionados__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
                 </div>
