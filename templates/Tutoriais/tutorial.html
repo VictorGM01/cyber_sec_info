@@ -1,132 +1,114 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Tutorial | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-  <body class="corpo--tutorial">
-    <!-- espaço para o link de pular para o conteúdo principal -->
-    <!-- espaço para o cabeçalho -->
-    <main class="principal--tutorial" role="main" tabindex="0">
-      <section class="secao-caminho-tutorial">
-        <a class="secao-caminho-tutorial__link" href="#">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
-          Categoria<span class="secao-caminho-tutorial__link__span"></span>
-        </a>
-        <p class="secao-caminho-tutorial__paragrafo">Tema do Tutorial</p>
-      </section>
-      
-      <section id="conteudo-principal" class="secao-inicio-tutorial">
-        <h1 class="secao-inicio-tutorial__titulo">Título do Tutorial</h1>
-        <div class="secao-inicio-tutorial__conteiner">
-          <img class="secao-inicio-tutorial__conteiner__imagem" src="" alt="Capa do Tutorial..">
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Tutorial sobre {{ tutorial.titulo }}. Leia e assista o vídeo indicado para entender como aplicar este conteúdo.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Cibersegurança, Cybersecurity, Tutorial, Vídeo">
+{% endblock %}
+
+{% block title %}
+<title>{{ tutorial.titulo }} | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--tutorial" {% endblock %}
+
+{% block content %}
+
+<main class="principal--tutorial" role="main" tabindex="0">
+  <section class="secao-caminho-tutorial">
+    <a class="secao-caminho-tutorial__link" href="#">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
+      {{ tutorial.categoria }}<span class="secao-caminho-tutorial__link__span"></span>
+    </a>
+    <p class="secao-caminho-tutorial__paragrafo">{{ tutorial.titulo }}</p>
+  </section>
+
+  <section id="conteudo-principal" class="secao-inicio-tutorial">
+    <h1 class="secao-inicio-tutorial__titulo">{{ tutorial.titulo }}</h1>
+    <div class="secao-inicio-tutorial__conteiner">
+      <img class="secao-inicio-tutorial__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do Tutorial Sobre {{ tutorial.titulo }}">
+    </div>
+  </section>
+
+  <section class="secao-informacoes-tutorial">
+    <div class="secao-informacoes-tutorial__conteiner--leitura-data-video">
+      <time class="secao-informacoes-tutorial__conteiner--leitura-data-video__tempo">{{ tutorial.data_publicacao }}</time>
+      <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
+      <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minutos de leitura</p>
+      <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
+      <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_video }} minutos de video</p>
+    </div>
+
+    <div class="secao-informacoes-tutorial__conteiner-redes-sociais">
+      <ul class="secao-informacoes-tutorial__conteiner-redes-sociais__lista">
+        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+          <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://linkedin.com/shareArticle?url=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do LinkedIn"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_linkedin.svg' %}" alt="Ícone do LinkedIn para compartilhar esse tutorial no feed" width="20"></a>
+        </li>
+        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+          <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar no feed do Facebook"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_facebook.svg' %}" alt="Ícone do Facebook para compartilhar esse tutorial no feed" width="20"></a>
+        </li>
+        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+          <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="https://api.whatsapp.com/send?text=Veja este tutorial sobre {{ tutorial.titulo }} https://www.ciberseguranca.info{{ request.get_full_path }}" title="Compartilhar via WhatsApp"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_whatsapp.svg' %}" alt="Ícone do WhatsApp para compartilhar esse tutorial em alguma conversa" width="20"></a>
+        </li>
+        <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
+          <button onclick="window.print()" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__botao">
+            <img title="Realizar donwload do Tutorial" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="{% static '/assets/img/icone_download.svg' %}" alt="Ícone para realizar o download do tutorial" width="20">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="conteiner__linha"></div>
+
+  <section class="secao-conteudo">
+
+      {{ tutorial.conteudo | safe }}
+
+  </section>
+</main>
+<div class="conteiner__linha--tutoriais-relacionados"></div>
+<section class="secao-tutoriais-relacionados">
+  <h3 class="secao-tutoriais-relacionados__titulo"><span class="secao-tutoriais-relacionados__titulo__span">Tutoriais</span> relacionados</h3>
+  <ul class="secao-tutoriais-relacionados__lista">
+    <li class="secao-tutoriais-relacionados__lista__item">
+      <a href="#" class="secao-tutoriais-relacionados__lista__item__link" title="Acesse o tutorial">
+        <div class="secao-tutoriais-relacionados__lista__item__link__conteiner">
+          <img class="secao-tutoriais-relacionados__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
         </div>
-      </section>
-      
-      <section class="secao-informacoes-tutorial">
-        <div class="secao-informacoes-tutorial__conteiner--leitura-data-video">
-          <time class="secao-informacoes-tutorial__conteiner--leitura-data-video__tempo">01 de agosto de 2022</time>
-          <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
-          <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">X minutos de leitura</p>
-          <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
-          <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">X minutos de video</p>
-        </div>
-        
-        <div class="secao-informacoes-tutorial__conteiner-redes-sociais">
-          <ul class="secao-informacoes-tutorial__conteiner-redes-sociais__lista">
-            <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-              <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="#" title="Compartilhar no feed do LinkedIn"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="../static/assets/img/icone_linkedin.svg" alt="Ícone do LinkedIn para compartilhar esse tutorial no feed" width="20"></a>
-            </li>
-            <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-              <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="#" title="Compartilhar no feed do Facebook"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="../static/assets/img/icone_facebook.svg" alt="Ícone do Facebook para compartilhar esse tutorial no feed" width="20"></a>
-            </li>
-            <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-              <a class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link" href="#" title="Compartilhar via WhatsApp"><img class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="../static/assets/img/icone_whatsapp.svg" alt="Ícone do WhatsApp para compartilhar esse tutorial em alguma conversa" width="20"></a>
-            </li>
-            <li class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item">
-              <button onclick="window.print()" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__botao">
-                <img title="Realizar donwload do Tutorial" class="secao-informacoes-tutorial__conteiner-redes-sociais__lista__item__link__imagem" src="../static/assets/img/icone_download.svg" alt="Ícone para realizar o download do tutorial" width="20">
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <div class="conteiner__linha"></div>
-      
-      <section class="secao-conteudo">
-        <article class="secao-conteudo__artigo">
-          <h2 class="secao-conteudo__artigo__titulo">Subtitulo</h2>
-        </article>
-        <article class="secao-conteudo__artigo">
-          <p class="secao-conteudo__artigo__paragrafo">
+        <h4 class="secao-tutoriais-relacionados__lista__item__link__titulo">Tutorial 1</h4>
+        <article class="secao-tutoriais-relacionados__lista__item__link__artigo">
+          <p class="secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo">
             <!-- espaço para o texto -->
           </p>
         </article>
-        <section class="secao-conteudo__secao-video">
-          <!-- espaço para o iframe do youtube -->
-        </section>
-        
-        <article class="secao-conteudo__artigo">
-          <h2 class="secao-conteudo__artigo__titulo">Subtitulo 2</h2>
-        </article>
-        <article class="secao-conteudo__artigo">
-          <p class="secao-conteudo__artigo__paragrafo">
-            <!-- espaço para o texto -->
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="secao-artigos-relacionados secao-artigos-relacionados--pagina-de-conteudo-tutoriais">
+  <h3 class="secao-artigos-relacionados__titulo"><span class="secao-artigos-relacionados__titulo__span">
+     Artigos
+  </span> relacionados</h3>
+
+  <div class="conteiner-linha--titulo-artigos-relacionados"></div>
+
+  <ul class="secao-artigos-relacionados__lista secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais">
+    <li class="secao-artigos-relacionados__lista__item secao-artigos-relacionados__lista__item--pagina-de-conteudo-tutoriais">
+      <a href="#" class="secao-artigos-relacionados__lista__item__link" title="Acesse o Artigo">
+        <div class="secao-artigos-relacionados__lista__item__link__conteiner">
+          <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="" alt="Capa do Artigo">
+        </div>
+        <h4 class="secao-artigos-relacionados__lista__item__link__titulo">Artigo 1</h4>
+        <article class="secao-artigos-relacionados__lista__item__link__artigo">
+          <p class="secao-artigos-relacionados__lista__item__link__artigo__paragrafo">
+            <!-- espaço para o texto aqui -->
           </p>
         </article>
-      </section>
-    </main>
-    <div class="conteiner__linha--tutoriais-relacionados"></div>
-    <section class="secao-tutoriais-relacionados">
-      <h3 class="secao-tutoriais-relacionados__titulo"><span class="secao-tutoriais-relacionados__titulo__span">Tutoriais</span> relacionados</h3>
-      <ul class="secao-tutoriais-relacionados__lista">
-        <li class="secao-tutoriais-relacionados__lista__item">
-          <a href="#" class="secao-tutoriais-relacionados__lista__item__link" title="Acesse o tutorial">
-            <div class="secao-tutoriais-relacionados__lista__item__link__conteiner">
-              <img class="secao-tutoriais-relacionados__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-            </div>
-            <h4 class="secao-tutoriais-relacionados__lista__item__link__titulo">Tutorial 1</h4>
-            <article class="secao-tutoriais-relacionados__lista__item__link__artigo">
-              <p class="secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo">
-                <!-- espaço para o texto -->
-              </p>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="secao-artigos-relacionados secao-artigos-relacionados--pagina-de-conteudo-tutoriais">
-      <h3 class="secao-artigos-relacionados__titulo"><span class="secao-artigos-relacionados__titulo__span">
-         Artigos
-      </span> relacionados</h3>
-      
-      <div class="conteiner-linha--titulo-artigos-relacionados"></div>
-      
-      <ul class="secao-artigos-relacionados__lista secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais">
-        <li class="secao-artigos-relacionados__lista__item secao-artigos-relacionados__lista__item--pagina-de-conteudo-tutoriais">
-          <a href="#" class="secao-artigos-relacionados__lista__item__link" title="Acesse o Artigo">
-            <div class="secao-artigos-relacionados__lista__item__link__conteiner">
-              <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="" alt="Capa do Artigo">
-            </div>
-            <h4 class="secao-artigos-relacionados__lista__item__link__titulo">Artigo 1</h4>
-            <article class="secao-artigos-relacionados__lista__item__link__artigo">
-              <p class="secao-artigos-relacionados__lista__item__link__artigo__paragrafo">
-                <!-- espaço para o texto aqui -->
-              </p>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- espaço para o botão de voltar ao topo -->
-    <!-- espaço para o rodapé -->
-  </body>
-  <!-- espaço para os scripts -->
-</html>
+      </a>
+    </li>
+  </ul>
+</section>
+{% endblock %}
