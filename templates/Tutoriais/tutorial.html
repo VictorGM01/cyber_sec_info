@@ -91,26 +91,24 @@
   </ul>
 </section>
 <section class="secao-artigos-relacionados secao-artigos-relacionados--pagina-de-conteudo-tutoriais">
-  <h3 class="secao-artigos-relacionados__titulo"><span class="secao-artigos-relacionados__titulo__span">
-     Artigos
-  </span> relacionados</h3>
-
-  <div class="conteiner-linha--titulo-artigos-relacionados"></div>
-
-  <ul class="secao-artigos-relacionados__lista secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais">
-    <li class="secao-artigos-relacionados__lista__item secao-artigos-relacionados__lista__item--pagina-de-conteudo-tutoriais">
-      <a href="#" class="secao-artigos-relacionados__lista__item__link" title="Acesse o Artigo">
-        <div class="secao-artigos-relacionados__lista__item__link__conteiner">
-          <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="" alt="Capa do Artigo">
-        </div>
-        <h4 class="secao-artigos-relacionados__lista__item__link__titulo">Artigo 1</h4>
-        <article class="secao-artigos-relacionados__lista__item__link__artigo">
-          <p class="secao-artigos-relacionados__lista__item__link__artigo__paragrafo">
-            <!-- espaço para o texto aqui -->
-          </p>
-        </article>
-      </a>
-    </li>
-  </ul>
+    <h3 class="secao-artigos-relacionados__titulo"><span class="secao-artigos-relacionados__titulo__span">Artigos</span> relacionados</h3>
+    <div class="conteiner-linha--titulo-artigos-relacionados"></div>
+    <ul class="secao-artigos-relacionados__lista secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais">
+        {% for artigo in artigos_relacionados %}
+        <li class="secao-artigos-relacionados__lista__item secao-artigos-relacionados__lista__item--pagina-de-conteudo-tutoriais">
+            <a href="{% url 'artigo' artigo.titulo_para_url %}" class="secao-artigos-relacionados__lista__item__link" title="Acesse o Artigo">
+                <div class="secao-artigos-relacionados__lista__item__link__conteiner">
+                    <img class="secao-artigos-relacionados__lista__item__link__conteiner__imagem" src="{{ artigo.capa.url }}" alt="Capa do Artigo">
+                </div>
+                <h4 class="secao-artigos-relacionados__lista__item__link__titulo">{{ artigo.titulo }}</h4>
+                <article class="secao-artigos-relacionados__lista__item__link__artigo">
+                    <p class="secao-artigos-relacionados__lista__item__link__artigo__paragrafo">
+                        {{ artigo.resumo }}
+                    </p>
+                </article>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
 {% endblock %}
