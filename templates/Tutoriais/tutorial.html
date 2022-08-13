@@ -71,21 +71,23 @@
 </main>
 <div class="conteiner__linha--tutoriais-relacionados"></div>
 <section class="secao-tutoriais-relacionados">
-  <h3 class="secao-tutoriais-relacionados__titulo"><span class="secao-tutoriais-relacionados__titulo__span">Tutoriais</span> relacionados</h3>
-  <ul class="secao-tutoriais-relacionados__lista">
-    <li class="secao-tutoriais-relacionados__lista__item">
-      <a href="#" class="secao-tutoriais-relacionados__lista__item__link" title="Acesse o tutorial">
-        <div class="secao-tutoriais-relacionados__lista__item__link__conteiner">
-          <img class="secao-tutoriais-relacionados__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-        </div>
-        <h4 class="secao-tutoriais-relacionados__lista__item__link__titulo">Tutorial 1</h4>
-        <article class="secao-tutoriais-relacionados__lista__item__link__artigo">
-          <p class="secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo">
-            <!-- espaço para o texto -->
-          </p>
-        </article>
-      </a>
-    </li>
+    <h3 class="secao-tutoriais-relacionados__titulo"><span class="secao-tutoriais-relacionados__titulo__span">Tutoriais</span> relacionados</h3>
+    <ul class="secao-tutoriais-relacionados__lista">
+        {% for tutorial in tutoriais_relacionados %}
+        <li class="secao-tutoriais-relacionados__lista__item">
+            <a href="{% url 'tutorial' tutorial.titulo_para_url %}" class="secao-tutoriais-relacionados__lista__item__link" title="Acesse o tutorial">
+                <div class="secao-tutoriais-relacionados__lista__item__link__conteiner">
+                    <img class="secao-tutoriais-relacionados__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
+                </div>
+                <h4 class="secao-tutoriais-relacionados__lista__item__link__titulo">{{ tutorial.titulo }}</h4>
+                <article class="secao-tutoriais-relacionados__lista__item__link__artigo">
+                    <p class="secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo">
+                        {{ tutorial.resumo }}
+                    </p>
+                </article>
+            </a>
+        </li>
+        {% endfor %}
   </ul>
 </section>
 <section class="secao-artigos-relacionados secao-artigos-relacionados--pagina-de-conteudo-tutoriais">

@@ -12,9 +12,13 @@ def exibe_tutorial(request, nome_tutorial: str):
     if not tutorial_a_ser_exibido.publicado:
         return redirect('tutoriais')
 
+    tutoriais_relacionados = Tutorial.objects.order_by('-data_publicacao').filter(publicado=True).filter(
+        categoria=tutorial_a_ser_exibido.categoria).exclude(titulo_para_url=nome_tutorial)[:2]
+
     conteudo = {
         'tutorial': tutorial_a_ser_exibido,
         'request': request,
+        'tutoriais_relacionados': tutoriais_relacionados,
     }
 
     return render(request, 'tutoriais/tutorial.html', context=conteudo)
