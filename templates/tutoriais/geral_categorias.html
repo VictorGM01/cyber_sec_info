@@ -4,12 +4,8 @@
 {% block title %}
 {% if categoria == 'redes-sociais' %}
 <title>Tutoriais - Redes Sociais | Cyber Security Information</title>
-{% elif categoria == 'navegadores' %}
-<title>Tutoriais - Navegadores | Cyber Security Information</title>
-{% elif categoria == 'celulares' %}
-<title>Tutoriais - Celulares | Cyber Security Information</title>
 {% else %}
-<title>Tutoriais - Computadores | Cyber Security Information</title>
+<title>Tutoriais - {{ categoria.capitalize }} | Cyber Security Information</title>
 {% endif %}
 {% endblock %}
 
