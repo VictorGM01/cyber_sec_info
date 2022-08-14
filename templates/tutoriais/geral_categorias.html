@@ -23,7 +23,7 @@
     <div class="secao-inicio--pagina-categoria-tutoriais__conteiner">
       <div class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo">
         <h1>
-          Tutoriais relacionados
+          Tutoriais Sobre
           {% if categoria == 'redes-sociais' %}
           <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-redes-sociais">Redes Sociais</span>
           {% elif categoria == 'navegadores' %}
@@ -50,22 +50,22 @@
     <ul class="secao-tutoriais--pagina-categoria-tutoriais__lista">
       {% for tutorial in tutoriais_por_categoria %}
       <li class="secao-tutoriais--pagina-categoria-tutoriais__lista__item animacao">
-        <a href="#" class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link">
+        <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link">
           <h2 class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__titulo">
             {{ tutorial.titulo }}
           </h2>
           <div class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__conteiner">
-            <img class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__conteiner__imagem" src="" alt="Capa do Tutorial">
+            <img class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do Tutorial">
           </div>
           <section class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao">
             <div class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao__conteiner-minutos-leitura">
               <p class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                X min.
+                {{ tutorial.tempo_de_leitura }} min.
               </p>
             </div>
             <div class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao__conteiner-minutos-video">
               <p class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                X min.
+                {{ tutorial.tempo_de_video }} min.
               </p>
             </div>
           </section>
