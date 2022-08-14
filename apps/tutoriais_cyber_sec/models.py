@@ -2,7 +2,7 @@ from django.db import models
 from datetime import datetime
 
 
-# Opções para as categorias dos tutorial
+# Opções para as categorias dos tutoriais
 class Categorias(models.TextChoices):
     CELULARES = 'celulares'
     COMPUTADORES = 'computadores'
@@ -10,11 +10,11 @@ class Categorias(models.TextChoices):
     REDES_SOCIAIS = 'redes-sociais'
 
 
-# Modelo para os tutorial
+# Modelo para os tutoriais
 class Tutorial(models.Model):
     titulo = models.CharField(max_length=100)
     titulo_para_url = models.CharField(max_length=100)
-    capa = models.ImageField(upload_to='tutorial/%Y/%m/%d/')
+    capa = models.ImageField(upload_to='tutoriais/%Y/%m/%d/')
     data_publicacao = models.DateField(default=datetime.today)
     tempo_de_leitura = models.IntegerField()
     tempo_de_video = models.IntegerField(blank=True)

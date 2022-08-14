@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('titulo', models.CharField(max_length=100)),
                 ('titulo_para_url', models.CharField(max_length=100)),
-                ('capa', models.ImageField(upload_to='tutorial/%Y/%m/%d/')),
+                ('capa', models.ImageField(upload_to='tutoriais/%Y/%m/%d/')),
                 ('data_publicacao', models.DateField(default=datetime.datetime.today)),
                 ('tempo_de_leitura', models.IntegerField()),
                 ('tempo_de_video', models.IntegerField(blank=True)),
