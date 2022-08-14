@@ -19,9 +19,12 @@
 
 <main class="principal--tutorial" role="main" tabindex="0">
     <section class="secao-caminho-tutorial">
-        <a class="secao-caminho-tutorial__link" href="{% url 'tutoriais' %}">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
-        <a class="secao-caminho-tutorial__link" href="{% url 'categoria' tutorial.categoria %}">{{ tutorial.categoria }}<span class="secao-caminho-tutorial__link__span"></span>
-        </a>
+        <a class="secao-caminho-tutorial__link" href="{% url 'tutoriais' %}">Tutoriais <span class="secao-caminho-tutorial__link__span"></span></a>
+        {% if tutorial.categoria == "redes-sociais" %}
+        <a class="secao-caminho-tutorial__link" href="{% url 'categoria' tutorial.categoria %}">Redes Sociais<span class="secao-caminho-tutorial__link__span"></span></a>
+        {% else %}
+        <a class="secao-caminho-tutorial__link" href="{% url 'categoria' tutorial.categoria %}">{{ tutorial.categoria.capitalize }}<span class="secao-caminho-tutorial__link__span"></span></a>
+        {% endif %}
         <p class="secao-caminho-tutorial__paragrafo">{{ tutorial.titulo }}</p>
     </section>
 
