@@ -28,6 +28,7 @@
         </div>
     </div>
 
+    {% if tutoriais_recentes %}
     <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes">
     <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem">
         <h2 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo">
@@ -38,34 +39,37 @@
 
       <section data-secao-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards">
         <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista">
+          {% for tutorial in tutoriais_recentes %}
           <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item">
             <a href="#" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link" title="Acesse o tutorial">
                <h3 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__titulo">
-                  Tutorial 1
-                </h3>
+                 {{ tutorial.titulo }}
+               </h3>
 
-                 <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner">
-                    <img class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
-                  </div>
+               <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner">
+                 <img class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
+               </div>
 
-                  <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao">
-                    <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura">
-                      <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                         X min.
-                      </p>
-                     </div>
+               <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao">
+                 <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura">
+                   <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
+                     {{ tutorial.tempo_de_leitura }} min.
+                   </p>
+                 </div>
 
-                     <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video">
-                       <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                          X min.
-                       </p>
-                      </div>
-                    </section>
-                  </a>
-                </li>
+                 <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video">
+                   <p class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
+                     {{ tutorial.tempo_de_video }} min.
+                   </p>
+                 </div>
+               </section>
+            </a>
+          </li>
+          {% endfor %}
         </ul>
       </section>
     </section>
+    {% endif %}
   </section>
   <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais">
     <h2 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo">
