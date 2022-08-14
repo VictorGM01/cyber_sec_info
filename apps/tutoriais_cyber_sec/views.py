@@ -4,15 +4,25 @@ from apps.artigos_cyber_sec.models import Artigo
 
 
 def tutoriais(request):
-    tutoriais = Tutorial.objects.order_by("data_publicacao").filter(publicado=True)
-    tutoriais_recentes = Tutorial.objects.order_by("-data_publicacao").filter(publicado=True)[:3]
+    tutoriais = Tutorial.objects.order_by('data_publicacao').filter(publicado=True)
+    tutoriais_recentes = Tutorial.objects.order_by('-data_publicacao').filter(publicado=True)[:3]
 
     conteudo = {
-        "tutoriais": tutoriais,
-        "tutoriais_recentes": tutoriais_recentes,
+        'tutoriais': tutoriais,
+        'tutoriais_recentes': tutoriais_recentes,
     }
 
     return render(request, 'tutoriais/geral_tutoriais.html', context=conteudo)
+
+
+def categoria(request, categoria: str):
+    tutoriais_por_categoria = Tutorial.objects.filter(publicado=True).filter(categoria=categoria)
+
+    conteudo = {
+        'tutoriais_por_categoria': tutoriais_por_categoria,
+    }
+
+    return render(request, 'tutoriais/geral_categorias.html', context=conteudo)
 
 
 def exibe_tutorial(request, categoria: str, nome_tutorial: str):
