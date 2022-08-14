@@ -41,7 +41,7 @@
         <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista">
           {% for tutorial in tutoriais_recentes %}
           <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item">
-            <a href="#" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link" title="Acesse o tutorial">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link" title="Acesse o tutorial">
                <h3 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__titulo">
                  {{ tutorial.titulo }}
                </h3>
