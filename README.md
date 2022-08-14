@@ -32,7 +32,7 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 - [ ] Disponibilização do App Mobile (Digital Authenticator)
 - [x] Envio diário de E-mails (newsletter)
 - [x] Disponibilização de Meio para Contato
-- [x] Exposição de Informações Sobre Adicionais Sobre o Projeto (Desenvolvedores, Instituição, Relatório, etc)
+- [x] Exposição de Informações Adicionais Sobre o Projeto (Desenvolvedores, Instituição, Relatório, etc)
 
 Estas funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
 
@@ -43,8 +43,8 @@ Estas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
 <table>
     <tr>
     <td align="center"><a href="https://github.com/VictorGM01"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068797?v=4" width="100px;" alt=""/></br><sub><b>Victor G. Marques</b></sub></a><br />Back-end</td>
-    <td align="center"><a href="https://github.com/Anninha1411"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86080382?v=4" width="100px;" alt=""/></br><sub><b>Anna Beatriz</b></sub></a></br>Back-end</td>
     <td align="center"><a href="https://github.com/raphaelaferraz"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068799?v=4" width="100px;" alt=""/></br><sub><b>Raphaela G. Ferraz</b></sub></a></br>Front-end</td>
+    <td align="center"><a href="https://github.com/Anninha1411"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86080382?v=4" width="100px;" alt=""/></br><sub><b>Anna Beatriz</b></sub></a></br>Back-end</td>
     <td align="center"><a href="https://github.com/heyyyhill"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85965087?v=4" width="100px;" alt=""/></br><sub><b>Hillary Mendes</b></sub></a></br>Front-end</td>
     </tr>
 </table>
