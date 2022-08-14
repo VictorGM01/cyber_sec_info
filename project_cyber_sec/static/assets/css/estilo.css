@@ -1091,7 +1091,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/* Página geral de Tutoriais */
+/* Página geral de tutoriais */
 .secao-inicio--pagina-geral-de-tutoriais, .secao-inicio--pagina-categoria-tutoriais {
     background: #056014;
     
@@ -1432,7 +1432,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/* Página de categoria dos Tutoriais */
+/* Página de categoria dos tutoriais */
 .secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao__conteiner-minutos-leitura__paragrafo, .secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__secao__conteiner-minutos-video__paragrafo {
     color: #DFD9D9;
 
@@ -1495,7 +1495,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
-/* Página do conteúdo dos Tutoriais */
+/* Página do conteúdo dos tutoriais */
 .secao-caminho-tutorial {
     color: #FFFFFF;
 

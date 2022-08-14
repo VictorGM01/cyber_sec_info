@@ -13,7 +13,7 @@ def tutoriais(request):
         'tutoriais_recentes': tutoriais_recentes,
     }
 
-    return render(request, 'Tutoriais/geral_tutoriais.html', context=conteudo)
+    return render(request, 'tutoriais/geral_tutoriais.html', context=conteudo)
 
 
 def categoria(request, categoria: str):
@@ -36,7 +36,7 @@ def categoria(request, categoria: str):
         'paginas': numero_de_paginas
     }
 
-    return render(request, 'Tutoriais/geral_categorias.html', context=conteudo)
+    return render(request, 'tutoriais/geral_categorias.html', context=conteudo)
 
 
 def exibe_tutorial(request, categoria: str, nome_tutorial: str):
@@ -57,4 +57,4 @@ def exibe_tutorial(request, categoria: str, nome_tutorial: str):
         'artigos_relacionados': artigos_relacionados,
     }
 
-    return render(request, 'Tutoriais/tutorial.html', context=conteudo)
+    return render(request, 'tutoriais/tutorial.html', context=conteudo)

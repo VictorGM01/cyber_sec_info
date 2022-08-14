@@ -905,7 +905,7 @@
     }
     
     
-    /* Página geral de Tutoriais */
+    /* Página geral de tutoriais */
     .secao-inicio--pagina-geral-de-tutoriais::after, .secao-inicio--pagina-categoria-tutoriais::after {
         height: 14%;
 
@@ -996,7 +996,7 @@
     }
     
     
-    /* Página de categoria dos Tutoriais */
+    /* Página de categoria dos tutoriais */
     .secao-inicio--pagina-categoria-tutoriais::after {
         height: 16%;
     }
@@ -1201,7 +1201,7 @@
     }
     
     
-    /* Página geral de Tutoriais */
+    /* Página geral de tutoriais */
     .secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo {
         width: 45%;
     }
@@ -2109,7 +2109,7 @@
     }
     
     
-    /* Página geral de Tutoriais */
+    /* Página geral de tutoriais */
     .secao-inicio--pagina-geral-de-tutoriais__conteiner, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem, .secao-tutoriais-gerais--pagina-geral-de-tutoriais, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
         margin: 0 9.96875rem 0 9.96875rem;
     }
@@ -2188,7 +2188,7 @@
     }
     
     
-     /* Página de categoria dos Tutoriais */
+     /* Página de categoria dos tutoriais */
     .secao-inicio--pagina-categoria-tutoriais::after {
         height: 50%;
     }
@@ -2236,7 +2236,7 @@
     }
     
     
-        /* Página do conteúdo dos Tutoriais */
+        /* Página do conteúdo dos tutoriais */
     .principal--tutorial {
         margin: 0 9.96875rem 0 9.96875rem;
     }
