@@ -4,7 +4,13 @@ from apps.artigos_cyber_sec.models import Artigo
 
 
 def tutoriais(request):
-    return render(request, 'tutoriais/geral_tutoriais.html')
+    tutoriais = Tutorial.objects.order_by("-data_publicacao").filter(publicado=True)
+
+    conteudo = {
+        "tutoriais": tutoriais
+    }
+
+    return render(request, 'tutoriais/geral_tutoriais.html', context=conteudo)
 
 
 def exibe_tutorial(request, categoria:str, nome_tutorial: str):

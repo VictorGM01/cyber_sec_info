@@ -29,12 +29,12 @@
     </div>
 
     <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes">
-                  <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem">
-            <h2 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo">
-                Tutoriais <span class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo__span">recentes</span>
-            </h2>
-            <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
-        </div>
+    <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem">
+        <h2 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo">
+            Tutoriais <span class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo__span">recentes</span>
+        </h2>
+        <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
+    </div>
 
       <section data-secao-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards">
         <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista">
@@ -87,28 +87,32 @@
       </div>
       <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
         <ul data-carrossel-lista="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          {% for tutorial in tutoriais %}
+          {% if tutorial.categoria == "computadores" %}
           <li data-carrossel-item="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                Título
+                {{ tutorial.titulo }}
               </h3>
               <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
               </div>
               <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_leitura }} min.
                   </p>
                 </div>
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_video }} min.
                   </p>
                 </div>
               </section>
             </a>
           </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </section>
     </section>
@@ -125,28 +129,32 @@
       </div>
       <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
         <ul data-carrossel-lista="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          {% for tutorial in tutoriais %}
+          {% if tutorial.categoria == "celulares" %}
           <li data-carrossel-item="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                Título do Tutorial
+                  {{ tutorial.titulo }}
               </h3>
               <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
               </div>
               <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_leitura }} min.
                   </p>
                 </div>
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_video }} min.
                   </p>
                 </div>
               </section>
             </a>
           </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </section>
     </section>
@@ -163,28 +171,32 @@
       </div>
       <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
         <ul data-carrossel-lista="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          {% for tutorial in tutoriais %}
+          {% if tutorial.categoria == "redes-sociais" %}
           <li data-carrossel-item="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                Título do Tutorial
+                {{ tutorial.titulo }}
               </h3>
               <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
               </div>
               <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_leitura }} min.
                   </p>
                 </div>
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_video }} min.
                   </p>
                 </div>
               </section>
             </a>
           </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </section>
     </section>
@@ -201,28 +213,32 @@
       </div>
       <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards">
         <ul data-carrossel-lista="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista">
+          {% for tutorial in tutoriais %}
+          {% if tutorial.categoria == "navegadores" %}
           <li data-carrossel-item="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="#" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
-                Título do Tutorial
+                {{ tutorial.titulo }}
               </h3>
               <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner">
-                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="" alt="Capa do tutorial">
+                <img class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__conteiner__imagem" src="{{ tutorial.capa.url }}" alt="Capa do tutorial">
               </div>
               <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao">
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_leitura }} min.
                   </p>
                 </div>
                 <div class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video">
                   <p class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo">
-                    X min.
+                    {{ tutorial.tempo_de_video }} min.
                   </p>
                 </div>
               </section>
             </a>
           </li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </section>
     </section>
