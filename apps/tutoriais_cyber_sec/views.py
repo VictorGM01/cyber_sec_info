@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Tutorial, Categorias
 from apps.artigos_cyber_sec.models import Artigo
+from django.core.paginator import Paginator
 
 
 def tutoriais(request):
@@ -22,9 +23,17 @@ def categoria(request, categoria: str):
 
     tutoriais_por_categoria = Tutorial.objects.filter(publicado=True).filter(categoria=categoria)
 
+    paginator = Paginator(tutoriais_por_categoria, 6)
+
+    numero_de_paginas = paginator.num_pages
+    pagina = request.GET.get('page')
+
+    tutoriais_por_pagina = paginator.get_page(pagina)
+
     conteudo = {
-        'tutoriais_por_categoria': tutoriais_por_categoria,
+        'tutoriais_por_categoria': tutoriais_por_pagina,
         'categoria': categoria,
+        'paginas': numero_de_paginas
     }
 
     return render(request, 'tutoriais/geral_categorias.html', context=conteudo)

@@ -74,12 +74,24 @@
       {% endfor %}
     </ul>
   </section>
+
 <section class="secao-paginacao">
     <nav class="secao-paginacao__navegacao">
-        <a href="#" class="secao-paginacao__navegacao__link-voltar" title="Ir para a página anterior"></a>
-        <p class="secao-paginacao__navegacao__paragrafo">Página X de XX</p>
-        <a href="#" class="secao-paginacao__navegacao__link-avancar" title="Ir para a próxima página"></a>
-    </nav>
+        {% if tutoriais_por_categoria.has_other_pages %}
+            {% if tutoriais_por_categoria.has_previous %}
+                <a href="?page={{ tutoriais_por_categoria.previous_page_number }}" class="secao-paginacao__navegacao__link-voltar"></a>
+            {% else %}
+                <a href="#" style="display: none" class="secao-paginacao__navegacao__link-voltar" title="Ir para a página anterior"></a>
+            {% endif %}
+
+            <p class="secao-paginacao__navegacao__paragrafo">Página {{ tutoriais_por_categoria.number }} de {{ paginas }}</p>
+            {% if tutoriais_por_categoria.has_next %}
+                <a href="?page={{ tutoriais_por_categoria.next_page_number }}" class="secao-paginacao__navegacao__link-avancar"></a>
+            {% else %}
+                <a href="#" style="display: none" class="secao-paginacao__navegacao__link-avancar" title="Ir para a próxima página"></a>
+            {% endif %}
+       {% endif %}
+   </nav>
 </section>
 </main>
 {% endblock %}
