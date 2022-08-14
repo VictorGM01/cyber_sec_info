@@ -16,7 +16,15 @@
       <div class="secao-inicio--pagina-categoria-tutoriais__conteiner--titulo">
         <h1>
           Artigos para
-          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-navegadores">Categoria aqui</span>
+          {% if categoria == 'redes-sociais' %}
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-redes-sociais">Redes Sociais</span>
+          {% elif categoria == 'navegadores' %}
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-navegadores">Navegadores</span>
+          {% elif categoria == 'celulares' %}
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-celulares">Celulares</span>
+          {% else %}
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-computadores">Computadores</span>
+          {% endif %}
         </h1>
       </div>
 
