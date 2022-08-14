@@ -2,7 +2,15 @@
 {% load static %}
 
 {% block title %}
-<title>Tutoriais | Cyber Security Information</title>
+{% if categoria == 'redes-sociais' %}
+<title>Tutoriais - Redes Sociais | Cyber Security Information</title>
+{% elif categoria == 'navegadores' %}
+<title>Tutoriais - Navegadores | Cyber Security Information</title>
+{% elif categoria == 'celulares' %}
+<title>Tutoriais - Celulares | Cyber Security Information</title>
+{% else %}
+<title>Tutoriais - Computadores | Cyber Security Information</title>
+{% endif %}
 {% endblock %}
 
 
@@ -13,17 +21,17 @@
 <main class="principal--pagina-categoria-tutoriais" role="main" tabindex="0">
   <section id="conteudo-principal" class="secao-inicio--pagina-categoria-tutoriais">
     <div class="secao-inicio--pagina-categoria-tutoriais__conteiner">
-      <div class="secao-inicio--pagina-categoria-tutoriais__conteiner--titulo">
+      <div class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo">
         <h1>
-          Artigos para
+          Tutoriais relacionados
           {% if categoria == 'redes-sociais' %}
-          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-redes-sociais">Redes Sociais</span>
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-redes-sociais">Redes Sociais</span>
           {% elif categoria == 'navegadores' %}
-          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-navegadores">Navegadores</span>
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-navegadores">Navegadores</span>
           {% elif categoria == 'celulares' %}
-          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-celulares">Celulares</span>
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-celulares">Celulares</span>
           {% else %}
-          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores titulo-categoria-tutoriais-span-celulares titulo-categoria-tutoriais-span-redes-sociais titulo-categoria-tutoriais-span-computadores">Computadores</span>
+          <span class="secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span titulo-categoria-tutoriais-span-computadores">Computadores</span>
           {% endif %}
         </h1>
       </div>
@@ -40,10 +48,11 @@
 
   <section class="secao-tutoriais--pagina-categoria-tutoriais">
     <ul class="secao-tutoriais--pagina-categoria-tutoriais__lista">
+      {% for tutorial in tutoriais_por_categoria %}
       <li class="secao-tutoriais--pagina-categoria-tutoriais__lista__item animacao">
         <a href="#" class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link">
           <h2 class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__titulo">
-            Título do Tutorial
+            {{ tutorial.titulo }}
           </h2>
           <div class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__conteiner">
             <img class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__conteiner__imagem" src="" alt="Capa do Tutorial">
@@ -62,6 +71,7 @@
           </section>
         </a>
       </li>
+      {% endfor %}
     </ul>
   </section>
 <section class="secao-paginacao">
