@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='tutoriais',
+            model_name='Tutoriais',
             name='categoria',
             field=models.TextField(choices=[('Celulares', 'Celulares'), ('Computadores', 'Computadores'), ('Navegadores', 'Navegadores'), ('Redes Sociais', 'Redes Sociais')], default='', max_length=20),
             preserve_default=False,
