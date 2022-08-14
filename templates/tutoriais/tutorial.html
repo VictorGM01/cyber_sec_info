@@ -19,8 +19,8 @@
 
 <main class="principal--tutorial" role="main" tabindex="0">
     <section class="secao-caminho-tutorial">
-        <a class="secao-caminho-tutorial__link" href="#">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
-            {{ tutorial.categoria }}<span class="secao-caminho-tutorial__link__span"></span>
+        <a class="secao-caminho-tutorial__link" href="{% url 'tutoriais' %}">Tutoriais <span class="secao-caminho-tutorial__link__span"></span>
+        <a class="secao-caminho-tutorial__link" href="{% url 'categoria' tutorial.categoria %}">{{ tutorial.categoria }}<span class="secao-caminho-tutorial__link__span"></span>
         </a>
         <p class="secao-caminho-tutorial__paragrafo">{{ tutorial.titulo }}</p>
     </section>
