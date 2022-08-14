@@ -37,7 +37,7 @@ def exibe_tutorial(request, categoria: str, nome_tutorial: str):
     artigos_relacionados = Artigo.objects.filter(conteudo__icontains=tutorial_a_ser_exibido.titulo).filter(publicado=True)
 
     conteudo = {
-        'tutoriais': tutorial_a_ser_exibido,
+        'tutorial': tutorial_a_ser_exibido,
         'request': request,
         'tutoriais_relacionados': tutoriais_relacionados,
         'artigos_relacionados': artigos_relacionados,
