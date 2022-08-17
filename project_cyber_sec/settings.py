@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'apps.emails_cyber_sec',
     'apps.principal_cyber_sec',
     'apps.tutoriais_cyber_sec',
+    'apps.ferramentas_cyber_sec',
     # Media Cloudinary
     'cloudinary',
     'cloudinary_storage',

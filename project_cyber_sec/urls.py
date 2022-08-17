@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("apps.principal_cyber_sec.urls")),
     path('sobre-nos/email/', include("apps.emails_cyber_sec.urls")),
+    path('ferramentas/', include("apps.ferramentas_cyber_sec.urls")),
     path('tutoriais/', include("apps.tutoriais_cyber_sec.urls")),
     path('artigos/', include("apps.artigos_cyber_sec.urls")),
     path('sitemap.xml', views.sitemap, name='sitemap.xml'),
