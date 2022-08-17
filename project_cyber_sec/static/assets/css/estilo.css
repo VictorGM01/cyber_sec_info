@@ -1299,7 +1299,7 @@ a:active, a:focus, label:focus, label:active, li:focus {
     content: " ";
 
     height: 35px;
-    width: 19px;
+    width: 35px;
 }
 
 .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner__link--celulares::after {
