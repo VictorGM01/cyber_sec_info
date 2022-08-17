@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Nosso App | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-<body class="corpo__nosso-app">
-<!-- espaço para o link de pular para o conteúdo principal -->
-<!-- espaço para o cabeçalho -->
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Conheça os benefícios e as funcionalidades do nosso app exclusivo, o Digital Authenticator. Baixe agora na Play Store.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Aplicativo, Cibersegurança, Digital Authenticator, Gerenciador de Senhas">
+{% endblock %}
+
+{% block title %}
+<title>Nosso App | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--nosso-app" {% endblock %}
+
+{% block content %}
+
 <main class="principal__nosso-app" tabindex="0" role="main">
     <section class="secao__inicio--nosso-app" id="conteudo-principal">
         <div class="secao__inicio--nosso-app__conteiner">
@@ -98,12 +101,8 @@
     <section class="secao__baixar">
         <h5 class="secao__baixar__titulo">Baixe agora no seu celular!</h5>
         <a href="#" class="secao__baixar__link" title="Clique aqui para baixar no seu celular o nosso aplicativo">
-            <img class="secao__baixar__link__imagem" src="../static/assets/img/imagem_play_store.webp" alt="Ícone da Play Store">
+            <img class="secao__baixar__link__imagem" src="{% static '/assets/img/imagem_play_store.webp' %}" alt="Ícone da Play Store">
         </a>
     </section>
 </main>
-<!-- espaço para voltar ao topo -->
-<!-- espaço para o rodape -->
-</body>
-<!-- espaço para os scripts -->
-</html>
+{% endblock %}
