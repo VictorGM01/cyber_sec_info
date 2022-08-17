@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def nosso_app(request):
+    return render(request, 'ferramentas/nosso_app.html')
