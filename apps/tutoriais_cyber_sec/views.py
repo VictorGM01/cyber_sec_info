@@ -2,16 +2,28 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Tutorial, Categorias
 from apps.artigos_cyber_sec.models import Artigo
 from django.core.paginator import Paginator
+from django.db.models import Q
 
 
 def tutoriais(request):
     tutoriais = Tutorial.objects.order_by('data_publicacao').filter(publicado=True)
     tutoriais_recentes = Tutorial.objects.order_by('-data_publicacao').filter(publicado=True)[:3]
+    busca = request.GET.get('busca')
 
-    conteudo = {
-        'tutoriais': tutoriais,
-        'tutoriais_recentes': tutoriais_recentes,
-    }
+    if busca:
+        tutoriais_buscados = Tutorial.objects.filter(Q(titulo__icontains=busca) | Q(conteudo__icontains=busca)).filter(publicado=True)
+        tutoriais_recentes_buscados = Tutorial.objects.order_by('-data_publicacao').filter(Q(titulo__icontains=busca) | Q(conteudo__icontains=busca)).filter(publicado=True)[:3]
+
+        conteudo = {
+            'tutoriais': tutoriais_buscados,
+            'tutoriais_recentes': tutoriais_recentes_buscados,
+        }
+
+    else:
+        conteudo = {
+            'tutoriais': tutoriais,
+            'tutoriais_recentes': tutoriais_recentes,
+        }
 
     return render(request, 'tutoriais/geral_tutoriais.html', context=conteudo)
 

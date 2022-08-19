@@ -20,15 +20,14 @@
         </div>
 
         <div class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input">
-            <form action="">
+            <form method="get">
                 <label for="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label" title="Pesquisar por tutorial...">
-                    <input type="search" id="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input" placeholder="Pesquisar por tutorial...">
+                    <input type="search" name="busca" id="pesquisa-tutorial" class="secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input" placeholder="Pesquisar por tutorial...">
                 </label>
             </form>
         </div>
     </div>
 
-    {% if tutoriais_recentes %}
     <section class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes">
     <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem">
         <h2 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo">
@@ -69,12 +68,17 @@
         </ul>
       </section>
     </section>
-    {% endif %}
   </section>
   <section class="secao-tutoriais-gerais--pagina-geral-de-tutoriais">
+    {% if busca %}
+    <h2 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo">
+      Tutoriais <span class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo__span">encontrados</span>
+    </h2>
+    {% else %}
     <h2 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo">
       Tutoriais <span class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo__span">por categoria</span>
     </h2>
+    {% endif %}
 
     <div class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner--linha"></div>
 
