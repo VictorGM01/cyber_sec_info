@@ -33,7 +33,12 @@ def categoria(request, categoria: str):
     if categoria not in Categorias.values:
         return redirect('tutoriais')
 
+    busca = request.GET.get('busca')
+
     tutoriais_por_categoria = Tutorial.objects.filter(publicado=True).filter(categoria=categoria)
+
+    if busca:
+        tutoriais_por_categoria = Tutorial.objects.filter(publicado=True).filter(categoria=categoria).filter(Q(titulo__icontains=busca) | Q(conteudo__icontains=busca))
 
     paginator = Paginator(tutoriais_por_categoria, 6)
 

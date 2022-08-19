@@ -33,9 +33,9 @@
       </div>
 
       <div class="secao-inicio--pagina-categoria-tutoriais__conteiner--input">
-        <form action="">
+        <form method="get">
           <label for="pesquisa-tutorial" class="secao-inicio--pagina-categoria-tutoriais__conteiner--input__label">
-            <input type="search" id="pesquisa-tutorial" class="secao-inicio--pagina-categoria-tutoriais__conteiner--input__label__input" placeholder="Pesquisar por tutorial...">
+            <input type="search" name="busca" id="pesquisa-tutorial" class="secao-inicio--pagina-categoria-tutoriais__conteiner--input__label__input" placeholder="Pesquisar por tutorial...">
           </label>
         </form>
       </div>
@@ -43,6 +43,7 @@
   </section>
 
   <section class="secao-tutoriais--pagina-categoria-tutoriais">
+    {% if tutoriais_por_categoria %}
     <ul class="secao-tutoriais--pagina-categoria-tutoriais__lista">
       {% for tutorial in tutoriais_por_categoria %}
       <li class="secao-tutoriais--pagina-categoria-tutoriais__lista__item animacao">
@@ -69,6 +70,12 @@
       </li>
       {% endfor %}
     </ul>
+    {% else %}
+      <article class="secao-conteudo__artigo-nao-encontrado" style="display: flex">
+        <div class="secao-conteudo__artigo-nao-encontrado__imagem"></div>
+        <h3 class="secao-conteudo__artigo-nao-encontrado__titulo">Nenhum resultado encontrado</h3>
+      </article>
+    {% endif %}
   </section>
 
 <section class="secao-paginacao">
