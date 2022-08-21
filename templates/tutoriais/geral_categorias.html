@@ -47,7 +47,7 @@
     <ul class="secao-tutoriais--pagina-categoria-tutoriais__lista">
       {% for tutorial in tutoriais_por_categoria %}
       <li class="secao-tutoriais--pagina-categoria-tutoriais__lista__item animacao">
-        <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link">
+        <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link" title="Acesse o Tutorial {{ tutorial.titulo }}">
           <h2 class="secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__titulo">
             {{ tutorial.titulo }}
           </h2>

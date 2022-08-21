@@ -40,7 +40,7 @@
         <ul data-lista-carrossel class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista">
           {% for tutorial in tutoriais_recentes %}
           <li data-artigo-recente="1" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item">
-            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link" title="Acesse o tutorial">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link"  title="{{ tutorial.titulo }}">
                <h3 class="secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__titulo">
                  {{ tutorial.titulo }}
                </h3>
@@ -98,7 +98,7 @@
           {% for tutorial in tutoriais %}
           {% if tutorial.categoria == "computadores" %}
           <li data-carrossel-item="computadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link"  title="{{ tutorial.titulo }}">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
                 {{ tutorial.titulo }}
               </h3>
@@ -140,7 +140,7 @@
           {% for tutorial in tutoriais %}
           {% if tutorial.categoria == "celulares" %}
           <li data-carrossel-item="celulares" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link" title="{{ tutorial.titulo }}">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
                   {{ tutorial.titulo }}
               </h3>
@@ -182,7 +182,7 @@
           {% for tutorial in tutoriais %}
           {% if tutorial.categoria == "redes-sociais" %}
           <li data-carrossel-item="redes-sociais" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link"  title="{{ tutorial.titulo }}">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
                 {{ tutorial.titulo }}
               </h3>
@@ -224,7 +224,7 @@
           {% for tutorial in tutoriais %}
           {% if tutorial.categoria == "navegadores" %}
           <li data-carrossel-item="navegadores" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item item-atual-carrossel animacao">
-            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link">
+            <a href="{% url 'tutorial' tutorial.categoria tutorial.titulo_para_url %}" class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link" title="{{ tutorial.titulo }}">
               <h3 class="secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item__link__titulo">
                 {{ tutorial.titulo }}
               </h3>
