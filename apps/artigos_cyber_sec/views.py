@@ -10,7 +10,7 @@ def artigos(request):
     artigos = Artigo.objects.order_by('data_publicacao').filter(publicado=True)
     artigos_recentes = Artigo.objects.order_by('-data_publicacao').filter(publicado=True)[:3]
 
-    paginator = Paginator(artigos, 9)
+    paginator = Paginator(artigos, 6)
 
     numero_de_paginas = paginator.num_pages
 
