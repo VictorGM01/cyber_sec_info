@@ -8,7 +8,7 @@ from django.db.models import Q
 def artigos(request):
     busca = request.GET.get('busca')
     artigos = Artigo.objects.order_by('data_publicacao').filter(publicado=True)
-    artigos_recentes = Artigo.objects.order_by('-data_publicacao').filter(publicado=True)
+    artigos_recentes = Artigo.objects.order_by('-data_publicacao').filter(publicado=True)[:3]
 
     paginator = Paginator(artigos, 9)
 
