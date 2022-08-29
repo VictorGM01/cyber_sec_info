@@ -1371,6 +1371,24 @@
     .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
         width: 31%;
     }
+    
+    
+    /*Página do Gerador de Senhas*/
+    .secao--configuracoes__conteiner-opcoes {
+        display: flex;
+    }
+
+    .secao--configuracoes__conteiner {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao--gerador-de-senhas__conteiner-botoes__botao-gerar, .secao--gerador-de-senhas__conteiner-botoes__botao-copiar {
+        font-size: 1.2rem;
+
+        padding: 1rem 2.5rem 1rem;
+    }
 }
 
 
