@@ -41,33 +41,7 @@ O presente trabalho tem como tema:
 Os autores desse projeto são:
 
 <table>
-    <tr>
-      <td align="center">
-        <img src="https://user-images.githubusercontent.com/86068797/178555475-152784e4-593f-4767-9eeb-9960d1892b5c.png" width="150;" alt="Foto de Anna Beatriz"/>
-        <br>
-        <b>Anna Beatriz Santos e Souza</b>
-        <br>
-        Responsável pelo desenvolvimento back-end da aplicação web, pela revisão e padronização de scripts e pela criação de ferramentas da aplicação.
-        <br>
-        <br>
-        <a href="https://www.linkedin.com/in/anna-beatriz-3b32921aa/">
-          <img alt="Perfil do Linkedin de Anna Beatriz" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-        </a>
-      </td>
-      <td align="center">
-        <img src="https://user-images.githubusercontent.com/86068797/178555740-9b99df1a-e39b-46b2-8474-71903d1483f7.png" width="150;" alt="Foto de Hillary Mendes"/>
-        <br>
-        <b>Hillary Mendes Moreira</b>
-        <br>
-        Responsável pelo desenvolvimento front-end da aplicação web, pela criação da interface do usuário (UI) e pela criação de templates complementares.
-        <br>
-        <br>
-        <a href="https://www.linkedin.com/in/hillary-mendes-78609a215/">
-          <img alt="Perfil do Linkedin de Hillary Mendes" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-        </a>
-      </td>
-    </tr>
-    <tr>
+<tr>
       <td align="center">
         <img src="https://user-images.githubusercontent.com/86068797/178555567-f0f70de3-183e-4f56-8d6e-341480c2df72.png" width="150;" alt="Foto de Raphaela Ferraz"/>
         <br>
@@ -95,6 +69,32 @@ Os autores desse projeto são:
         <br>
         <a href="https://www.linkedin.com/in/victor-marques-profile/">
           <img alt="Perfil do Linkedin de Victor Marques" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/86068797/178555475-152784e4-593f-4767-9eeb-9960d1892b5c.png" width="150;" alt="Foto de Anna Beatriz"/>
+        <br>
+        <b>Anna Beatriz Santos e Souza</b>
+        <br>
+        Responsável pelo desenvolvimento back-end da aplicação web, pela revisão e padronização de scripts e pela criação de ferramentas da aplicação.
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/anna-beatriz-3b32921aa/">
+          <img alt="Perfil do Linkedin de Anna Beatriz" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+        </a>
+      </td>
+      <td align="center">
+        <img src="https://user-images.githubusercontent.com/86068797/178555740-9b99df1a-e39b-46b2-8474-71903d1483f7.png" width="150;" alt="Foto de Hillary Mendes"/>
+        <br>
+        <b>Hillary Mendes Moreira</b>
+        <br>
+        Responsável pelo desenvolvimento front-end da aplicação web, pela criação da interface do usuário (UI) e pela criação de templates complementares.
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/hillary-mendes-78609a215/">
+          <img alt="Perfil do Linkedin de Hillary Mendes" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
         </a>
       </td>
     </tr>
