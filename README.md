@@ -7,7 +7,7 @@
 * [Trabalho escrito](#trabalho-escrito-)
 * [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
-* [Tecnologias Utilizadas]()
+* [Tecnologias Utilizadas](#tecnologias-utilizadas-hammer_and_wrench)
 * [Desenvolvedores](#desenvolvedores-octocat)
 
 ## Descrição do Projeto 📋
@@ -38,6 +38,25 @@ Estas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
 
 ## Status do Projeto 🔔
 ####  🚧 Em desenvolvimento 🚧
+
+## Tecnologias Utilizadas :hammer_and_wrench:
+
+> Clique sobre as imagens para acessar a documentação de cada tecnologia utilizada neste projeto.
+
+### Front-End
+
+<a href="https://www.w3schools.com/html/default.asp"><img alt="ícone html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"></a>
+<a href="https://www.w3schools.com/css/default.asp"><img alt="ícone css" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"></a>
+<a href="https://www.w3schools.com/js/default.asp"><img alt="ícone javascript" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></a>
+<a href="https://www.w3schools.com/jquery/default.asp"><img alt="ícone jquery" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" /></a>
+
+### Back-End
+
+<a href="https://www.w3schools.com/python/default.asp"><img alt="ícone python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></a>
+<a href="https://docs.djangoproject.com/en/4.1/"><img alt="ícone django" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"></a>
+<a href="https://www.sqlite.org/docs.html"><img alt="ícone sqlite" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"></a>
+<a href="https://devcenter.heroku.com/articles/cleardb"><img alt="ícone mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"></a>
+<a href="https://devcenter.heroku.com/categories/reference"><img alt="ícone heroku" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg"></a>
 
 ## Desenvolvedores :octocat:
 <table>
