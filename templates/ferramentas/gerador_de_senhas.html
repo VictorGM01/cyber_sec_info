@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Gerador de Senhas | Cyber Security Information</title>
-    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-</head>
-<body class="corpo--gerador-de-senhas">
-<!-- espaço para o link de pular para o conteúdo principal -->
-<!-- espaço para o link de pular para o cabeçalho -->
+{% extends 'base.html' %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Gere senhas seguras e exclusivas com a nossa ferramenta exclusiva. Configurar, gerar e copiar as senhas são ações disponíveis. Confira.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Cibersegurança, Gerador de senhas, Senhas">
+{% endblock %}
+
+{% block title %}
+<title>Gerador de Senhas | Cyber Security Information</title>
+{% endblock %}
+
+{% block class_css_body %} class="corpo--gerador-de-senhas" {% endblock %}
+
+{% block content %}
+
 <main class="principal--gerador-de-senhas" tabindex="0" role="main">
     <section id="conteudo-principal" class="secao-inicio--gerador-de-senhas">
         <h1 class="secao-inicio--gerador-de-senhas__titulo">Gerador de Senhas<span class="secao-inicio__titulo__cursor">|</span></h1>
@@ -86,13 +89,12 @@
     <section class="secao--nosso-aplicativo">
         <article class="secao--nosso-aplicativo__artigo">
             <p class="secao--nosso-aplicativo__artigo__paragrafo">
-                Caso queira utilizar em seu celular, <a href="./nosso_app_teste.html" class="secao--nosso-aplicativo__artigo__paragrafo__link" title="Clique aqui para acessar a página sobre o nosso aplicativo">baixe o nosso aplicativo</a>
+                Caso queira utilizar em seu celular, <a href="{% url 'nosso-app' %}" class="secao--nosso-aplicativo__artigo__paragrafo__link" title="Clique aqui para acessar a página sobre o nosso aplicativo">baixe o nosso aplicativo</a>
             </p>
         </article>
     </section>
 </main>
-<!-- espaço para o botão de voltar ao topo -->
-<!-- espaço para o rodapé -->
-</body>
-<!-- espaço para os scriprs -->
-</html>
+{% endblock %}
+{% block script %}
+    <script src="{% static '/assets/js/geradorDeSenhas' %}"></script>
+{% endblock %}
