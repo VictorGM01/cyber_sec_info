@@ -29,7 +29,7 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 - [x] Disponibilização de Artigos
 - [ ] Disponibilização de Tutoriais
 - [ ] Disponibilização de Ferramentas para Proteção
-- [ ] Disponibilização do App Mobile (Digital Authenticator)
+- [x] Disponibilização do App Mobile (Digital Authenticator)
 - [x] Envio diário de E-mails (newsletter)
 - [x] Disponibilização de Meio para Contato
 - [x] Exposição de Informações Adicionais Sobre o Projeto (Desenvolvedores, Instituição, Relatório, etc)
