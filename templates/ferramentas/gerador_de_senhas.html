@@ -1,1 +1,98 @@
-<!-- Arquivo para futura página do gerador de senhas -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gerador de Senhas | Cyber Security Information</title>
+    <link rel="icon"  type="image/png" sizes="16x16" href="../static/assets/img/favicon_csi.png">
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
+</head>
+<body class="corpo--gerador-de-senhas">
+<!-- espaço para o link de pular para o conteúdo principal -->
+<!-- espaço para o link de pular para o cabeçalho -->
+<main class="principal--gerador-de-senhas" tabindex="0" role="main">
+    <section id="conteudo-principal" class="secao-inicio--gerador-de-senhas">
+        <h1 class="secao-inicio--gerador-de-senhas__titulo">Gerador de Senhas<span class="secao-inicio__titulo__cursor">|</span></h1>
+        <h2 class="secao-inicio--gerador-de-senhas__subtitulo">Crie senhas fortes para garantir a sua segurança no mundo virtual!</h2>
+    </section>
+
+    <div class="conteiner">
+        <div class="conteiner__linha"></div>
+    </div>
+
+    <section class="secao--gerador-de-senhas">
+        <div data-imagem-senha class="secao--gerador-de-senhas__conteiner__imagem"></div>
+        <div class="secao--gerador-de-senhas__conteiner-input">
+            <label for="input-senha" class="secao--gerador-de-senhas__label" title="Aqui aparecerá a senha gerada">
+                <input data-input-senha type="text" name="senha" id="input-senha" class="secao--gerador-de-senhas__label__input" placeholder="Senha aqui" readonly>
+            </label>
+            <button data-botao-gerar class="secao--gerador-de-senhas__botao" title="Clique aqui para gerar outra senha"></button>
+        </div>
+
+
+        <div class="secao--gerador-de-senhas__conteiner-botoes">
+            <button data-botao-gerar class="secao--gerador-de-senhas__conteiner-botoes__botao-gerar" title="Clique aqui para gerar a senha">Gerar</button>
+            <button data-botao-copiar class="secao--gerador-de-senhas__conteiner-botoes__botao-copiar" title="Clique aqui para copiar a senha">Copiar</button>
+        </div>
+
+        <div data-aviso class="copiado">
+            <p> A senha foi copiada com sucesso!</p>
+        </div>
+    </section>
+
+    <section class="secao--configuracoes">
+        <h3 class="secao--configuracoes__titulo">Configurações da senha:</h3>
+        <div class="secao--configuracoes__conteiner">
+            <div class="secao--configuracoes__conteiner-tamanho">
+                <label for="input-tamanho" class="secao--configuracoes-tamanho__conteiner__label">
+                    <input data-input-tamanho type="number" name="tamanho" id="input-tamanho" class="secao--configuracoes-tamanho__conteiner__label__input" onkeyup="animacaoSenha()" onclick="animacaoSenha()">
+                    Tamanho da Senha
+                </label>
+            </div>
+
+            <div class="secao--configuracoes__conteiner-opcoes">
+                <div class="secao--configuracoes__conteiner-opcoes__conteiner">
+                    <input data-checkbox-maiuscula type="checkbox" name="letra-maiuscula" id="checkbox-letra-maiuscula" class="secao--configuracoes__conteiner-opcoes__input">
+                    <label for="checkbox-letra-maiuscula" class="secao--configuracoes__conteiner-opcoes__label">A-Z</label>
+                </div>
+
+                <div class="secao--configuracoes__conteiner-opcoes__conteiner">
+                    <input data-checkbox-miniscula type="checkbox" name="letra-minuscula" id="checkbox-letra-minuscula" class="secao--configuracoes__conteiner-opcoes__input">
+                    <label for="checkbox-letra-minuscula" class="secao--configuracoes__conteiner-opcoes__label">a-z</label>
+                </div>
+
+                <div class="secao--configuracoes__conteiner-opcoes__conteiner">
+                    <input data-checkbox-numero type="checkbox" name="numeros" id="numeros" class="secao--configuracoes__conteiner-opcoes__input">
+                    <label for="numeros" class="secao--configuracoes__conteiner-opcoes__label">0-9</label>
+                </div>
+
+                <div class="secao--configuracoes__conteiner-opcoes__conteiner">
+                    <input data-checkbox-caracteres type="checkbox" name="caracteres-especiais" id="caracteres-especiais" class="secao--configuracoes__conteiner-opcoes__input">
+                    <label for="caracteres-especiais" class="secao--configuracoes__conteiner-opcoes__label">!@#$%^&</label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="conteiner">
+        <div class="conteiner__linha"></div>
+    </div>
+
+    <section class="secao--nosso-aplicativo">
+        <article class="secao--nosso-aplicativo__artigo">
+            <p class="secao--nosso-aplicativo__artigo__paragrafo">
+                Caso queira utilizar em seu celular, <a href="./nosso_app_teste.html" class="secao--nosso-aplicativo__artigo__paragrafo__link" title="Clique aqui para acessar a página sobre o nosso aplicativo">baixe o nosso aplicativo</a>
+            </p>
+        </article>
+    </section>
+</main>
+<!-- espaço para o botão de voltar ao topo -->
+<!-- espaço para o rodapé -->
+</body>
+<!-- espaço para os scriprs -->
+</html>

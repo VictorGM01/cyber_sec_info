@@ -45,6 +45,11 @@ a:active, a:focus, label:focus, label:active, li:focus {
 }
 
 
+/* Estilização geral dos inputs do tipo checkbox */
+input[type=checkbox] {
+    accent-color: #149A54;
+}
+
 /* Link de pular para o conteúdo principal */
 .link-conteudo-principal {
     color: #FFFFFF;
@@ -1827,6 +1832,158 @@ a:active, a:focus, label:focus, label:active, li:focus {
 .secao__informacoes__lista__item__artigo__paragrafo {
     color: #FFFFFF;
     letter-spacing: 1.25px;
+}
+
+
+/* Página do Gerador de Senhas */
+.principal--gerador-de-senhas {
+    margin-bottom: 6rem;
+}
+
+.secao-inicio--gerador-de-senhas__titulo, .secao-inicio--gerador-de-senhas__subtitulo {
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.secao-inicio--gerador-de-senhas__subtitulo {
+    font-weight: normal;
+}
+
+.secao--gerador-de-senhas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao--gerador-de-senhas__label__input {
+    background: #205218;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    padding-left: 1rem;
+
+    height: 4rem;
+
+    width: 100%;
+}
+
+.secao--gerador-de-senhas__label__input::placeholder {
+    color: #FFFFFF;
+}
+
+.secao--gerador-de-senhas__conteiner-botoes__botao-gerar, .secao--gerador-de-senhas__conteiner-botoes__botao-copiar {
+    background: #062B00;
+    border: 1px solid #14FF00;
+    border-radius: 20px;
+    color: #ffffff;
+
+    padding: 1rem 1.5rem 1rem;
+
+    transition: all .5s ease-in-out;
+}
+
+.secao--gerador-de-senhas__conteiner-botoes__botao-gerar:hover, .secao--gerador-de-senhas__conteiner-botoes__botao-copiar:hover {
+    cursor: pointer;
+
+    box-shadow: 0 0 .5rem #00ff45;
+}
+
+.secao--configuracoes__titulo {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 1rem;
+}
+
+.secao--configuracoes__conteiner-tamanho {
+    margin-bottom: 1rem;
+}
+
+.secao--configuracoes-tamanho__conteiner__label {
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+
+    align-items: center;
+    display: flex;
+}
+
+.secao--configuracoes-tamanho__conteiner__label__input {
+    background: #062B00;
+    border: 1px solid #14FF00;
+    border-radius: 10px;
+    color: #ffffff;
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    height: 2.5rem;
+    width: 3rem;
+
+    margin-right: .5rem;
+}
+
+.secao--configuracoes__conteiner-opcoes__label {
+    color: #FFFFFF;
+
+    margin: 1rem 1rem 1rem 0;
+}
+.secao--nosso-aplicativo__artigo {
+    border-left: 2px solid rgba(10, 246, 76, 0.65);
+
+    padding-left: 0.5rem;
+}
+
+.secao--nosso-aplicativo__artigo__paragrafo {
+    color: #ffffff;
+
+    letter-spacing: 1.5px;
+}
+
+.secao--nosso-aplicativo__artigo__paragrafo__link {
+    color: rgba(10, 246, 76, 0.65);
+
+    text-decoration: none;
+}
+
+.secao--nosso-aplicativo__artigo__paragrafo__link:hover {
+    text-decoration: underline;
+}
+
+.secao--configuracoes__conteiner-opcoes__conteiner {
+    align-items: center;
+    display: flex;
+    gap: .6rem;
+
+    margin-left: 1rem;
+}
+
+.secao--configuracoes__conteiner-opcoes__input {
+    display: flex;
+    min-height: 1.4rem;
+    min-width: 1.4rem;
+}
+
+.copiado {
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+    border-radius: 0.375rem;
+    color: #0f5132;
+
+    display: none;
+
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+}
+
+.secao--gerador-de-senhas__botao:hover {
+    cursor: pointer;
 }
 
 

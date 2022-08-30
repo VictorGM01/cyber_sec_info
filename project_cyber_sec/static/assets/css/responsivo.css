@@ -1249,6 +1249,76 @@
         font-weight: 100;
         letter-spacing: 1.5px;
     }
+    
+    
+    /* Página do Gerador de Senhas*/
+    .secao-inicio--gerador-de-senhas__titulo {
+        font-size: 1.75rem;
+        margin: 2.5rem 0 1.8rem 0;
+    }
+
+    .secao-inicio--gerador-de-senhas__subtitulo {
+        font-size: 1rem;
+
+        margin-bottom: 2.5rem;
+    }
+
+    .secao--gerador-de-senhas__conteiner__imagem {
+        display: block;
+
+        height: 200px;
+        width: 200px;
+
+        margin: 2rem 0 2rem 0;
+    }
+
+    .secao--gerador-de-senhas {
+        margin: 0 1.15625rem 0 1.15625rem;
+    }
+
+    .secao--configuracoes {
+        margin: 1rem 1.5625rem 2.5rem 1.5625rem;
+    }
+
+    .secao--gerador-de-senhas__conteiner-input {
+        align-items: center;
+        display: flex;
+
+        width: 100%;
+    }
+
+    .secao--gerador-de-senhas__botao {
+        background: #205218 url("../img/icone_atualizar_gerador.svg") no-repeat center;
+        border: none;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+
+        height: 4rem;
+        width: 22px;
+
+        padding-left: 2.5rem;
+    }
+
+    .secao--gerador-de-senhas__label {
+        width: 100%;
+    }
+
+    .secao--gerador-de-senhas__conteiner-botoes {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+
+        margin: 1.6rem 0 2.6rem 0;
+    }
+
+    .secao--nosso-aplicativo {
+        margin: 2.5rem 1.5625rem 0 1.5625rem;
+    }
+
+    .secao--configuracoes__conteiner-opcoes {
+        display: initial;
+    }
 }
 
 
@@ -1300,6 +1370,24 @@
 
     .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
         width: 31%;
+    }
+    
+    
+    /*Página do Gerador de Senhas*/
+    .secao--configuracoes__conteiner-opcoes {
+        display: flex;
+    }
+
+    .secao--configuracoes__conteiner {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao--gerador-de-senhas__conteiner-botoes__botao-gerar, .secao--gerador-de-senhas__conteiner-botoes__botao-copiar {
+        font-size: 1.2rem;
+
+        padding: 1rem 2.5rem 1rem;
     }
 }
 
@@ -2555,6 +2643,109 @@
 
     .secao__informacoes__lista__item {
         margin-bottom: 0;
+    }
+    
+    
+    /* Página do Gerador de Senhas*/
+    .conteiner, .secao--gerador-de-senhas, .secao--configuracoes, .secao--nosso-aplicativo {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio--gerador-de-senhas {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-inicio--gerador-de-senhas {
+        margin: 2.5rem 0 1.8rem 0;
+    }
+
+    .secao-inicio--gerador-de-senhas__titulo {
+        animation: animacao--gerador-de-senhas 3.5s steps(50) 1s normal both;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+
+        margin: 0 0 2rem 0;
+    }
+
+    @keyframes animacao--gerador-de-senhas {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    .secao-inicio--gerador-de-senhas__subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .secao--gerador-de-senhas__conteiner-botoes__botao-gerar, .secao--gerador-de-senhas__conteiner-botoes__botao-copiar {
+        font-size: 1.2rem;
+
+        padding: 1rem 2.5rem 1rem;
+    }
+
+    .secao--gerador-de-senhas__conteiner-botoes {
+        margin: 2.6rem 0 2.6rem 0;
+    }
+
+    .secao--gerador-de-senhas__conteiner-botoes {
+        font-size: 1.35rem;
+    }
+
+    .secao--configuracoes__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 2.5rem;
+    }
+
+    .secao--configuracoes-tamanho__conteiner__label__input {
+        height: 3rem;
+        width: 4rem;
+    }
+
+    .secao--configuracoes__titulo {
+        font-size: 1.4rem;
+
+        margin-bottom: 2rem;
+    }
+
+    .secao--configuracoes__conteiner-tamanho {
+        align-items: center;
+        display: flex;
+    }
+
+    .secao--configuracoes__conteiner-opcoes__label, .secao--configuracoes-tamanho__conteiner__label{
+        font-size: 1.3rem;
+    }
+
+    .secao--nosso-aplicativo {
+        margin-top: 2.5rem;
+    }
+
+    .secao--nosso-aplicativo__artigo__paragrafo {
+        font-size: 1.3rem;
+    }
+
+    .secao--nosso-aplicativo__artigo {
+        border-left: 5px solid rgba(10, 246, 76, 0.65);
+    }
+
+    .secao--configuracoes-tamanho__conteiner__label__input {
+        padding-left: .6rem;
+    }
+
+    .secao--configuracoes__conteiner-opcoes {
+        display: flex;
     }
 }
 
