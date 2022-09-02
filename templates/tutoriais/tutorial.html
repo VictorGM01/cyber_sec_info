@@ -43,6 +43,14 @@
                 <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minuto de leitura</p>
                 <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
                 <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_video }} minuto de video</p>
+            {% elif tutorial.tempo_de_leitura == 1 and tutorial.tempo_de_video != 1 %}
+                <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minuto de leitura</p>
+                <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
+                <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_video }} minutos de video</p>
+            {% elif tutorial.tempo_de_leitura != 1 and tutorial.tempo_de_video == 1 %}
+                <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minutos de leitura</p>
+                <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
+                <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_video }} minuto de video</p>
             {% else %}
                 <p class="secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo">{{ tutorial.tempo_de_leitura }} minutos de leitura</p>
                 <span class="secao-informacoes-tutorial__conteiner--leitura-data-video__span"></span>
