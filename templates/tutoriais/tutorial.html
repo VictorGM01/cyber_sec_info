@@ -85,13 +85,14 @@
         {{ tutorial.motivacao | safe }}
 
         <section class="secao-conteudo__secao-video">
-            <iframe class="secao-conteudo__secao-video__iframe" width="560" height="315" src="{{ tutorial.url_video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="secao-conteudo__secao-video__iframe" width="600" height="400" src="{{ tutorial.url_video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         {{ tutorial.conteudo | safe }}
 
     </section>
 </main>
+{% if tutoriais_relacionados %}
 <div class="conteiner__linha--tutoriais-relacionados"></div>
 <section class="secao-tutoriais-relacionados">
     <h3 class="secao-tutoriais-relacionados__titulo"><span class="secao-tutoriais-relacionados__titulo__span">Tutoriais</span> relacionados</h3>
@@ -113,7 +114,14 @@
         {% endfor %}
   </ul>
 </section>
+{% endif %}
+
+{% if artigos_relacionados %}
+{% if not tutoriais_relacionados %}
+<section class="secao-artigos-relacionados secao-artigos-relacionados--pagina-de-conteudo-tutoriais" style="margin-top: 0;">
+{% else %}
 <section class="secao-artigos-relacionados secao-artigos-relacionados--pagina-de-conteudo-tutoriais">
+{% endif %}
     <h3 class="secao-artigos-relacionados__titulo"><span class="secao-artigos-relacionados__titulo__span">Artigos</span> relacionados</h3>
     <div class="conteiner-linha--titulo-artigos-relacionados"></div>
     <ul class="secao-artigos-relacionados__lista secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais">
@@ -134,4 +142,5 @@
         {% endfor %}
     </ul>
 </section>
+{% endif %}
 {% endblock %}
