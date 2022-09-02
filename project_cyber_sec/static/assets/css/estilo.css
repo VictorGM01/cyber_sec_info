@@ -1503,8 +1503,6 @@ input[type=checkbox] {
 /* Página do conteúdo dos tutoriais */
 .secao-caminho-tutorial {
     color: #FFFFFF;
-
-    display: flex;
 }
 
 .secao-caminho-tutorial__link {

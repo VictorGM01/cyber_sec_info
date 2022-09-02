@@ -2398,9 +2398,13 @@
     }
     
     
-        /* Página do conteúdo dos tutoriais */
+    /* Página do conteúdo dos tutoriais */
     .principal--tutorial {
         margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-caminho-tutorial {
+        display: flex;
     }
 
     .secao-inicio-tutorial__titulo {
