@@ -32,7 +32,11 @@
     <section class="secao-informacoes-artigo">
         <div class="secao-informacoes-artigo__conteiner--leitura-data">
             <time class="secao-informacoes-artigo__tempo">{{ artigo.data_publicacao }}</time> <span class="secao-informacoes-artigo__span"> | </span>
-            <p class="secao-informacoes-artigo__paragrafo">{{ artigo.tempo_de_leitura }} minutos de leitura</p>
+            {% if artigo.tempo_de_leitura == 1 %}
+                <p class="secao-informacoes-artigo__paragrafo">{{ artigo.tempo_de_leitura }} minuto de leitura</p>
+            {% else %}
+                <p class="secao-informacoes-artigo__paragrafo">{{ artigo.tempo_de_leitura }} minutos de leitura</p>
+            {% endif %}
         </div>
 
         <div class="secao-informacoes-artigo__conteiner--redes-sociais">
