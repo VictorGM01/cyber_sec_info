@@ -1661,6 +1661,10 @@ input[type=checkbox] {
     height: 1px;
 }
 
+.secao-conteudo__artigo__imagem {
+    width: 100%;
+}
+
 
 /* Página Sobre o Projeto */
 .principal--sobre-projeto {
