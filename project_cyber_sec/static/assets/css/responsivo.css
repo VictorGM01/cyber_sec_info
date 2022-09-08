@@ -2706,6 +2706,10 @@
         margin-bottom: 0;
     }
     
+    .secao__informacoes__lista__item--imagem-cadeado, .secao__informacoes__lista__item--imagem-autenticacao, .secao__informacoes__lista__item--imagem-manual, .secao__informacoes__lista__item--imagem-gerador {
+        display: none;
+    }
+    
     
     /* Página do Gerador de Senhas*/
     .conteiner, .secao--gerador-de-senhas, .secao--configuracoes, .secao--nosso-aplicativo {
