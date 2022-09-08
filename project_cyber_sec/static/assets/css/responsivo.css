@@ -1250,6 +1250,63 @@
         letter-spacing: 1.5px;
     }
     
+    .secao__informacoes__lista__item--imagem-cadeado {
+        background-image: url(../img/icone_cadeado_nosso_app.svg);
+
+        display: block;
+
+        height: 31px;
+        width: 25px;
+
+        position: absolute;
+
+        margin-top: -1rem;
+    }
+
+    .secao__informacoes__lista__item--imagem-autenticacao {
+        background-image: url(../img/icone_autenticacao_nosso_app.svg);
+        background-position-x: right;
+        background-repeat: no-repeat;
+
+        display: block;
+
+        height: 31px;
+        width: 90%;
+
+        position: absolute;
+
+        margin-top: -1rem;
+    }
+
+    .secao__informacoes__lista__item--imagem-gerador {
+        background-image: url(../img/icone_gerador_nosso_app.svg);
+        background-repeat: no-repeat;
+
+        display: block;
+
+        height: 19px;
+        width: 40px;
+
+        position: absolute;
+
+        margin-top: -0.5rem;
+    }
+
+    .secao__informacoes__lista__item--imagem-manual {
+        background-image: url("../img/icone_manual_nosso_app.svg");
+        background-position-x: right;
+        background-repeat: no-repeat;
+
+        display: block;
+
+        height: 37px;
+        width: 90%;
+
+        position: absolute;
+
+        margin-top: -1rem;
+    }
+    
     
     /* Página do Gerador de Senhas*/
     .secao-inicio--gerador-de-senhas__titulo {
