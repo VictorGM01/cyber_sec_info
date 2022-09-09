@@ -20,28 +20,11 @@ const botoesSecaoNavegadores = document.querySelectorAll("[data-botao-navegadore
 const itensDoCarrosselNavegadores = document.querySelectorAll("[data-carrossel-item='navegadores']");
 const itensMaximosDoCarrosselNavegadores = itensDoCarrosselNavegadores.length;
 
-//Variável de index para todas as funções.
-let itemAtual = -1;
-
-//Função responsável por realizar a movimentação do carrossel.
-function validacoes(botao, itemAtualDoCarrossel, itensMaximosDoCarrossel) {
-    //Validação responsável por alterar o index do item atual do carrossel.
-    if(botao) {
-        itemAtual -= 1;
-    } else {
-        itemAtual += 1;
-    }
-
-    //Validação responsável por fazer o carrossel retornar ao primeiro item quando o último for alcançado.
-    if(itemAtualDoCarrossel >= itensMaximosDoCarrossel) {
-        itemAtual = 0;
-    }
-
-    //Validação responsável por fazer o carrossel retornar ao último item quando o primeiro for alcançado.
-    if(itemAtual < 0) {
-        itemAtual = itensMaximosDoCarrossel - 1;
-    }
-}
+//Variáveis de index para as funções.
+let itemAtualComputadores = -1;
+let itemAtualCelulares = -1;
+let itemAtualRedesSociais = -1;
+let itemAtualNavegadores = -1;
 
 //Função responsável por alterar as classes dos itens para o carrossel.
 function alteraClasses(itensDoCarrossel, itemAtualDoCarrossel) {
@@ -63,16 +46,96 @@ function caracteristicaScroll(itensDoCarrossel, itemAtualDoCarrossel) {
     });
 }
 
+//Função responsável por realizar a movimentação do carrossel da categoria de computadores
+function validacoesComputadores(botao, itemAtualDoCarrossel, itensMaximosDoCarrossel) {
+    //Validação responsável por alterar o index do item atual do carrossel.
+    if(botao) {
+        itemAtualComputadores -= 1;
+    } else {
+        itemAtualComputadores += 1;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao primeiro item quando o último for alcançado.
+    if(itemAtualDoCarrossel >= itensMaximosDoCarrossel) {
+        itemAtualComputadores = 0;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao último item quando o primeiro for alcançado.
+    if(itemAtualComputadores < 0) {
+        itemAtualComputadores = itensMaximosDoCarrossel - 1;
+    }
+}
+
+//Função responsável por realizar a movimentação do carrossel da categoria de celulares
+function validacoesCelulares(botao, itemAtualDoCarrossel, itensMaximosDoCarrossel) {
+    //Validação responsável por alterar o index do item atual do carrossel.
+    if(botao) {
+        itemAtualCelulares -= 1;
+    } else {
+        itemAtualCelulares += 1;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao primeiro item quando o último for alcançado.
+    if(itemAtualDoCarrossel >= itensMaximosDoCarrossel) {
+        itemAtualCelulares = 0;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao último item quando o primeiro for alcançado.
+    if(itemAtualCelulares < 0) {
+        itemAtualCelulares = itensMaximosDoCarrossel - 1;
+    }
+}
+
+//Função responsável por realizar a movimentação do carrossel da categoria de redes-sociais
+function validacoesRedesSociais(botao, itemAtualDoCarrossel, itensMaximosDoCarrossel) {
+    //Validação responsável por alterar o index do item atual do carrossel.
+    if(botao) {
+        itemAtualRedesSociais -= 1;
+    } else {
+        itemAtualRedesSociais += 1;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao primeiro item quando o último for alcançado.
+    if(itemAtualDoCarrossel >= itensMaximosDoCarrossel) {
+        itemAtualRedesSociais = 0;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao último item quando o primeiro for alcançado.
+    if(itemAtualRedesSociais < 0) {
+        itemAtualRedesSociais = itensMaximosDoCarrossel - 1;
+    }
+}
+
+//Função responsável por realizar a movimentação do carrossel da categoria de navegadores
+function validacoesNavegadores(botao, itemAtualDoCarrossel, itensMaximosDoCarrossel) {
+    //Validação responsável por alterar o index do item atual do carrossel.
+    if(botao) {
+        itemAtualNavegadores -= 1;
+    } else {
+        itemAtualNavegadores += 1;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao primeiro item quando o último for alcançado.
+    if(itemAtualDoCarrossel >= itensMaximosDoCarrossel) {
+        itemAtualNavegadores = 0;
+    }
+
+    //Validação responsável por fazer o carrossel retornar ao último item quando o primeiro for alcançado.
+    if(itemAtualNavegadores < 0) {
+        itemAtualNavegadores = itensMaximosDoCarrossel - 1;
+    }
+}
+
 //Laço responsável por adicionar nos botões da categoria 'Computadores' as funções do carrossel.
 botoesSecaoComputadores.forEach((botao) => {
     botao.addEventListener('click', (e) => {
         let botaoEsquerdo = e.target.classList.contains("botao-voltar-computadores");
 
-        validacoes(botaoEsquerdo, itemAtual, itensMaximosDoCarrosselComputadores);
+        validacoesComputadores(botaoEsquerdo, itemAtualComputadores, itensMaximosDoCarrosselComputadores);
 
-        alteraClasses(itensDoCarrosselComputadores, itemAtual);
+        alteraClasses(itensDoCarrosselComputadores, itemAtualComputadores);
 
-        caracteristicaScroll(itensDoCarrosselComputadores, itemAtual);
+        caracteristicaScroll(itensDoCarrosselComputadores, itemAtualComputadores);
     });
 });
 
@@ -81,11 +144,11 @@ botoesSecaoCelulares.forEach((botao) => {
     botao.addEventListener('click', (e) => {
         let botaoEsquerdo = e.target.classList.contains("botao-voltar-celulares");
 
-        validacoes(botaoEsquerdo, itemAtual, itensMaximosDoCarrosselCelulares);
+        validacoesCelulares(botaoEsquerdo, itemAtualCelulares, itensMaximosDoCarrosselCelulares);
 
-        alteraClasses(itensDoCarrosselCelulares, itemAtual);
+        alteraClasses(itensDoCarrosselCelulares, itemAtualCelulares);
 
-        caracteristicaScroll(itensDoCarrosselCelulares, itemAtual);
+        caracteristicaScroll(itensDoCarrosselCelulares, itemAtualCelulares);
     });
 });
 
@@ -94,11 +157,11 @@ botoesSecaoRedesSociais.forEach((botao) => {
     botao.addEventListener('click', (e) => {
         let botaoEsquerdo = e.target.classList.contains("botao-voltar-redes-sociais");
 
-        validacoes(botaoEsquerdo, itemAtual, itensMaximosDoCarrosselRedesSociais);
+        validacoesRedesSociais(botaoEsquerdo, itemAtualRedesSociais, itensMaximosDoCarrosselRedesSociais);
 
-        alteraClasses(itensDoCarrosselRedesSociais, itemAtual);
+        alteraClasses(itensDoCarrosselRedesSociais, itemAtualRedesSociais);
 
-        caracteristicaScroll(itensDoCarrosselRedesSociais, itemAtual);
+        caracteristicaScroll(itensDoCarrosselRedesSociais, itemAtualRedesSociais);
     });
 });
 
@@ -107,10 +170,10 @@ botoesSecaoNavegadores.forEach((botao) => {
     botao.addEventListener('click', (e) => {
         let botaoEsquerdo = e.target.classList.contains("botao-voltar-navegadores");
 
-        validacoes(botaoEsquerdo, itemAtual, itensMaximosDoCarrosselNavegadores);
+        validacoesNavegadores(botaoEsquerdo, itemAtualNavegadores, itensMaximosDoCarrosselNavegadores);
 
-        alteraClasses(itensDoCarrosselNavegadores, itemAtual);
+        alteraClasses(itensDoCarrosselNavegadores, itemAtualNavegadores);
 
-        caracteristicaScroll(itensDoCarrosselNavegadores, itemAtual);
+        caracteristicaScroll(itensDoCarrosselNavegadores, itemAtualNavegadores);
     });
 });
