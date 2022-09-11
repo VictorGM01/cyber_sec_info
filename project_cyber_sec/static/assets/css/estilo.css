@@ -1777,7 +1777,7 @@ input[type=checkbox] {
 }
 
 .secao__inicio--nosso-app__conteiner__titulo {
-    animation: secao-inicio__titulo--animacao--nosso-app 6s steps(60) 1s normal both;
+    animation: secao-inicio__titulo--animacao--nosso-app 4.6s steps(60) 1s normal both;
     color: #FFFFFF;
     overflow: hidden;
     letter-spacing: 2px;
