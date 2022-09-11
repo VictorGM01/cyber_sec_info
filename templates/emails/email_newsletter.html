@@ -42,15 +42,41 @@
 
             <p>Olá, {{ nome }}!</p>
 
-            <p>Esses foram os artigos adicionados recentemente no nosso site:</p>
+            <p>Veja os conteúdos adicionados recentemente no nosso site</p>
         </div>
 
         {% if artigos %}
         <div>
+            <h2>Artigos</h2>
             {% for artigo in artigos %}
-            <p><strong><a href="https://www.ciberseguranca.info/artigos/{{ artigo.titulo_para_caminho }}">{{ artigo.titulo }}</a></strong></p>
-            <img alt="capa do artigo {{ artigo.titulo_para_caminho  }}" src="{{ artigo.capa.url }}" width="50%">
+            <p><strong><a href="https://www.ciberseguranca.info/artigos/{{ artigo.titulo_para_url }}">{{ artigo.titulo }}</a></strong></p>
+            <img alt="capa do artigo {{ artigo.titulo_para_url  }}" src="{{ artigo.capa.url }}" width="50%">
             <p>{{ artigo.resumo }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <hr>
+
+        {% if tutoriais %}
+        <div>
+            <h2>Tutoriais</h2>
+            {% for tutorial in tutoriais %}
+            <p><strong><a href="https://www.ciberseguranca.info/tutoriais/{{ tutorial.categoria }}/{{ tutorial.titulo_para_url }}">{{ tutorial.titulo }}</a></strong></p>
+            <img alt="capa do tutorial {{ tutorial.titulo_para_url  }}" src="{{ tutorial.capa.url }}" width="50%">
+            <p>{{ tutorial.resumo }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <hr>
+
+        {% if ferramentas %}
+        <div>
+            <h2>Ferramentas</h2>
+            {% for ferramenta in ferramentas %}
+            <p><strong><a href="{{ ferramenta.link }}">{{ ferramenta.nome }}</a></strong></p>
+            <p>{{ ferramenta.resumo }}</p>
             {% endfor %}
         </div>
         {% endif %}

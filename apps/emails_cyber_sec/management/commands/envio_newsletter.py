@@ -6,6 +6,8 @@ from project_cyber_sec import settings
 # modelos
 from apps.artigos_cyber_sec.models import Artigo
 from apps.emails_cyber_sec.models import Email
+from apps.ferramentas_cyber_sec.models import Ferramenta
+from apps.tutoriais_cyber_sec.models import Tutorial
 
 
 class Command(BaseCommand):
@@ -14,8 +16,11 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         try:
             artigos = Artigo.objects.filter(data_publicacao=datetime.today()).filter(publicado=True)
+            ferramentas = Ferramenta.objects.filter(data_criacao=datetime.today())
+            tutoriais = Tutorial.objects.filter(data_publicacao=datetime.today()).filter(publicado=True)
             inscritos = Email.objects.all()
-            if artigos.exists():
+
+            if artigos.exists() or tutoriais.exists() or ferramentas.exists():
                 assunto = "Novo Conteúdo: Cyber Security Information"  # Assunto do e-mail
                 mensagem = "Novo conteúdo no site"
                 host = settings.EMAIL_HOST_USER  # E-mail que enviará a mensagem
@@ -26,8 +31,11 @@ class Command(BaseCommand):
 
                     email = EmailMultiAlternatives(assunto, mensagem, host, destinatario)
 
+                    # renderização do HTML
                     msg = render_to_string("emails/email_newsletter.html", context={"artigos": artigos,
-                                                                                    "nome": nome})  # Mensagem em html
+                                                                                    "nome": nome,
+                                                                                    "tutoriais": tutoriais,
+                                                                                    "ferramentas": ferramentas})
 
                     email.attach_alternative(msg, "text/html")
                     print(f"Enviando e-mail para {destinatario}")
