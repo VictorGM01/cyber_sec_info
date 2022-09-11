@@ -11,6 +11,11 @@ def tutoriais(request):
     busca = request.GET.get('busca')
 
     if busca:
+
+        # trecho relacionado ao primeiro link do header (Verificação em Duas etapas)
+        if "verificacao-em-duas-etapas" == busca:
+            busca = "Verificação em duas etapas"
+
         tutoriais_buscados = Tutorial.objects.filter(Q(titulo__icontains=busca) | Q(conteudo__icontains=busca)).filter(publicado=True)
         tutoriais_recentes_buscados = Tutorial.objects.order_by('-data_publicacao').filter(Q(titulo__icontains=busca) | Q(conteudo__icontains=busca)).filter(publicado=True)[:3]
 
