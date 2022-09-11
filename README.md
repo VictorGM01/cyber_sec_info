@@ -27,8 +27,8 @@ Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, ori
 ## Funcionalidades :scroll:
 
 - [x] Disponibilização de Artigos
-- [ ] Disponibilização de Tutoriais
-- [ ] Disponibilização de Ferramentas para Proteção
+- [x] Disponibilização de Tutoriais
+- [x] Disponibilização de Ferramentas para Proteção
 - [x] Disponibilização do App Mobile (Digital Authenticator)
 - [x] Envio diário de E-mails (newsletter)
 - [x] Disponibilização de Meio para Contato
