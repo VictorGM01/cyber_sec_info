@@ -129,16 +129,16 @@ function animacaoSenha() {
 
     //Validação responsável por mudar as imagens de acordo com o tamanho da senha
     if(inputTamanhoDaSenha.value <= 8) {
-        imagemTamanhoDaSenha.style.backgroundImage = "url('/static/assets/img/icone_senha_fraca.svg')"
+        imagemTamanhoDaSenha.style.backgroundImage = "url('/static/assets/img/icone_senha_fraca.svg')";
     } else if(inputTamanhoDaSenha.value <= 12) {
-        imagemTamanhoDaSenha.style.backgroundImage = "url('/static/assets/img/icone_senha_regular.svg')"
+        imagemTamanhoDaSenha.style.backgroundImage = "url('/static/assets/img/icone_senha_regular.svg')";
     } else {
-        imagemTamanhoDaSenha.style.backgroundImage = "url('/static/assets/img/icone_senha_forte.svg')"
+        imagemTamanhoDaSenha.style.backgroundImage = "url('/static/assets/img/icone_senha_forte.svg')";
     }
 
     //Validação responsável por não permitir valores menores que 4 no input de tamanho da senha
     if(inputTamanhoDaSenha.value < 4) {
-        inputTamanhoDaSenha.value = 4
+        iinputTamanhoDaSenha.value = inputTamanhoDaSenha.attributes.min;
     }
 }
 
