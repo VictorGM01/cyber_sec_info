@@ -1633,6 +1633,71 @@
 
 
 @media screen and (min-width: 1000px) {
+    /* Página Principal */
+    .secao-inicial {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-inicial__titulo {
+        font-size: 3rem;
+    }
+
+    .secao-inicial__subtitulo {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .secao-informacoes-ferramentas__titulo {
+        font-size: 2rem;
+        text-align: center;
+
+        padding: 3.75rem 0 3.75rem 0;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas {
+        height: 30rem;
+
+        padding: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label {
+        font-size: 1rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo {
+        padding: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__titulo {
+        background: #0f5e25;
+        border-bottom-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        width: 53%;
+
+        margin: 2rem 0 1.25rem 0;
+        padding: 0.8rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo {
+        font-size: 1.12rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao, .secao-informacoes-newsletter__botao, .secao-informacoes-fale-conosco__botao, .secao-informacoes-sobre-nos__botao {
+        width: 23.6875rem;
+        height: 3.8125rem;
+    }
+
+    .secao-informacoes-newsletter {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
     /* Página geral de artigos */
     .secao-inicio--pagina-geral-de-artigos::after {
         height: 20%;
