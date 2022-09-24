@@ -1,4 +1,257 @@
 @media screen and (min-width: 0){
+    /* Página Principal */
+    .secao-informacoes-ferramentas__titulo {
+        font-size: 1.5rem;
+        text-align: center;
+
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-informacoes-tutoriais__titulo, .secao-informacoes-artigos__titulo, .secao-informacoes-newsletter__titulo, .secao-informacoes-fale-conosco__titulo, .secao-informacoes-sobre-nos__titulo {
+        font-size: 1.5rem;
+        text-align: center;
+
+        padding-top: 2.5rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas {
+        height: 55rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo {
+        padding: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__titulo {
+        background: none;
+        border-radius: initial;
+        letter-spacing: 1.5px;
+
+        font-size: 1.2rem;
+
+        width: 100%;
+
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo {
+        line-height: 2rem;
+        letter-spacing: 1.5px;
+
+        font-size: 1.2rem;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label {
+        font-size: .9rem;
+
+        padding: 0;
+    }
+
+    .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao {
+        font-size: 1rem;
+
+        width: 100%;
+    }
+
+    .secao-informacoes-tutoriais, .secao-informacoes-artigos, .secao-informacoes-newsletter, .secao-informacoes-fale-conosco, .secao-informacoes-sobre-nos {
+        border-bottom: 1px solid #20E456;
+
+        padding-bottom: 6rem;
+    }
+
+    .secao-informacoes-tutoriais__lista {
+        list-style: none;
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-informacoes-tutoriais__lista__item {
+        width: 20.5rem;
+        height: 18.5rem;
+
+        margin-top: 2.5rem;
+    }
+
+    .secao-informacoes-tutoriais__lista__item__artigo__paragrafo {
+        font-size: 1rem;
+
+        padding: 0 1.34rem 0 1.34rem;
+    }
+
+    .secao-informacoes-tutoriais__lista__item__botao {
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+        height: 2.5rem;
+        width: 14.5rem;
+
+        margin-top: 1.5rem;
+    }
+
+    .secao-informacoes-artigos__lista__item {
+        border: 1px solid #14FF00;
+        border-radius: 20px;
+
+        height: 17.5rem;
+        width: 20.5rem;
+
+        margin-top: 2.5rem;
+    }
+
+    .secao-informacoes-artigos__lista__item:nth-child(4) {
+        height: 19.5rem;
+    }
+
+    .item-artigos-ciberseguranca {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/capa_ciberseguranca_index.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item-artigos-crimes {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/capa_crimes-ciber_index.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item-artigos-dicionario {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/capa_dicionario_index.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item-artigos-geral {
+        background: #0E340D;
+        border: 1px solid #14FF00;
+        box-shadow: 2px 2px 24px rgba(20, 255, 0, 0.4);
+    }
+
+    .secao-informacoes-artigos__lista__item__titulo {
+        border-bottom: 1px solid #20E456;
+        font-size: 1.2rem;
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        padding: 2.8rem 0 5px 0;
+    }
+
+    .item-artigos-titulo-dicionario {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .secao-informacoes-artigos__lista__item__artigo__paragrafo {
+        font-size: 1rem;
+
+        padding: 1.4rem 1rem 1.4rem 1rem;
+    }
+
+    .secao-informacoes-artigos__lista__item__conteiner__botao {
+        font-size: 1rem;
+        font-weight: bold;
+
+        height: 2.5rem;
+        width: 14.125rem;
+    }
+
+    .item-artigos-botao-geral {
+        width: 15rem;
+    }
+    
+    .secao-informacoes-newsletter__artigo__paragrafo, .secao-informacoes-fale-conosco__artigo__paragrafo {
+        margin: 2.5rem 0 2rem 0;
+    }
+
+    .secao-informacoes-newsletter__botao, .secao-informacoes-fale-conosco__botao, .secao-informacoes-sobre-nos__botao {
+        height: 3.8125rem;
+        width: 85%;
+    }
+
+    .secao-informacoes-newsletter__artigo, .secao-informacoes-fale-conosco__artigo {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-informacoes-fale-conosco__artigo {
+        display: initial;
+    }
+
+    .secao-informacoes-fale-conosco__artigo__paragrafo {
+        line-height: 2rem;
+    }
+
+    .secao-informacoes-fale-conosco {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-informacoes-sobre-nos__subtitulo {
+        margin: 2.5rem 0 0 1rem;
+    }
+
+    .secao-informacoes-sobre-nos__lista {
+        margin-top: 1.25rem;
+    }
+
+    .secao-informacoes-sobre-nos__lista__item__imagem {
+        height: 8rem;
+
+        align-self: center;
+        flex-shrink: 0;
+    }
+
+    .secao-informacoes-sobre-nos__lista__item__titulo  {
+        font-size: 1rem;
+        text-align: center;
+
+        margin-top: .5rem;
+    }
+
+    .secao-informacoes-sobre-nos__lista__item__paragrafo {
+        font-size: .74rem;
+        text-align: center;
+
+        margin-top: .5rem;
+
+        width: 75%;
+    }
+
+    .secao-informacoes-sobre-nos__lista__item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 2rem;
+
+        width: 50%;
+    }
+
+    .secao-informacoes-sobre-nos__lista {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .secao-informacoes-sobre-nos__lista {
+        margin: 0 0.4rem 0 0.4rem;
+    }
+
+    .secao-informacoes-sobre-nos__botao {
+        margin-top: 2.5rem;
+    }
+
+    .secao-informacoes-sobre-nos__conteinter {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
     /* Cabecalho */
     .cabecalho {
         align-items: flex-start;
