@@ -81,9 +81,394 @@ input[type=checkbox] {
 
 
 /* Estilizações gerais da tag body */
-.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos, .corpo--pagina-geral-de-tutoriais, .corpo--pagina-categoria-tutoriais, .corpo--tutorial, .corpo--sobre-projeto, .corpo--nosso-app, .corpo--gerador-de-senhas {
+.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos, .corpo--pagina-geral-de-tutoriais, .corpo--pagina-categoria-tutoriais, .corpo--tutorial, .corpo--sobre-projeto, .corpo--nosso-app, .corpo--gerador-de-senhas, .corpo--pagina-principal {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
+}
+
+
+/* Página Principal */
+.secao-inicial__titulo, .secao-inicial__subtitulo {
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+
+    text-align: center;
+}
+
+.secao-inicial__titulo__span, .secao-inicial__subtitulo__span {
+    color: #28BC10;
+}
+
+.secao-informacoes-ferramentas {
+    background: #1B341D;
+    border-bottom: 1px solid #20E456;
+    overflow-x: auto;
+
+    max-width: auto;
+    width: 100%;
+
+    margin: 0 auto;
+    padding-bottom: 6rem;
+}
+
+.secao-informacoes-ferramentas__titulo, .secao-informacoes-tutoriais__titulo, .secao-informacoes-artigos__titulo, .secao-informacoes-newsletter__titulo, .secao-informacoes-fale-conosco__titulo, .secao-informacoes-sobre-nos__titulo{
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.secao-informacoes-ferramentas__titulo__span, .secao-informacoes-tutoriais__titulo__span, .secao-informacoes-artigos__titulo__span, .secao-informacoes-newsletter__titulo__span, .secao-informacoes-fale-conosco__titulo__span, .secao-informacoes-sobre-nos__titulo__span {
+    color: #28BC10;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas {
+    background: #1B341D;
+
+    height: 30rem;
+
+    position: relative;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas::before, .secao-informacoes-ferramentas__conteiner-escolhas::after {
+    content: "";
+
+    display: table;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas::after {
+    clear: both;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha {
+    border-bottom: 2px solid #20E456;
+    float: left;
+
+    width: calc(100%/2);
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__input {
+    display: none;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label {
+    background: transparent;
+    border-right: 0.125rem solid transparent;
+    color: #fff;
+    cursor: pointer;
+    line-height: 2.75em;
+    transition: all 0.25s;
+    text-align: center;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+
+    height: 3em;
+
+    padding: 0 1.618em;
+
+    position: relative;
+    top: 0;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label:hover {
+    transition: top 0.25s;
+
+    top: -0.15rem;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo {
+    background: transparent;
+    border-bottom: 0.25rem solid transparent;
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.35s;
+    z-index: 1;
+
+    height: 12rem;
+
+    padding: 1.618rem;
+
+    left: 0;
+    position: absolute;
+    top: 2.75em;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__titulo {
+    letter-spacing: 1.5px;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo {
+    color: #F8F0F0;
+    letter-spacing: 1px;
+
+    margin-top: 1.5rem;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2.6875rem;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao {
+    background: #1A993D;
+    border: 1px solid #14FF00;
+    border-radius: 20px;
+    color: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    letter-spacing: 2px;
+    transition: all .40s;
+
+    height: 3.8125rem;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao:hover, .secao-informacoes-newsletter__botao:hover, .secao-informacoes-fale-conosco__botao:hover, .secao-informacoes-sobre-nos__botao:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 1px 4px #14FF00);
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__input:checked + .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label {
+    background: #1A993D;
+    border-bottom: 0;
+    border-right: 0.125rem solid #1A993D;
+    color: #FFFFFF;
+    transition: all 0.35s;
+    z-index: 1;
+}
+
+.secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__input:checked + label + .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo {
+    opacity: 1;
+    transition: all 0.35s;
+    z-index: 2;
+}
+
+.label-gerador-de-senhas:before {
+    background-image: url("../img/icone_gerador_index.svg");
+    content: "";
+
+    height: 21px;
+    width: 16px;
+}
+
+.label-nosso-app:before {
+    background-image: url("../img/icone_app_index.svg");
+    content: "";
+
+    height: 24px;
+    width: 14px;
+}
+
+.secao-informacoes-tutoriais__lista__item {
+    background: #081408;
+    border: 1px solid #14FF00;
+    border-radius: 25px;
+}
+
+.secao-informacoes-tutoriais__lista__item__titulo {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+
+    align-items: center;
+    display: flex;
+    gap: .8rem;
+
+    padding: 2.4rem 0 1.6rem 0;
+}
+
+.titulo-item-tutoriais-computadores {
+    color: #20A9E4;
+}
+
+.titulo-item-tutoriais-computadores:before {
+    background-image: url("../img/icone_computadores_index.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+
+    height: 44px;
+    width: 56px;
+
+    margin-left: 1.5rem;
+}
+
+.titulo-item-tutoriais-celulares {
+    color: #F45151;
+}
+
+.titulo-item-tutoriais-celulares:before {
+    background-image: url("../img/icone_celulares_index.svg");
+    content: "";
+
+    height: 44px;
+    width: 51px;
+
+    margin-left: 1.5rem;
+}
+
+.titulo-item-tutoriais-redes-sociais {
+    color: #EA6CC7;
+}
+
+.titulo-item-tutoriais-redes-sociais:before {
+    background-image: url("../img/icone_redes-sociais_index.svg");
+    content: "";
+
+    height: 52px;
+    width: 54px;
+
+    margin-left: 1.5rem;
+}
+
+.titulo-item-tutoriais-navegadores {
+    color: #F2C830;
+}
+
+.titulo-item-tutoriais-navegadores:before {
+    background-image: url("../img/icone_navegadores_index.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+
+    height: 52px;
+    width: 48px;
+    margin-left: 1.5rem;
+}
+
+.secao-informacoes-tutoriais__lista__item__artigo__paragrafo, .secao-informacoes-newsletter__artigo__paragrafo, .secao-informacoes-fale-conosco__artigo__paragrafo {
+    color: #ded9d9;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    line-height: 1.6rem;
+}
+
+.secao-informacoes-tutoriais__lista__item__botao {
+    background: transparent;
+    border: 1px solid #20E456;
+    border-radius: 20px;
+    box-shadow: 2px 1px 4px #14FF00;
+    color: #ffffff;
+    outline: none;
+}
+
+.secao-informacoes-tutoriais__lista__item__conteiner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-informacoes-artigos__lista {
+    list-style-type: none;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-informacoes-artigos__lista__item__titulo {
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.secao-informacoes-artigos__lista__item__artigo__paragrafo {
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    line-height: 1.6rem;
+}
+
+.secao-informacoes-artigos__lista__item__conteiner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-informacoes-artigos__lista__item__conteiner__botao {
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #20e456;
+    border-radius: 20px;
+    box-shadow: 2px 1px 4px #14FF00;
+    letter-spacing: 1.5px;
+    outline: none;
+}
+
+.secao-informacoes-newsletter__artigo__paragrafo, .secao-informacoes-fale-conosco__artigo__paragrafo {
+    font-size: 1.12rem;
+}
+
+.secao-informacoes-newsletter__botao, .secao-informacoes-sobre-nos__botao {
+    background: #062B00;
+    border: 1px solid #14FF00;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all .40s;
+}
+
+.secao-informacoes-newsletter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-informacoes-artigos, .secao-informacoes-fale-conosco {
+    background: #1B341D;
+}
+
+.secao-informacoes-fale-conosco__botao {
+    background: #062B00;
+    border: 1px solid #14FF00;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: all .40s;
+}
+
+.secao-informacoes-newsletter__conteiner, .secao-informacoes-fale-conosco__conteiner {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secao-informacoes-sobre-nos__subtitulo {
+    color: #20E456;
+    letter-spacing: 1.5px;
+    font-size: 1.4rem;
+    font-weight: normal;
+
+    align-items: center;
+    display: flex;
+    gap: .8rem;
+}
+
+.secao-informacoes-sobre-nos__subtitulo:before {
+    background-image: url("../img/icone_sobre-nos_index.svg");
+    content: "";
+
+    display: flex;
+
+    height: 43px;
+    width: 56px;
+}
+
+.secao-informacoes-sobre-nos__lista__item__titulo {
+    color: #C4C4C4;
+    letter-spacing: 1.5px;
+}
+
+.secao-informacoes-sobre-nos__lista__item__paragrafo {
+    color: #20E456;
+    letter-spacing: 1.5px;
 }
 
 
