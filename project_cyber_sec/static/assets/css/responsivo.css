@@ -1768,6 +1768,163 @@
 
 
 @media screen and (min-width: 1200px) {
+    /* Página Principal */
+    .secao-inicial__subtitulo {
+        width: 50%;
+    }
+
+    .secao-informacoes-tutoriais__titulo, .secao-informacoes-artigos__titulo, .secao-informacoes-newsletter__titulo, .secao-informacoes-fale-conosco__titulo, .secao-informacoes-sobre-nos__titulo {
+        font-size: 2rem;
+
+        padding: 3.75rem 0 2rem 0;
+    }
+
+    .secao-informacoes-tutoriais__lista__item {
+        height: 22rem;
+        width: 31.25rem;
+    }
+
+    .secao-informacoes-tutoriais__lista__item__artigo {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .secao-informacoes-tutoriais__lista__item__artigo__paragrafo {
+        font-size: 1.3rem;
+    }
+
+    .secao-informacoes-tutoriais__lista {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secao-informacoes-tutoriais__lista__item:nth-child(1), .secao-informacoes-tutoriais__lista__item:nth-child(3) {
+        margin-right: 4rem;
+    }
+
+    .secao-informacoes-tutoriais__lista__item:nth-child(1), .secao-informacoes-tutoriais__lista__item:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+
+    .secao-informacoes-tutoriais__lista__item__botao {
+        transition: all 60s ease-in-out;
+        height: 3rem;
+        width: 15.5rem;
+
+        position: relative;
+    }
+
+    .secao-informacoes-tutoriais__lista__item__botao:hover {
+        cursor: pointer;
+
+        bottom: .5rem;
+    }
+
+    .secao-informacoes-artigos__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secao-informacoes-artigos__lista__item, .secao-informacoes-artigos__lista__item:nth-child(4) {
+        height: 22rem;
+        width: 31.25rem;
+    }
+
+    .secao-informacoes-artigos__lista__item__titulo {
+        font-size: 1.4rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .secao-informacoes-artigos__lista__item__artigo {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .secao-informacoes-artigos__lista__item__artigo__paragrafo {
+        font-size: 1.3rem;
+    }
+
+    .secao-informacoes-artigos__lista__item:nth-child(1), .secao-informacoes-artigos__lista__item:nth-child(3) {
+        margin-right: 4rem;
+    }
+
+    .secao-informacoes-artigos__lista__item:nth-child(1), .secao-informacoes-artigos__lista__item:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+
+    .secao-informacoes-artigos__lista__item__conteiner__botao {
+        transition: all 60s ease-in-out;
+        height: 3rem;
+        width: 15.5rem;
+
+        position: relative;
+    }
+
+    .secao-informacoes-artigos__lista__item__conteiner__botao:hover {
+        cursor: pointer;
+
+        bottom: .5rem;
+    }
+
+    .secao-informacoes-newsletter__conteiner-imagem {
+        background-image: url("../img/icone_newsletter_index.svg");
+
+        display: flex;
+
+        height: 327px;
+        width: 336px;
+    }
+
+    .secao-informacoes-newsletter__artigo, .secao-informacoes-fale-conosco__artigo {
+        font-size: 1.12rem;
+    }
+
+    .secao-informacoes-fale-conosco__conteiner-imagem {
+        background-image: url("../img/icone_fale-conosco_index.svg");
+        background-repeat: no-repeat;
+
+        display: flex;
+
+        height: 291px;
+        width: 580px;
+    }
+
+    .secao-informacoes-fale-conosco {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 9rem 6rem 9rem;
+    }
+
+    .secao-informacoes-fale-conosco__botao {
+        margin-top: 2.5rem;
+    }
+
+    .secao-informacoes-fale-conosco__artigo {
+        margin: initial;
+    }
+
+    .secao-informacoes-sobre-nos__lista {
+        flex-wrap: initial;
+
+        margin-left: 9rem;
+    }
+
+    .secao-informacoes-sobre-nos__subtitulo {
+        margin-left: 9rem;
+    }
+
+    .secao-informacoes-sobre-nos__lista__item {
+        margin-right: 5rem;
+        width: initial;
+    }
+    
+    
     /* Cabeçalho */
     .cabecalho {
         top: 0;
