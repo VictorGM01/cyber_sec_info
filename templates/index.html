@@ -14,7 +14,245 @@
 
 
 {% block class_css_body %} class="corpo__index" {% endblock %}
+<main id="conteudo-principal" role="main" tabindex="0">
+    <section class="secao-inicial">
+        <h1 class="secao-inicial__titulo">
+            Cuide-se ao navegar pela <span class="secao-inicial__titulo__span">internet</span>!<span class="secao-inicio__titulo__cursor">_</span>
+        </h1>
+        <h2 class="secao-inicial__subtitulo">
+            Aqui você encontrará <span class="secao-inicial__subtitulo__span">conteúdos</span>, <span class="secao-inicial__subtitulo__span">ferramentas</span>
+            e <span class="secao-inicial__subtitulo__span">vídeos práticos</span> sobre como garantir a segurança no meio digital.
+        </h2>
+    </section>
+    <section class="secao-informacoes-ferramentas">
+        <h3 class="secao-informacoes-ferramentas__titulo">Nossas <span class="secao-informacoes-ferramentas__titulo__span">Ferramentas</span><span class="secao-inicio__titulo__cursor">_</span></h3>
+        <div class="secao-informacoes-ferramentas__conteiner-escolhas animacao">
+            <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha">
+                <input type="radio" checked name="escolhas-ferramentas" id="gerador-de-senhas" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__input">
+                <label for="gerador-de-senhas" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label label-gerador-de-senhas">
+                    Gerador de Senhas
+                </label>
+                <article class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo">
+                    <h3 class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__titulo">Garanta a segurança de suas contas
+                        na internet!
+                    </h3>
+                    <p class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo">
+                        Para efetivar a cibersegurança, é muito importante a utilização de senhas seguras, porém a criação dessas senhas diversas é algo que pode demandar tempo e, até mesmo, criatividade.
+                    </p>
+                    <p class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo">
+                        Por isso, um gerador de senhas pode te ajudar nessas demandas específicas, uma vez que ele pode gerar senhas seguras, complexas e exclusivas. Além disso, através do nosso gerador, você consegue configurar todos os aspectos da sua senha
+                    </p>
+                    <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner">
+                        <button class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso gerador de senhas</button>
+                    </div>
+                    </article>
+            </div>
 
-
+            <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha">
+                <input type="radio" name="escolhas-ferramentas" id="nosso-app" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__input">
+                <label for="nosso-app" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label label-nosso-app">
+                    Nosso App
+                </label>
+                <article class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo">
+                    <h3 class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__titulo">Armazene suas informações de
+                        maneira segura!
+                    </h3>
+                    <p class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo">
+                        Para efetivar a cibersegurança, também é muito importante o correto armazenamento das suas informações sigilosas, tal como senhas, números de documentos e outros dados confidenciais.
+                    </p>
+                    <p class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__paragrafo">
+                        Por isso, o nosso aplicativo, Digital Authenticator, é capaz de guardar dados no seu próprio dispositivo, ou seja, somente você pode acessá-los, além de criptografá-los e disponibilizá-los somente para a digital cadastrada.
+                    </p>
+                    <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner">
+                        <button class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso aplicativo mobile</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="secao-informacoes-tutoriais">
+        <h3 class="secao-informacoes-tutoriais__titulo">Nossos <span class="secao-informacoes-tutoriais__titulo__span">Tutoriais</span><span class="secao-inicio__titulo__cursor">_</span></h3>
+        <ul class="secao-informacoes-tutoriais__lista animacao">
+            <li class="secao-informacoes-tutoriais__lista__item">
+                <h4 class="secao-informacoes-tutoriais__lista__item__titulo titulo-item-tutoriais-computadores">
+                    Computadores
+                </h4>
+                <article class="secao-informacoes-tutoriais__lista__item__artigo">
+                    <p class="secao-informacoes-tutoriais__lista__item__artigo__paragrafo">
+                        Conheça os mecanismos necessários para aplicar a segurança cibernética em seu computador.
+                    </p>
+                </article>
+                <div class="secao-informacoes-tutoriais__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/tutoriais/computadores/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre computadores">Acessar tutoriais</button>
+                </div>
+            </li>
+            <li class="secao-informacoes-tutoriais__lista__item">
+                <h4 class="secao-informacoes-tutoriais__lista__item__titulo titulo-item-tutoriais-celulares">
+                    Celulares
+                </h4>
+                <article class="secao-informacoes-tutoriais__lista__item__artigo">
+                    <p class="secao-informacoes-tutoriais__lista__item__artigo__paragrafo">
+                        Aplique o passo-a-passo do tutorial para garantir a segurança de seu dispositivo móvel e de seus dados.
+                    </p>
+                </article>
+                <div class="secao-informacoes-tutoriais__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/tutoriais/celulares/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre celulares">Acessar tutoriais</button>
+                </div>
+            </li>
+            <li class="secao-informacoes-tutoriais__lista__item">
+                <h4 class="secao-informacoes-tutoriais__lista__item__titulo titulo-item-tutoriais-redes-sociais">
+                    Redes sociais
+                </h4>
+                <article class="secao-informacoes-tutoriais__lista__item__artigo">
+                    <p class="secao-informacoes-tutoriais__lista__item__artigo__paragrafo">
+                        Conheça todos os mecanismos de segurança que as redes sociais oferecem e aplique-as em sua conta.
+                    </p>
+                </article>
+                <div class="secao-informacoes-tutoriais__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/tutoriais/redes-sociais/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre redes sociais">Acessar tutoriais</button>
+                </div>
+            </li>
+            <li class="secao-informacoes-tutoriais__lista__item">
+                <h4 class="secao-informacoes-tutoriais__lista__item__titulo titulo-item-tutoriais-navegadores">
+                    Navegadores
+                </h4>
+                <article class="secao-informacoes-tutoriais__lista__item__artigo">
+                    <p class="secao-informacoes-tutoriais__lista__item__artigo__paragrafo">
+                        Saiba quais ferramentas utilizar para realizar uma navegação mais segura pela internet.
+                    </p>
+                </article>
+                <div class="secao-informacoes-tutoriais__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/tutoriais/navegadores/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre navegadores">Acessar tutoriais</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="secao-informacoes-artigos">
+        <h3 class="secao-informacoes-artigos__titulo">Nossos <span class="secao-informacoes-artigos__titulo__span">Artigos</span><span class="secao-inicio__titulo__cursor">_</span></h3>
+        <ul class="secao-informacoes-artigos__lista animacao">
+            <li class="secao-informacoes-artigos__lista__item item-artigos-ciberseguranca">
+                <h4 class="secao-informacoes-artigos__lista__item__titulo">O que é Cibersegurança?</h4>
+                <div class="conteiner__linha-index"></div>
+                <article class="secao-informacoes-artigos__lista__item__artigo">
+                    <p class="secao-informacoes-artigos__lista__item__artigo__paragrafo">
+                        Saiba quais ferramentas utilizar para realizar uma navegação mais segura pela internet.
+                    </p>
+                </article>
+                <div class="secao-informacoes-artigos__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/artigos/o-que-e-ciberseguranca'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o artigo sobre cibersegurança">Acessar artigo</button>
+                </div>
+            </li>
+            <li class="secao-informacoes-artigos__lista__item item-artigos-crimes">
+                <h4 class="secao-informacoes-artigos__lista__item__titulo">Crimes Cibernéticos</h4>
+                <div class="conteiner__linha-index"></div>
+                <article class="secao-informacoes-artigos__lista__item__artigo">
+                    <p class="secao-informacoes-artigos__lista__item__artigo__paragrafo">
+                        Entenda quais são os principais crimes cibernéticos que ocorrem na internet e se proteja contra eles.
+                    </p>
+                </article>
+                <div class="secao-informacoes-artigos__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/artigos/o-que-sao-crimes-ciberneticos'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o artigo sobre crimes cibernéticos">Acessar artigo</button>
+                </div>
+            </li>
+            <li class="secao-informacoes-artigos__lista__item item-artigos-dicionario">
+                <h4 class="secao-informacoes-artigos__lista__item__titulo item-artigos-titulo-dicionario">Dicionário de Cibersegurança</h4>
+                <div class="conteiner__linha-index"></div>
+                <article class="secao-informacoes-artigos__lista__item__artigo">
+                    <p class="secao-informacoes-artigos__lista__item__artigo__paragrafo">
+                        Saiba quais ferramentas utilizar para realizar uma navegação mais segura pela internet.
+                    </p>
+                </article>
+                <div class="secao-informacoes-artigos__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/artigos/dicionario-de-ciberseguranca'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o nosso dicionário sobre cibersegurança">Acessar artigo</button>
+                </div>
+            </li>
+            <li class="secao-informacoes-artigos__lista__item item-artigos-geral">
+                <h4 class="secao-informacoes-artigos__lista__item__titulo item-artigos-titulo-geral">Acesse todos os nossos artigos!</h4>
+                <div class="conteiner__linha-index"></div>
+                <article class="secao-informacoes-artigos__lista__item__artigo">
+                    <p class="secao-informacoes-artigos__lista__item__artigo__paragrafo">
+                        Além desses artigos, temos outros que auxiliarão o seu conhecimento sobre a cibersegurança!
+                    </p>
+                </article>
+                <div class="secao-informacoes-artigos__lista__item__conteiner">
+                    <button onclick="window.location.href = 'https://www.ciberseguranca.info/artigos/dicionario-de-ciberseguranca'" class="secao-informacoes-artigos__lista__item__conteiner__botao item-artigos-botao-geral" title="Clique aqui para acessar a nossa página com todos os artigos">Acessar todos os artigos</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="secao-informacoes-newsletter">
+        <h3 class="secao-informacoes-newsletter__titulo">Nossa <span class="secao-informacoes-newsletter__titulo__span">Newsletter</span><span class="secao-inicio__titulo__cursor">_</span></h3>
+        <div class="secao-informacoes-newsletter__conteiner">
+            <article class="secao-informacoes-newsletter__artigo animacao">
+            <p class="secao-informacoes-newsletter__artigo__paragrafo">
+                Fique por dentro dos novos artigos e tutoriais publicados em nosso site!
+            </p>
+            <p class="secao-informacoes-newsletter__artigo__paragrafo">
+                Inscreva-se na nossa newsletter de forma rápida e gratuira!
+            </p>
+        </article>
+            <div class="secao-informacoes-newsletter__conteiner-imagem"></div>
+        </div>
+        <button onclick="window.location.href = 'https://www.ciberseguranca.info/sobre-nos/email/newsletter'" class="secao-informacoes-newsletter__botao" title="Clique aqui e acesse a nossa página da newsletter">Inscreva-se na Newsletter</button>
+    </section>
+    <section class="secao-informacoes-fale-conosco">
+        <h3 class="secao-informacoes-fale-conosco__titulo">Fale <span class="secao-informacoes-fale-conosco__titulo__span">Conosco</span><span class="secao-inicio__titulo__cursor">_</span></h3>
+        <div class="secao-informacoes-fale-conosco__conteiner">
+            <article class="secao-informacoes-fale-conosco__artigo animacao">
+                <p class="secao-informacoes-fale-conosco__artigo__paragrafo">
+                    Tem alguma dúvida, sugestão, reclamação ou notou algo estranho na plataforma? Entre em contato com a gente pelo nosso suporte.
+                </p>
+                <p class="secao-informacoes-fale-conosco__artigo__paragrafo">
+                    Entre em contato com a gente pelo nosso suporte.
+                </p>
+            </article>
+            <div class="secao-informacoes-fale-conosco__conteiner-imagem"></div>
+        </div>
+        <button onclick="window.location.href = 'https://www.ciberseguranca.info/sobre-nos/email/fale-conosco'" class="secao-informacoes-fale-conosco__botao" title="Clique aqui para contatar o suporte da plataforma">Contatar o suporte da plataforma</button>
+    </section>
+    <section class="secao-informacoes-sobre-nos">
+            <h3 class="secao-informacoes-sobre-nos__titulo">Sobre <span class="secao-informacoes-sobre-nos__titulo__span">Nós</span><span class="secao-inicio__titulo__cursor">_</span></h3>
+            <h4 class="secao-informacoes-sobre-nos__subtitulo">Desenvolvedores</h4>
+            <ul class="secao-informacoes-sobre-nos__lista animacao">
+                <li class="secao-informacoes-sobre-nos__lista__item">
+                    <img class="secao-informacoes-sobre-nos__lista__item__imagem" src="../static/assets/img/foto_rapha.png" alt="Foto da desenvolvedora Raphaela">
+                    <h5 class="secao-informacoes-sobre-nos__lista__item__titulo">Raphaela Guiland Ferraz</h5>
+                    <p class="secao-informacoes-sobre-nos__lista__item__paragrafo">Desenvolvedora front-end, UX e UI</p>
+                </li>
+                <li class="secao-informacoes-sobre-nos__lista__item">
+                    <img class="secao-informacoes-sobre-nos__lista__item__imagem" src="../static/assets/img/foto_victor.png" alt="Foto do desenvolvedor Victor">
+                    <h5 class="secao-informacoes-sobre-nos__lista__item__titulo">Victor Gabriel Marques</h5>
+                    <p class="secao-informacoes-sobre-nos__lista__item__paragrafo">Desenvolvedor back-end</p>
+                </li>
+                <li class="secao-informacoes-sobre-nos__lista__item">
+                    <img class="secao-informacoes-sobre-nos__lista__item__imagem" src="../static/assets/img/foto_anna.png" alt="Foto da desenvolvedora Anna Beatriz">
+                    <h5 class="secao-informacoes-sobre-nos__lista__item__titulo">Anna Beatriz Santos e Souza</h5>
+                    <p class="secao-informacoes-sobre-nos__lista__item__paragrafo">Desenvolvedora back-end</p>
+                </li>
+                <li class="secao-informacoes-sobre-nos__lista__item">
+                    <img class="secao-informacoes-sobre-nos__lista__item__imagem" src="../static/assets/img/foto_hillary.png" alt="Foto da desenvolvedora Hillary">
+                    <h5 class="secao-informacoes-sobre-nos__lista__item__titulo">Hillary Mendes Moreira</h5>
+                    <p class="secao-informacoes-sobre-nos__lista__item__paragrafo">Desenvolvedora front-end</p>
+                </li>
+            </ul>
+            <h4 class="secao-informacoes-sobre-nos__subtitulo">Orientadores</h4>
+            <ul class="secao-informacoes-sobre-nos__lista animacao">
+                <li class="secao-informacoes-sobre-nos__lista__item">
+                    <img class="secao-informacoes-sobre-nos__lista__item__imagem" src="../static/assets/img/foto_adriano.png" alt="Foto do orientador Adriano">
+                    <h5 class="secao-informacoes-sobre-nos__lista__item__titulo">Adriano José Ferruzzi</h5>
+                    <p class="secao-informacoes-sobre-nos__lista__item__paragrafo">Orientador do projeto</p>
+                </li>
+                <li class="secao-informacoes-sobre-nos__lista__item">
+                    <img class="secao-informacoes-sobre-nos__lista__item__imagem" src="../static/assets/img/foto_regivaldo.png" alt="Foto do orientador Adriano">
+                    <h5 class="secao-informacoes-sobre-nos__lista__item__titulo">Regivaldo Sousa Ferreira</h5>
+                    <p class="secao-informacoes-sobre-nos__lista__item__paragrafo">Co-orientador do projeto</p>
+                </li>
+            </ul>
+            <div class="secao-informacoes-sobre-nos__conteinter">
+                <button onclick="window.location.href = 'https://www.ciberseguranca.info/sobre-nos/desenvolvedores'" class="secao-informacoes-sobre-nos__botao" title="Clique aqui para conhecer mais sobre a nossa equipe">Saiba mais sobre a nossa equipe</button>
+            </div>
+        </section>
+</main>
+<!-- Adicionar script de animacao -->
 {% block content %}
 {% endblock %}
