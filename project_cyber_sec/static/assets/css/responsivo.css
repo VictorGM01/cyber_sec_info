@@ -520,19 +520,8 @@
 
         margin-left: 1rem;
     }
-   
+
     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
-        background: url("../img/icone_validador_de_url.svg");
-        content: " ";
-
-        height: 24px;
-        width: 24px;
-
-        display: block;
-        margin-left: 1rem;
-    }
-
-    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
         background: url("../img/icone_gerador_de_senhas.svg");
         content: " ";
 
@@ -544,7 +533,7 @@
         margin-left: 1rem;
     }
 
-    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
         background: url("../img/icone_nosso_app.svg");
         content: " ";
 
@@ -556,7 +545,7 @@
         margin-left: 1rem;
     }
 
-    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
         background: url("../img/icone_recomendacao.svg");
         content: " ";
 
