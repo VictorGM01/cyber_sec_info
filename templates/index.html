@@ -46,7 +46,7 @@
                         Por isso, um gerador de senhas pode te ajudar nessas demandas específicas, uma vez que ele pode gerar senhas seguras, complexas e exclusivas. Além disso, através do nosso gerador, você consegue configurar todos os aspectos da sua senha
                     </p>
                     <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner">
-                        <button class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso gerador de senhas</button>
+                        <button onclick="window.location.href = '{% url 'gerador-de-senhas' %}'" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso gerador de senhas</button>
                     </div>
                     </article>
             </div>
@@ -67,7 +67,7 @@
                         Por isso, o nosso aplicativo, Digital Authenticator, é capaz de guardar dados no seu próprio dispositivo, ou seja, somente você pode acessá-los, além de criptografá-los e disponibilizá-los somente para a digital cadastrada.
                     </p>
                     <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner">
-                        <button class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso aplicativo mobile</button>
+                        <button onclick="window.location.href = '{% url 'nosso-app' %}'" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso aplicativo mobile</button>
                     </div>
                 </article>
             </div>
@@ -86,7 +86,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-tutoriais__lista__item__conteiner">
-                    <button onclick="window.location.href = '/tutoriais/computadores/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre computadores">Acessar tutoriais</button>
+                    <button onclick="window.location.href = '{% url 'categoria' 'computadores' %}'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre computadores">Acessar tutoriais</button>
                 </div>
             </li>
             <li class="secao-informacoes-tutoriais__lista__item">
@@ -99,7 +99,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-tutoriais__lista__item__conteiner">
-                    <button onclick="window.location.href = '/tutoriais/celulares/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre celulares">Acessar tutoriais</button>
+                    <button onclick="window.location.href = '{% url 'categoria' 'celulares' %}'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre celulares">Acessar tutoriais</button>
                 </div>
             </li>
             <li class="secao-informacoes-tutoriais__lista__item">
@@ -112,7 +112,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-tutoriais__lista__item__conteiner">
-                    <button onclick="window.location.href = '/tutoriais/redes-sociais/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre redes sociais">Acessar tutoriais</button>
+                    <button onclick="window.location.href = '{% url 'categoria' 'redes-sociais' %}'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre redes sociais">Acessar tutoriais</button>
                 </div>
             </li>
             <li class="secao-informacoes-tutoriais__lista__item">
@@ -125,7 +125,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-tutoriais__lista__item__conteiner">
-                    <button onclick="window.location.href = '/tutoriais/navegadores/'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre navegadores">Acessar tutoriais</button>
+                    <button onclick="window.location.href = '{% url 'categoria' 'navegadores' %}'" class="secao-informacoes-tutoriais__lista__item__botao" title="Clique aqui para acessar os tutoriais sobre navegadores">Acessar tutoriais</button>
                 </div>
             </li>
         </ul>
@@ -142,7 +142,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-artigos__lista__item__conteiner">
-                    <button onclick="window.location.href = '/artigos/o-que-e-ciberseguranca'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o artigo sobre cibersegurança">Acessar artigo</button>
+                    <button onclick="window.location.href = '{% url 'artigo' 'o-que-e-ciberseguranca' %}'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o artigo sobre cibersegurança">Acessar artigo</button>
                 </div>
             </li>
             <li class="secao-informacoes-artigos__lista__item item-artigos-crimes">
@@ -154,7 +154,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-artigos__lista__item__conteiner">
-                    <button onclick="window.location.href = '/artigos/o-que-sao-crimes-ciberneticos'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o artigo sobre crimes cibernéticos">Acessar artigo</button>
+                    <button onclick="window.location.href = '{% url 'artigo' 'o-que-sao-crimes-ciberneticos' %}'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o artigo sobre crimes cibernéticos">Acessar artigo</button>
                 </div>
             </li>
             <li class="secao-informacoes-artigos__lista__item item-artigos-dicionario">
@@ -166,7 +166,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-artigos__lista__item__conteiner">
-                    <button onclick="window.location.href = '/artigos/dicionario-de-ciberseguranca'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o nosso dicionário sobre cibersegurança">Acessar artigo</button>
+                    <button onclick="window.location.href = '{% url 'artigo' 'dicionario-de-ciberseguranca' %}'" class="secao-informacoes-artigos__lista__item__conteiner__botao" title="Clique aqui para acessar o nosso dicionário sobre cibersegurança">Acessar artigo</button>
                 </div>
             </li>
             <li class="secao-informacoes-artigos__lista__item item-artigos-geral">
@@ -178,7 +178,7 @@
                     </p>
                 </article>
                 <div class="secao-informacoes-artigos__lista__item__conteiner">
-                    <button onclick="window.location.href = '/artigos/dicionario-de-ciberseguranca'" class="secao-informacoes-artigos__lista__item__conteiner__botao item-artigos-botao-geral" title="Clique aqui para acessar a nossa página com todos os artigos">Acessar todos os artigos</button>
+                    <button onclick="window.location.href = '{% url 'artigos' %}'" class="secao-informacoes-artigos__lista__item__conteiner__botao item-artigos-botao-geral" title="Clique aqui para acessar a nossa página com todos os artigos">Acessar todos os artigos</button>
                 </div>
             </li>
         </ul>
@@ -196,7 +196,7 @@
         </article>
             <div class="secao-informacoes-newsletter__conteiner-imagem"></div>
         </div>
-        <button onclick="window.location.href = '/sobre-nos/email/newsletter'" class="secao-informacoes-newsletter__botao" title="Clique aqui e acesse a nossa página da newsletter">Inscreva-se na Newsletter</button>
+        <button onclick="window.location.href = '{% url 'newsletter' %}'" class="secao-informacoes-newsletter__botao" title="Clique aqui e acesse a nossa página da newsletter">Inscreva-se na Newsletter</button>
     </section>
     <section class="secao-informacoes-fale-conosco">
         <h3 class="secao-informacoes-fale-conosco__titulo">Fale <span class="secao-informacoes-fale-conosco__titulo__span">Conosco</span><span class="secao-inicio__titulo__cursor">_</span></h3>
@@ -211,7 +211,7 @@
             </article>
             <div class="secao-informacoes-fale-conosco__conteiner-imagem"></div>
         </div>
-        <button onclick="window.location.href = '/sobre-nos/email/fale-conosco'" class="secao-informacoes-fale-conosco__botao" title="Clique aqui para contatar o suporte da plataforma">Contatar o suporte da plataforma</button>
+        <button onclick="window.location.href = '{% url 'fale-conosco' %}'" class="secao-informacoes-fale-conosco__botao" title="Clique aqui para contatar o suporte da plataforma">Contatar o suporte da plataforma</button>
     </section>
     <section class="secao-informacoes-sobre-nos">
             <h3 class="secao-informacoes-sobre-nos__titulo">Sobre <span class="secao-informacoes-sobre-nos__titulo__span">Nós</span><span class="secao-inicio__titulo__cursor">_</span></h3>
@@ -252,8 +252,11 @@
                 </li>
             </ul>
             <div class="secao-informacoes-sobre-nos__conteinter">
-                <button onclick="window.location.href = '/sobre-nos/desenvolvedores'" class="secao-informacoes-sobre-nos__botao" title="Clique aqui para conhecer mais sobre a nossa equipe">Saiba mais sobre a nossa equipe</button>
+                <button onclick="window.location.href = '{% url 'desenvolvedores' %}'" class="secao-informacoes-sobre-nos__botao" title="Clique aqui para conhecer mais sobre a nossa equipe">Saiba mais sobre a nossa equipe</button>
             </div>
         </section>
 </main>
+{% endblock %}
+{% block script %}
+
 {% endblock %}
