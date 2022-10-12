@@ -1819,14 +1819,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .secao-informacoes-tutoriais__lista__item:nth-child(1), .secao-informacoes-tutoriais__lista__item:nth-child(3) {
-        margin-right: 4rem;
-    }
-
-    .secao-informacoes-tutoriais__lista__item:nth-child(1), .secao-informacoes-tutoriais__lista__item:nth-child(2) {
-        margin-bottom: 2rem;
+        gap: 3rem;
     }
 
     .secao-informacoes-tutoriais__lista__item__botao {
