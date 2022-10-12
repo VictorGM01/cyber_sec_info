@@ -1,5 +1,26 @@
 @media screen and (min-width: 0){
     /* Página Principal */
+    .secao-inicial {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url("../img/git_index.gif");
+        border-bottom: 1px solid #20E456;
+
+        height: 31.8125rem;
+    }
+    
+    .secao-inicial__titulo {
+        font-size: 2rem;
+
+        padding-top: 7.5rem;
+    }
+
+    .secao-inicial__subtitulo {
+        font-size: 1.25rem;
+        font-weight: 100;
+        line-height: 2rem;
+
+        padding: 3.125rem .8rem 0 .8rem;
+    }
+    
     .secao-informacoes-ferramentas__titulo {
         font-size: 1.5rem;
         text-align: center;
@@ -256,6 +277,7 @@
     .cabecalho {
         align-items: flex-start;
         flex-direction: column;
+        z-index: 3;
     }
 
     #cabecalho_menu_checkbox {
@@ -1797,14 +1819,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .secao-informacoes-tutoriais__lista__item:nth-child(1), .secao-informacoes-tutoriais__lista__item:nth-child(3) {
-        margin-right: 4rem;
-    }
-
-    .secao-informacoes-tutoriais__lista__item:nth-child(1), .secao-informacoes-tutoriais__lista__item:nth-child(2) {
-        margin-bottom: 2rem;
+        gap: 3rem;
     }
 
     .secao-informacoes-tutoriais__lista__item__botao {
@@ -1826,6 +1841,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 3rem;
     }
 
     .secao-informacoes-artigos__lista__item, .secao-informacoes-artigos__lista__item:nth-child(4) {
@@ -1846,14 +1862,6 @@
 
     .secao-informacoes-artigos__lista__item__artigo__paragrafo {
         font-size: 1.3rem;
-    }
-
-    .secao-informacoes-artigos__lista__item:nth-child(1), .secao-informacoes-artigos__lista__item:nth-child(3) {
-        margin-right: 4rem;
-    }
-
-    .secao-informacoes-artigos__lista__item:nth-child(1), .secao-informacoes-artigos__lista__item:nth-child(2) {
-        margin-bottom: 2rem;
     }
 
     .secao-informacoes-artigos__lista__item__conteiner__botao {
