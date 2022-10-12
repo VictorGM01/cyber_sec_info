@@ -1,5 +1,26 @@
 @media screen and (min-width: 0){
     /* Página Principal */
+    .secao-inicial {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url("../img/git_index.gif");
+        border-bottom: 1px solid #20E456;
+
+        height: 31.8125rem;
+    }
+    
+    .secao-inicial__titulo {
+        font-size: 2rem;
+
+        padding-top: 7.5rem;
+    }
+
+    .secao-inicial__subtitulo {
+        font-size: 1.25rem;
+        font-weight: 100;
+        line-height: 2rem;
+
+        padding: 3.125rem .8rem 0 .8rem;
+    }
+    
     .secao-informacoes-ferramentas__titulo {
         font-size: 1.5rem;
         text-align: center;
