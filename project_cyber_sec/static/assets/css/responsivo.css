@@ -1872,10 +1872,7 @@
 
     .secao-informacoes-artigos__lista__item:nth-child(1), .secao-informacoes-artigos__lista__item:nth-child(3) {
         margin-right: 4rem;
-    }
-
-    .secao-informacoes-artigos__lista__item:nth-child(1), .secao-informacoes-artigos__lista__item:nth-child(2) {
-        margin-bottom: 2rem;
+        margin-left: 4rem;
     }
 
     .secao-informacoes-artigos__lista__item__conteiner__botao {
