@@ -81,7 +81,7 @@ input[type=checkbox] {
 
 
 /* Estilizações gerais da tag body */
-.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos, .corpo--pagina-geral-de-tutoriais, .corpo--pagina-categoria-tutoriais, .corpo--tutorial, .corpo--sobre-projeto, .corpo--nosso-app, .corpo--gerador-de-senhas, .corpo--pagina-principal {
+.corpo--fale-conosco, .corpo--newsletter, .corpo--desenvolvedores, .corpo--instituicao, .corpo--termos-de-uso, .corpo--politica-de-privacidade, .corpo--pesquisa, .corpo--documentos, .corpo--pagina-geral-de-tutoriais, .corpo--pagina-categoria-tutoriais, .corpo--tutorial, .corpo--sobre-projeto, .corpo--nosso-app, .corpo--gerador-de-senhas, .corpo--pagina-principal, .corpo__index {
     background: rgb(23,20,20);
     background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
 }
