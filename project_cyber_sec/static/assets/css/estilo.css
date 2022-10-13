@@ -214,7 +214,7 @@ input[type=checkbox] {
 }
 
 .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao {
-    background: #1A993D;
+    background: #13702d;
     border: 1px solid #14FF00;
     border-radius: 20px;
     color: #FFFFFF;
@@ -231,9 +231,9 @@ input[type=checkbox] {
 }
 
 .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__input:checked + .secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__label {
-    background: #1A993D;
+    background: #13702d;
     border-bottom: 0;
-    border-right: 0.125rem solid #1A993D;
+    border-right: 0.125rem solid #13702d;
     color: #FFFFFF;
     transition: all 0.35s;
     z-index: 1;
