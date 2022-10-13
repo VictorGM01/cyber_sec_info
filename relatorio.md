@@ -493,11 +493,11 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 </div><br><br>
 
 **Etapa 5) Criação do Diagrama de Caso de Uso da Aplicação Web**
- - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 3).
+ - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 1).
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 3 — Diagrama de caso de uso da aplicação web</em></figcaption><br>
+    <figcaption><em>Figura 1 — Diagrama de caso de uso da aplicação web</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/182613442-944fbae5-5184-44f5-b559-3afd0e1a23b5.png" width="700px" alt="Figura 3"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -506,11 +506,11 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 ## Etapas do Back-End
 **Etapa 6) Estruturação dos diretórios da aplicação**
- - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 4.
+ - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 2.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 4 — Diretórios da aplicação Cyber Security Information</em></figcaption><br>
+    <figcaption><em>Figura 2 — Diretórios da aplicação Cyber Security Information</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/182613389-84cb43b3-4b33-4887-a655-2b815c6acfdb.png" width="350px" alt="Figura 4"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -533,21 +533,21 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Após a etapa acima, o segundo passo, para realizar o desenvolvimento front-end das páginas do website, consiste em realizar estudos sobre a inserção da responsividade no design das páginas. Com isso, foram realizados os estudos sobre mobile first e media queries.
 
 **Etapa 11) Criação dos designs no Figma (mobile e desktop)**
- - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 5.
+ - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 3.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 5 — Ambiente de design Figma da aplicação Cyber Security Information</em></figcaption><br>
+    <figcaption><em>Figura 3 — Ambiente de design Figma da aplicação Cyber Security Information</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/182613419-8d250587-1668-48f8-b89a-664c334988c5.png" width="700px" alt="Figura 5"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
 
- - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 6.
+ - Conforme mostra a figura acima, o design das páginas da aplicação é desenvolvido através da responsividade. Sendo assim, no ambiente de design há a divisão da criação dos layouts, existindo uma página da criação dos designs relacionados aos desktops e uma página de criação dos designs relacionados aos dispositivos mobile, de acordo com a figura 4.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 6 — Divisão do ambiente de design Figma</em></figcaption><br>
+    <figcaption><em>Figura 4 — Divisão do ambiente de design Figma</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/182613360-c66568c3-4ad9-49ac-874d-9fae61ea803d.png" width="350px" alt="Figura 6"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
