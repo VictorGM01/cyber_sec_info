@@ -498,7 +498,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 <div align="center">
   <figure>
     <figcaption><em>Figura 1 — Diagrama de caso de uso da aplicação web</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/182613442-944fbae5-5184-44f5-b559-3afd0e1a23b5.png" width="700px" alt="Figura 3"><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613442-944fbae5-5184-44f5-b559-3afd0e1a23b5.png" width="700px" alt="Figura 1"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
@@ -511,7 +511,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 <div align="center">
   <figure>
     <figcaption><em>Figura 2 — Diretórios da aplicação Cyber Security Information</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/182613389-84cb43b3-4b33-4887-a655-2b815c6acfdb.png" width="350px" alt="Figura 4"><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613389-84cb43b3-4b33-4887-a655-2b815c6acfdb.png" width="350px" alt="Figura 2"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
@@ -538,7 +538,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 <div align="center">
   <figure>
     <figcaption><em>Figura 3 — Ambiente de design Figma da aplicação Cyber Security Information</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/182613419-8d250587-1668-48f8-b89a-664c334988c5.png" width="700px" alt="Figura 5"><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613419-8d250587-1668-48f8-b89a-664c334988c5.png" width="700px" alt="Figura 3"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
@@ -548,7 +548,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 <div align="center">
   <figure>
     <figcaption><em>Figura 4 — Divisão do ambiente de design Figma</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/182613360-c66568c3-4ad9-49ac-874d-9fae61ea803d.png" width="350px" alt="Figura 6"><br>
+    <img src="https://user-images.githubusercontent.com/86080382/182613360-c66568c3-4ad9-49ac-874d-9fae61ea803d.png" width="350px" alt="Figura 4"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
@@ -573,6 +573,520 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 **Etapa 17) Publicação das funcionalidades no ambiente de produção**
  - Após a realização dos testes, as funcionalidades implementadas na aplicação, se forem aprovadas nos testes, serão disponibilizadas para os usuários finais.
+
+# Resultados e Discussão
+A priori, com base nos objetivos e na metodologia deste projeto, a aplicação web “Cyber Security Information” foi desenvolvida, tal como o aplicativo móvel “Digital Authenticator”, o qual foi integrado, em continuação ao projeto realizado no ano de 2021, na aplicação.
+
+Nesse viés, os resultados foram divididos para apresentar as tecnologias desenvolvidas e, também, compará-las com as tecnologias disponíveis no mercado digital. Com isso, considerando que foram desenvolvidas duas tecnologias que atuam em ambientes diferentes (Web e Android), as discussões foram levantadas de acordo com tais ambientes. Outrossim, os seguintes tópicos estão relacionados ao levantamento de requisitos dos softwares.
+
+## Aplicação Web
+### Garantia da Acessibilidade nas Páginas
+De acordo com a metodologia do projeto, sobretudo da aplicação, o desenvolvimento das páginas está fundamentado na acessibilidade web, uma vez que há, na estrutura do HTML, mecanismos que garantem tal aspecto do site, como as tags semânticas, atributos para leitores de tela, etc. Dessa maneira, as pessoas que possuem alguma deficiência conseguem ter acesso aos conteúdos que estão disponibilizados, algo que democratiza não só o acesso à internet, como também o acesso aos conteúdos relacionados à cibersegurança. Assim, as figuras abaixo demonstram a eficácia e a presença do desenvolvimento semântico e acessível do website, através do medidor de qualidade das páginas web do Google, o LightHouse.
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 5 — Resultados do teste de acessibilidade da página inicial da aplicação, visualizada pelo computador</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195667295-3eea74e2-a454-4cab-866c-3cf3e8ff9198.png" width="400px" alt="Figura 5"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 6 — Resultados do teste de acessibilidade da página inicial da aplicação, visualizada pelo celular</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195667644-90da2cb2-3a08-47cc-9bfb-c64a157f84cd.png" width="400px" alt="Figura 6"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Outrossim, para a efetividade da acessibilidade na aplicação, foi implementado nas páginas um plugin de código aberto, VLibras, que traduz os conteúdos digitais presentes no site do Português para a Língua Brasileira de Sinais (LIBRAS). Dessa forma, a democratização das informações é, mais uma vez, garantida, pois pessoas que são surdas e que não possuem conhecimento da língua portuguesa podem consumir, sem nenhum tipo de empecilho, todo o assunto relacionado à segurança cibernética. Assim sendo, a figura 7 evidencia a funcionalidade do plugin na página do site, especificamente na página de Artigos.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 7 — VLibras em funcionamento na página de um artigo</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195668492-dc4d1765-7f7a-4cba-a0ab-73fa5a3a74dd.png" width="800px" alt="Figura 7"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Ademais, todas as páginas foram criadas a partir da responsividade, isto é, todas as páginas do site possuem suporte nos mais diferentes dispositivos, como em notebooks, celulares, tablets, PC e até mesmo em computadores que possuem a tela widescreen. Sendo assim, as imagens a seguir demonstram a responsividade das páginas em um dispositivo móvel com as telas de dimensões 375 x 667, em um computador de dimensões 1678 x 670 e em um tablet de tamanhos 820 x 1180.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 8 — Responsividade da página inicial em um dispositivo móvel</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195670265-4ccd2f41-074e-4be3-bf04-c5ecb12baf7f.png" width="400px" alt="Figura 8"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 9 — Responsividade da página inicial em um computador</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195670736-a5b5782f-3e01-4176-8db1-efb7864aa71e.png" width="700px" alt="Figura 9"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 10 — Responsividade da página inicial em um tablet</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195671323-7759300f-6734-4b37-a607-78f3a64dfb09.png" width="500px" alt="Figura 10"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Além disso, a responsividade da aplicação contribui, também, para a acessibilidade, principalmente no que diz respeito à possibilidade de aumentar ou diminuir as letras do site para uma visualização melhor dos conteúdos escritos (como os que estarão presentes na página de Artigos www.ciberseguranca.info/artigos/) ou, até mesmo, para uma visualização melhor do site em si. À vista disso, as figuras 11 e 12 demonstram a efetividade do zoom aumentado na página de Artigo e a funcionalidade do zoom diminuído na mesma página.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 11 — Zoom aumentado de 125%  na página do artigo sobre cibersegurança</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195673350-12e92944-3141-486a-bc22-e69d984f0f6d.png" width="800px" alt="Figura 11"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 12 — Zoom diminuído de 80% na página do artigo sobre cibersegurança</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195673624-ee9b0bed-fd25-46c6-8da5-030d2f98683a.png" width="800px" alt="Figura 12"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Disponibilização de Artigos
+No tocante à disponibilização de artigos sobre a cibersegurança, o desenvolvimento da aplicação web cumpriu esse requisito funcional, uma vez que, dentro do item “Artigos”, no cabeçalho do site, encontram-se três principais artigos sobre o tema, além de um link para a página que contém todos os artigos já publicados, a qual está demonstrada na figura 13.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 13 — Página geral de artigos</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195674199-4024de6c-e2d6-4417-9eac-3d90d6e6df21.png" width="800px" alt="Figura 13"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Com isso, a página expositiva de cada artigo possui, além do conteúdo escrito, os seguintes componentes: caminho do artigo, capa, data da publicação, tempo de leitura em minutos, botões para compartilhamento nas principais redes sociais (Instagram, Linkedin e Facebook), botão para download da página e sugestões de leitura com base no assunto do artigo, conforme demonstra a figura a seguir (figura 14).
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 14 — Artigo sobre o que é a Cibersegurança</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195674199-4024de6c-e2d6-4417-9eac-3d90d6e6df21.png" width="800px" alt="Figura 14"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Ademais, acerca da linguagem do artigo, os integrantes do grupo prezaram por uma escrita simples, de modo que o máximo de pessoas possível consiga ler e compreender o artigo, inclusive as pessoas com algum tipo de deficiência, já que, como mencionado no tópico anterior, as páginas garantem a acessibilidade web.
+
+### Disponibilização de Tutoriais
+Acerca da disponibilização de tutoriais com exemplos práticos para a aplicação dos conteúdos dos artigos, este projeto cumpriu esse requisito. Isso devido ao fato de que foram desenvolvidas três páginas relacionadas aos tutoriais, sendo elas: a própria página do tutorial, a página das categorias dos tutoriais e a página que expõe todos os tutoriais já publicados no site (https://www.ciberseguranca.info/tutoriais/).
+
+Sobre a página expositiva do tutorial, ela contém os seguintes componentes: caminho do tutorial, capa, data da publicação, tempo de leitura e tempo de vídeo, botões para compartilhamento nas principais redes sociais (Instagram, Linkedin e Facebook), botão para download da página, texto introdutório, tutorial em vídeo, conteúdo escrito do vídeo, sugestão de tutoriais relacionados e sugestão de artigos relacionados, conforme exposto na figura 15.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 15 — Tutorial sobre como instalar um bloqueador de anúncios no Google Chrome</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195674958-cddccc1a-2500-4a1d-b7b5-3e54c5f9e29c.png" width="800px" alt="Figura 15"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Já sobre a página das categorias, ela apresenta todos os tutoriais da categoria requisitada pelo usuário. As categorias são: Redes Sociais, Computadores, Celulares e Navegadores. Sendo assim, o usuário pode acessar a página de cada categoria através da página geral ou através do caminho disponibilizado na página de um tutorial. Dito isso, a imagem a seguir (figura 16) demonstra a aparência da página das categorias.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 16 — Página da categoria “Navegadores”</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195675468-68c60330-212d-4d02-b49b-ff70f2c79af9.png" width="800px" alt="Figura 16"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Além disso, a terceira página trata da exposição de todos os tutoriais já publicados, separados por categorias, além de disponibilizar, no topo da página, três tutoriais publicados recentemente. A imagem a seguir expõe o comportamento dessa página.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 17 — Página geral dos tutoriais</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195676136-a2984bd0-d216-4b2f-9670-981a9dd2be03.png" width="800px" alt="Figura 17"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Disponibilização de Ferramentas para Proteção
+No que tange à disponibilização de ferramentas voltadas à cibersegurança, cuja finalidade é proporcionar mais segurança aos usuários da aplicação web, esse requisito funcional foi cumprido neste projeto. Tal realização se dá pelo fato de que foram desenvolvidas quatro páginas para as ferramentas, as quais estão disponíveis no cabeçalho da aplicação através do item “Ferramentas”. A primeira página trata de uma ferramenta que valida a segurança de uma URL através de uma tecnologia desenvolvida pela empresa Google. 
+
+Já a segunda página expõe um gerador de senhas, desenvolvido em JavaScript, capaz de gerar senhas pseudo-aleatórias com caracteres alfabéticos, caracteres numéricos e caracteres especiais (conforme demonstra a figura 18).
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 18 — Página do gerador de senhas</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195676541-640a9f9b-ba0a-4811-9470-63fb114c24d5.png" width="800px" alt="Figura 18"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+A terceira e a quarta página demonstram, respectivamente, a página expositiva do aplicativo móvel “Digital Authenticator” (exposta na figura 19) e a página de recomendações de algumas ferramentas externas (antivírus, extensões de navegadores, etc).
+
+### Disponibilização do Software Mobile
+No que diz respeito à disponibilização do software mobile “Digital Authenticator”, foi disponibilizado no cabeçalho da aplicação web o link para download do aplicativo, dentro do item “Ferramentas”, na opção “Nosso App”. Além disso, também foi disponibilizada uma explicação sobre as funcionalidades do aplicativo, de modo que o leitor saiba do que o software mobile é capaz, além de instigá-lo a baixar e utilizar o aplicativo. Com isso, essa página está demonstrada na imagem a seguir (figura 19)
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 19 — Página que expõe o aplicativo móvel Digital Authenticator</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195676962-7de3498d-3780-42be-bb4f-341857fdd503.png" width="800px" alt="Figura 19"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Envio de E-mails
+Para o compartilhamento de notificações acerca das novas publicações, foi desenvolvido um código personalizado para o envio de e-mails quando há a postagem de novos tutoriais, novos artigos ou novas ferramentas. Nesse sentido, os usuários que sentirem vontade podem cadastrar os seus e-mails através da página “Newsletter” (https://www.ciberseguranca.info/sobre-nos/email/newsletter) e, a cada nova publicação na aplicação web, receberão e-mails contendo as informações dos objetos postados, o que inclui: resumo sobre o artigo, a ferramenta ou o tutorial postado, imagem de capa do tutorial e/ou do artigo, link para acesso específico para cada nova publicação e link geral da aplicação.
+
+Nesse viés, as próximas imagens demonstram, respectivamente, o código-fonte da ferramenta de envio de e-mails, o qual foi desenvolvido utilizando a linguagem de programação Python, a página para cadastramento dos e-mails e um e-mail recebido através da execução do script.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 20 — Código da newsletter</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195677501-28286455-1f94-4efa-93e7-1c457f7bbb53.png" width="800px" alt="Figura 20"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 21 — Página que apresenta o formulário de cadastro da newsletter</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195677981-90472b4b-31d1-4070-83b0-aa046f8a47d8.png" width="800px" alt="Figura 21"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 22 — E-mail recebido após inscrição na newsletter</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195678481-6bbbb452-e618-4c97-85ee-90b2560246a1.png" width="800px" alt="Figura 22"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Informações Sobre o Projeto
+No que se refere às informações relacionadas ao projeto, foi disponibilizado na aplicação web, na página intitulada “Sobre o Projeto”, um resumo do projeto integrador de 2022. Além disso, também foram disponibilizados links, tanto para o acesso ao relatório - localizado no repositório do projeto, na plataforma de hospedagem de código GitHub -, quanto para artigos escritos pelos desenvolvedores da aplicação web “Cyber Security Information”, publicados no Congresso de Inovação, Ciência e Tecnologia (CONICT) e na revista acadêmica Qualif. Ademais, nesta página, há outro link para o acesso a uma história em quadrinhos, da série de gibis intitulada “Dona Ciência”, a qual, os autores do projeto em parceria com o Instituto do Sono, foram responsáveis pela criação.
+
+### Disponibilização de Um Canal de Contato
+Em consentimento com o requisito de disponibilização de um meio para contato, na aplicação web há a página denominada “Fale Conosco” (https://www.ciberseguranca.info/sobre-nos/email/fale-conosco). Assim, a página possibilita que o usuário envie uma mensagem, podendo ser de reclamação, sugestão, dúvidas ou reporte de erros, a partir do preenchimento dos campos obrigatórios que são: nome, e-mail e o número de telefone. Além disso, o usuário, ao querer contatar os desenvolvedores, precisará preencher o tipo de contato, isto é, qual será a forma de resposta, por parte dos responsáveis pela aplicação, a qual pode ser via e-mail ou via WhatsApp. 
+
+A mensagem que o usuário enviar, por meio deste formulário, chegará no e-mail de suporte da aplicação, ou seja, no e-mail em que os responsáveis do site têm acesso e, por conseguinte, respondem as mensagens recebidas.
+
+Dessa maneira, as imagens abaixo exibem o formulário que o usuário responderá para contatar os desenvolvedores e exibem, também, uma mensagem de exemplo recebida no e-mail de suporte. 
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 23 — Página que apresenta o formulário de contato com o suporte</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195678976-d3cd022a-cb52-454a-9f80-f63971cc860a.png" width="800px" alt="Figura 23"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 24 — Exemplo de e-mail recebido pelo suporte quando o usuário preenche o formulário de contato</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195679530-9cb15a04-15c2-4c40-bd59-c4681bebfbc5.png" width="800px" alt="Figura 24"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Exposição dos Resultados da Enquete
+Em relação à exposição dos resultados da enquete, a qual consiste em perguntas que foram respondidas pela comunidade geral por meio de um formulário on-line - o Google Forms -, o qual foi compartilhado pelas redes sociais, como o LinkedIn, o Facebook, o Instagram e o WhatsApp. Essa enquete foi realizada com o intuito de entender como a cibersegurança é aplicada no cotidiano das pessoas de modo geral e, também, com o intuito de sabermos como poderíamos contribuir para melhorar a democratização de tal tema na sociedade. 
+
+Sendo assim, em harmonia com a metodologia do projeto, foi desenvolvida uma página de exposição de todos os resultados de tal enquete (https://www.ciberseguranca.info/sobre-nos/pesquisas), a qual possui gráficos dinâmicos para uma melhor compreensão, por parte dos usuários, das conclusões e dos dados obtidos. Ademais, a figura a seguir expõe um trecho da página com os resultados da enquete:
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 25 — Página que expõe os dados obtidos da enquete visualizada pelo computador</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195679741-4c515319-967e-4415-9d6f-96fb44565367.png" width="800px" alt="Figura 25"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+## Aplicativo Mobile Android
+### Cadastro
+Em conformidade com a metodologia do projeto, o aplicativo conta com um formulário de cadastro, o qual possui os seguintes campos obrigatórios: nome, sobrenome, e-mail, senha e confirmação da senha.  
+
+Dessa forma, entre essas informações do usuário, apenas o e-mail e a senha cadastradas são salvas no banco de dados do Google Firebase, o qual é utilizado para realizar essa autenticação das credenciais. Assim, a imagem a seguir demonstra o formulário que o usuário precisará preencher para utilizar o aplicativo.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 26 — Formulário de cadastro do aplicativo</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195690481-ef1ea4d2-48c6-4a83-8c9f-d517fd1d86ca.jpg" width="300px" alt="Figura 26"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Login
+Em relação à tela de login do aplicativo, ela conta com um pequeno formulário que exige o preenchimento das credenciais cadastrada. Dessa forma, tal formulário conta com os campos de e-mail e de senha. Desse modo, a imagem 27 expõe a tela de login.
+
+Após clicar no botão “Prosseguir”, conforme mostra a figura 27, o aplicativo pedirá para o usuário realizar a leitura biométrica, a qual será comparada com a biometria que está cadastrada no próprio celular.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 27 — Formulário de Login para acessar o aplicativo</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195690510-7032dfa3-cd64-4522-846e-15f3e5606b07.jpg" width="300px" alt="Figura 27"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Redefinição de Senha
+No tocante à redefinição de senhas do usuário, este projeto cumpriu esse requisito, uma vez que foi desenvolvido um formulário obrigatório que solicita o e-mail, o qual foi cadastrado no aplicativo, conforme demonstra a figura 28. 
+
+Dessa forma, assim que o usuário preencher o campo, ele receberá um link para a página web que permite a modificação da senha, conforme expõe a imagem 29. 
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 28 — Tela de redefinição de senha</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195690638-4706fb17-4b16-4ce2-b820-2cc3aa440c19.jpg" width="300px" alt="Figura 28"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 29 — E-mail recebido com o link para a redefinição da senha</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195690703-afd649fb-3ae1-4b97-a484-c5385363f200.jpg" width="500px" alt="Figura 29"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Armazenamento de Dados Sensíveis
+No que se refere ao armazenamento de dados sensíveis, esse requisito funcional foi atendido, uma vez que foi desenvolvida uma tela na qual o usuário poderá inserir e salvar as suas informações confidenciais.
+
+Essa tela apresenta dois campos, um para o título da informação e outro para a informação propriamente dita, como evidencia a imagem 30.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 30 — Tela para o armazenamento de informações sensíveis</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195690885-a9d25130-1c61-4875-a583-976db94996f0.png" width="300px" alt="Figura 30"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+Dessa forma, após o usuário clicar no botão para salvar os dados confidenciais, esses dados serão salvos, de maneira local, no banco de dados TinyDB e, após isso, o usuário será direcionado para a tela inicial do aplicativo, a qual disponibilizará uma lista com cada título das informações que foram armazenadas, como demonstra a imagem 31.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 31 — Tela inicial do aplicativo com a lista de informações armazenadas</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195690964-f81d3f35-4401-4bd8-a8a4-a4ef537415e2.png" width="300px" alt="Figura 31"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Manual de Cibersegurança
+No que diz respeito ao manual de cibersegurança, foi disponibilizado no menu do aplicativo uma página que direciona para os tópicos que tal material aborda, como evidencia a imagem 32. Dessa forma, os tópicos presentes no manual desenvolvido são: O que é cibersegurança, O que são crimes cibernéticos, Como se proteger de crimes cibernéticos e Dicionário de cibersegurança. 
+
+A partir disso, os conteúdos escolhidos pelo grupo para serem redigidos no manual são essenciais para se ter um conhecimento básico sobre a cibersegurança e, por isso, eles foram escritos com uma linguagem simples e explicativa para que, assim, seja possível alcançar a democratização desse conhecimento.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 32 — Menu do aplicativo que possui as opções de navegação no próprio app, incluindo o Manual de Cibersegurança</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195691258-9a22d6d7-06bb-439e-9af9-d86a0adbdd81.jpg" width="300px" alt="Figura 32"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 33 — Tela com os conteúdos presentes no Manual de Cibersegurança</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195691367-228ba0ac-67ae-4fd3-b321-949345150404.jpg" width="300px" alt="Figura 33"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+### Criptografia de Dados
+Quanto à criptografia dos dados, o aplicativo utiliza o padrão AES-128 bits, um tipo de criptografia avançado e um dos melhores existentes, visto que esse padrão é extremamente difícil de ser quebrado.
+
+Sendo assim, cada vez que o usuário salvar um dado confidencial, este será criptografado antes de ser armazenado no banco de dados TinyDB e quando o usuário acessar determinada informação, seja para visualizá-la ou seja para editá-la, ela será descriptografada. Caso o dispositivo em questão possua alguma impressão digital cadastrada, para acessar os dados armazenados o usuário precisará realizar a segunda autenticação via leitura biométrica, então, somente após isso, a informação será descriptografada.
+
+### Gerador de Senhas
+Em relação ao desenvolvimento de um gerador de senhas, o aplicativo cumpriu esse requisito funcional, uma vez que tal ferramenta foi disponibilizada no menu do app (figura 32).
+
+Nesse viés, o gerador de senhas apresenta um input range, que permite ao usuário escolher um número entre o valor mínimo (4 caracteres) e o valor máximo (30 caracteres), o qual corresponde ao tamanho da senha que será gerada, um botão para gerar a senha e um botão para limpar os dados da tela. Além disso, o usuário deve escolher uma das cinco opções exibidas na tela, as quais definem o tipo de senha que será criada. Por fim, há uma parte da tela reservada para apresentar a senha que será gerada a partir das características definidas pelo usuário, conforme demonstra a figura 34.
+
+<div align="center">
+  <figure>
+    <figcaption><em>Figura 34 — Tela que apresenta o gerador de senhas com a senha criada</em></figcaption><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195691501-3d632ec3-558a-49cc-be03-aa7828ccf2aa.png" width="300px" alt="Figura 34"><br>
+    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
+  </figure>
+</div>
+
+## Discussão
+A priori, vale ressaltar que, a partir dos resultados obtidos neste projeto, ficou claro a importância da Segurança Cibernética e o quanto ainda há muito a se fazer para democratizar tal assunto. Nesse sentido, conforme estabelecido como objetivo principal deste trabalho, a aplicação Cyber Security Information e o aplicativo Digital Authenticator foram desenvolvidos para contribuir para a inclusão digital, no que diz respeito à democratização da informação, especialmente da informação acerca da cibersegurança. Sendo assim, é válido discutir a relevância deste trabalho.
+
+No que se refere à contribuição das tecnologias desenvolvidas para a coletivização de conteúdos acessíveis sobre a cibersegurança, é notório que, com a produção, a disponibilização e a constante atualização dos materiais teóricos, particularmente dos artigos, integrados nas plataformas supracitadas, nota-se que um grande público poderá acessar, entender e compartilhar importantes termos e conceitos sobre o tema. Nesse viés, ambos os softwares disponibilizam esses materiais de maneira acessível, a partir de uma leitura mais simples, de um acesso facilitado e da gratuidade de tais materiais, além da possibilidade de leitura em diferentes dispositivos eletrônicos e da possibilidade de download. 
+
+Em contrapartida, é notória a necessidade de difundir, ainda mais, outras ferramentas que assegurem ao máximo a proteção das pessoas na internet. Isso devido ao fato de que, por meio deste trabalho, não foi possível (e nem seria) suprir a carência da população mais vulnerável  quanto à posse de aparatos tecnológicos gratuitos, de fácil acesso e entendimento e, sobretudo, acessíveis.
+
+### Comparação Crítica com a Literatura Pertinente
+Nessa direção, conforme detalhado na revisão literária deste projeto, foi identificada uma outra plataforma que também oferece acesso à materiais voltados à cibersegurança, o CERT.br. Todavia, no quesito acessibilidade, constata-se que o site apresenta uma difícil navegação, o que dificulta, também, o acesso à informação. Por esse motivo, o quadro a seguir compara a aplicação Cyber Security Information com o site CERT.br.
+
+<div align="center">
+  <em>Quadro 5 — Comparação entre a aplicação CSI e o site do CERT.br - Artigos</em>
+  <table>
+    <thead align="center">
+      <th>Recursos</th>
+      <th>Cyber Security Information</th>
+      <th>CERT.br</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Disponibilização de Materiais Teóricos Sobre Segurança Cibernética</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Disponibilização do Material em PDF</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Leitura Simplificada</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Navegação Simplificada</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Link para os Materiais Teóricos no Cabeçalho da Aplicação</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Adaptação do Material para Diferentes Dispositivos</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Aplicação Principal Responsiva</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Utilização de Imagens</td>
+        <td>Não</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Conteúdos Disponibilizados na Aplicação Principal</td>
+        <td>Sim</td>
+        <td>Não (cartilha.cert.br)</td>
+      </tr> 
+      <tr>
+        <td>Compartilhamento da Informação Simplificado</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
+
+Já no tocante a disponibilização de tutoriais, úteis para a aplicação dos conceitos abordados nos artigos supracitados, constata-se que, a partir deles, um grande número de usuários poderá aplicar boas práticas de segurança na internet. Isso devido ao fato de que esses materiais foram desenvolvidos sob o viés da acessibilidade digital, por meio da disponibilização de conteúdos audiovisuais legendados - disponibilizados no canal do youtube deste projeto (Cybersecurity Info), de textos e de imagens para auxiliar na execução dos procedimentos. 
+
+Nesse viés, a aplicação web Cyber Security Information possui os tutoriais em diferentes formatos - justamente para maximizar a possibilidade de acesso e aplicação dos conteúdos ensinados. Por isso, o quadro a seguir apresenta uma breve comparação dos tutoriais disponíveis no site CERT.br, especificamente no site cartilha.cert.br, com os tutoriais disponíveis na plataforma desenvolvida neste projeto.
+
+<div align="center">
+  <em>Quadro 6 — Comparação entre a aplicação CSI e o site do CERT.br - Tutoriais</em>
+  <table>
+    <thead align="center">
+      <th>Recursos</th>
+      <th>Cyber Security Information</th>
+      <th>CERT.br</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Disponibilização dos Tutoriais em Texto</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Disponibilização dos Tutoriais em PDF</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Disponibilização dos Tutoriais em Vídeo</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Vídeos Legendados Manualmente</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Disponibilização de Imagens</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Adaptação do Material para Diferentes Dispositivos</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Conteúdos Disponibilizados na Aplicação Principal</td>
+        <td>Sim</td>
+        <td>Não (cidadaonarede.nic.br)</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
+
+No que tange à disposição de ferramentas, voltadas principalmente para o público inexperiente na área de segurança cibernética, a aplicação CSI contribui para a democratização dos aparatos básicos para uma mínima garantia de segurança aos usuários. Portanto, o quadro a seguir expõe uma conferência entre a referida aplicação web e o site CERT.br, sob a perspectiva da exposição de tais ferramentas.
+
+<div align="center">
+  <em>Quadro 7 — Comparação entre a aplicação CSI e o site do CERT.br - Ferramentas</em>
+  <table>
+    <thead align="center">
+      <th>Recursos</th>
+      <th>Cyber Security Information</th>
+      <th>CERT.br</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Disponibilização de Ferramentas Básicas</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Recomendação de Ferramentas para Profissionais</td>
+        <td>Não</td>
+        <td>Sim</td>
+      </tr> 
+      <tr>
+        <td>Recomendação de Ferramentas para Uso Pessoal</td>
+        <td>Sim</td>
+        <td>Não</td>
+      </tr> 
+      <tr>
+        <td>Conteúdos Disponibilizados na Aplicação Principal</td>
+        <td>Sim</td>
+        <td>Sim</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
+
+Outrossim, é válido ressaltar que, conforme consta nos resultados deste trabalho, a aplicação web Cyber Security Information foi desenvolvida para a população em geral, diferente do CERT.br, cujo foco principal é o tratamento de incidentes cibernéticos relacionados às redes brasileiras. Portanto, é evidente que este trabalho buscou um olhar cauteloso para as necessidades das pessoas iniciantes no ramo da Segurança da Informação, de modo a prezar pela inclusão digital e informacional.
+
+Sob essa perspectiva, a aplicação web também assegura a democratização do acesso a ferramentas tecnológicas voltadas à cibersegurança por meio da disponibilização de um aplicativo móvel que armazena, de maneira confidencial e local, dados dos usuários, sejam eles sigilosos ou não.
+
+### Limitações e Aspectos Positivos
+Primordialmente, é inegável que a produção dos materiais teóricos, disponíveis sobretudo na aplicação web CSI, ainda é quantitativamente restrita, uma vez que o principal resultado desta pesquisa foi, além da produção desses materiais, a construção de uma ferramenta tecnológica escalável que viabiliza e incentiva a coletivização de instrumentos para o aprendizado e para a aplicação da Segurança na Internet.
+
+Sob tal perspectiva, a aplicação Cyber Security Information, em seu estado atual, possibilita a inserção de inúmeros conteúdos textuais e visuais, além de seguir à risca os cenários criados no “diagrama de caso de uso da aplicação” (figura 1). Nesse viés, todas as principais funcionalidades, tendo como base essa diagramação e o levantamento de requisitos, estão em seus estados ideais de aplicabilidade.
+
+Outrossim, a continuidade do projeto de desenvolvimento de um software mobile para o armazenamento de dados confidenciais, estabelecido no ano de 2021, foi garantida, uma vez que o aplicativo mobile Digital Authenticator foi melhorado (com a inclusão de novas telas e funcionalidades) e integrado à aplicação desenvolvida no presente ano.
+
+Nessa direção, é de suma relevância salientar que o aplicativo conta com uma limitação técnica de armazenamento, sobretudo no que diz respeito à forma de armazenamento. Isso ocorre devido ao fato de que, sob o viés da restrição de tecnologias gratuitas para o desenvolvimento Android por meio da linguagem de programação em blocos, não foi possível concretizar o armazenamento em nuvem dos dados armazenados no aplicativo, restando apenas o armazenamento local. Ou seja, cada usuário do software terá suas informações armazenadas em seu próprio dispositivo Android, correndo o risco de, na hipótese de perda total do aparelho eletrônico, perder o acesso a essas informações.
 
 # Referências
 
