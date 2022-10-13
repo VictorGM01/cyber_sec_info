@@ -333,25 +333,164 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 **Etapa 3) Criação dos ambientes para diferentes estágios do ciclo de vida da aplicação web**
  - Nessa etapa, a área de back-end foi responsável por criar o **ambiente de desenvolvimento**, ou seja, o ambiente utilizado pelos integrantes para a programação da aplicação, o **ambiente de homologação**, isto é, o ambiente utilizado para a realização de testes na aplicação e o **ambiente de produção**, ou seja, o ambiente que os usuários finais utilizarão. Ademais, a área de front-end foi responsável por criar o **ambiente de design**, ou seja, o ambiente utilizado para a criação do design das páginas da aplicação. 
 
-**Etapa 4) Levantamento de Requisitos da Aplicação**
- - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram as imagens a seguir (figura 1 e figura 2):
+**Etapa 4) Levantamento de Requisitos da Aplicação Web e do Aplicativo Móvel**
+ - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram os quadros a seguir (quadro 1 e quadro 2) e para o desenvolvimento do Digital Authenticator, de acordo com os quadros 3 e 4:
 
 <div align="center">
-  <figure>
-    <figcaption><em>Figura 1 — Requisitos funcionais da aplicação web</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/182613150-d19bf0b7-5124-4599-876f-1eba95e6407c.png" width="700px" alt="Figura 1"><br>
-    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
-  </figure>
-</div>
+  <em>Quadro 1 — Requisitos funcionais da aplicação web</em>
+  <table>
+    <thead>
+      <th>Atividades</th>
+      <th>Requisitos Funcionais</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Garantia da Acessibilidade nas Páginas</td>
+        <td>Apresentar os conteúdos de maneira acessível para todos os públicos</td>
+      </tr>
+      <tr>
+        <td>Disponibilização de Artigos</td>
+        <td>Expor artigos, escritos de maneira acessível, sobre a Cibersegurança</td>
+      </tr>
+      <tr>
+        <td>Disponibilização de Tutoriais</td>
+        <td>Apresentar tutoriais em diversos formatos com exemplos de aplicações dos conteúdos dos artigos</td>
+      </tr>
+      <tr>
+        <td>Disponibilização de Ferramentas para Proteção</td>
+        <td>Exibir ferramentas voltadas à cibersegurança. Ex.: Digital Authenticator</td>
+      </tr>
+      <tr>
+        <td>Disponibilização do Software Mobile</td>
+        <td>Disponibilizar o aplicativo Digital Authenticator para download</td>
+      </tr>
+      <tr>
+        <td>Envio de E-mails</td>
+        <td>Enviar newsletter, para os usuários cadastrados no banco de dados, com avisos sobre a inclusão de conteúdos na aplicação</td>
+      </tr>
+      <tr>
+        <td>Informações Sobre o Projeto</td>
+        <td>Disponibilizar informações sobre os desenvolvedores, os orientadores e a instituição de ensino</td>
+      </tr>
+      <tr>
+        <td>Disponibilização de um Canal de Contato</td>
+        <td>Expor um formulário para que os usuários possam contatar os desenvolvedores</td>
+      </tr>
+      <tr>
+        <td>Exposição dos Resultados da Enquete</td>
+        <td>Disponibilizar gráficos com os principais resultados da enquete realizada pelos desenvolvedores</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
 
 <div align="center">
- <figure>
-  <figcaption><em>Figura 2 — Requisitos não funcionais da aplicação web</em></figcaption><br>
-  <img src="https://user-images.githubusercontent.com/86080382/182613333-d0025277-5ffa-474a-abaf-fbe3275d0638.png" width="700px" alt="Figura 2"><br>
-  <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
- </figure>
-</div>
+    <em>Quadro 2 — Requisitos não funcionais da aplicação web</em>
+  <table>
+    <thead align="center">
+      <th>Atividades</th>
+      <th>Requisitos Não Funcionais</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Criação do Layout da Aplicação</td>
+        <td>Windows, Figma</td>
+      </tr>
+      <tr>
+        <td>Configuração do Ambiente de Desenvolvimento</td>
+        <td>Windows, PyCharm, Git</td>
+      </tr>
+      <tr>
+        <td>Configuração do Ambiente de Homologação</td>
+        <td>Windows, PyCharm, Git</td>
+      </tr>
+      <tr>
+        <td>Criação das Páginas da Aplicação</td>
+        <td>Windows, PyCharm, Git, GitHub</td>
+      </tr>
+      <tr>
+        <td>Configuração do Ambiente de Produção</td>
+        <td>Windows, PyCharm, Git, Heroku CLI, Heroku, Namecheap</td>
+      </tr>
+      <tr>
+        <td>Tecnologias</td>
+        <td>Django, Python3, HTML5, CSS3, JavaScript, jQuery, PostgreSQL, SQLite</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
 
+<div align="center">
+    <em>Quadro 3 — Requisitos funcionais do aplicativo mobile</em>
+  <table>
+    <thead align="center">
+      <th>Atividades</th>
+      <th>Requisitos Funcionais</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Cadastro</td>
+        <td>Possibilitar a criação de uma conta no aplicativo, de modo a salvar o nome, o e-mail e a senha do usuário</td>
+      </tr>
+      <tr>
+        <td>Login</td>
+        <td>Autenticar usuário, permitindo ou não o acesso ao aplicativo</td>
+      </tr>
+      <tr>
+        <td>Redefinição de Senha</td>
+        <td>Viabilizar a redefinição da senha do usuário</td>
+      </tr>
+      <tr>
+        <td>Armazenamento de Dados Sensíveis</td>
+        <td>Realizar o armazenamento dos dados do usuário localmente</td>
+      </tr>
+      <tr>
+        <td>Expor Manual de Cibersegurança</td>
+        <td>Permitir a visualização dos conteúdos do manual de cibersegurança</td>
+      </tr>
+      <tr>
+        <td>Criptografia dos Dados</td>
+        <td>Criptografar os dados armazenados com o padrão AES-128</td>
+      </tr>
+      <tr>
+        <td>Expor Gerador de Senhas</td>
+        <td>Disponibilizar um gerador de senhas seguras</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
+
+<div align="center">
+    <em>Quadro 4 — Requisitos não funcionais do aplicativo mobile</em>
+  <table>
+    <thead align="center">
+      <th>Atividades</th>
+      <th>Requisitos Não Funcionais</th>
+    </thead>
+    <tbody align="center"> 
+      <tr>
+        <td>Criação do Layout do Aplicativo</td>
+        <td>Windows, Figma</td>
+      </tr>
+      <tr>
+        <td>Configuração do Ambiente de Desenvolvimento</td>
+        <td>Windows, Kodular</td>
+      </tr>
+      <tr>
+        <td>Criação do Aplicativo</td>
+        <td>Windows, Kodular, TinyDB, Google Firebase</td>
+      </tr>
+      <tr>
+        <td>Tecnologias</td>
+        <td>Linguagem de Programação em Blocos, TinyDB, Real-Time Database, AES-128 bits</td>
+      </tr>
+    </tbody>
+  </table>
+  <em>Fonte: Os autores (2022)</em>
+</div><br><br>
 
 **Etapa 5) Criação do Diagrama de Caso de Uso da Aplicação Web**
  - Com o objetivo de definir as metas de interações entre usuários e a aplicação web Cyber Security Information, além de representar graficamente os requisitos funcionais da aplicação, foi criado um diagrama de caso de uso (representado na Figura 3).
