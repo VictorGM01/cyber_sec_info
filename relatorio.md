@@ -668,7 +668,7 @@ Com isso, a página expositiva de cada artigo possui, além do conteúdo escrito
 <div align="center">
   <figure>
     <figcaption><em>Figura 14 — Artigo sobre o que é a Cibersegurança</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/195674199-4024de6c-e2d6-4417-9eac-3d90d6e6df21.png" width="800px" alt="Figura 14"><br>
+    <img src="https://user-images.githubusercontent.com/86080382/195696186-a2de09da-481b-48b9-bffc-f366146cb835.png" width="800px" alt="Figura 14"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
