@@ -19,8 +19,6 @@
     
     <a class="link-conteudo-principal" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
-    {% include "partials/_header.html" %}  {# Inclui o header, cujo html está no arquivo _header.html #}
-
     <noscript>
         <section class="erro">
             Caro usuário! <br>
@@ -30,14 +28,16 @@
         </section>
     </noscript>
 
+    {% include "partials/_header.html" %}  {# Inclui o header, cujo html está no arquivo _header.html #}
+
     <!-- Vlibras -->
     <div class="print">
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
         </div>
-    </div>
     </div>
 
     {% block content %} {% endblock %}  {# bloco body: cada página possui conteúdos diferentes no body #}
@@ -46,14 +46,14 @@
     <button title="Voltar ao Topo" id="link-voltar-ao-topo" class="conteiner__link-voltar-ao-topo" data-link-voltar-ao-topo>
         <img class="conteiner__link__imagem-voltar-ao-topo" src="{% static '/assets/img/seta_topo.svg' %}" alt="Botão para voltar ao topo da página">
     </button>
+
+    {% include "partials/_footer.html" %}  {# Inclui o footer, cujo html está no arquivo _footer.html #}
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="{% static '/assets/js/cabecalho.js' %}"></script>
 <script src="{% static '/assets/js/botaoVoltarAoTopo.js' %}"></script>
 {% block script %} {% endblock %}  {# bloco script: caso alguma página tenha um script específico #}
-
-{% include "partials/_footer.html" %}  {# Inclui o footer, cujo html está no arquivo _footer.html #}
 
 <!-- Script Vlibras -->
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
