@@ -48,7 +48,7 @@
                     <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner">
                         <button onclick="window.location.href = '{% url 'gerador-de-senhas' %}'" class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha__artigo__conteiner__botao">Acesse nosso gerador de senhas</button>
                     </div>
-                    </article>
+                </article>
             </div>
 
             <div class="secao-informacoes-ferramentas__conteiner-escolhas__conteiner-escolha">
@@ -187,13 +187,13 @@
         <h3 class="secao-informacoes-newsletter__titulo">Nossa <span class="secao-informacoes-newsletter__titulo__span">Newsletter</span><span class="secao-inicio__titulo__cursor">_</span></h3>
         <div class="secao-informacoes-newsletter__conteiner">
             <article class="secao-informacoes-newsletter__artigo animacao">
-            <p class="secao-informacoes-newsletter__artigo__paragrafo">
-                Fique por dentro dos novos artigos e tutoriais publicados em nosso site!
-            </p>
-            <p class="secao-informacoes-newsletter__artigo__paragrafo">
-                Inscreva-se na nossa newsletter de forma rápida e gratuira!
-            </p>
-        </article>
+                <p class="secao-informacoes-newsletter__artigo__paragrafo">
+                    Fique por dentro dos novos artigos e tutoriais publicados em nosso site!
+                </p>
+                <p class="secao-informacoes-newsletter__artigo__paragrafo">
+                    Inscreva-se na nossa newsletter de forma rápida e gratuira!
+                </p>
+            </article>
             <div class="secao-informacoes-newsletter__conteiner-imagem"></div>
         </div>
         <button onclick="window.location.href = '{% url 'newsletter' %}'" class="secao-informacoes-newsletter__botao" title="Clique aqui e acesse a nossa página da newsletter">Inscreva-se na Newsletter</button>
@@ -254,7 +254,7 @@
             <div class="secao-informacoes-sobre-nos__conteinter">
                 <button onclick="window.location.href = '{% url 'desenvolvedores' %}'" class="secao-informacoes-sobre-nos__botao" title="Clique aqui para conhecer mais sobre a nossa equipe">Saiba mais sobre a nossa equipe</button>
             </div>
-        </section>
+    </section>
 </main>
 {% endblock %}
 {% block script %}
