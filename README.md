@@ -11,7 +11,7 @@
 * [Desenvolvedores](#desenvolvedores-octocat)
 
 ## Descrição do Projeto 📋
-Site em desenvolvimento por um grupo de 4 alunos do IFSP - Câmpus Pirituba, originário do projeto acadêmico científico-tecnológico deste grupo, cujo objetivo é o fornecimento de informações sobre a cibersegurança e de ferramentas tecnológicas para a aplicação, por parte dos usuários, dos conceitos ensinados.
+Site em desenvolvimento por um grupo de alunos do IFSP - Câmpus Pirituba, originário do projeto acadêmico científico-tecnológico deste grupo, cujo objetivo é o fornecimento de informações sobre a cibersegurança e de ferramentas tecnológicas para a aplicação, por parte dos usuários, dos conceitos ensinados.
 
 <div align="center">
     <img alt="Badge com a versão utilizada do Python" src="https://img.shields.io/static/v1?label=PYTHON&message=3.9.9&color=blue&style=for-the-badge&logo=Python"/>
