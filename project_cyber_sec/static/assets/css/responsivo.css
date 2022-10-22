@@ -1421,7 +1421,8 @@
     .secao-inicio__artigo__paragrafo {
         color: #DFD9D9;
         text-align: initial;
-        line-height: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 1.5px;
     }
 
     .secao-inicio__artigo-acesso {
