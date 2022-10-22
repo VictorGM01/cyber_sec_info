@@ -43,15 +43,16 @@ os desenvolvedores, o relatório do projeto, entre outros.
 
 ## Funcionalidades :scroll:
 
+- [x] Garantia da Acessibilidade e Responsividade
 - [x] Disponibilização de Artigos
-- [x] Disponibilização de Tutoriais
+- [x] Disponibilização de Tutoriais em Diversos Formatos
 - [x] Disponibilização de Ferramentas para Proteção
 - [x] Disponibilização do App Mobile (Digital Authenticator)
-- [x] Envio diário de E-mails (newsletter)
-- [x] Disponibilização de Meio para Contato
+- [x] Envio Automatizado de E-mails (Newsletter)
+- [x] Disponibilização de um Canal para Contato
 - [x] Exposição de Informações Adicionais Sobre o Projeto (Desenvolvedores, Instituição, Relatório, etc)
 
-Estas funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
+Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
 
 ## Status do Projeto 🔔
 ####  🚧 Em desenvolvimento 🚧
