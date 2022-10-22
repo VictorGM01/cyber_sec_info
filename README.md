@@ -4,7 +4,7 @@
 
 ## Tabela de Conteúdos
 * [Descrição do Projeto](#descrição-do-projeto-)
-* [Demonstração da Aplicação](#demonstracao-da-aplicacao-)
+* [Demonstração da Aplicação](#demonstração-da-aplicação-)
 * [Trabalho escrito](#trabalho-escrito-)
 * [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
