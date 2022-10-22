@@ -4,6 +4,7 @@
 
 ## Tabela de Conteúdos
 * [Descrição do Projeto](#descrição-do-projeto-)
+* [Demonstração da Aplicação](#demonstracao-da-aplicacao-)
 * [Trabalho escrito](#trabalho-escrito-)
 * [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
@@ -37,6 +38,17 @@ os desenvolvedores, o relatório do projeto, entre outros.
     <img alt="Badge com a versão utilizada do HTML" src="https://img.shields.io/static/v1?label=HTML&message=V5&color=yellow&style=for-the-badge&logo=HTML5&logoColor=yellow"/>
     <img alt="Badge com a versão utilizada do CSS" src="https://img.shields.io/static/v1?label=CSS&message=V3&color=blue&style=for-the-badge&logo=CSS3&logoColor=blue"/>
 </div>
+
+## Demonstração da Aplicação 💻
+
+> Páginas de Início, de Artigos e de Tutoriais em Dispositivo Móvel
+
+![demonstracao](https://user-images.githubusercontent.com/86068797/197358539-06dd8d8a-2a37-43ca-9409-9db619570500.png)
+
+
+> Página de Início em Desktop 
+
+![image](https://user-images.githubusercontent.com/86068797/197358830-04419e74-b605-433e-9bec-7374bf3a2f7f.png)
 
 ## Trabalho Escrito 📚
 
