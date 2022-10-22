@@ -9,7 +9,7 @@
 
 <url>
   <loc>https://www.ciberseguranca.info/</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -39,38 +39,168 @@
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/sobre-nos/pesquisas</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/ferramentas/gerador-de-senhas</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/ferramentas/nosso-app</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/?busca=verificacao-em-duas-etapas</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/computadores/</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/artigos/o-que-e-ciberseguranca</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/artigos/o-que-sao-crimes-ciberneticos</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/artigos/dicionario-de-ciberseguranca</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/artigos/</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/politica-de-privacidade</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.ciberseguranca.info/termos-de-uso</loc>
-  <lastmod>2022-07-26T00:09:14+00:00</lastmod>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/verificacao-em-duas-etapas-no-google</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/celulares/instalar-e-utilizar-o-aplicativo-google-authenticator</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/redes-sociais/verificacao-em-duas-etapas-no-twitter</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/celulares/</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/redes-sociais/</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/redes-sociais/verificacao-em-duas-etapas-no-instagram</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/redes-sociais/verificacao-em-duas-etapas-no-linkedin</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/computadores/verificar-as-atualizacoes-do-seu-computador-windows-11</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/computadores/verificar-a-situacao-do-firewall-em-seu-computador</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/instalacao-do-bloqueador-de-anuncios-no-firefox</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/verificar-as-atualizacoes-do-google-chrome</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/verificar-as-atualizacoes-do-firefox</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/instalacao-do-bloqueador-de-anuncios-no-google-chrome</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/instalacao-do-navegador-brave</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/celulares/atualizar-aplicativos-em-dispositivos-ios</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/navegadores/ativar-a-navegacao-segura-no-google-chrome</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/celulares/atualizar-dispositivos-android</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/celulares/atualizar-aplicativos-em-dispositivos-android</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/tutoriais/celulares/atualizar-dispositivos-ios</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ciberseguranca.info/artigos/verificacao-em-duas-etapas</loc>
+  <lastmod>2022-10-22T23:11:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
