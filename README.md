@@ -9,6 +9,7 @@
 * [Status do Projeto](#status-do-projeto-)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas-hammer_and_wrench)
 * [Desenvolvedores](#desenvolvedores-octocat)
+* [Licença](#licença-)
 
 ## Descrição do Projeto 📋
 Este projeto trata do desenvolvimento de uma aplicação web, chamada de *Cyber Security Information*. Essa aplicação foi desenvolvida por um grupo de alunos do 
@@ -85,3 +86,6 @@ Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
     <td align="center"><a href="https://github.com/heyyyhill"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85965087?v=4" width="100px;" alt=""/><br><sub><b>Hillary Mendes</b></sub></a><br>Front-end</td>
     </tr>
 </table>
+
+## Licença 📄
+Este projeto está sob a licença MIT - acesse o arquivo [LICENSE](LICENSE) para mais detalhes.
