@@ -2577,6 +2577,18 @@
         filter: drop-shadow(1px 1px 1px rgba(10, 246, 76, 0.61));
     }
     
+    .secao-cards-desenvolvedores__lista__item {
+        height: calc(35rem - 5vh);
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        height: 100%;
+    }
+    
     
     /* Instituição */
     .principal--instituicao {
