@@ -21,7 +21,7 @@ visando a **democratização do acesso a materiais voltados à Segurança Cibern
 Sob tal perspectiva, além de prover materiais relacionados ao tema principal [Segurança Cibernética], a aplicação web *CSI* 
 colabora para que muitos usuários, sem levar em consideração o grau de escolaridade, a idade ou o conhecimento prévio sobre Cibersegurança, possam acessar, 
 compartilhar e entender os assuntos disponibilizados, incluindo os usuários com deficiências. Isso é possível devido às práticas de acessibilidade 
-inseridas no desenvolvimento de tal aplicação, de modo que as inclusões informacionais e digitais foram levadas em consideração 
+inseridas no desenvolvimento de tal aplicação, de modo que as inclusões informacional e digital foram levadas em consideração 
 durante todas as etapas da criação do *web software*.
 
 Portanto, a aplicação web está disponível gratuitamente através de um endereço na web, de modo que pode ser acessada a partir 
