@@ -11,7 +11,24 @@
 * [Desenvolvedores](#desenvolvedores-octocat)
 
 ## Descrição do Projeto 📋
-Site em desenvolvimento por um grupo de alunos do IFSP - Câmpus Pirituba, originário do projeto acadêmico científico-tecnológico deste grupo, cujo objetivo é o fornecimento de informações sobre a cibersegurança e de ferramentas tecnológicas para a aplicação, por parte dos usuários, dos conceitos ensinados.
+Este projeto trata do desenvolvimento de uma aplicação web, chamada de *Cyber Security Information*. Essa aplicação foi desenvolvida por um grupo de alunos do 
+curso Técnico em Redes de Computadores Integrado ao Ensino Médio, ofertado pelo IFSP - Câmpus São Paulo Pirituba, 
+a qual tem como objetivo o compartilhamento de conteúdos teóricos (artigos) e práticos (tutoriais), além de ferramentas gratuitas, 
+visando a **democratização do acesso a materiais voltados à Segurança Cibernética**.
+
+Sob tal perspectiva, além de prover materiais relacionados ao tema principal [Segurança Cibernética], a aplicação web *CSI* 
+colabora para que muitos usuários, sem levar em consideração o grau de escolaridade, a idade ou o conhecimento prévio sobre Cibersegurança, possam acessar, 
+compartilhar e entender os assuntos disponibilizados, incluindo os usuários com deficiências. Isso é possível devido às práticas de acessibilidade 
+inseridas no desenvolvimento de tal aplicação, de modo que as inclusões informacionais e digitais foram levadas em consideração 
+durante todas as etapas da criação do *web software*.
+
+Portanto, a aplicação web está disponível gratuitamente através de um endereço na web, de modo que pode ser acessada a partir 
+de diversos dispositivos eletrônicos, como computadores, tablets e celulares, uma vez que, ratificando o tema de democratização e acessibilidade, 
+foi criada a partir do conceito de responsividade. Ainda assim, ela conta com uma ferramenta gratuita de tecnologia assistiva, disponibilizada 
+pelo Governo Digital, chamada de VLIBRAS, a qual realiza a tradução de todo conteúdo digital para a Língua Brasileira de Sinais - LIBRAS.
+
+Finalmente, nos tópicos abaixo é possível encontrar detalhes específicos sobre a *Cyber Security Information*, tal como as tecnologias utilizadas, 
+os desenvolvedores, o relatório do projeto, entre outros.
 
 <div align="center">
     <img alt="Badge com a versão utilizada do Python" src="https://img.shields.io/static/v1?label=PYTHON&message=3.9.9&color=blue&style=for-the-badge&logo=Python"/>
