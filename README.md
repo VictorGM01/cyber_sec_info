@@ -55,7 +55,7 @@ os desenvolvedores, o relatório do projeto, entre outros.
 Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcionais](https://github.com/VictorGM01/cyber_sec_info/blob/main/relatorio.md#etapas-iniciais) da aplicação Cyber Security Information
 
 ## Status do Projeto 🔔
-####  🚧 Em desenvolvimento 🚧
+#### 🏁 Em finalização 🏁
 
 ## Tecnologias Utilizadas :hammer_and_wrench:
 
