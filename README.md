@@ -103,7 +103,7 @@ Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
 ## Orientadores 👨‍🔬
 <table>
     <tr>
-    <td align="center"><a href="https://github.com/adrianoferruzzi"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/16050067?v=4" width="100px;" alt=""/><br><sub><b>Raphaela G. Ferraz</b></sub></a></td>
+    <td align="center"><a href="https://github.com/adrianoferruzzi"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/16050067?v=4" width="100px;" alt=""/><br><sub><b>Adriano J. Ferruzzi</b></sub></a></td>
     <td align="center"><a href="https://github.com/regivaldo717"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/66335296?v=4" width="100px;" alt=""/><br><sub><b>Regivaldo S. Ferreira</b></sub></a></td>
     </tr>
 </table>
