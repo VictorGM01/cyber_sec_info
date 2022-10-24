@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def index(request):
@@ -18,7 +18,7 @@ def instituicao(request):
 
 
 def pesquisas(request):
-    return render(request, "principal/pesquisas.html")
+    return redirect('home-page')
 
 
 def sitemap(request):
