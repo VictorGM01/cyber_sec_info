@@ -95,7 +95,15 @@ Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
     <td align="center"><a href="https://github.com/VictorGM01"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068797?v=4" width="100px;" alt=""/><br><sub><b>Victor G. Marques</b></sub></a><br />Back-end</td>
     <td align="center"><a href="https://github.com/raphaelaferraz"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068799?v=4" width="100px;" alt=""/><br><sub><b>Raphaela G. Ferraz</b></sub></a><br>Front-end</td>
     <td align="center"><a href="https://github.com/Anninha1411"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86080382?v=4" width="100px;" alt=""/><br><sub><b>Anna Beatriz</b></sub></a><br>Back-end</td>
-    <td align="center"><a href="https://github.com/heyyyhill"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85965087?v=4" width="100px;" alt=""/><br><sub><b>Hillary Mendes</b></sub></a><br>Front-end</td>
+    <td align="center"><a href="https://github.com/heyyyhill"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85965087?v=4" width="100px;" alt=""/><br><sub><b>Hillary Mendes</b></sub></a><br>Designer auxiliar</td>
+    </tr>
+</table>
+
+## Orientadores 👨‍🔬
+<table>
+    <tr>
+    <td align="center"><a href="https://github.com/adrianoferruzzi"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/16050067?v=4" width="100px;" alt=""/><br><sub><b>Raphaela G. Ferraz</b></sub></a></td>
+    <td align="center"><a href="https://github.com/regivaldo717"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/66335296?v=4" width="100px;" alt=""/><br><sub><b>Regivaldo S. Ferreira</b></sub></a></td>
     </tr>
 </table>
 
