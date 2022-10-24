@@ -4,5 +4,12 @@ Disallow: /admin
 Disallow: /admin/*
 Disallow: /sobre-nos/email/enviar-mensagem
 Disallow: /sobre-nos/email/cadastro-newsletter
+Disallow: /instituicao
+Disallow: /email/newsletter
+Disallow: /artigos/Cibersegurança
+Disallow: /artigos/Crimes Cibernéticos
+Disallow: /desenvolvedores
+Disallow: /email/fale-conosco
+Disallow: /artigos/Dicionário de Cibersegurança
 
 Sitemap: https://www.ciberseguranca.info/sitemap.xml
