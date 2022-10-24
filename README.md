@@ -10,6 +10,7 @@
 * [Status do Projeto](#status-do-projeto-)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas-hammer_and_wrench)
 * [Desenvolvedores](#desenvolvedores-octocat)
+* [Orientadores](#orientadores-)
 * [Licença](#licença-)
 
 ## Descrição do Projeto 📋
