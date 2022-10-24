@@ -85,8 +85,7 @@ Os autores desse projeto são:
         <br>
         Líder do Projeto
         <br>
-        Responsável pelo desenvolvimento back-end da aplicação web, pela criação do ambiente de produção, pelo desenvolvimento de scripts complementares e pela criação de ferramentas da aplicação.
-        <br>
+        Responsável pelo desenvolvimento back-end da aplicação web, pelo gerenciamento dos ambientes da aplicação, pela realização dos testes de ponta a ponta, pela criação de scripts e de outras ferramentas.
         <br>
         <br>
         <a href="https://www.linkedin.com/in/victor-marques-profile/">
@@ -100,7 +99,7 @@ Os autores desse projeto são:
         <br>
         <b>Anna Beatriz Santos e Souza</b>
         <br>
-        Responsável pelo desenvolvimento back-end da aplicação web, pela revisão e padronização de scripts e pela criação de ferramentas da aplicação.
+        Responsável pela complementação do back-end da aplicação web, com a refatoração dos códigos, e pela manutenção do relatório do repositório.
         <br>
         <br>
         <a href="https://www.linkedin.com/in/anna-beatriz-3b32921aa/">
@@ -112,7 +111,8 @@ Os autores desse projeto são:
         <br>
         <b>Hillary Mendes Moreira</b>
         <br>
-        Responsável pelo desenvolvimento front-end da aplicação web, pela criação da interface do usuário (UI) e pela criação de templates complementares.
+        Responsável pela criação de templates complementares.
+        <br>
         <br>
         <br>
         <a href="https://www.linkedin.com/in/hillary-mendes-78609a215/">
