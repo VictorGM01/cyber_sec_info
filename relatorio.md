@@ -579,9 +579,9 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Além disso, nesta etapa seriam realizados os testes de segurança da aplicação web, todavia, devido à limitação de tempo - decorrente  da necessidade de produzir os materiais teóricos e práticos de forma simultânea à produção do sistema - não foi possível implementar tais verificações.
 
 # Resultados e Discussão
-A priori, com base nos objetivos e na metodologia deste projeto, a aplicação web “Cyber Security Information” foi desenvolvida, tal como o aplicativo móvel “Digital Authenticator”, o qual foi integrado, em continuação ao projeto realizado no ano de 2021, na aplicação.
+A priori, com base nos objetivos e na metodologia deste projeto, a aplicação web “Cyber Security Information” foi desenvolvida e disponibilizada publicamente através da URL https://www.ciberseguranca.info/, tal como o aplicativo móvel “Digital Authenticator”, o qual foi integrado, em continuação ao projeto realizado no ano de 2021, na aplicação.
 
-Nesse viés, os resultados foram divididos para apresentar as tecnologias desenvolvidas e, também, compará-las com as tecnologias disponíveis no mercado digital. Com isso, considerando que foram desenvolvidas duas tecnologias que atuam em ambientes diferentes (Web e Android), as discussões foram levantadas de acordo com tais ambientes. Outrossim, os seguintes tópicos estão relacionados ao levantamento de requisitos dos softwares.
+Nesse viés, os resultados foram divididos para apresentar as tecnologias desenvolvidas e, também, compará-las com as tecnologias disponíveis no mercado digital. Com isso, para detalhar os resultados obtidos neste trabalho, os seguintes tópicos estão vinculados ao levantamento de requisitos, etapa 3 da criação da referida aplicação.
 
 ## Aplicação Web
 ### Garantia da Acessibilidade nas Páginas
@@ -793,19 +793,6 @@ Dessa maneira, as imagens abaixo exibem o formulário que o usuário responderá
   </figure>
 </div>
 
-### Exposição dos Resultados da Enquete
-Em relação à exposição dos resultados da enquete, a qual consiste em perguntas que foram respondidas pela comunidade geral por meio de um formulário on-line - o Google Forms -, o qual foi compartilhado pelas redes sociais, como o LinkedIn, o Facebook, o Instagram e o WhatsApp. Essa enquete foi realizada com o intuito de entender como a cibersegurança é aplicada no cotidiano das pessoas de modo geral e, também, com o intuito de sabermos como poderíamos contribuir para melhorar a democratização de tal tema na sociedade. 
-
-Sendo assim, em harmonia com a metodologia do projeto, foi desenvolvida uma página de exposição de todos os resultados de tal enquete (https://www.ciberseguranca.info/sobre-nos/pesquisas), a qual possui gráficos dinâmicos para uma melhor compreensão, por parte dos usuários, das conclusões e dos dados obtidos. Ademais, a figura a seguir expõe um trecho da página com os resultados da enquete:
-
-<div align="center">
-  <figure>
-    <figcaption><em>Figura 25 — Página que expõe os dados obtidos da enquete visualizada pelo computador</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/195679741-4c515319-967e-4415-9d6f-96fb44565367.png" width="800px" alt="Figura 25"><br>
-    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
-  </figure>
-</div>
-
 ## Aplicativo Mobile Android
 ### Cadastro
 Em conformidade com a metodologia do projeto, o aplicativo conta com um formulário de cadastro, o qual possui os seguintes campos obrigatórios: nome, sobrenome, e-mail, senha e confirmação da senha.  
@@ -814,7 +801,7 @@ Dessa forma, entre essas informações do usuário, apenas o e-mail e a senha ca
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 26 — Formulário de cadastro do aplicativo</em></figcaption><br>
+    <figcaption><em>Figura 25 — Formulário de cadastro do aplicativo</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690481-ef1ea4d2-48c6-4a83-8c9f-d517fd1d86ca.jpg" width="300px" alt="Figura 26"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -827,7 +814,7 @@ Após clicar no botão “Prosseguir”, conforme mostra a figura 27, o aplicati
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 27 — Formulário de Login para acessar o aplicativo</em></figcaption><br>
+    <figcaption><em>Figura 26 — Formulário de Login para acessar o aplicativo</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690510-7032dfa3-cd64-4522-846e-15f3e5606b07.jpg" width="300px" alt="Figura 27"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -840,7 +827,7 @@ Dessa forma, assim que o usuário preencher o campo, ele receberá um link para 
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 28 — Tela de redefinição de senha</em></figcaption><br>
+    <figcaption><em>Figura 27 — Tela de redefinição de senha</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690638-4706fb17-4b16-4ce2-b820-2cc3aa440c19.jpg" width="300px" alt="Figura 28"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -848,7 +835,7 @@ Dessa forma, assim que o usuário preencher o campo, ele receberá um link para 
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 29 — E-mail recebido com o link para a redefinição da senha</em></figcaption><br>
+    <figcaption><em>Figura 28 — E-mail recebido com o link para a redefinição da senha</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690703-afd649fb-3ae1-4b97-a484-c5385363f200.jpg" width="500px" alt="Figura 29"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -861,7 +848,7 @@ Essa tela apresenta dois campos, um para o título da informação e outro para 
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 30 — Tela para o armazenamento de informações sensíveis</em></figcaption><br>
+    <figcaption><em>Figura 29 — Tela para o armazenamento de informações sensíveis</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690885-a9d25130-1c61-4875-a583-976db94996f0.png" width="300px" alt="Figura 30"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -871,7 +858,7 @@ Dessa forma, após o usuário clicar no botão para salvar os dados confidenciai
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 31 — Tela inicial do aplicativo com a lista de informações armazenadas</em></figcaption><br>
+    <figcaption><em>Figura 30 — Tela inicial do aplicativo com a lista de informações armazenadas</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690964-f81d3f35-4401-4bd8-a8a4-a4ef537415e2.png" width="300px" alt="Figura 31"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -884,7 +871,7 @@ A partir disso, os conteúdos escolhidos pelo grupo para serem redigidos no manu
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 32 — Menu do aplicativo que possui as opções de navegação no próprio app, incluindo o Manual de Cibersegurança</em></figcaption><br>
+    <figcaption><em>Figura 31 — Menu do aplicativo que possui as opções de navegação no próprio app, incluindo o Manual de Cibersegurança</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195691258-9a22d6d7-06bb-439e-9af9-d86a0adbdd81.jpg" width="300px" alt="Figura 32"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -892,7 +879,7 @@ A partir disso, os conteúdos escolhidos pelo grupo para serem redigidos no manu
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 33 — Tela com os conteúdos presentes no Manual de Cibersegurança</em></figcaption><br>
+    <figcaption><em>Figura 32 — Tela com os conteúdos presentes no Manual de Cibersegurança</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195691367-228ba0ac-67ae-4fd3-b321-949345150404.jpg" width="300px" alt="Figura 33"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -910,7 +897,7 @@ Nesse viés, o gerador de senhas apresenta um input range, que permite ao usuár
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 34 — Tela que apresenta o gerador de senhas com a senha criada</em></figcaption><br>
+    <figcaption><em>Figura 33 — Tela que apresenta o gerador de senhas com a senha criada</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195691501-3d632ec3-558a-49cc-be03-aa7828ccf2aa.png" width="300px" alt="Figura 34"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
