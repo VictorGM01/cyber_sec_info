@@ -1090,7 +1090,10 @@ Finalmente, como a CSI disponibiliza publicamente seu código-fonte, torna-se vi
 
 # Referências
 
-    AFIP - Associação Fundo de Incentivo à Pesquisa; SILVA, Andressa.; LÔBO, Ingrid.; MELLO, Marco Túlio. Dona Ciência - Acessibilidade. 32. ed.  2021. E-book. 19 p. Disponível em: https://institutodosono.com/dona-ciencia-edicao-32/#dearflip-df_7864/26/. Acesso em: 9 jun. 2022.
+    ALMEIDA, J. de J. et al. Crimes cibernéticos. Caderno de Graduação - Ciências Humanas e Sociais - UNIT - SERGIPE, [S. l.], v. 2, n. 3, p. 215–236, 2015. Disponível em: https://periodicos.set.edu.br/cadernohumanas/article/view/2013. Acesso em: 29 jun. 2022
+    
+    
+    ANDRADE, Henrique. Site do Ministério da Saúde sofre ataque hacker durante madrugada e sai do ar. CNN Brasil. São Paulo, 10 dez. 2021. Disponível em: https://www.cnnbrasil.com.br/nacional/site-do-ministerio-da-saude-sofre-ataque-hacker-durante-madrugada-e-sai-do-ar/. Acesso em: 20 set. 2022.
 
 
     AZAUSTRE, Carlos. Aprendiendo JavaScript: Desde cero hasta ECMAScript 6. carlosazaustre. es, 2016.
@@ -1138,7 +1141,6 @@ Finalmente, como a CSI disponibiliza publicamente seu código-fonte, torna-se vi
     DA SILVA, Rogério Oliveira; SILVA, Igor Rodrigues Sousa. Linguagem de Programação Python. TECNOLOGIAS EM PROJEÇÃO, v. 10, n. 1, p. 55-71, 2019.
     
     
-    DE JESUS ALMEIDA, Jessica et al. Crimes cibernéticos. Caderno de Graduação-Ciências Humanas e Sociais-UNIT-SERGIPE, v. 2, n. 3, p. 215-236, 2015.
     DHAWAN, S. What’s new in CSS 3. In: Medium. Beginner's Guide to Mobile Web Development. [S. I.], 13 mai. 2018. Disponível em: https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1. Acesso em 14 jun. 2022.
     
     
@@ -1226,7 +1228,13 @@ Finalmente, como a CSI disponibiliza publicamente seu código-fonte, torna-se vi
     RIBEIRO, Alysson de Sousa; ALBUQUERQUE, Walisson Francisco de. Análise de artefatos maliciosos em ambiente acadêmico. 2014.
     
     
+    SECTOR, STANDARDIZATION; ITU, O. F. ITU-Tx. 1205. Overview of cybersecurity, v. 10, n. 20-X, p. 49.
+    
+    
     SERASA - Serasa Experian. Brasileiros sofrem uma tentativa de fraude a cada 8 segundos, revela levantamento da Serasa Experian. In: SERASA - Serasa Experian. Análise de Dados. [S. I.], 30  ago. 2021. Disponível em: https://www.serasaexperian.com.br/sala-de-imprensa/analise-de-dados/brasileiros-sofrem-uma-tentativa-de-fraude-a-cada-8-segundos-revela-levantamento-da-serasa-experian/. Acesso em: 10 mai. 2022.
+    
+    
+    SILVA, Andressa.; LÔBO, Ingrid.; MELLO, Marco Túlio. Dona Ciência - Acessibilidade. 32. ed.  2021. E-book. 19 p. Disponível em: https://institutodosono.com/dona-ciencia-edicao-32/#dearflip-df_7864/26/. Acesso em: 9 jun. 2022. 
     
     
     SILVA, Diego Pereira da et al. AACVOX: mobile application for augmentative alternative communication to help people with speech disorder and motor impairment. Research on Biomedical Engineering, v. 34, p. 166-175, 2018.
