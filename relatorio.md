@@ -27,10 +27,6 @@
       * [SQLite e PostgreSQL](#sqlite-e-postgresql)
   * [Artigos Relacionados](#artigos-relacionados)
 * [Método](#método)
-    * [Etapas Iniciais](#etapas-iniciais)
-    * [Etapas do Back-End](#etapas-do-back-end)
-    * [Etapas do Front-End](#etapas-do-front-end)
-    * [Etapas Gerais](#etapas-gerais)
 * [Resultados e Discussão](#resultados-e-discussão)
   * [Aplicação Web](#aplicação-web)
     * [Garantia da Acessibilidade nas Páginas](#garantia-da-acessibilidade-nas-páginas)
@@ -41,7 +37,6 @@
     * [Envio de E-mails](#envio-de-e-mails)
     * [Informações Sobre o Projeto](#informações-sobre-o-projeto)
     * [Disponibilização de Um Canal de Contato](#disponibilização-de-um-canal-de-contato)
-    * [Exposição dos Resultados da Enquete](#exposição-dos-resultados-da-enquete)
   * [Aplicativo Mobile Android](#aplicativo-mobile-android)
     * [Cadastro](#cadastro)
     * [Login](#login)
@@ -53,6 +48,7 @@
   * [Discussão](#discussão)
     * [Comparação Crítica com a Literatura Pertinente](#comparação-crítica-com-a-literatura-pertinente)
     * [Limitações e Aspectos Positivos](#limitações-e-aspectos-positivos) 
+* [Conclusões](#conclusões)
 * [Referências](#referências)
 
 # Tema e Autores
@@ -155,11 +151,11 @@ Os orientadores desse projeto são:
 
 # Introdução
 
-Em 1946, conforme relatado por Maciel (2015), o primeiro computador digital eletrônico de grande escala era apresentado, o ENIAC (Electronic Numerical Integrator and Computer). Esse computador tinha o peso igual a 30 toneladas e ocupava 180 metros quadrados (MACIEL, 2015). Com o passar do tempo, os computadores foram se desenvolvendo, tornando-se multifuncionais e disponíveis para uso pessoal. Cury e Capobianco (2011) relatam que foi a partir de 1980 que a fase dos computadores portáteis e em rede se iniciou.
+Em 1946, conforme relatado por Maciel (2015), o primeiro computador digital eletrônico de grande escala era apresentado, o ENIAC (Electronic Numerical Integrator and Computer). Esse computador tinha o peso igual a 30 toneladas e ocupava 180 metros quadrados (MACIEL, 2015). Com o passar do tempo, os computadores foram aperfeiçoados, tornando-se multifuncionais e disponíveis para uso pessoal. Cury e Capobianco (2011) relatam que foi a partir de 1980 que a fase dos computadores portáteis e em rede se iniciou.
 
 Por consequência, é exatamente na década de 1980 que estão datados os primeiros ataques cibernéticos dos quais temos conhecimento. Charão (2017), expõe que, em 1982, Richard Skrenta, com apenas quinze anos de idade, desenvolveu o Elk Cloner, um vírus que tinha como objetivo contaminar computadores e que se difundia a partir de cópias de disquetes que já estavam infectados. Outrossim, Ribeiro e Albuquerque (2014) relatam que, ainda nos anos 80, o primeiro worm conhecido foi criado pelo estudante Robert T. Morris, chamado de Morris Worm. Esse worm infectou, segundo Serge Malenkovich (2013), “[...] cerca de 10% dos computadores conectados à internet na época”, sendo semelhante ao que hoje conhecemos como um tipo de DoS (ataque de negação de serviço), uma vez que o worm se replicava inúmeras vezes num mesmo computador, deixando o sistema inoperante.
 
-Com o passar do tempo, na medida que os aparelhos eletrônicos foram se desenvolvendo, os crimes cibernéticos tornaram-se cada vez mais amplos e complexos. A título de exemplificação, a empresa holandesa de cibersegurança Surfshark estimou que, no ano de 2021, 1 em cada 5 pessoas em todo o mundo teve seus dados vazados, conforme publicado pela revista IstoÉ (2021). Além disso, em fevereiro de 2022, segundo um levantamento da Serasa Experian (2021), 326.290 brasileiros foram alvos de tentativas de golpes - o que equivale a dizer que a cada 8 segundos um brasileiro foi vítima de golpistas.
+Com o passar do tempo, na medida que os aparelhos eletrônicos foram sendo aprimorados, os crimes cibernéticos tornaram-se cada vez mais amplos e complexos. A título de exemplificação, a empresa holandesa de cibersegurança Surfshark estimou que, no ano de 2021, 1 em cada 5 pessoas em todo o mundo teve seus dados vazados, conforme publicado por Filipe Prado na revista IstoÉ (2021). Além disso, em fevereiro de 2022, segundo um levantamento da Serasa Experian (2021), 326.290 brasileiros foram alvos de tentativas de golpes - o que equivale a dizer que a cada 8 segundos um brasileiro foi vítima de golpistas.
 
 Com a crescente onda dos crimes cibernéticos, criou-se um ramo de estudos, dentro da segurança da informação, relacionado a esses ataques. Esse ramo de estudos é a Cibersegurança ou, em inglês “Cybersecurtiy” ou “Cyber security”, que, de acordo com a  Oxford University Press (2014), consiste no estado de proteção contra o uso criminoso ou não autorizado de dados eletrônicos, ou as medidas tomadas para isso (Apud Craigen et al, 2014).
 
@@ -180,23 +176,23 @@ Outrossim, o projeto está desenvolvido com preceitos na literatura como artigos
 
 ### Objetivos Específicos
 
-* Realizar uma pesquisa via Google Forms para compreender a aplicação da cibersegurança no cotidiano da comunidade, com foco em crianças, adolescentes e idosos; 
 * Realizar o levantamento de requisitos da aplicação web;
 * Produzir tutoriais, incluindo vídeos, imagens e textos, que tratem da aplicação da segurança cibernética nas redes sociais, aplicativos e aparelhos eletrônicos;
-* Produzir artigos relacionados a cibersegurança, com uma linguagem acessível, de modo a garantir que todos possam compreender os assuntos abordados;
-* Desenvolver ferramentas, que serão disponibilizadas na aplicação web, para que os usuários possam se precaver no mundo digital, aplicando os conteúdos expostos na aplicação;
+* Produzir artigos relacionados a cibersegurança, com uma linguagem acessível, de modo a garantir que os usuários da CSI possam compreender os assuntos abordados;
+* Desenvolver ferramentas, as quais serão disponibilizadas na aplicação web, para que os usuários possam se precaver no mundo digital, aplicando os conteúdos expostos na aplicação;
 * Disponibilizar, entre as ferramentas, um software mobile que servirá como gerenciador de informações confidenciais dos usuários;
 * Estudar sobre acessibilidade na web, visando um desenvolvimento semântico da aplicação, de modo que pessoas com deficiências possam acessar, compreender, navegar e interagir na aplicação;
 * Aperfeiçoar os conhecimentos relacionados à linguagem de marcação HTML5, à linguagem de estilização CSS3 e às linguagens de programação JavaScript e Python, de modo a desenvolver a aplicação seguindo boas práticas de programação;
+* Inserir critérios/objetivos de segurança no desenvolvimento e na disponibilização da Cyber Security Information;
 * Criar páginas nas principais redes sociais para um maior alcance de usuários da aplicação. 
 
 ## Justificativa
 
-A realização do presente trabalho é de suma relevância, principalmente para as pessoas que não possuem um conhecimento prévio sobre Tecnologia da Informação e Segurança da Informação, sobretudo crianças, adolescentes e idosos,  uma vez que trata do desenvolvimento de uma aplicação web para divulgação de conteúdos essenciais sobre a Segurança Cibernética, além de tutoriais e ferramentas. Sendo assim, esta pesquisa será essencial para a disseminação e enfatização da importância do conhecimento acerca da cibersegurança, além de contribuir com a democratização do acesso aos conteúdos relacionados a essa área, pois a aplicação será acessível a todos os públicos. 
+A realização do presente trabalho é de suma relevância, principalmente para as pessoas que não possuem um conhecimento prévio sobre Tecnologia da Informação e Segurança da Informação, sobretudo crianças, adolescentes e idosos, uma vez que trata do desenvolvimento de uma aplicação web para divulgação de conteúdos essenciais sobre a Segurança Cibernética, além de tutoriais e ferramentas. Sendo assim, esta pesquisa será essencial para a disseminação e enfatização da importância do conhecimento acerca da cibersegurança, além de contribuir com a democratização do acesso aos conteúdos relacionados a essa área, pois a aplicação será acessível a todos os públicos.
 
-Dessa forma, a abordagem que esse trabalho realiza sobre a cibersegurança é algo de extrema importância para o contexto atual, dado que a tecnologia está cada vez mais inserida na sociedade. Assim sendo, com o avanço da tecnologia, há também o avanço de crimes cibernéticos e isso é evidenciado pelo surgimento do “WannaCry”, em 2017, que, de acordo com Patil e Mohurle (2017), é um software malicioso responsável pela criptografia de arquivos ou dispositivos inteiros. A restituição desses dados só ocorre após a vítima realizar um pagamento ao sequestrador. Nessa direção, além do surgimento do “WannaCry”, muitos outros crimes cibernéticos desse tipo foram registrados e o mais recente deles foi o sequestro dos dados do Ministério de Saúde, em dezembro de 2021, pelo grupo de crackers “Lapsus$”. Diante o exposto, é necessário que as pessoas tenham conhecimento sobre o que é a cibersegurança e quais são as maneiras de aplicar esse conceito no dia-a-dia, de modo a evitar mais vítimas de crimes virtuais.
+Dessa forma, a abordagem que esse trabalho realiza sobre a cibersegurança é algo de extrema importância para o contexto atual, dado que a tecnologia está cada vez mais inserida na sociedade. Assim sendo, com o avanço da tecnologia, há também o avanço de crimes cibernéticos e isso é evidenciado pelo surgimento do “WannaCry”, em 2017, que, de acordo com Mohurle e Patil (2017), é um software malicioso do tipo ransomware responsável pela criptografia de arquivos ou dispositivos inteiros. A restituição desses dados só ocorre após a vítima realizar um pagamento ao sequestrador (ranson). Nessa direção, além do surgimento do “WannaCry”, muitos outros crimes cibernéticos desse tipo foram registrados e o mais recente deles, de acordo com a publicação de Henrique Andrade do jornal CNN Brasil (2021), foi o sequestro dos dados do Ministério de Saúde, em dezembro de 2021, pelo grupo de crackers “Lapsus$”. Diante o exposto, é necessário que as pessoas tenham conhecimento sobre o que é a cibersegurança e quais são as maneiras de aplicar esse conceito no dia-a-dia, de modo a evitar mais vítimas de crimes virtuais.
 
-Com isso, este trabalho apresenta uma plataforma inovadora na área de Segurança Cibernética, pois, além dos conteúdos teóricos, tutoriais e ferramentas reunidos em um único lugar, a aplicação web desenvolvida visa a possibilidade de acesso para todas as pessoas, inclusive para as pessoas com deficiências, o que, em concordância com Loja et al. (2015), visa minimizar as limitações das pessoas deficientes, além de contribuir para a inclusão dessas pessoas na sociedade (apud Silva et al., 2018). Para isso, esse projeto utilizará outras tecnologias que facilitam a utilização, navegação e entendimento da aplicação, como, por exemplo, a ferramenta VLibras, responsável por traduzir o conteúdo digital (texto, áudio e imagem) em libras (Brasil, 2019). Ademais, o desenvolvimento da aplicação web conta com a utilização de recursos do HTML5 que possibilitam a navegação por teclado, algo fundamental para os usuários que utilizam softwares de leitura de tela e para usuários que não conseguem utilizar o mouse devido alguma deficiência.
+Com isso, este trabalho apresenta uma plataforma moderna na área de Segurança Cibernética, pois, além dos conteúdos teóricos, tutoriais e ferramentas reunidos em um único lugar, a aplicação web desenvolvida objetiva a possibilidade de acesso para o maior número de pessoas, por meio da acessibilidade web, o que, em concordância com Loja et al. (2015), visa minimizar as limitações das pessoas deficientes, além de contribuir para a inclusão dessas pessoas na sociedade (apud Silva et al., 2018). Para isso, esse projeto utilizará outras tecnologias que facilitam a utilização, a navegação e o entendimento da aplicação, como, por exemplo, a ferramenta VLibras, responsável por traduzir o conteúdo digital (texto, áudio e imagem) em LIBRAS (Brasil, 2019). Ademais, o desenvolvimento da aplicação web conta com a utilização de recursos do HTML5 que possibilitam a navegação por teclado, algo fundamental para os usuários que utilizam softwares de leitura de tela e para usuários que não conseguem utilizar o mouse devido alguma deficiência.
 
 
 # Revisão de Literatura
@@ -344,9 +340,8 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 # Método
 
-## Etapas Iniciais
 **Etapa 1) Segmentação das áreas de desenvolvimento**
- - Para o início do desenvolvimento da aplicação web Cyber Security Information, a segmentação das áreas de desenvolvimento em front-end e back-end foi o primeiro passo. Nessa etapa, dois dos integrantes do grupo de autores, Anna Santos e Victor Marques, ficaram responsáveis pelo desenvolvimento back-end da aplicação, enquanto Hillary Mendes e Raphaela Ferraz ficaram responsáveis pelo desenvolvimento front-end da aplicação.
+ - Para o início do desenvolvimento da aplicação web Cyber Security Information, a segmentação das áreas de desenvolvimento em front-end e back-end foi o primeiro passo. Nessa etapa, dois dos integrantes do grupo de autores, Anna Santos e Victor Marques, ficaram responsáveis pelo desenvolvimento back-end da aplicação, enquanto Raphaela Ferraz ficou responsável pelo desenvolvimento front-end da aplicação.
  - Outrossim, dando continuidade ao projeto realizado em 2021, isto é, o projeto de desenvolvimento de um software mobile para o armazenamento de dados confidenciais, o qual o resultado (aplicativo Digital Authenticator) será exposto na aplicação, dois dos integrantes do grupo, Anna Santos e Victor Marques, ficaram responsáveis pelo aprimoramento do software, enquanto Raphaela Ferraz ficou responsável pela criação do layout das novas telas.
 
 **Etapa 2) Estudo sobre as tecnologias das áreas de desenvolvimento**
@@ -356,7 +351,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Nessa etapa, a área de back-end foi responsável por criar o **ambiente de desenvolvimento**, ou seja, o ambiente utilizado pelos integrantes para a programação da aplicação, o **ambiente de homologação**, isto é, o ambiente utilizado para a realização de testes na aplicação e o **ambiente de produção**, ou seja, o ambiente que os usuários finais utilizarão. Ademais, a área de front-end foi responsável por criar o **ambiente de design**, ou seja, o ambiente utilizado para a criação do design das páginas da aplicação. 
 
 **Etapa 4) Levantamento de Requisitos da Aplicação Web e do Aplicativo Móvel**
- - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram os quadros a seguir (quadro 1 e quadro 2) e para o desenvolvimento do Digital Authenticator, de acordo com os quadros 3 e 4:
+ - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nas tecnologias para a criação da Cyber Security Information, conforme demonstram os quadros a seguir (quadro 1 e quadro 2) e para o desenvolvimento do Digital Authenticator, de acordo com os quadros 3 e 4:
 
 <div align="center">
   <em>Quadro 1 — Requisitos funcionais da aplicação web</em>
@@ -367,40 +362,36 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Garantia da Acessibilidade nas Páginas</td>
+        <td>Garantir Acessibilidade nas Páginas</td>
         <td>Apresentar os conteúdos de maneira acessível para todos os públicos</td>
       </tr>
       <tr>
-        <td>Disponibilização de Artigos</td>
+        <td>Disponibilizar Artigos de Cibersegurança</td>
         <td>Expor artigos, escritos de maneira acessível, sobre a Cibersegurança</td>
       </tr>
       <tr>
-        <td>Disponibilização de Tutoriais</td>
+        <td>Disponibilizar Tutoriais</td>
         <td>Apresentar tutoriais em diversos formatos com exemplos de aplicações dos conteúdos dos artigos</td>
       </tr>
       <tr>
-        <td>Disponibilização de Ferramentas para Proteção</td>
+        <td>Disponibilizar Ferramentas para Proteção</td>
         <td>Exibir ferramentas voltadas à cibersegurança. Ex.: Digital Authenticator</td>
       </tr>
       <tr>
-        <td>Disponibilização do Software Mobile</td>
+        <td>Disponibilizar Software Mobile</td>
         <td>Disponibilizar o aplicativo Digital Authenticator para download</td>
       </tr>
       <tr>
-        <td>Envio de E-mails</td>
+        <td>Enviar E-mails</td>
         <td>Enviar newsletter, para os usuários cadastrados no banco de dados, com avisos sobre a inclusão de conteúdos na aplicação</td>
       </tr>
       <tr>
-        <td>Informações Sobre o Projeto</td>
+        <td>Informar Sobre o Projeto</td>
         <td>Disponibilizar informações sobre os desenvolvedores, os orientadores e a instituição de ensino</td>
       </tr>
       <tr>
-        <td>Disponibilização de um Canal de Contato</td>
+        <td>Disponibilizar um Canal de Contato</td>
         <td>Expor um formulário para que os usuários possam contatar os desenvolvedores</td>
-      </tr>
-      <tr>
-        <td>Exposição dos Resultados da Enquete</td>
-        <td>Disponibilizar gráficos com os principais resultados da enquete realizada pelos desenvolvedores</td>
       </tr>
     </tbody>
   </table>
@@ -408,35 +399,35 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 </div><br><br>
 
 <div align="center">
-    <em>Quadro 2 — Requisitos não funcionais da aplicação web</em>
+    <em>Quadro 2 — Tecnologias utilizadas na aplicação web</em>
   <table>
     <thead align="center">
       <th>Atividades</th>
-      <th>Requisitos Não Funcionais</th>
+      <th>Tecnologias</th>
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Criação do Layout da Aplicação</td>
+        <td>Criar o Layout da Aplicação</td>
         <td>Windows, Figma</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Desenvolvimento</td>
+        <td>Configurar o Ambiente de Desenvolvimento</td>
         <td>Windows, PyCharm, Git</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Homologação</td>
+        <td>Configurar o Ambiente de Homologação</td>
         <td>Windows, PyCharm, Git</td>
       </tr>
       <tr>
-        <td>Criação das Páginas da Aplicação</td>
+        <td>Criar as Páginas da Aplicação</td>
         <td>Windows, PyCharm, Git, GitHub</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Produção</td>
+        <td>Configurar o Ambiente de Produção</td>
         <td>Windows, PyCharm, Git, Heroku CLI, Heroku, Namecheap</td>
       </tr>
       <tr>
-        <td>Tecnologias</td>
+        <td>Desenvolver as Funcionalidades da Aplicação</td>
         <td>Django, Python3, HTML5, CSS3, JavaScript, jQuery, PostgreSQL, SQLite</td>
       </tr>
     </tbody>
@@ -453,19 +444,19 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Cadastro</td>
+        <td>Permitir o Cadastro de um Novo Usuário</td>
         <td>Possibilitar a criação de uma conta no aplicativo, de modo a salvar o nome, o e-mail e a senha do usuário</td>
       </tr>
       <tr>
-        <td>Login</td>
+        <td>Permitir o Login no Aplicativo</td>
         <td>Autenticar usuário, permitindo ou não o acesso ao aplicativo</td>
       </tr>
       <tr>
-        <td>Redefinição de Senha</td>
+        <td>Redefinir a Senha do Usuário</td>
         <td>Viabilizar a redefinição da senha do usuário</td>
       </tr>
       <tr>
-        <td>Armazenamento de Dados Sensíveis</td>
+        <td>Armazenar os Dados Sensíveis do Usuário</td>
         <td>Realizar o armazenamento dos dados do usuário localmente</td>
       </tr>
       <tr>
@@ -473,7 +464,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
         <td>Permitir a visualização dos conteúdos do manual de cibersegurança</td>
       </tr>
       <tr>
-        <td>Criptografia dos Dados</td>
+        <td>Criptograr os Dados</td>
         <td>Criptografar os dados armazenados com o padrão AES-128</td>
       </tr>
       <tr>
@@ -486,27 +477,27 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 </div><br><br>
 
 <div align="center">
-    <em>Quadro 4 — Requisitos não funcionais do aplicativo mobile</em>
+    <em>Quadro 4 — Tecnologias utilizadas no aplicativo mobile</em>
   <table>
     <thead align="center">
       <th>Atividades</th>
-      <th>Requisitos Não Funcionais</th>
+      <th>Tecnologias</th>
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Criação do Layout do Aplicativo</td>
+        <td>Criar o Layout do Aplicativo</td>
         <td>Windows, Figma</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Desenvolvimento</td>
+        <td>Configurar o Ambiente de Desenvolvimento</td>
         <td>Windows, Kodular</td>
       </tr>
       <tr>
-        <td>Criação do Aplicativo</td>
+        <td>Criar o Aplicativo</td>
         <td>Windows, Kodular, TinyDB, Google Firebase</td>
       </tr>
       <tr>
-        <td>Tecnologias</td>
+        <td>Desenvolver as Funcionalidades do Aplicativo</td>
         <td>Linguagem de Programação em Blocos, TinyDB, Real-Time Database, AES-128 bits</td>
       </tr>
     </tbody>
@@ -525,8 +516,6 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
   </figure>
 </div>
 
-
-## Etapas do Back-End
 **Etapa 6) Estruturação dos diretórios da aplicação**
  - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 2.
 
@@ -546,15 +535,12 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 **Etapa 8) Criação dos bancos de dados**
  - Após todas as etapas supramencionadas, a última etapa necessária para o início da programação back-end da aplicação foi a criação dos bancos de dados SQLite (para os ambientes de desenvolvimento e de homologação) e a criação do banco de dados PostgreSQL (para o ambiente de produção).
- 
-## Etapas do Front-End
-**Etapa 9) Estudo sobre a inserção da acessibilidade nas páginas**
- - Para o início do desenvolvimento front-end das páginas da aplicação, o estudo sobre a inserção da acessibilidade na estruturação das páginas trata-se do primeiro passo. Com isso, foram realizados os estudos sobre a semântica que o HTML5 proporciona, através das suas tags de marcação com significado. Ademais, também foi estudado os tipos de leitores de telas e como utilizá-los para navegar em páginas web. 
 
-**Etapa 10) Estudo sobre a inserção de responsividade nas páginas**
- - Após a etapa acima, o segundo passo, para realizar o desenvolvimento front-end das páginas do website, consiste em realizar estudos sobre a inserção da responsividade no design das páginas. Com isso, foram realizados os estudos sobre mobile first e media queries.
+**Etapa 9) Estudo sobre a acessibilidade e sobre a responsividades**
+ - Para o início do desenvolvimento front-end das páginas da aplicação, o estudo sobre a inserção da acessibilidade na estruturação das páginas trata-se do primeiro passo. Com isso, foram realizados os estudos sobre a semântica que o HTML5 proporciona, através das suas tags de marcação com significado. Ademais, também foi estudado os tipos de leitores de telas e como utilizá-los para navegar em páginas web. Já o segundo passo para o desenvolvimento das páginas, trata-se de realizar estudos sobre a inserção da responsividade no design. Com isso, foram realizados os estudos sobre mobile first e media queries.
+ - Outrossim, foram feitas pesquisas acerca das recomendações descritas nas Diretrizes de Acessibilidade para Conteúdo Web (WCAG, versão 2.1), definidas pela World Wide Web Consortium (W3C), as quais foram utilizadas como modelos de desenvolvimento das páginas da *Cyber Security Information*.
 
-**Etapa 11) Criação dos designs no Figma (mobile e desktop)**
+**Etapa 10) Criação dos designs no Figma (mobile e desktop)**
  - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 3.
 
 <div align="center">
@@ -575,31 +561,23 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
   </figure>
 </div>
 
-
-**Etapa 12) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
+**Etapa 11) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
  - Através da realização de todas as etapas acima, a última etapa necessária para o início da programação front-end da aplicação consiste em desenvolver os códigos de marcação (HTML), de estilização (CSS) e de dinamicidade (JavaScript) com os recursos que garantem a acessibilidade e a responsividade do site. 
 
-**Etapa 13) Realização de testes de acessibilidade e responsividade**
- - Nesta etapa, são realizados os testes das páginas desenvolvidas, no ambiente de desenvolvimento e no ambiente de homologação, para garantir a acessibilidade e a responsividade da aplicação.
-
-## Etapas Gerais
-**Etapa 14) Estudo sobre a segurança cibernética**
+**Etapa 12) Estudo sobre a segurança cibernética**
  - Visando a produção de conteúdos informacionais acerca da Cibersegurança, nessa etapa os integrantes realizaram uma pesquisa aprofundada sobre Segurança da Informação aplicada à Segurança Cibernética, de modo a obter conhecimento e fundamentação teórica para a produção de artigos, tutoriais e ferramentas.
 
-**Etapa 15) Produção de artigos, tutoriais e ferramentas**
- - Uma vez que os integrantes realizaram a etapa anterior, a próxima etapa trata da produção dos artigos, tutoriais e ferramentas, que serão disponibilizados em diversos tipos de mídias na aplicação web.
- - Ademais, nessa etapa o software mobile Digital Authenticator - responsável por armazenar informações confidenciais de maneira segura - é melhorado e implementado na aplicação Cyber Security Information.
+**Etapa 13) Produção de artigos, tutoriais e ferramentas**
+ - Uma vez realizada a etapa anterior, a próxima etapa trata da produção dos artigos, tutoriais e ferramentas, os quais serão disponibilizados em diversos tipos de mídias na aplicação web.
 
-**Etapa 16) Realização de testes**
- - Nessa etapa, os responsáveis pelo ambiente de homologação ficam encarregados de validar todas as implementações na aplicação antes da publicação destas no ambiente de produção.
-
-**Etapa 17) Publicação das funcionalidades no ambiente de produção**
- - Após a realização dos testes, as funcionalidades implementadas na aplicação, se forem aprovadas nos testes, serão disponibilizadas para os usuários finais.
+**Etapa 14) Realização de testes e publicação**
+ - Nessa etapa, os responsáveis pelo ambiente de homologação ficam encarregados de validar todas as implementações na aplicação antes da publicação destas no ambiente de produção, o que inclui a verificação das páginas desenvolvidas nas plataformas que validam a conformidade da aplicação com as Diretrizes de Acessibilidade para Conteúdo Web (WCAG), tal como o AccessMonitor, o Google Lighthouse, o ASES (Avaliador e Simulador de Acessibilidade em Sítios) e o Color Contrast Accessibility Validator (Validador de Acessibilidade de Contraste de Cor). Após a realização dos testes, as funcionalidades implementadas na aplicação, se forem aprovadas, serão disponibilizadas para os usuários finais.
+ - Além disso, nesta etapa seriam realizados os testes de segurança da aplicação web, todavia, devido à limitação de tempo - decorrente  da necessidade de produzir os materiais teóricos e práticos de forma simultânea à produção do sistema - não foi possível implementar tais verificações.
 
 # Resultados e Discussão
-A priori, com base nos objetivos e na metodologia deste projeto, a aplicação web “Cyber Security Information” foi desenvolvida, tal como o aplicativo móvel “Digital Authenticator”, o qual foi integrado, em continuação ao projeto realizado no ano de 2021, na aplicação.
+A priori, com base nos objetivos e na metodologia deste projeto, a aplicação web “Cyber Security Information” foi desenvolvida e disponibilizada publicamente através da URL https://www.ciberseguranca.info/, tal como o aplicativo móvel “Digital Authenticator”, o qual foi integrado, em continuação ao projeto realizado no ano de 2021, na aplicação.
 
-Nesse viés, os resultados foram divididos para apresentar as tecnologias desenvolvidas e, também, compará-las com as tecnologias disponíveis no mercado digital. Com isso, considerando que foram desenvolvidas duas tecnologias que atuam em ambientes diferentes (Web e Android), as discussões foram levantadas de acordo com tais ambientes. Outrossim, os seguintes tópicos estão relacionados ao levantamento de requisitos dos softwares.
+Nesse viés, os resultados foram divididos para apresentar as tecnologias desenvolvidas e, também, compará-las com as tecnologias disponíveis no mercado digital. Com isso, para detalhar os resultados obtidos neste trabalho, os seguintes tópicos estão vinculados ao levantamento de requisitos, etapa 3 da criação da referida aplicação.
 
 ## Aplicação Web
 ### Garantia da Acessibilidade nas Páginas
@@ -811,19 +789,6 @@ Dessa maneira, as imagens abaixo exibem o formulário que o usuário responderá
   </figure>
 </div>
 
-### Exposição dos Resultados da Enquete
-Em relação à exposição dos resultados da enquete, a qual consiste em perguntas que foram respondidas pela comunidade geral por meio de um formulário on-line - o Google Forms -, o qual foi compartilhado pelas redes sociais, como o LinkedIn, o Facebook, o Instagram e o WhatsApp. Essa enquete foi realizada com o intuito de entender como a cibersegurança é aplicada no cotidiano das pessoas de modo geral e, também, com o intuito de sabermos como poderíamos contribuir para melhorar a democratização de tal tema na sociedade. 
-
-Sendo assim, em harmonia com a metodologia do projeto, foi desenvolvida uma página de exposição de todos os resultados de tal enquete (https://www.ciberseguranca.info/sobre-nos/pesquisas), a qual possui gráficos dinâmicos para uma melhor compreensão, por parte dos usuários, das conclusões e dos dados obtidos. Ademais, a figura a seguir expõe um trecho da página com os resultados da enquete:
-
-<div align="center">
-  <figure>
-    <figcaption><em>Figura 25 — Página que expõe os dados obtidos da enquete visualizada pelo computador</em></figcaption><br>
-    <img src="https://user-images.githubusercontent.com/86080382/195679741-4c515319-967e-4415-9d6f-96fb44565367.png" width="800px" alt="Figura 25"><br>
-    <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
-  </figure>
-</div>
-
 ## Aplicativo Mobile Android
 ### Cadastro
 Em conformidade com a metodologia do projeto, o aplicativo conta com um formulário de cadastro, o qual possui os seguintes campos obrigatórios: nome, sobrenome, e-mail, senha e confirmação da senha.  
@@ -832,33 +797,33 @@ Dessa forma, entre essas informações do usuário, apenas o e-mail e a senha ca
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 26 — Formulário de cadastro do aplicativo</em></figcaption><br>
+    <figcaption><em>Figura 25 — Formulário de cadastro do aplicativo</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690481-ef1ea4d2-48c6-4a83-8c9f-d517fd1d86ca.jpg" width="300px" alt="Figura 26"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
 
 ### Login
-Em relação à tela de login do aplicativo, ela conta com um pequeno formulário que exige o preenchimento das credenciais cadastrada. Dessa forma, tal formulário conta com os campos de e-mail e de senha. Desse modo, a imagem 27 expõe a tela de login.
+Em relação à tela de login do aplicativo, ela conta com um pequeno formulário que exige o preenchimento das credenciais cadastrada. Dessa forma, tal formulário conta com os campos de e-mail e de senha. Desse modo, a imagem 26 expõe a tela de login.
 
-Após clicar no botão “Prosseguir”, conforme mostra a figura 27, o aplicativo pedirá para o usuário realizar a leitura biométrica, a qual será comparada com a biometria que está cadastrada no próprio celular.
+Após clicar no botão “Prosseguir”, conforme mostra a figura 26, o aplicativo pedirá para o usuário realizar a leitura biométrica, a qual será comparada com a biometria que está cadastrada no próprio celular.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 27 — Formulário de Login para acessar o aplicativo</em></figcaption><br>
+    <figcaption><em>Figura 26 — Formulário de Login para acessar o aplicativo</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690510-7032dfa3-cd64-4522-846e-15f3e5606b07.jpg" width="300px" alt="Figura 27"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
 
 ### Redefinição de Senha
-No tocante à redefinição de senhas do usuário, este projeto cumpriu esse requisito, uma vez que foi desenvolvido um formulário obrigatório que solicita o e-mail, o qual foi cadastrado no aplicativo, conforme demonstra a figura 28. 
+No tocante à redefinição de senhas do usuário, este projeto cumpriu esse requisito, uma vez que foi desenvolvido um formulário obrigatório que solicita o e-mail, o qual foi cadastrado no aplicativo, conforme demonstra a figura 27. 
 
-Dessa forma, assim que o usuário preencher o campo, ele receberá um link para a página web que permite a modificação da senha, conforme expõe a imagem 29. 
+Dessa forma, assim que o usuário preencher o campo, ele receberá um link para a página web que permite a modificação da senha, conforme expõe a imagem 28. 
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 28 — Tela de redefinição de senha</em></figcaption><br>
+    <figcaption><em>Figura 27 — Tela de redefinição de senha</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690638-4706fb17-4b16-4ce2-b820-2cc3aa440c19.jpg" width="300px" alt="Figura 28"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -866,7 +831,7 @@ Dessa forma, assim que o usuário preencher o campo, ele receberá um link para 
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 29 — E-mail recebido com o link para a redefinição da senha</em></figcaption><br>
+    <figcaption><em>Figura 28 — E-mail recebido com o link para a redefinição da senha</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690703-afd649fb-3ae1-4b97-a484-c5385363f200.jpg" width="500px" alt="Figura 29"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -875,34 +840,34 @@ Dessa forma, assim que o usuário preencher o campo, ele receberá um link para 
 ### Armazenamento de Dados Sensíveis
 No que se refere ao armazenamento de dados sensíveis, esse requisito funcional foi atendido, uma vez que foi desenvolvida uma tela na qual o usuário poderá inserir e salvar as suas informações confidenciais.
 
-Essa tela apresenta dois campos, um para o título da informação e outro para a informação propriamente dita, como evidencia a imagem 30.
+Essa tela apresenta dois campos, um para o título da informação e outro para a informação propriamente dita, como evidencia a imagem 29.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 30 — Tela para o armazenamento de informações sensíveis</em></figcaption><br>
+    <figcaption><em>Figura 29 — Tela para o armazenamento de informações sensíveis</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690885-a9d25130-1c61-4875-a583-976db94996f0.png" width="300px" alt="Figura 30"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
 
-Dessa forma, após o usuário clicar no botão para salvar os dados confidenciais, esses dados serão salvos, de maneira local, no banco de dados TinyDB e, após isso, o usuário será direcionado para a tela inicial do aplicativo, a qual disponibilizará uma lista com cada título das informações que foram armazenadas, como demonstra a imagem 31.
+Dessa forma, após o usuário clicar no botão para salvar os dados confidenciais, esses dados serão salvos, de maneira local, no banco de dados TinyDB e, após isso, o usuário será direcionado para a tela inicial do aplicativo, a qual disponibilizará uma lista com cada título das informações que foram armazenadas, como demonstra a imagem 30.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 31 — Tela inicial do aplicativo com a lista de informações armazenadas</em></figcaption><br>
+    <figcaption><em>Figura 30 — Tela inicial do aplicativo com a lista de informações armazenadas</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195690964-f81d3f35-4401-4bd8-a8a4-a4ef537415e2.png" width="300px" alt="Figura 31"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
 </div>
 
 ### Manual de Cibersegurança
-No que diz respeito ao manual de cibersegurança, foi disponibilizado no menu do aplicativo uma página que direciona para os tópicos que tal material aborda, como evidencia a imagem 32. Dessa forma, os tópicos presentes no manual desenvolvido são: O que é cibersegurança, O que são crimes cibernéticos, Como se proteger de crimes cibernéticos e Dicionário de cibersegurança. 
+No que diz respeito ao manual de cibersegurança, foi disponibilizado no menu do aplicativo uma página que direciona para os tópicos que tal material aborda, como evidencia a imagem 31. Dessa forma, os tópicos presentes no manual desenvolvido são: O que é cibersegurança, O que são crimes cibernéticos, Como se proteger de crimes cibernéticos e Dicionário de cibersegurança. Esses tópicos são acessados através da página principal do manual (figura 32).
 
 A partir disso, os conteúdos escolhidos pelo grupo para serem redigidos no manual são essenciais para se ter um conhecimento básico sobre a cibersegurança e, por isso, eles foram escritos com uma linguagem simples e explicativa para que, assim, seja possível alcançar a democratização desse conhecimento.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 32 — Menu do aplicativo que possui as opções de navegação no próprio app, incluindo o Manual de Cibersegurança</em></figcaption><br>
+    <figcaption><em>Figura 31 — Menu do aplicativo que possui as opções de navegação no próprio app, incluindo o Manual de Cibersegurança</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195691258-9a22d6d7-06bb-439e-9af9-d86a0adbdd81.jpg" width="300px" alt="Figura 32"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -910,7 +875,7 @@ A partir disso, os conteúdos escolhidos pelo grupo para serem redigidos no manu
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 33 — Tela com os conteúdos presentes no Manual de Cibersegurança</em></figcaption><br>
+    <figcaption><em>Figura 32 — Tela com os conteúdos presentes no Manual de Cibersegurança</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195691367-228ba0ac-67ae-4fd3-b321-949345150404.jpg" width="300px" alt="Figura 33"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -922,13 +887,13 @@ Quanto à criptografia dos dados, o aplicativo utiliza o padrão AES-128 bits, u
 Sendo assim, cada vez que o usuário salvar um dado confidencial, este será criptografado antes de ser armazenado no banco de dados TinyDB e quando o usuário acessar determinada informação, seja para visualizá-la ou seja para editá-la, ela será descriptografada. Caso o dispositivo em questão possua alguma impressão digital cadastrada, para acessar os dados armazenados o usuário precisará realizar a segunda autenticação via leitura biométrica, então, somente após isso, a informação será descriptografada.
 
 ### Gerador de Senhas
-Em relação ao desenvolvimento de um gerador de senhas, o aplicativo cumpriu esse requisito funcional, uma vez que tal ferramenta foi disponibilizada no menu do app (figura 32).
+Em relação ao desenvolvimento de um gerador de senhas, o aplicativo cumpriu esse requisito funcional, uma vez que tal ferramenta foi disponibilizada no menu do app (figura 31).
 
-Nesse viés, o gerador de senhas apresenta um input range, que permite ao usuário escolher um número entre o valor mínimo (4 caracteres) e o valor máximo (30 caracteres), o qual corresponde ao tamanho da senha que será gerada, um botão para gerar a senha e um botão para limpar os dados da tela. Além disso, o usuário deve escolher uma das cinco opções exibidas na tela, as quais definem o tipo de senha que será criada. Por fim, há uma parte da tela reservada para apresentar a senha que será gerada a partir das características definidas pelo usuário, conforme demonstra a figura 34.
+Nesse viés, o gerador de senhas apresenta um input range, que permite ao usuário escolher um número entre o valor mínimo (4 caracteres) e o valor máximo (30 caracteres), o qual corresponde ao tamanho da senha que será gerada, um botão para gerar a senha e um botão para limpar os dados da tela. Além disso, o usuário deve escolher uma das cinco opções exibidas na tela, as quais definem o tipo de senha que será criada. Por fim, há uma parte da tela reservada para apresentar a senha que será gerada a partir das características definidas pelo usuário, conforme demonstra a figura 33.
 
 <div align="center">
   <figure>
-    <figcaption><em>Figura 34 — Tela que apresenta o gerador de senhas com a senha criada</em></figcaption><br>
+    <figcaption><em>Figura 33 — Tela que apresenta o gerador de senhas com a senha criada</em></figcaption><br>
     <img src="https://user-images.githubusercontent.com/86080382/195691501-3d632ec3-558a-49cc-be03-aa7828ccf2aa.png" width="300px" alt="Figura 34"><br>
     <figcaption><em>Fonte: Os autores (2022)</em></figcaption><br><br>
   </figure>
@@ -1110,9 +1075,25 @@ Outrossim, a continuidade do projeto de desenvolvimento de um software mobile pa
 
 Nessa direção, é de suma relevância salientar que o aplicativo conta com uma limitação técnica de armazenamento, sobretudo no que diz respeito à forma de armazenamento. Isso ocorre devido ao fato de que, sob o viés da restrição de tecnologias gratuitas para o desenvolvimento Android por meio da linguagem de programação em blocos, não foi possível concretizar o armazenamento em nuvem dos dados armazenados no aplicativo, restando apenas o armazenamento local. Ou seja, cada usuário do software terá suas informações armazenadas em seu próprio dispositivo Android, correndo o risco de, na hipótese de perda total do aparelho eletrônico, perder o acesso a essas informações.
 
+# Conclusões
+A priori, o desenvolvimento do presente projeto possibilitou uma análise acerca da importância das ferramentas que possuem a acessibilidade como sendo um pilar, haja vista que tal ação possibilita a ampliação da área de impacto desses aparatos tecnológicos, sobretudo para os públicos mais vulneráveis, o que, em outras palavras, viabiliza a democratização do acesso aos conteúdos presentes nessas ferramentas.
+
+Outrossim, a construção da aplicação web Cyber Security Information, a qual é resultado desta pesquisa, viabilizou o estudo dos impactos da Segurança Cibernética no mundo contemporâneo, uma vez que a sua concepção partiu da constatação da carência global de uma maior proteção na internet. Nesse viés, tal aplicação web foi criada para colaborar com a disseminação de conteúdos pertinentes a este tema.
+
+Sob essa ótica, ao unir o desenvolvimento web semântico e acessível ao compartilhamento de informações e tecnologias acerca da cibersegurança, este projeto foi capaz de demonstrar o quanto a tecnologia pode democratizar temas elitizados, tal qual a segurança na internet, por meio de ferramentas que permitem que os seus usuários possam acessar, entender e compartilhar as informações, sem que necessitem de um conhecimento prévio ou de uma determinada característica física.
+
+Sendo assim, por meio da utilização de ferramentas assistivas, da escrita semântica das páginas HTML, da escrita simplificada dos artigos teóricos, da disponibilização dos tutoriais em diversos formatos - vídeos, imagens e textos - e, sobretudo, do oferecimento gratuito de tal tecnologia, a Cyber Security Information colabora para a coletivização da cibersegurança ao seus usuários, sejam eles jovens, adultos, pessoas portadoras de deficiências ou quaisquer pessoas imperítas no assunto.
+
+Outrossim, constata-se que este projeto, além de contribuir para a ampliação do tema, colabora para a melhoria da segurança dos seus usuários frente aos inúmeros ataques cibernéticos no mundo digital, tendo em vista que concede diversos materiais didáticos e práticos para a efetivação de tal proteção.
+
+Finalmente, como a CSI disponibiliza publicamente seu código-fonte, torna-se viável a ampliação do seu alcance, além do seu contínuo melhoramento, por qualquer pessoa que deseje isso, o que oportuniza, acima de tudo, a incessante realização da inclusão digital. Além disso, embora sua infraestrutura seja limitada pela gratuidade, tal aplicação, em seu estado atual, suporta a inclusão de centenas de conteúdos.
+
 # Referências
 
-    AFIP - Associação Fundo de Incentivo à Pesquisa; SILVA, Andressa.; LÔBO, Ingrid.; MELLO, Marco Túlio. Dona Ciência - Acessibilidade. 32. ed.  2021. E-book. 19 p. Disponível em: https://institutodosono.com/dona-ciencia-edicao-32/#dearflip-df_7864/26/. Acesso em: 9 jun. 2022.
+    ALMEIDA, J. de J. et al. Crimes cibernéticos. Caderno de Graduação - Ciências Humanas e Sociais - UNIT - SERGIPE, [S. l.], v. 2, n. 3, p. 215–236, 2015. Disponível em: https://periodicos.set.edu.br/cadernohumanas/article/view/2013. Acesso em: 29 jun. 2022
+    
+    
+    ANDRADE, Henrique. Site do Ministério da Saúde sofre ataque hacker durante madrugada e sai do ar. CNN Brasil. São Paulo, 10 dez. 2021. Disponível em: https://www.cnnbrasil.com.br/nacional/site-do-ministerio-da-saude-sofre-ataque-hacker-durante-madrugada-e-sai-do-ar/. Acesso em: 20 set. 2022.
 
 
     AZAUSTRE, Carlos. Aprendiendo JavaScript: Desde cero hasta ECMAScript 6. carlosazaustre. es, 2016.
@@ -1160,7 +1141,6 @@ Nessa direção, é de suma relevância salientar que o aplicativo conta com uma
     DA SILVA, Rogério Oliveira; SILVA, Igor Rodrigues Sousa. Linguagem de Programação Python. TECNOLOGIAS EM PROJEÇÃO, v. 10, n. 1, p. 55-71, 2019.
     
     
-    DE JESUS ALMEIDA, Jessica et al. Crimes cibernéticos. Caderno de Graduação-Ciências Humanas e Sociais-UNIT-SERGIPE, v. 2, n. 3, p. 215-236, 2015.
     DHAWAN, S. What’s new in CSS 3. In: Medium. Beginner's Guide to Mobile Web Development. [S. I.], 13 mai. 2018. Disponível em: https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1. Acesso em 14 jun. 2022.
     
     
@@ -1248,7 +1228,13 @@ Nessa direção, é de suma relevância salientar que o aplicativo conta com uma
     RIBEIRO, Alysson de Sousa; ALBUQUERQUE, Walisson Francisco de. Análise de artefatos maliciosos em ambiente acadêmico. 2014.
     
     
+    SECTOR, STANDARDIZATION; ITU, O. F. ITU-Tx. 1205. Overview of cybersecurity, v. 10, n. 20-X, p. 49.
+    
+    
     SERASA - Serasa Experian. Brasileiros sofrem uma tentativa de fraude a cada 8 segundos, revela levantamento da Serasa Experian. In: SERASA - Serasa Experian. Análise de Dados. [S. I.], 30  ago. 2021. Disponível em: https://www.serasaexperian.com.br/sala-de-imprensa/analise-de-dados/brasileiros-sofrem-uma-tentativa-de-fraude-a-cada-8-segundos-revela-levantamento-da-serasa-experian/. Acesso em: 10 mai. 2022.
+    
+    
+    SILVA, Andressa.; LÔBO, Ingrid.; MELLO, Marco Túlio. Dona Ciência - Acessibilidade. 32. ed.  2021. E-book. 19 p. Disponível em: https://institutodosono.com/dona-ciencia-edicao-32/#dearflip-df_7864/26/. Acesso em: 9 jun. 2022. 
     
     
     SILVA, Diego Pereira da et al. AACVOX: mobile application for augmentative alternative communication to help people with speech disorder and motor impairment. Research on Biomedical Engineering, v. 34, p. 166-175, 2018.
