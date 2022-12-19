@@ -803,9 +803,9 @@ Dessa forma, entre essas informações do usuário, apenas o e-mail e a senha ca
 </div>
 
 ### Login
-Em relação à tela de login do aplicativo, ela conta com um pequeno formulário que exige o preenchimento das credenciais cadastrada. Dessa forma, tal formulário conta com os campos de e-mail e de senha. Desse modo, a imagem 27 expõe a tela de login.
+Em relação à tela de login do aplicativo, ela conta com um pequeno formulário que exige o preenchimento das credenciais cadastrada. Dessa forma, tal formulário conta com os campos de e-mail e de senha. Desse modo, a imagem 26 expõe a tela de login.
 
-Após clicar no botão “Prosseguir”, conforme mostra a figura 27, o aplicativo pedirá para o usuário realizar a leitura biométrica, a qual será comparada com a biometria que está cadastrada no próprio celular.
+Após clicar no botão “Prosseguir”, conforme mostra a figura 26, o aplicativo pedirá para o usuário realizar a leitura biométrica, a qual será comparada com a biometria que está cadastrada no próprio celular.
 
 <div align="center">
   <figure>
@@ -816,9 +816,9 @@ Após clicar no botão “Prosseguir”, conforme mostra a figura 27, o aplicati
 </div>
 
 ### Redefinição de Senha
-No tocante à redefinição de senhas do usuário, este projeto cumpriu esse requisito, uma vez que foi desenvolvido um formulário obrigatório que solicita o e-mail, o qual foi cadastrado no aplicativo, conforme demonstra a figura 28. 
+No tocante à redefinição de senhas do usuário, este projeto cumpriu esse requisito, uma vez que foi desenvolvido um formulário obrigatório que solicita o e-mail, o qual foi cadastrado no aplicativo, conforme demonstra a figura 27. 
 
-Dessa forma, assim que o usuário preencher o campo, ele receberá um link para a página web que permite a modificação da senha, conforme expõe a imagem 29. 
+Dessa forma, assim que o usuário preencher o campo, ele receberá um link para a página web que permite a modificação da senha, conforme expõe a imagem 28. 
 
 <div align="center">
   <figure>
@@ -839,7 +839,7 @@ Dessa forma, assim que o usuário preencher o campo, ele receberá um link para 
 ### Armazenamento de Dados Sensíveis
 No que se refere ao armazenamento de dados sensíveis, esse requisito funcional foi atendido, uma vez que foi desenvolvida uma tela na qual o usuário poderá inserir e salvar as suas informações confidenciais.
 
-Essa tela apresenta dois campos, um para o título da informação e outro para a informação propriamente dita, como evidencia a imagem 30.
+Essa tela apresenta dois campos, um para o título da informação e outro para a informação propriamente dita, como evidencia a imagem 29.
 
 <div align="center">
   <figure>
@@ -849,7 +849,7 @@ Essa tela apresenta dois campos, um para o título da informação e outro para 
   </figure>
 </div>
 
-Dessa forma, após o usuário clicar no botão para salvar os dados confidenciais, esses dados serão salvos, de maneira local, no banco de dados TinyDB e, após isso, o usuário será direcionado para a tela inicial do aplicativo, a qual disponibilizará uma lista com cada título das informações que foram armazenadas, como demonstra a imagem 31.
+Dessa forma, após o usuário clicar no botão para salvar os dados confidenciais, esses dados serão salvos, de maneira local, no banco de dados TinyDB e, após isso, o usuário será direcionado para a tela inicial do aplicativo, a qual disponibilizará uma lista com cada título das informações que foram armazenadas, como demonstra a imagem 30.
 
 <div align="center">
   <figure>
@@ -860,7 +860,7 @@ Dessa forma, após o usuário clicar no botão para salvar os dados confidenciai
 </div>
 
 ### Manual de Cibersegurança
-No que diz respeito ao manual de cibersegurança, foi disponibilizado no menu do aplicativo uma página que direciona para os tópicos que tal material aborda, como evidencia a imagem 32. Dessa forma, os tópicos presentes no manual desenvolvido são: O que é cibersegurança, O que são crimes cibernéticos, Como se proteger de crimes cibernéticos e Dicionário de cibersegurança. 
+No que diz respeito ao manual de cibersegurança, foi disponibilizado no menu do aplicativo uma página que direciona para os tópicos que tal material aborda, como evidencia a imagem 31. Dessa forma, os tópicos presentes no manual desenvolvido são: O que é cibersegurança, O que são crimes cibernéticos, Como se proteger de crimes cibernéticos e Dicionário de cibersegurança. Esses tópicos são acessados através da página principal do manual (figura 32).
 
 A partir disso, os conteúdos escolhidos pelo grupo para serem redigidos no manual são essenciais para se ter um conhecimento básico sobre a cibersegurança e, por isso, eles foram escritos com uma linguagem simples e explicativa para que, assim, seja possível alcançar a democratização desse conhecimento.
 
@@ -886,9 +886,9 @@ Quanto à criptografia dos dados, o aplicativo utiliza o padrão AES-128 bits, u
 Sendo assim, cada vez que o usuário salvar um dado confidencial, este será criptografado antes de ser armazenado no banco de dados TinyDB e quando o usuário acessar determinada informação, seja para visualizá-la ou seja para editá-la, ela será descriptografada. Caso o dispositivo em questão possua alguma impressão digital cadastrada, para acessar os dados armazenados o usuário precisará realizar a segunda autenticação via leitura biométrica, então, somente após isso, a informação será descriptografada.
 
 ### Gerador de Senhas
-Em relação ao desenvolvimento de um gerador de senhas, o aplicativo cumpriu esse requisito funcional, uma vez que tal ferramenta foi disponibilizada no menu do app (figura 32).
+Em relação ao desenvolvimento de um gerador de senhas, o aplicativo cumpriu esse requisito funcional, uma vez que tal ferramenta foi disponibilizada no menu do app (figura 31).
 
-Nesse viés, o gerador de senhas apresenta um input range, que permite ao usuário escolher um número entre o valor mínimo (4 caracteres) e o valor máximo (30 caracteres), o qual corresponde ao tamanho da senha que será gerada, um botão para gerar a senha e um botão para limpar os dados da tela. Além disso, o usuário deve escolher uma das cinco opções exibidas na tela, as quais definem o tipo de senha que será criada. Por fim, há uma parte da tela reservada para apresentar a senha que será gerada a partir das características definidas pelo usuário, conforme demonstra a figura 34.
+Nesse viés, o gerador de senhas apresenta um input range, que permite ao usuário escolher um número entre o valor mínimo (4 caracteres) e o valor máximo (30 caracteres), o qual corresponde ao tamanho da senha que será gerada, um botão para gerar a senha e um botão para limpar os dados da tela. Além disso, o usuário deve escolher uma das cinco opções exibidas na tela, as quais definem o tipo de senha que será criada. Por fim, há uma parte da tela reservada para apresentar a senha que será gerada a partir das características definidas pelo usuário, conforme demonstra a figura 33.
 
 <div align="center">
   <figure>
