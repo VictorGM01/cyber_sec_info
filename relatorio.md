@@ -48,6 +48,7 @@
   * [Discussão](#discussão)
     * [Comparação Crítica com a Literatura Pertinente](#comparação-crítica-com-a-literatura-pertinente)
     * [Limitações e Aspectos Positivos](#limitações-e-aspectos-positivos) 
+* [Conclusões](#conclusões)
 * [Referências](#referências)
 
 # Tema e Autores
@@ -1073,6 +1074,19 @@ Sob tal perspectiva, a aplicação Cyber Security Information, em seu estado atu
 Outrossim, a continuidade do projeto de desenvolvimento de um software mobile para o armazenamento de dados confidenciais, estabelecido no ano de 2021, foi garantida, uma vez que o aplicativo mobile Digital Authenticator foi melhorado (com a inclusão de novas telas e funcionalidades) e integrado à aplicação desenvolvida no presente ano.
 
 Nessa direção, é de suma relevância salientar que o aplicativo conta com uma limitação técnica de armazenamento, sobretudo no que diz respeito à forma de armazenamento. Isso ocorre devido ao fato de que, sob o viés da restrição de tecnologias gratuitas para o desenvolvimento Android por meio da linguagem de programação em blocos, não foi possível concretizar o armazenamento em nuvem dos dados armazenados no aplicativo, restando apenas o armazenamento local. Ou seja, cada usuário do software terá suas informações armazenadas em seu próprio dispositivo Android, correndo o risco de, na hipótese de perda total do aparelho eletrônico, perder o acesso a essas informações.
+
+# Conclusões
+A priori, o desenvolvimento do presente projeto possibilitou uma análise acerca da importância das ferramentas que possuem a acessibilidade como sendo um pilar, haja vista que tal ação possibilita a ampliação da área de impacto desses aparatos tecnológicos, sobretudo para os públicos mais vulneráveis, o que, em outras palavras, viabiliza a democratização do acesso aos conteúdos presentes nessas ferramentas.
+
+Outrossim, a construção da aplicação web Cyber Security Information, a qual é resultado desta pesquisa, viabilizou o estudo dos impactos da Segurança Cibernética no mundo contemporâneo, uma vez que a sua concepção partiu da constatação da carência global de uma maior proteção na internet. Nesse viés, tal aplicação web foi criada para colaborar com a disseminação de conteúdos pertinentes a este tema.
+
+Sob essa ótica, ao unir o desenvolvimento web semântico e acessível ao compartilhamento de informações e tecnologias acerca da cibersegurança, este projeto foi capaz de demonstrar o quanto a tecnologia pode democratizar temas elitizados, tal qual a segurança na internet, por meio de ferramentas que permitem que os seus usuários possam acessar, entender e compartilhar as informações, sem que necessitem de um conhecimento prévio ou de uma determinada característica física.
+
+Sendo assim, por meio da utilização de ferramentas assistivas, da escrita semântica das páginas HTML, da escrita simplificada dos artigos teóricos, da disponibilização dos tutoriais em diversos formatos - vídeos, imagens e textos - e, sobretudo, do oferecimento gratuito de tal tecnologia, a Cyber Security Information colabora para a coletivização da cibersegurança ao seus usuários, sejam eles jovens, adultos, pessoas portadoras de deficiências ou quaisquer pessoas imperítas no assunto.
+
+Outrossim, constata-se que este projeto, além de contribuir para a ampliação do tema, colabora para a melhoria da segurança dos seus usuários frente aos inúmeros ataques cibernéticos no mundo digital, tendo em vista que concede diversos materiais didáticos e práticos para a efetivação de tal proteção.
+
+Finalmente, como a CSI disponibiliza publicamente seu código-fonte, torna-se viável a ampliação do seu alcance, além do seu contínuo melhoramento, por qualquer pessoa que deseje isso, o que oportuniza, acima de tudo, a incessante realização da inclusão digital. Além disso, embora sua infraestrutura seja limitada pela gratuidade, tal aplicação, em seu estado atual, suporta a inclusão de centenas de conteúdos.
 
 # Referências
 
