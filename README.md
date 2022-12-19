@@ -53,7 +53,8 @@ os desenvolvedores, o relatório do projeto, entre outros.
 
 ## Trabalho Escrito 📚
 
-> Para acessar o nosso relatório [clique aqui](relatorio.md)
+> Para visualizar relatório principal deste projeto, [clique aqui](relatorio.md). Para baixá-lo, [clique aqui](https://github.com/VictorGM01/cyber_sec_info/files/10255445/relatorio_projeto_cyber_security_information_2022.pdf)
+
 
 ## Funcionalidades :scroll:
 
