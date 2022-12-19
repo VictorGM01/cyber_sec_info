@@ -344,9 +344,8 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 # Método
 
-## Etapas Iniciais
 **Etapa 1) Segmentação das áreas de desenvolvimento**
- - Para o início do desenvolvimento da aplicação web Cyber Security Information, a segmentação das áreas de desenvolvimento em front-end e back-end foi o primeiro passo. Nessa etapa, dois dos integrantes do grupo de autores, Anna Santos e Victor Marques, ficaram responsáveis pelo desenvolvimento back-end da aplicação, enquanto Hillary Mendes e Raphaela Ferraz ficaram responsáveis pelo desenvolvimento front-end da aplicação.
+ - Para o início do desenvolvimento da aplicação web Cyber Security Information, a segmentação das áreas de desenvolvimento em front-end e back-end foi o primeiro passo. Nessa etapa, dois dos integrantes do grupo de autores, Anna Santos e Victor Marques, ficaram responsáveis pelo desenvolvimento back-end da aplicação, enquanto Raphaela Ferraz ficou responsável pelo desenvolvimento front-end da aplicação.
  - Outrossim, dando continuidade ao projeto realizado em 2021, isto é, o projeto de desenvolvimento de um software mobile para o armazenamento de dados confidenciais, o qual o resultado (aplicativo Digital Authenticator) será exposto na aplicação, dois dos integrantes do grupo, Anna Santos e Victor Marques, ficaram responsáveis pelo aprimoramento do software, enquanto Raphaela Ferraz ficou responsável pela criação do layout das novas telas.
 
 **Etapa 2) Estudo sobre as tecnologias das áreas de desenvolvimento**
@@ -356,7 +355,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
  - Nessa etapa, a área de back-end foi responsável por criar o **ambiente de desenvolvimento**, ou seja, o ambiente utilizado pelos integrantes para a programação da aplicação, o **ambiente de homologação**, isto é, o ambiente utilizado para a realização de testes na aplicação e o **ambiente de produção**, ou seja, o ambiente que os usuários finais utilizarão. Ademais, a área de front-end foi responsável por criar o **ambiente de design**, ou seja, o ambiente utilizado para a criação do design das páginas da aplicação. 
 
 **Etapa 4) Levantamento de Requisitos da Aplicação Web e do Aplicativo Móvel**
- - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nos requisitos não funcionais para a criação da Cyber Security Information, conforme demonstram os quadros a seguir (quadro 1 e quadro 2) e para o desenvolvimento do Digital Authenticator, de acordo com os quadros 3 e 4:
+ - Após a criação dos ambientes, o próximo passo foi a realização do levantamento de requisitos da aplicação web. O levantamento foi baseado nos requisitos funcionais e nas tecnologias para a criação da Cyber Security Information, conforme demonstram os quadros a seguir (quadro 1 e quadro 2) e para o desenvolvimento do Digital Authenticator, de acordo com os quadros 3 e 4:
 
 <div align="center">
   <em>Quadro 1 — Requisitos funcionais da aplicação web</em>
@@ -367,40 +366,36 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Garantia da Acessibilidade nas Páginas</td>
+        <td>Garantir Acessibilidade nas Páginas</td>
         <td>Apresentar os conteúdos de maneira acessível para todos os públicos</td>
       </tr>
       <tr>
-        <td>Disponibilização de Artigos</td>
+        <td>Disponibilizar Artigos de Cibersegurança</td>
         <td>Expor artigos, escritos de maneira acessível, sobre a Cibersegurança</td>
       </tr>
       <tr>
-        <td>Disponibilização de Tutoriais</td>
+        <td>Disponibilizar Tutoriais</td>
         <td>Apresentar tutoriais em diversos formatos com exemplos de aplicações dos conteúdos dos artigos</td>
       </tr>
       <tr>
-        <td>Disponibilização de Ferramentas para Proteção</td>
+        <td>Disponibilizar Ferramentas para Proteção</td>
         <td>Exibir ferramentas voltadas à cibersegurança. Ex.: Digital Authenticator</td>
       </tr>
       <tr>
-        <td>Disponibilização do Software Mobile</td>
+        <td>Disponibilizar Software Mobile</td>
         <td>Disponibilizar o aplicativo Digital Authenticator para download</td>
       </tr>
       <tr>
-        <td>Envio de E-mails</td>
+        <td>Enviar E-mails</td>
         <td>Enviar newsletter, para os usuários cadastrados no banco de dados, com avisos sobre a inclusão de conteúdos na aplicação</td>
       </tr>
       <tr>
-        <td>Informações Sobre o Projeto</td>
+        <td>Informar Sobre o Projeto</td>
         <td>Disponibilizar informações sobre os desenvolvedores, os orientadores e a instituição de ensino</td>
       </tr>
       <tr>
-        <td>Disponibilização de um Canal de Contato</td>
+        <td>Disponibilizar um Canal de Contato</td>
         <td>Expor um formulário para que os usuários possam contatar os desenvolvedores</td>
-      </tr>
-      <tr>
-        <td>Exposição dos Resultados da Enquete</td>
-        <td>Disponibilizar gráficos com os principais resultados da enquete realizada pelos desenvolvedores</td>
       </tr>
     </tbody>
   </table>
@@ -408,35 +403,35 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 </div><br><br>
 
 <div align="center">
-    <em>Quadro 2 — Requisitos não funcionais da aplicação web</em>
+    <em>Quadro 2 — Tecnologias utilizadas na aplicação web</em>
   <table>
     <thead align="center">
       <th>Atividades</th>
-      <th>Requisitos Não Funcionais</th>
+      <th>Tecnologias</th>
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Criação do Layout da Aplicação</td>
+        <td>Criar o Layout da Aplicação</td>
         <td>Windows, Figma</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Desenvolvimento</td>
+        <td>Configurar o Ambiente de Desenvolvimento</td>
         <td>Windows, PyCharm, Git</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Homologação</td>
+        <td>Configurar o Ambiente de Homologação</td>
         <td>Windows, PyCharm, Git</td>
       </tr>
       <tr>
-        <td>Criação das Páginas da Aplicação</td>
+        <td>Criar as Páginas da Aplicação</td>
         <td>Windows, PyCharm, Git, GitHub</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Produção</td>
+        <td>Configurar o Ambiente de Produção</td>
         <td>Windows, PyCharm, Git, Heroku CLI, Heroku, Namecheap</td>
       </tr>
       <tr>
-        <td>Tecnologias</td>
+        <td>Desenvolver as Funcionalidades da Aplicação</td>
         <td>Django, Python3, HTML5, CSS3, JavaScript, jQuery, PostgreSQL, SQLite</td>
       </tr>
     </tbody>
@@ -453,19 +448,19 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Cadastro</td>
+        <td>Permitir o Cadastro de um Novo Usuário</td>
         <td>Possibilitar a criação de uma conta no aplicativo, de modo a salvar o nome, o e-mail e a senha do usuário</td>
       </tr>
       <tr>
-        <td>Login</td>
+        <td>Permitir o Login no Aplicativo</td>
         <td>Autenticar usuário, permitindo ou não o acesso ao aplicativo</td>
       </tr>
       <tr>
-        <td>Redefinição de Senha</td>
+        <td>Redefinir a Senha do Usuário</td>
         <td>Viabilizar a redefinição da senha do usuário</td>
       </tr>
       <tr>
-        <td>Armazenamento de Dados Sensíveis</td>
+        <td>Armazenar os Dados Sensíveis do Usuário</td>
         <td>Realizar o armazenamento dos dados do usuário localmente</td>
       </tr>
       <tr>
@@ -473,7 +468,7 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
         <td>Permitir a visualização dos conteúdos do manual de cibersegurança</td>
       </tr>
       <tr>
-        <td>Criptografia dos Dados</td>
+        <td>Criptograr os Dados</td>
         <td>Criptografar os dados armazenados com o padrão AES-128</td>
       </tr>
       <tr>
@@ -486,27 +481,27 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 </div><br><br>
 
 <div align="center">
-    <em>Quadro 4 — Requisitos não funcionais do aplicativo mobile</em>
+    <em>Quadro 4 — Tecnologias utilizadas no aplicativo mobile</em>
   <table>
     <thead align="center">
       <th>Atividades</th>
-      <th>Requisitos Não Funcionais</th>
+      <th>Tecnologias</th>
     </thead>
     <tbody align="center"> 
       <tr>
-        <td>Criação do Layout do Aplicativo</td>
+        <td>Criar o Layout do Aplicativo</td>
         <td>Windows, Figma</td>
       </tr>
       <tr>
-        <td>Configuração do Ambiente de Desenvolvimento</td>
+        <td>Configurar o Ambiente de Desenvolvimento</td>
         <td>Windows, Kodular</td>
       </tr>
       <tr>
-        <td>Criação do Aplicativo</td>
+        <td>Criar o Aplicativo</td>
         <td>Windows, Kodular, TinyDB, Google Firebase</td>
       </tr>
       <tr>
-        <td>Tecnologias</td>
+        <td>Desenvolver as Funcionalidades do Aplicativo</td>
         <td>Linguagem de Programação em Blocos, TinyDB, Real-Time Database, AES-128 bits</td>
       </tr>
     </tbody>
@@ -525,8 +520,6 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
   </figure>
 </div>
 
-
-## Etapas do Back-End
 **Etapa 6) Estruturação dos diretórios da aplicação**
  - Por meio da utilização de projetos e aplicativos em Django, os diretórios da aplicação foram segmentados de maneira a seguir com as boas práticas de programação back-end, tornando a organização da aplicação mais simplificada e, por consequência, garantindo uma maior escalabilidade da aplicação web.  A divisão dos diretórios está representada na figura 2.
 
@@ -546,15 +539,12 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
 
 **Etapa 8) Criação dos bancos de dados**
  - Após todas as etapas supramencionadas, a última etapa necessária para o início da programação back-end da aplicação foi a criação dos bancos de dados SQLite (para os ambientes de desenvolvimento e de homologação) e a criação do banco de dados PostgreSQL (para o ambiente de produção).
- 
-## Etapas do Front-End
-**Etapa 9) Estudo sobre a inserção da acessibilidade nas páginas**
- - Para o início do desenvolvimento front-end das páginas da aplicação, o estudo sobre a inserção da acessibilidade na estruturação das páginas trata-se do primeiro passo. Com isso, foram realizados os estudos sobre a semântica que o HTML5 proporciona, através das suas tags de marcação com significado. Ademais, também foi estudado os tipos de leitores de telas e como utilizá-los para navegar em páginas web. 
 
-**Etapa 10) Estudo sobre a inserção de responsividade nas páginas**
- - Após a etapa acima, o segundo passo, para realizar o desenvolvimento front-end das páginas do website, consiste em realizar estudos sobre a inserção da responsividade no design das páginas. Com isso, foram realizados os estudos sobre mobile first e media queries.
+**Etapa 9) Estudo sobre a acessibilidade e sobre a responsividades**
+ - Para o início do desenvolvimento front-end das páginas da aplicação, o estudo sobre a inserção da acessibilidade na estruturação das páginas trata-se do primeiro passo. Com isso, foram realizados os estudos sobre a semântica que o HTML5 proporciona, através das suas tags de marcação com significado. Ademais, também foi estudado os tipos de leitores de telas e como utilizá-los para navegar em páginas web. Já o segundo passo para o desenvolvimento das páginas, trata-se de realizar estudos sobre a inserção da responsividade no design. Com isso, foram realizados os estudos sobre mobile first e media queries.
+ - Outrossim, foram feitas pesquisas acerca das recomendações descritas nas Diretrizes de Acessibilidade para Conteúdo Web (WCAG, versão 2.1), definidas pela World Wide Web Consortium (W3C), as quais foram utilizadas como modelos de desenvolvimento das páginas da *Cyber Security Information*.
 
-**Etapa 11) Criação dos designs no Figma (mobile e desktop)**
+**Etapa 10) Criação dos designs no Figma (mobile e desktop)**
  - Dado a realização dos estudos sobre a acessibilidade web, a próxima etapa consiste na criação do design de cada página da aplicação web e, para isso, a plataforma de design Figma foi utilizada como o ambiente de design, conforme demonstra a figura 3.
 
 <div align="center">
@@ -575,26 +565,18 @@ Com isso, durante a revisão bibliográfica desse projeto, foi encontrado um sit
   </figure>
 </div>
 
-
-**Etapa 12) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
+**Etapa 11) Criação das páginas da aplicação, através da utilização da acessibilidade web e mobile first**
  - Através da realização de todas as etapas acima, a última etapa necessária para o início da programação front-end da aplicação consiste em desenvolver os códigos de marcação (HTML), de estilização (CSS) e de dinamicidade (JavaScript) com os recursos que garantem a acessibilidade e a responsividade do site. 
 
-**Etapa 13) Realização de testes de acessibilidade e responsividade**
- - Nesta etapa, são realizados os testes das páginas desenvolvidas, no ambiente de desenvolvimento e no ambiente de homologação, para garantir a acessibilidade e a responsividade da aplicação.
-
-## Etapas Gerais
-**Etapa 14) Estudo sobre a segurança cibernética**
+**Etapa 12) Estudo sobre a segurança cibernética**
  - Visando a produção de conteúdos informacionais acerca da Cibersegurança, nessa etapa os integrantes realizaram uma pesquisa aprofundada sobre Segurança da Informação aplicada à Segurança Cibernética, de modo a obter conhecimento e fundamentação teórica para a produção de artigos, tutoriais e ferramentas.
 
-**Etapa 15) Produção de artigos, tutoriais e ferramentas**
- - Uma vez que os integrantes realizaram a etapa anterior, a próxima etapa trata da produção dos artigos, tutoriais e ferramentas, que serão disponibilizados em diversos tipos de mídias na aplicação web.
- - Ademais, nessa etapa o software mobile Digital Authenticator - responsável por armazenar informações confidenciais de maneira segura - é melhorado e implementado na aplicação Cyber Security Information.
+**Etapa 13) Produção de artigos, tutoriais e ferramentas**
+ - Uma vez realizada a etapa anterior, a próxima etapa trata da produção dos artigos, tutoriais e ferramentas, os quais serão disponibilizados em diversos tipos de mídias na aplicação web.
 
-**Etapa 16) Realização de testes**
- - Nessa etapa, os responsáveis pelo ambiente de homologação ficam encarregados de validar todas as implementações na aplicação antes da publicação destas no ambiente de produção.
-
-**Etapa 17) Publicação das funcionalidades no ambiente de produção**
- - Após a realização dos testes, as funcionalidades implementadas na aplicação, se forem aprovadas nos testes, serão disponibilizadas para os usuários finais.
+**Etapa 14) Realização de testes e publicação**
+ - Nessa etapa, os responsáveis pelo ambiente de homologação ficam encarregados de validar todas as implementações na aplicação antes da publicação destas no ambiente de produção, o que inclui a verificação das páginas desenvolvidas nas plataformas que validam a conformidade da aplicação com as Diretrizes de Acessibilidade para Conteúdo Web (WCAG), tal como o AccessMonitor, o Google Lighthouse, o ASES (Avaliador e Simulador de Acessibilidade em Sítios) e o Color Contrast Accessibility Validator (Validador de Acessibilidade de Contraste de Cor). Após a realização dos testes, as funcionalidades implementadas na aplicação, se forem aprovadas, serão disponibilizadas para os usuários finais.
+ - Além disso, nesta etapa seriam realizados os testes de segurança da aplicação web, todavia, devido à limitação de tempo - decorrente  da necessidade de produzir os materiais teóricos e práticos de forma simultânea à produção do sistema - não foi possível implementar tais verificações.
 
 # Resultados e Discussão
 A priori, com base nos objetivos e na metodologia deste projeto, a aplicação web “Cyber Security Information” foi desenvolvida, tal como o aplicativo móvel “Digital Authenticator”, o qual foi integrado, em continuação ao projeto realizado no ano de 2021, na aplicação.
