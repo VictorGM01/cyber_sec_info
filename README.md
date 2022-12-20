@@ -51,10 +51,29 @@ os desenvolvedores, o relatório do projeto, entre outros.
 
 ![image](https://user-images.githubusercontent.com/86068797/197358830-04419e74-b605-433e-9bec-7374bf3a2f7f.png)
 
-## Trabalho Escrito 📚
+## Relatório do Projeto 📚
 
-> Para visualizar relatório principal deste projeto, [clique aqui](relatorio.md). Para baixá-lo, [clique aqui](https://github.com/VictorGM01/cyber_sec_info/files/10255445/relatorio_projeto_cyber_security_information_2022.pdf)
+> Para visualizar o relatório final deste trabalho, o qual foi aprovado na disciplina de Desenvolvimento de Projetos (Projeto Integrador) do IFSP - PTB, [clique aqui](relatorio.md). Para baixá-lo, [clique aqui](https://github.com/VictorGM01/cyber_sec_info/files/10255445/relatorio_projeto_cyber_security_information_2022.pdf)
 
+## Publicações 🔬
+
+### Desenvolvimento de uma Aplicação Web para Divulgação de Conteúdos e Ferramentas Acerca da Cibersegurança
+> 13° Congresso de Inovação, Ciência e Tecnologia · 22 de nov de 2022
+
+**RESUMO:** Embora a Segurança Cibernética - também conhecida como Cibersegurança - esteja no
+centro das atenções da maioria das empresas e instituições no geral, nota-se a ausência de ferramentas
+tecnológicas capazes de alertar, informar e capacitar as pessoas comuns sobre tal assunto. Ou, ainda,
+quando há essas ferramentas, apenas um exclusivo grupo é privilegiado com o fácil acesso e
+entendimento dessas, seja devido ao nível de escolaridade, ou maturidade, requerido para a
+compreensão dos conteúdos, seja pela ausência da acessibilidade digital. Preenchendo essa lacuna, foi
+desenvolvida uma aplicação web, intitulada de “Cyber Security Information”, com tecnologias que
+possibilitam o acesso a conteúdos e ferramentas relacionados à cibersegurança, de modo a tornar esses
+conteúdos acessíveis para todos os públicos. Nessa direção, o trabalho visa desenvolver uma aplicação
+fundamentada na democratização do acesso aos conteúdos relacionados ao tema, de modo a assegurar
+que todos possam se proteger das ameaças digitais, incluindo as crianças, os idosos, pessoas com
+deficiências e o público leigo no geral.
+
+🔎 [Acessar a publicação](http://ocs.ifsp.edu.br/index.php/conict/xiiiconict/paper/view/8254)
 
 ## Funcionalidades :scroll:
 
