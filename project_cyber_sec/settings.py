@@ -35,9 +35,9 @@ DEBUG = True
 ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost", "www.ciberseguranca.info",
                  "ciberseguranca.info"]
 
-SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = True
 
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
