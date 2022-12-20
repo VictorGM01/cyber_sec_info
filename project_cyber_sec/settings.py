@@ -35,9 +35,9 @@ DEBUG = True
 ALLOWED_HOSTS = ["https://cyber-sec-info.herokuapp.com/", "127.0.0.1/", "localhost", "www.ciberseguranca.info",
                  "ciberseguranca.info"]
 
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
@@ -96,7 +96,17 @@ WSGI_APPLICATION = 'project_cyber_sec.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config()}
+# DATABASES = {'default': dj_database_url.config()}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': config('HOST'),
+        'USER': config('USER'),
+        'NAME': config('NAME'),
+        'PASSWORD': config('PASSWORD'),
+    }
+}
 
 
 # Django cache com Memcached
@@ -110,16 +120,6 @@ CACHES = {
             }
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': config('NAME'),
-#         'USER': config("USER"),
-#         'PASSWORD': config("PASSWORD"),
-#         'HOST': config("HOST")
-#     }
-# }
 
 
 # Password validation
