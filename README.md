@@ -5,7 +5,8 @@
 ## Tabela de Conteúdos
 * [Descrição do Projeto](#descrição-do-projeto-)
 * [Demonstração da Aplicação](#demonstração-da-aplicação-)
-* [Trabalho escrito](#trabalho-escrito-)
+* [Relatório do Projeto](#relatório-do-projeto-)
+* [Publicações](#publicações-)
 * [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas-hammer_and_wrench)
