@@ -9,6 +9,7 @@
 * [Publicações](#publicações-)
 * [Funcionalidades](#funcionalidades-scroll)
 * [Status do Projeto](#status-do-projeto-)
+* [Como Usar a Aplicação](#como-usar-a-aplicação-)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas-hammer_and_wrench)
 * [Desenvolvedores](#desenvolvedores-octocat)
 * [Orientadores](#orientadores-)
