@@ -92,6 +92,11 @@ Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
 ## Status do Projeto 🔔
 #### ✅ Finalizado - Aplicação publicada ✅
 
+## Como Usar a Aplicação 🚀
+
+### Web 🌐
+Para utilizar a *Cyber Security Information* via web, acesse o domínio ciberseguranca.info ou, caso prefira, [clique aqui](https://www.ciberseguranca.info/)
+
 ## Tecnologias Utilizadas :hammer_and_wrench:
 
 > Clique sobre as imagens para acessar a documentação de cada tecnologia utilizada neste projeto.
