@@ -97,6 +97,39 @@ Essas funcionalidades estão fundamentadas no [levantamento de requisitos funcio
 ### Web 🌐
 Para utilizar a *Cyber Security Information* via web, acesse o domínio ciberseguranca.info ou, caso prefira, [clique aqui](https://www.ciberseguranca.info/)
 
+### Local 🖥️
+#### Pré-requisitos 📦
+Antes de começar, é preciso que você tenha as seguintes ferramentas instaladas em sua máquina:
+
+[Git](https://git-scm.com/), [Python](https://www.python.org/downloads/release/python-390/).
+
+Além disso, é interessante que você tenha um editor para trabalhar com o código. Recomendamos o uso do [Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows) ou do [VSCode](https://code.visualstudio.com/)
+
+#### Rodando a Aplicação ▶
+```bash
+# No terminal, clone este repositório:
+git clone <https://github.com/VictorGM01/cyber_sec_info>
+
+# Acesse a pasta do projeto
+cd cyber_sec_info
+
+# Crie e ative um ambiente virtual
+python -m venv .venv
+.venv\Scripts\activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Realize as migrações
+python manage.py migrate
+
+# Crie um usuário admin
+python manage.py createsuperuser
+
+# Rode o servidor
+python manage.py runserver
+```
+
 ## Tecnologias Utilizadas :hammer_and_wrench:
 
 > Clique sobre as imagens para acessar a documentação de cada tecnologia utilizada neste projeto.
